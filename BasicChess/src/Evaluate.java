@@ -2,14 +2,24 @@
 public class Evaluate {
 	Board myboard;
 	long col1=0b1000000010000000100000001000000010000000100000001000000010000000L;
-	long whtA=0b0000000000000000111111111111111111111111000000000000000000000000L;
-	long blkA=0b0000000000000000000000001111111111111111111111110000000000000000L;
+	long blkA=0b0000000000000000111111111111111111111111000000000000000000000000L;
+	long whtA=0b0000000000000000000000001111111111111111111111110000000000000000L;
 	long col8=0b0000000100000001000000010000000100000001000000010000000100000001L;
 	long wReach=0;
 	long bReach=0;
 	double weights[]=new double[100];
 	 int wNmob;
 	 int bNmob;
+	 long whitekingadjacent=0;
+	 int whitekingattackedpoint=0; // attacked black pieces - defending white pieces
+	 int blackkingattackedpoint=0; // attacked white pieces - defending black
+	 long blackkingadjacent=0;
+	 long tempreach=0;
+	 // static values
+	public Evaluate(Board b, Individual ind){
+		myboard=b;
+		weights=ind.weights;
+	}
 	public Evaluate(Board b){
 		myboard=b;
 		int count=0;// weak square
@@ -17,8 +27,10 @@ public class Evaluate {
 		weights[count++]=-9;//enemy knight on weak;
 		weights[count++]=10;//center pawn count;
 		count+=7;// king value
-		weights[count++]=6;//pawn shield;
-		count+=9;//bishop value
+		weights[count++]=6;//pawn shield;		
+		weights[count++]=-4;//king adjacent attacked;
+		weights[count++]=40;//king castled
+		count+=7;//bishop value
 		weights[count++]=4;//bishop mob;
 		weights[count++]=7;//bishop on large diag;
 		weights[count++]=28;//bishop pair;
@@ -26,19 +38,27 @@ public class Evaluate {
 		weights[count++]=6;//knight mob;
 		count+=9;// pawn vlaue
 		weights[count++]=-8;//iso pawn ;
-		weights[count++]=-14;//double pawn ;
+		weights[count++]=-7;//double pawn ;
 		weights[count++]=10;//pass pawn ;
-		weights[count++]=30;//rookbhd pawn ;
+		weights[count++]=40;//rookbhd pawn ;
 		weights[count++]=-3;//back pawn ;
 		weights[count++]=6;//rank of passed pawn
-		count+=4;// rook vlaue
+		weights[count++]=-6;//blocked pawn pen
+		weights[count++]=-6;//blocked pass pawn pen
+		count+=2;// rook vlaue
 		weights[count++]=27;//rook open file ;
 		weights[count++]=11;//rook semi-open file ;
 		weights[count++]=30;//rook on seventh;
 		weights[count++]=4;//rook mob;
-		weights[count++]=6;//rook con;
+		weights[count++]=3;//rook con;
 		count+=5;// queen vlaue
 		weights[count++]=2;//queen mob;
+		int piece= 94;
+		weights[piece++]=100;//pawn
+		weights[piece++]=300;//knight
+		weights[piece++]=300;//bishop
+		weights[piece++]=500;//rook
+		weights[piece++]=900;//queen
 
 	}
 
@@ -54,10 +74,21 @@ public class Evaluate {
 		double bishopValue=0;
 		double queenValue=0;
 		double kingValue=0;
+		whitekingattackedpoint=0;
+	    blackkingattackedpoint=0;
+		int wkingsqu= (int) (Math.log(myboard.wK)/Math.log(2));
+		int bkingsqu= (int) (Math.log(myboard.bK)/Math.log(2));
+		if(wkingsqu==0&&(myboard.wK&1)==0)
+			wkingsqu=63;
+		if(bkingsqu==0&&(myboard.bK&1)==0)
+			bkingsqu=63;
+		whitekingadjacent=adjacentSquCalc(wkingsqu);
+		blackkingadjacent=adjacentSquCalc(bkingsqu);
 		double weaks=weakSquare(0)-weakSquare(1);
 		long a=1;
 		for(int i=0;i<64;i++)
 		{
+			tempreach=0;
 			a=1;
 			a<<=i;
 			if((a&allp)==0){// if the square is empty which is the case most times
@@ -103,18 +134,44 @@ public class Evaluate {
 			bishoppair+=weights[22];
 		if(bbishopcount>=2)
 			bishoppair-=weights[22];
-		/*System.out.println("rooks: "+rookValue);
+		int kingattacked= (int) (weights[11]*((whitekingattackedpoint-blackkingattackedpoint)/80));
+/*		System.out.println("rooks: "+rookValue);
 		System.out.println("queens: "+queenValue);
 		System.out.println("knights: "+knightValue);
 		System.out.println("bishop: "+bishopValue);
 		System.out.println("pawn: "+pawnValue);
 		System.out.println("king: "+kingValue);
 		System.out.println("weaks: "+weaks);
-		System.out.println("bishop pair: "+bishoppair);*/
-		return (rookValue+pawnValue+knightValue+bishopValue+queenValue+kingValue+bishoppair+weaks);// þimdilik bu sayýlarý elle girdim
+		System.out.println("bishop pair: "+bishoppair);
+	*/
+		
+		return (rookValue+pawnValue+knightValue+bishopValue+queenValue+kingValue+bishoppair+weaks+kingattacked);// simdilik bu sayilari elle girdim
 	}
-	//kontrol etmedim burada hem rakip atlar weak squarede mi kontrolü
-	// hem de weak square sayýsý bulunuyor baþka weak square ile alakalý þeyler de ekleneilir
+	long adjacentSquCalc(int squ) {
+		// TODO Auto-generated method stub
+		long a = 0;
+		int col=squ%8;
+		int pos=squ-8;
+		int temp = pos;
+		for(int row = 0 ; row<3;row++){
+			if(pos>=0&&pos<64){
+			for(int colu=-1;colu<2;colu++){
+				long b = 1;
+				int temp1 = pos;
+				pos+=colu;
+				if(pos%8-col<2&&pos%8-col>-2&& pos<64&& pos>=0){
+					b<<=pos;
+					a |= b;
+				}
+				pos=temp1;
+			}
+			}
+			pos=temp+ 8 * (row +1);
+		}
+		return a;
+	}
+	//kontrol etmedim burada hem rakip atlar weak squarede mi kontrolu
+	// hem de weak square sayisi bulunuyor baska weak square ile alakali seyler de ekleneilir
 	double weakSquare(int side){
 		long mychain=0;
 		long leftcap=0;
@@ -134,8 +191,8 @@ public class Evaluate {
 			cap=leftcap|rightcap;
 			for(int i=0;i<2;i++){
 				cap|=(cap<<8);
-				weak=(whtA&~cap);
 			}
+			weak=(whtA&~cap);
 			for(int a=16;a<32;a++){
 				ptr=1;
 				ptr<<=a;
@@ -155,8 +212,8 @@ public class Evaluate {
 			cap=leftcap|rightcap;
 			for(int i=0;i<2;i++){
 				cap|=(cap>>8);
-				weak=(blkA&~cap);
 			}
+			weak=(blkA&~cap);
 			for(int a=32;a<48;a++){
 				ptr=1;
 				ptr<<=a;
@@ -178,21 +235,38 @@ public class Evaluate {
 			centerpawncount++;
 		return weakcount*weights[0]+enemyknightonWeak*weights[1]+centerpawncount*weights[2];
 	}
-	// bu karýþýk biraz daha
+	// bu karisik biraz daha
 	double kingValue(int squ,int side) {
 		// TODO Auto-generated method stub
 		int pawnshield=0;
+		int iscastled=0;
 		if(side==0&&myboard.isWhiteCastled==1)
 			pawnshield=pawnshield(squ, side);
 		if(side==1&&myboard.isBlackCastled==1)
 			pawnshield=pawnshield(squ, side);
-		return pawnshield*weights[10];
+		iscastled=isCastled(side);
+		return pawnshield*weights[10]+iscastled*weights[12];
 	}
 	
+	 int isCastled(int side) {
+		// TODO Auto-generated method stub
+		 if(side==0){
+			if (myboard.rights[0]==1)
+				return 1;
+			else 
+				return 0;
+		 }
+		 else{
+			 if (myboard.rights[1]==1)
+					return 1;
+				else 
+					return 0;
+		 }
+	}
 	//number of pawns in front of the king after castled
 	 int pawnshield(int squ,int side) {
 		// TODO Auto-generated method stub
-		 int dir=0;
+		 int dir=1;
 		 int pawncount=0;
 		 int temp=squ;
 		 long mypwn=0;
@@ -206,12 +280,40 @@ public class Evaluate {
 
 		}
 		temp+=dir*8;
-		for(int i=-1;i<2;i++){
+			if((squ%8)==0){//en sag
 			a=1;
-			a<<=(temp+i);
+			a<<=(temp+1);
 			if((a&mypwn)!=0)
 				pawncount++;
-		}
+			a=1;
+			a<<=(temp);
+			if((a&mypwn)!=0)
+				pawncount++;
+			}
+			else if((squ%8)==7){//en sol
+				a=1;
+				a<<=(temp);
+				if((a&mypwn)!=0)
+					pawncount++;
+				a=1;
+				a<<=(temp-1);
+				if((a&mypwn)!=0)
+					pawncount++;
+				}
+			else{// orta
+					a=1;
+					a<<=(temp+1);
+					if((a&mypwn)!=0)
+						pawncount++;
+					a=1;
+					a<<=(temp);
+					if((a&mypwn)!=0)
+						pawncount++;
+				a=1;
+				a<<=(temp-1);
+				if((a&mypwn)!=0)
+					pawncount++;
+			}
 		return pawncount++;
 	}
 	 
@@ -221,7 +323,7 @@ public class Evaluate {
 		int blargediag=0;
 		blargediag=isbislargeDiag(squ,side);
 		bmob=bishopMob(squ, side);
-		return bmob*weights[20]+blargediag*weights[21];
+		return bmob*weights[20]+blargediag*weights[21]+weights[96];
 	}
 
 	int isbislargeDiag(int squ, int side) {
@@ -233,13 +335,12 @@ public class Evaluate {
 		if(row==col)
 			return 1;
 		return 0;
-
 	}
 
 	double knightValue(int squ,int side) {
 		// TODO Auto-generated method stub
 		int kniMob=knightMob(squ, side);
-		return kniMob*weights[30];
+		return kniMob*weights[30]+weights[95];
 	}
 
 	double pawnValue(int squ,int side) {
@@ -255,8 +356,6 @@ public class Evaluate {
 		isoPawn=isoPawn(squ,side);
 		doubPawn=doubledPawn(squ, side);
 		passPawn=passedPawn(squ, side);
-		blockedPawnpen=blockedPawnpen(squ,side);// by own pieces
-		blockedpasspawnpen=blockedPasspawnpen(squ,side);// by enemy piece
 		if(isoPawn==1)
 			backPawn=0;
 		else{
@@ -265,9 +364,19 @@ public class Evaluate {
 		if(passPawn==1){
 			rookbhdpasspawn=isrookbehind(squ,side);
 			passPawnrank=squ/8;
+			blockedpasspawnpen=blockedPasspawnpen(squ,side);// by enemy piece 
 			if(side==1){
 				passPawnrank= 7-passPawnrank;
 			}
+		}
+		if (side ==0)
+		{
+			if(squ==11||squ==12)
+			blockedPawnpen=blockedPawnpen(squ,side);// by own pieces
+		}
+		if(side==1){
+			if(squ==51||squ==52)
+			blockedPawnpen=blockedPawnpen(squ,side);// by own pieces
 		}
 		//passPawnrank*=passPawnrank; // give a lot importance 
 //position startpos moves e2e4 g8f6 b1c3 e7e5 d2d3 f8b4 c1g5 b4c3 b2c3 b8c6 g1f3 d7d6 d3d4 e5d4 f3d4 c8g4 f2f3 c6d4 c3d4 g4d7 f1c4 a7a5 a1b1 b7b6 e4e5 h7h6 e5f6 h6g5 f6g7 d8e7 d1e2
@@ -279,7 +388,9 @@ public class Evaluate {
 		System.out.println("pass "+passPawn);
 		System.out.println("pass rank: "+passPawnrank);
 		System.out.println("rookbhd "+rookbhdpasspawn);*/
-		return isoPawn*weights[40]+doubPawn*weights[41]+passPawn*weights[42]+rookbhdpasspawn*weights[43]+backPawn*weights[44]+passPawnrank*weights[45];
+		return isoPawn*weights[40]+doubPawn*weights[41]+passPawn*weights[42]+rookbhdpasspawn*weights[43]+
+				backPawn*weights[44]+passPawnrank*weights[45]+blockedPawnpen*weights[46]+blockedpasspawnpen*weights[47]+
+				weights[94];
 	}
      int blockedPasspawnpen(int squ, int side) {
 		// TODO Auto-generated method stub
@@ -304,11 +415,15 @@ public class Evaluate {
 	 int blockedPawnpen(int squ, int side) {
 		// TODO Auto-generated method stub
 		 long mypiece=0;
-		 if(side==0)
+		 int dir=-8;
+		 if(side==0){
 			 mypiece=myboard.whitePieces;
-		 else
+			 dir=8;
+		 }
+		 else{
 			 mypiece=myboard.blackPieces;
-		int squ1=squ+8;
+		 }
+		int squ1=squ+dir;
 		long pos=1;
 		pos<<=squ1;
 		if((mypiece&pos)!=0)
@@ -333,21 +448,21 @@ public class Evaluate {
 			dir=-1;
 		}
 		if(col==0){
-			for(int i=-2*dir+3;i!=row+1;i+=dir){
+			for(int i=(int) (-2.5*dir+3.5);i!=row+1;i+=dir){
 				a=1;
 				if(((a<<(i*8+col+1))&mypawns)!=0)
 					return 0;
 
 			}
 		}else if(col==7){
-			for(int i=-2*dir+3;i!=row+1;i+=dir){
+			for(int i=(int) (-2.5*dir+3.5);i!=row+1;i+=dir){
 				a=1;
 				if(((a<<(i*8+col-1))&mypawns)!=0)
 					return 0;
 
 			}
 		}else{
-			for(int i=-2*dir+3;i!=row+1;i+=dir){
+			for(int i=(int) (-2.5*dir+3.5);i!=row+1;i+=dir){
 				a=1;
 				if(((a<<(i*8+col+1))&mypawns)!=0||((a<<(i*8+col-1))&mypawns)!=0)
 					return 0;
@@ -400,7 +515,7 @@ public class Evaluate {
 		if(ropenfile==1)
 			ropenfileweight=weights[51];
 		//System.out.println("square"+squ+"rook open file ?"+ ropenfile);
-		return ropenfileweight+rookseventh*weights[52]+rookmob*weights[53]+rookcon*weights[54];
+		return ropenfileweight+rookseventh*weights[52]+rookmob*weights[53]+rookcon*weights[54]+weights[97];
 	}
 
 	int isrookSeventh(int squ, int side) {
@@ -449,20 +564,31 @@ public class Evaluate {
 		long my=1;
 		my<<=squ;
 		int row=squ/8;
+		int col=squ%8;
 		long all=0;
 		long myrooks=1;
 		if(side==0)
 		{
-			myrooks=myboard.wR;
+			myrooks=myboard.wR^my;
 			all=myboard.whitePieces|myboard.blackPieces;
 		}
 		else
 		{
-			myrooks=myboard.bR;
+			myrooks=myboard.bR^my;
 			all=myboard.whitePieces|myboard.blackPieces;
 		}
 		long rookrow=(all&~my);
-		for(int i=0;i<8;i++){
+		for(int i=0;i<col;i++){
+			my=1;
+			my<<=(8*row)+i;
+			if((my&rookrow)!=0){
+				if((myrooks&my)!=0)
+					return 1;
+				else
+					break;
+			}
+		}
+		for(int i=col+1;i<8;i++){
 			my=1;
 			my<<=(8*row)+i;
 			if((my&rookrow)!=0){
@@ -475,11 +601,11 @@ public class Evaluate {
 		return 0;
 	}
 
-	// burada bana bu tarafýn bu noktada queeni varmýþ bilgisi geldi 
-	// bu bilgiyle ben queen parametrelerini çaðýrýyorum
+	// burada bana bu tarafin bu noktada queeni varmis bilgisi geldi 
+	// bu bilgiyle ben queen parametrelerini cagiriyorum
 	double queenValue(int squ,int side) {
 		int qmob=queenMob(squ,side);
-		return qmob*weights[60];
+		return qmob*weights[60]+weights[98];
 	}
 	//returns if a pawn is isolated
 	int isoPawn(int squ, int side) {
@@ -498,8 +624,10 @@ public class Evaluate {
 			while(i++!=limit){
 			long right=1;
 			right<<=(i*8+col-1);
-			if((right&my)!=0)
+			if((right&my)!=0){
 				count++;
+			break;
+			}
 			}
 		}
 		else if(col==0){
@@ -508,6 +636,7 @@ public class Evaluate {
 			left<<=(i*8+col+1);
 			if((left&my)!=0){
 				count++;
+				break;
 			}
 			}
 		}
@@ -517,8 +646,10 @@ public class Evaluate {
 			right<<=(i*8+col-1);
 			long left=1;
 			left<<=(i*8+col+1);
-			if((right&my)!=0||(left&my)!=0)
+			if((right&my)!=0||(left&my)!=0){
 				count++;
+			break;
+			}
 			}
 		}
 		if(count==0)
@@ -553,7 +684,7 @@ public class Evaluate {
 			}
 		}
 		pos=squ;
-		while(pos>0&&gir==0){
+		while(pos>=8&&gir==0){
 			pos-=8;
 			squy=1;
 			squy<<=pos;
@@ -632,14 +763,17 @@ public class Evaluate {
 
 	int rookMob(int squ,int side){
 		int count=0;// # of available moves
-		count +=horizontalMob(squ, side);
-		count+=verticalMob(squ, side);
+		tempreach=0;
+		count +=horizontalMob(squ, side,'R');
+		count+=verticalMob(squ, side,'R');
+		kingadjacCheck(tempreach, side, 'R');
 		return count;
 	}
 	int knightMob(int squ,int side){
 		int count=0;// # of available moves
 		long mypiece=0;
 		long reach=0;
+		char piece = 'N'; 
 		if(side==0){
 			mypiece=myboard.whitePieces;
 		}
@@ -648,29 +782,37 @@ public class Evaluate {
 		}
 		int row=squ/8;
 		int col=squ%8;
-		if(row+1<8&&col+2<8&&(mypiece&(1L<<8*(row+1)+col+2))==0){
+		if(row+1<8&&col+2<8){
 			reach|=(1L<<8*(row+1)+col+2);
-			count++;
+			if((mypiece&(1L<<8*(row+1)+col+2))==0)
+				count++;
 	}
-		if(row+2<8&&col+1<8&&(mypiece&(1L<<8*(row+2)+col+1))==0){reach|=(1L<<8*(row+2)+col+1);
-	}	count++;
-
-		if(row+1<8&&col-2>=0&&(mypiece&(1L<<8*(row+1)+col-2))==0){reach|=(1L<<8*(row+1)+col-2);
+		if(row+2<8&&col+1<8){reach|=(1L<<8*(row+2)+col+1);
+			if((mypiece&(1L<<8*(row+1)+col+2))==0)
+					count++;
+		}
+		if(row+1<8&&col-2>=0){reach|=(1L<<8*(row+1)+col-2);
+		if((mypiece&(1L<<8*(row+1)+col+2))==0)
 		count++;
 	}
-		if(row+2<8&&col-1>=0&&(mypiece&(1L<<8*(row+2)+col-1))==0){reach|=(1L<<8*(row+2)+col-1);
+		if(row+2<8&&col-1>=0){reach|=(1L<<8*(row+2)+col-1);
+		if((mypiece&(1L<<8*(row+1)+col+2))==0)
 		count++;
 	}
-		if(row-1>=0&&col+2<8&&(mypiece&(1L<<8*(row-1)+col+2))==0){reach|=(1L<<8*(row-1)+col+2);
+		if(row-1>=0&&col+2<8){reach|=(1L<<8*(row-1)+col+2);
+		if((mypiece&(1L<<8*(row+1)+col+2))==0)
 		count++;
 	}
-		if(row-2>=0&&col+1<8&&(mypiece&(1L<<8*(row-2)+col+1))==0){reach|=(1L<<8*(row-2)+col+1);
+		if(row-2>=0&&col+1<8){reach|=(1L<<8*(row-2)+col+1);
+		if((mypiece&(1L<<8*(row+1)+col+2))==0)
 		count++;
 	}
-		if(row-1>=0&&col-2>=0&&(mypiece&(1L<<8*(row-1)+col-2))==0){reach|=(1L<<8*(row-1)+col-2);
+		if(row-1>=0&&col-2>=0){reach|=(1L<<8*(row-1)+col-2);
+		if((mypiece&(1L<<8*(row+1)+col+2))==0)
 		count++;
 	}
-		if(row-2>=0&&col-1>=0&&(mypiece&(1L<<8*(row-2)+col-1))==0){reach|=(1L<<8*(row-2)+col-1);
+		if(row-2>=0&&col-1>=0){reach|=(1L<<8*(row-2)+col-1);
+		if((mypiece&(1L<<8*(row+1)+col+2))==0)
 		count++;
 	}
 		if(side==0){
@@ -679,6 +821,7 @@ public class Evaluate {
 		if(side==1){
 			bReach|=reach;
 		}
+		kingadjacCheck(reach,side,piece);
 		//count=bitCounter(reach);
 		return count;
 	}
@@ -693,23 +836,28 @@ public class Evaluate {
 	int queenMob(int squ, int side) {
 		// TODO Auto-generated method stub
 		int count=0;// # of available moves
-		count +=horizontalMob(squ, side);
-		count+=verticalMob(squ, side);
-		count+=diagMob(squ, side);
-		count+=antiDMob(squ, side);
+		tempreach=0;
+		count +=horizontalMob(squ, side,'Q');
+		count+=verticalMob(squ, side,'Q');
+		count+=diagMob(squ, side,'Q');
+		count+=antiDMob(squ, side,'Q');
+		kingadjacCheck(tempreach, side, 'Q');
 		return  count;
 	}
 	int bishopMob(int squ, int side) {
 		// TODO Auto-generated method stub
 		int count=0;// # of available moves
-		count+=diagMob(squ, side);
-		count+=antiDMob(squ, side);
+		tempreach=0;
+		count+=diagMob(squ, side,'B');
+		count+=antiDMob(squ, side,'B');
+		kingadjacCheck(tempreach, side, 'B');
 		return count;
 	}
-	int diagMob(int squ,int side){
+	int diagMob(int squ,int side , char piece){
 		long my=0;
 		long enemy=0;
 		long reach=0;
+		int piecepoint=0;
 		if(side==0){
 			my=myboard.whitePieces;
 			enemy=myboard.blackPieces;
@@ -725,6 +873,7 @@ public class Evaluate {
 			squbit=1;
 			squbit<<=squt;
 			if((my&squbit)!=0){
+				reach|=squbit;
 				break;
 			}
 			else if((enemy&squbit)!=0){
@@ -759,9 +908,10 @@ public class Evaluate {
 			wReach|=reach;
 		else
 			bReach|=reach;
+		tempreach|=reach;
 		return count;
 	}
-	int antiDMob(int squ,int side){
+	int antiDMob(int squ,int side , char piece){
 		long my=0;
 		long enemy=0;
 		long reach=0;
@@ -780,6 +930,7 @@ public class Evaluate {
 			squbit=1;
 			squbit<<=squt;
 			if((my&squbit)!=0){
+				reach|=squbit;
 				break;
 			}
 			else if((enemy&squbit)!=0){
@@ -817,9 +968,37 @@ public class Evaluate {
 			wReach|=reach;
 		else
 			bReach|=reach;
+		tempreach|=reach;
 		return count;
 	}
-	int horizontalMob(int squ,int side){
+	 void kingadjacCheck(long reach, int side, char piece) {
+		// TODO Auto-generated method stub
+		 double piecepoint=0;
+		 if(piece=='N')piecepoint=weights[95];else if(piece=='B')piecepoint=weights[96];
+		 else if(piece=='R')piecepoint=weights[97];else if(piece=='Q')piecepoint=weights[98];
+		 if(side==0){
+				if((reach&whitekingadjacent)!=0)
+				{
+					whitekingattackedpoint-=piecepoint;
+				}
+			    if((reach&blackkingadjacent)!=0)
+				{
+					blackkingattackedpoint+=piecepoint;
+				}
+			}
+			if(side==1){
+				if((reach&whitekingadjacent)!=0)
+				{
+					whitekingattackedpoint+=piecepoint;
+				}
+			    if((reach&blackkingadjacent)!=0)
+				{
+					blackkingattackedpoint-=piecepoint;
+				}
+			}
+		
+	}
+	int horizontalMob(int squ,int side,char piece){
 		long my=0;
 		long enemy=0;
 		long reach=0;
@@ -838,6 +1017,7 @@ public class Evaluate {
 			squbit=1;
 			squbit<<=squt;
 			if((my&squbit)!=0){
+				reach|=squbit;
 				break;
 			}
 			else if((enemy&squbit)!=0){
@@ -872,9 +1052,10 @@ public class Evaluate {
 			wReach|=reach;
 		else
 			bReach|=reach;
+		tempreach|=reach;
 		return count;
 	}
-	int verticalMob(int squ,int side){
+	int verticalMob(int squ,int side, char piece){
 		long my=0;
 		long enemy=0;
 		long reach=0;
@@ -893,6 +1074,7 @@ public class Evaluate {
 			squbit=1;
 			squbit<<=squt;
 			if((my&squbit)!=0){
+				reach|=squbit;
 				break;
 			}
 			else if((enemy&squbit)!=0){
@@ -928,6 +1110,7 @@ public class Evaluate {
 			wReach|=reach;
 		else
 			bReach|=reach;
+		tempreach|=reach;
 		return count;
 	}
 

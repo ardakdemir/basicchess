@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 
 // this holds some information about a move
-// belki bunu yaparsam path generation kolaylaþýr
+// belki bunu yaparsam path generation kolaylasir
 public class Move implements Comparable <Move>{
 	public Move parent;
 	public String move;
@@ -10,7 +10,7 @@ public class Move implements Comparable <Move>{
 	public int side=0;// whose move is this
 	public double moveScore=0;
 	public Move child;
-	int promotionType=0;// bu sayýlar piecetype ile ayný
+	int promotionType=0;// bu sayilar piecetype ile ayni
 	  static final int NORMAL = 0;
 	  static final int PAWNDOUBLE = 1;
 	  static final int PAWNPROMOTION = 2;

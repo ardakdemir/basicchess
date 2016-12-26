@@ -1,3 +1,4 @@
+
 import java.util.ArrayList;
 
 public class Board {
@@ -36,7 +37,7 @@ public class Board {
 	long bR;
 	long wK;
 	long bK;
-	int sideToMove;
+	int sideToMove=0;
 	int isWhiteCastled=0;
 	int isBlackCastled=0;
 	int whiteqscastle=1;
@@ -63,7 +64,7 @@ public class Board {
 	public Board(Board b,Move move){
 		b.makeMove(move);
 	}
-	//for make and unmake I dont update castling rights yet
+	//for make and unmake i dont update castling rights yet
 	public void unmakeMove(Move movex){
 		String moves=movex.move;
 		int count=0;
@@ -158,15 +159,18 @@ public class Board {
 				if(moves.charAt(3)=='6'){//kingside
 					movePiece("777512");
 					isWhiteCastled=1;
+					rights[0]=1;
 				}
 				if(moves.charAt(3)=='2')//queenside
 				{
 					movePiece("707312");
 					isWhiteCastled=1;
+					rights[0]=1;
 				}
 			}
 			else{
 				isBlackCastled=1;
+				rights[0]=1;
 				if(moves.charAt(3)=='6'){//kingside
 					movePiece("070512");
 				}
@@ -215,6 +219,7 @@ public class Board {
 		whitePieces=wB|wQ|wR|wP|wN|wK;
 		blackPieces=bB|bQ|bR|bP|bN|bK;
 		lastmove=movex;
+		updateRights(movex);
 		changeSide();
 	}
 	
@@ -504,7 +509,7 @@ public class Board {
 			return 1;
 	}
 
-	// Initializes the Starting position
+	// initializes the Starting position
 	// Sets the bitboards to the initial values
 	public void initializeBoard(){
 		wP=iwP;

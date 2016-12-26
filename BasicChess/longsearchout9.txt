@@ -1,0 +1,848 @@
+training dosyasý bilmiyorum
+crossover rate = 0.26
+mutation rate = 0.7
+mutasyon aralýðý 2/3 - 10/3
+ilk iki ind. aynen sakla + ikisini mutate edip koy
+
+
+1000
+generation: 0
+individual:  1 position solved: 111
+individual:  2 position solved: 120
+individual:  3 position solved: 105
+individual:  4 position solved: 101
+individual:  5 position solved: 112
+individual:  6 position solved: 108
+individual:  7 position solved: 99
+individual:  8 position solved: 108
+individual:  9 position solved: 108
+individual:  10 position solved: 112
+weight 0 : -3.0
+weight 1 : -6.0
+weight 2 : 7.0
+weight 10 : 4.0
+weight 11 : -2.0
+weight 20 : 2.0
+weight 21 : 7.0
+weight 22 : 39.0
+weight 30 : 7.0
+weight 40 : -10.0
+weight 41 : -5.0
+weight 42 : 8.0
+weight 43 : 46.0
+weight 44 : -2.0
+weight 45 : 8.0
+weight 46 : -4.0
+weight 47 : -4.0
+weight 50 : 21.0
+weight 51 : 12.0
+weight 52 : 22.0
+weight 53 : 4.0
+weight 54 : 6.0
+weight 60 : 1.0
+weight 94 : 100.0
+weight 95 : 378.0
+weight 96 : 398.0
+weight 97 : 475.0
+weight 98 : 627.0
+ortalama : 108
+generation: 1
+individual:  1 position solved: 120
+individual:  2 position solved: 112
+individual:  3 position solved: 120
+individual:  4 position solved: 104
+individual:  5 position solved: 125
+individual:  6 position solved: 115
+individual:  7 position solved: 113
+individual:  8 position solved: 110
+individual:  9 position solved: 107
+individual:  10 position solved: 117
+ortalama : 111
+generation: 2
+individual:  1 position solved: 125
+individual:  2 position solved: 120
+individual:  3 position solved: 126
+individual:  4 position solved: 119
+individual:  5 position solved: 126
+individual:  6 position solved: 106
+individual:  7 position solved: 119
+individual:  8 position solved: 116
+individual:  9 position solved: 116
+individual:  10 position solved: 120
+ortalama : 114
+generation: 3
+individual:  1 position solved: 126
+individual:  2 position solved: 126
+individual:  3 position solved: 126
+individual:  4 position solved: 123
+individual:  5 position solved: 125
+individual:  6 position solved: 125
+individual:  7 position solved: 125
+individual:  8 position solved: 125
+individual:  9 position solved: 120
+individual:  10 position solved: 122
+ortalama : 116
+generation: 4
+individual:  1 position solved: 126
+individual:  2 position solved: 126
+individual:  3 position solved: 126
+individual:  4 position solved: 126
+individual:  5 position solved: 115
+individual:  6 position solved: 126
+individual:  7 position solved: 126
+individual:  8 position solved: 125
+individual:  9 position solved: 126
+individual:  10 position solved: 120
+ortalama : 118
+generation: 5
+individual:  1 position solved: 126
+individual:  2 position solved: 126
+individual:  3 position solved: 126
+individual:  4 position solved: 115
+individual:  5 position solved: 125
+individual:  6 position solved: 125
+individual:  7 position solved: 125
+individual:  8 position solved: 127
+individual:  9 position solved: 126
+individual:  10 position solved: 120
+ortalama : 119
+generation: 6
+individual:  1 position solved: 127
+individual:  2 position solved: 126
+individual:  3 position solved: 132
+individual:  4 position solved: 122
+individual:  5 position solved: 126
+individual:  6 position solved: 126
+individual:  7 position solved: 126
+individual:  8 position solved: 126
+individual:  9 position solved: 126
+individual:  10 position solved: 117
+ortalama : 120
+generation: 7
+individual:  1 position solved: 132
+individual:  2 position solved: 127
+individual:  3 position solved: 132
+individual:  4 position solved: 127
+individual:  5 position solved: 127
+individual:  6 position solved: 126
+individual:  7 position solved: 126
+individual:  8 position solved: 126
+individual:  9 position solved: 125
+individual:  10 position solved: 117
+ortalama : 120
+generation: 8
+individual:  1 position solved: 132
+individual:  2 position solved: 132
+individual:  3 position solved: 121
+individual:  4 position solved: 122
+individual:  5 position solved: 132
+individual:  6 position solved: 127
+individual:  7 position solved: 131
+individual:  8 position solved: 127
+individual:  9 position solved: 127
+individual:  10 position solved: 136
+ortalama : 121
+generation: 9
+individual:  1 position solved: 136
+individual:  2 position solved: 132
+individual:  3 position solved: 136
+individual:  4 position solved: 132
+individual:  5 position solved: 130
+individual:  6 position solved: 135
+individual:  7 position solved: 130
+individual:  8 position solved: 132
+individual:  9 position solved: 120
+individual:  10 position solved: 134
+ortalama : 122
+generation: 10
+individual:  1 position solved: 136
+individual:  2 position solved: 136
+individual:  3 position solved: 136
+individual:  4 position solved: 136
+individual:  5 position solved: 136
+individual:  6 position solved: 135
+individual:  7 position solved: 137
+individual:  8 position solved: 130
+individual:  9 position solved: 135
+individual:  10 position solved: 131
+ortalama : 123
+generation: 11
+individual:  1 position solved: 137
+individual:  2 position solved: 136
+individual:  3 position solved: 137
+individual:  4 position solved: 122
+individual:  5 position solved: 135
+individual:  6 position solved: 137
+individual:  7 position solved: 134
+individual:  8 position solved: 136
+individual:  9 position solved: 136
+individual:  10 position solved: 136
+ortalama : 124
+generation: 12
+individual:  1 position solved: 137
+individual:  2 position solved: 137
+individual:  3 position solved: 138
+individual:  4 position solved: 138
+individual:  5 position solved: 137
+individual:  6 position solved: 137
+individual:  7 position solved: 137
+individual:  8 position solved: 122
+individual:  9 position solved: 136
+individual:  10 position solved: 134
+ortalama : 125
+generation: 13
+individual:  1 position solved: 138
+individual:  2 position solved: 138
+individual:  3 position solved: 123
+individual:  4 position solved: 135
+individual:  5 position solved: 122
+individual:  6 position solved: 137
+individual:  7 position solved: 139
+individual:  8 position solved: 137
+individual:  9 position solved: 135
+individual:  10 position solved: 137
+ortalama : 126
+generation: 14
+individual:  1 position solved: 139
+individual:  2 position solved: 138
+individual:  3 position solved: 136
+individual:  4 position solved: 133
+individual:  5 position solved: 138
+individual:  6 position solved: 148
+individual:  7 position solved: 129
+individual:  8 position solved: 137
+individual:  9 position solved: 136
+individual:  10 position solved: 135
+ortalama : 126
+generation: 15
+individual:  1 position solved: 148
+individual:  2 position solved: 139
+individual:  3 position solved: 148
+individual:  4 position solved: 137
+individual:  5 position solved: 148
+individual:  6 position solved: 137
+individual:  7 position solved: 139
+individual:  8 position solved: 137
+individual:  9 position solved: 138
+individual:  10 position solved: 137
+ortalama : 127
+generation: 16
+individual:  1 position solved: 148
+individual:  2 position solved: 148
+individual:  3 position solved: 149
+individual:  4 position solved: 148
+individual:  5 position solved: 138
+individual:  6 position solved: 148
+individual:  7 position solved: 148
+individual:  8 position solved: 144
+individual:  9 position solved: 138
+individual:  10 position solved: 134
+ortalama : 128
+generation: 17
+individual:  1 position solved: 149
+individual:  2 position solved: 148
+individual:  3 position solved: 149
+individual:  4 position solved: 148
+individual:  5 position solved: 142
+individual:  6 position solved: 171
+individual:  7 position solved: 150
+individual:  8 position solved: 144
+individual:  9 position solved: 143
+individual:  10 position solved: 138
+ortalama : 129
+generation: 18
+individual:  1 position solved: 171
+individual:  2 position solved: 150
+individual:  3 position solved: 171
+individual:  4 position solved: 150
+individual:  5 position solved: 173
+individual:  6 position solved: 171
+individual:  7 position solved: 150
+individual:  8 position solved: 148
+individual:  9 position solved: 146
+individual:  10 position solved: 148
+ortalama : 131
+generation: 19
+individual:  1 position solved: 173
+individual:  2 position solved: 171
+individual:  3 position solved: 163
+individual:  4 position solved: 172
+individual:  5 position solved: 162
+individual:  6 position solved: 172
+individual:  7 position solved: 170
+individual:  8 position solved: 170
+individual:  9 position solved: 173
+individual:  10 position solved: 151
+ortalama : 133
+generation: 20
+individual:  1 position solved: 173
+individual:  2 position solved: 173
+individual:  3 position solved: 173
+individual:  4 position solved: 175
+individual:  5 position solved: 175
+individual:  6 position solved: 173
+individual:  7 position solved: 170
+individual:  8 position solved: 172
+individual:  9 position solved: 174
+individual:  10 position solved: 160
+ortalama : 134
+generation: 21
+individual:  1 position solved: 175
+individual:  2 position solved: 175
+individual:  3 position solved: 175
+individual:  4 position solved: 176
+individual:  5 position solved: 169
+individual:  6 position solved: 175
+individual:  7 position solved: 166
+individual:  8 position solved: 174
+individual:  9 position solved: 175
+individual:  10 position solved: 172
+ortalama : 136
+generation: 22
+individual:  1 position solved: 176
+individual:  2 position solved: 175
+individual:  3 position solved: 176
+individual:  4 position solved: 175
+individual:  5 position solved: 177
+individual:  6 position solved: 177
+individual:  7 position solved: 166
+individual:  8 position solved: 176
+individual:  9 position solved: 174
+individual:  10 position solved: 173
+ortalama : 138
+generation: 23
+individual:  1 position solved: 177
+individual:  2 position solved: 177
+individual:  3 position solved: 177
+individual:  4 position solved: 172
+individual:  5 position solved: 160
+individual:  6 position solved: 171
+individual:  7 position solved: 177
+individual:  8 position solved: 176
+individual:  9 position solved: 169
+individual:  10 position solved: 163
+ortalama : 139
+generation: 24
+individual:  1 position solved: 177
+individual:  2 position solved: 177
+individual:  3 position solved: 162
+individual:  4 position solved: 168
+individual:  5 position solved: 176
+individual:  6 position solved: 177
+individual:  7 position solved: 178
+individual:  8 position solved: 177
+individual:  9 position solved: 177
+individual:  10 position solved: 172
+ortalama : 141
+generation: 25
+individual:  1 position solved: 178
+individual:  2 position solved: 177
+individual:  3 position solved: 178
+individual:  4 position solved: 176
+individual:  5 position solved: 178
+individual:  6 position solved: 174
+individual:  7 position solved: 177
+individual:  8 position solved: 169
+individual:  9 position solved: 179
+individual:  10 position solved: 176
+ortalama : 142
+generation: 26
+individual:  1 position solved: 179
+individual:  2 position solved: 178
+individual:  3 position solved: 180
+individual:  4 position solved: 178
+individual:  5 position solved: 180
+individual:  6 position solved: 175
+individual:  7 position solved: 178
+individual:  8 position solved: 167
+individual:  9 position solved: 178
+individual:  10 position solved: 178
+ortalama : 143
+generation: 27
+individual:  1 position solved: 180
+individual:  2 position solved: 180
+individual:  3 position solved: 172
+individual:  4 position solved: 180
+individual:  5 position solved: 181
+individual:  6 position solved: 181
+individual:  7 position solved: 178
+individual:  8 position solved: 179
+individual:  9 position solved: 178
+individual:  10 position solved: 176
+ortalama : 144
+generation: 28
+individual:  1 position solved: 181
+individual:  2 position solved: 181
+individual:  3 position solved: 167
+individual:  4 position solved: 176
+individual:  5 position solved: 178
+individual:  6 position solved: 180
+individual:  7 position solved: 181
+individual:  8 position solved: 178
+individual:  9 position solved: 173
+individual:  10 position solved: 174
+ortalama : 146
+generation: 29
+individual:  1 position solved: 181
+individual:  2 position solved: 181
+individual:  3 position solved: 178
+individual:  4 position solved: 180
+individual:  5 position solved: 182
+individual:  6 position solved: 182
+individual:  7 position solved: 181
+individual:  8 position solved: 180
+individual:  9 position solved: 180
+individual:  10 position solved: 174
+ortalama : 147
+generation: 30
+individual:  1 position solved: 182
+individual:  2 position solved: 182
+individual:  3 position solved: 182
+individual:  4 position solved: 168
+individual:  5 position solved: 181
+individual:  6 position solved: 179
+individual:  7 position solved: 167
+individual:  8 position solved: 179
+individual:  9 position solved: 181
+individual:  10 position solved: 180
+ortalama : 148
+generation: 31
+individual:  1 position solved: 182
+individual:  2 position solved: 182
+individual:  3 position solved: 182
+individual:  4 position solved: 179
+individual:  5 position solved: 171
+individual:  6 position solved: 180
+individual:  7 position solved: 178
+individual:  8 position solved: 182
+individual:  9 position solved: 179
+individual:  10 position solved: 180
+ortalama : 149
+generation: 32
+individual:  1 position solved: 182
+individual:  2 position solved: 182
+individual:  3 position solved: 181
+individual:  4 position solved: 182
+individual:  5 position solved: 181
+individual:  6 position solved: 182
+individual:  7 position solved: 181
+individual:  8 position solved: 179
+individual:  9 position solved: 182
+individual:  10 position solved: 177
+ortalama : 150
+generation: 33
+individual:  1 position solved: 182
+individual:  2 position solved: 182
+individual:  3 position solved: 181
+individual:  4 position solved: 179
+individual:  5 position solved: 181
+individual:  6 position solved: 171
+individual:  7 position solved: 182
+individual:  8 position solved: 179
+individual:  9 position solved: 182
+individual:  10 position solved: 163
+ortalama : 150
+generation: 34
+individual:  1 position solved: 182
+individual:  2 position solved: 182
+individual:  3 position solved: 171
+individual:  4 position solved: 182
+individual:  5 position solved: 182
+individual:  6 position solved: 175
+individual:  7 position solved: 181
+individual:  8 position solved: 179
+individual:  9 position solved: 172
+individual:  10 position solved: 180
+ortalama : 151
+generation: 35
+individual:  1 position solved: 182
+individual:  2 position solved: 182
+individual:  3 position solved: 165
+individual:  4 position solved: 179
+individual:  5 position solved: 180
+individual:  6 position solved: 182
+individual:  7 position solved: 179
+individual:  8 position solved: 155
+individual:  9 position solved: 169
+individual:  10 position solved: 178
+ortalama : 152
+generation: 36
+individual:  1 position solved: 182
+individual:  2 position solved: 182
+individual:  3 position solved: 182
+individual:  4 position solved: 182
+individual:  5 position solved: 178
+individual:  6 position solved: 181
+individual:  7 position solved: 182
+individual:  8 position solved: 182
+individual:  9 position solved: 178
+individual:  10 position solved: 182
+ortalama : 153
+generation: 37
+individual:  1 position solved: 182
+individual:  2 position solved: 182
+individual:  3 position solved: 176
+individual:  4 position solved: 181
+individual:  5 position solved: 177
+individual:  6 position solved: 175
+individual:  7 position solved: 172
+individual:  8 position solved: 182
+individual:  9 position solved: 181
+individual:  10 position solved: 182
+ortalama : 153
+generation: 38
+individual:  1 position solved: 182
+individual:  2 position solved: 182
+individual:  3 position solved: 181
+individual:  4 position solved: 169
+individual:  5 position solved: 168
+individual:  6 position solved: 181
+individual:  7 position solved: 170
+individual:  8 position solved: 181
+individual:  9 position solved: 180
+individual:  10 position solved: 175
+ortalama : 154
+generation: 39
+individual:  1 position solved: 182
+individual:  2 position solved: 182
+individual:  3 position solved: 161
+individual:  4 position solved: 173
+individual:  5 position solved: 172
+individual:  6 position solved: 176
+individual:  7 position solved: 169
+individual:  8 position solved: 171
+individual:  9 position solved: 177
+individual:  10 position solved: 177
+ortalama : 154
+generation: 40
+individual:  1 position solved: 182
+individual:  2 position solved: 182
+individual:  3 position solved: 181
+individual:  4 position solved: 181
+individual:  5 position solved: 181
+individual:  6 position solved: 178
+individual:  7 position solved: 163
+individual:  8 position solved: 175
+individual:  9 position solved: 176
+individual:  10 position solved: 153
+ortalama : 155
+generation: 41
+individual:  1 position solved: 182
+individual:  2 position solved: 182
+individual:  3 position solved: 182
+individual:  4 position solved: 182
+individual:  5 position solved: 181
+individual:  6 position solved: 182
+individual:  7 position solved: 180
+individual:  8 position solved: 175
+individual:  9 position solved: 175
+individual:  10 position solved: 180
+ortalama : 156
+generation: 42
+individual:  1 position solved: 182
+individual:  2 position solved: 182
+individual:  3 position solved: 182
+individual:  4 position solved: 170
+individual:  5 position solved: 182
+individual:  6 position solved: 182
+individual:  7 position solved: 178
+individual:  8 position solved: 160
+individual:  9 position solved: 182
+individual:  10 position solved: 176
+ortalama : 156
+generation: 43
+individual:  1 position solved: 182
+individual:  2 position solved: 182
+individual:  3 position solved: 182
+individual:  4 position solved: 180
+individual:  5 position solved: 176
+individual:  6 position solved: 165
+individual:  7 position solved: 182
+individual:  8 position solved: 179
+individual:  9 position solved: 182
+individual:  10 position solved: 182
+ortalama : 157
+generation: 44
+individual:  1 position solved: 182
+individual:  2 position solved: 182
+individual:  3 position solved: 181
+individual:  4 position solved: 182
+individual:  5 position solved: 180
+individual:  6 position solved: 181
+individual:  7 position solved: 181
+individual:  8 position solved: 182
+individual:  9 position solved: 182
+individual:  10 position solved: 173
+ortalama : 157
+generation: 45
+individual:  1 position solved: 182
+individual:  2 position solved: 182
+individual:  3 position solved: 172
+individual:  4 position solved: 183
+individual:  5 position solved: 180
+individual:  6 position solved: 179
+individual:  7 position solved: 182
+individual:  8 position solved: 181
+individual:  9 position solved: 172
+individual:  10 position solved: 178
+ortalama : 158
+generation: 46
+individual:  1 position solved: 183
+individual:  2 position solved: 182
+individual:  3 position solved: 168
+individual:  4 position solved: 182
+individual:  5 position solved: 183
+individual:  6 position solved: 183
+individual:  7 position solved: 180
+individual:  8 position solved: 170
+individual:  9 position solved: 175
+individual:  10 position solved: 173
+ortalama : 158
+generation: 47
+individual:  1 position solved: 183
+individual:  2 position solved: 183
+individual:  3 position solved: 175
+individual:  4 position solved: 183
+individual:  5 position solved: 182
+individual:  6 position solved: 165
+individual:  7 position solved: 183
+individual:  8 position solved: 182
+individual:  9 position solved: 182
+individual:  10 position solved: 166
+ortalama : 158
+generation: 48
+individual:  1 position solved: 183
+individual:  2 position solved: 183
+individual:  3 position solved: 171
+individual:  4 position solved: 183
+individual:  5 position solved: 183
+individual:  6 position solved: 183
+individual:  7 position solved: 180
+individual:  8 position solved: 174
+individual:  9 position solved: 178
+individual:  10 position solved: 171
+ortalama : 159
+generation: 49
+individual:  1 position solved: 183
+individual:  2 position solved: 183
+individual:  3 position solved: 177
+individual:  4 position solved: 181
+individual:  5 position solved: 177
+individual:  6 position solved: 183
+individual:  7 position solved: 180
+individual:  8 position solved: 180
+individual:  9 position solved: 165
+individual:  10 position solved: 181
+ortalama : 159
+Best individual
+number of positions solved: 183 generation: 45
+weight 0 : -4.0
+weight 1 : -25.0
+weight 2 : 34.0
+weight 10 : 2.0
+weight 11 : -2.0
+weight 20 : 3.0
+weight 21 : 145.0
+weight 22 : 504.0
+weight 30 : 7.0
+weight 40 : -6.0
+weight 41 : -7.0
+weight 42 : 10.0
+weight 43 : 48.0
+weight 45 : 18.0
+weight 46 : -8.0
+weight 47 : -4.0
+weight 50 : 51.0
+weight 51 : 112.0
+weight 52 : 22.0
+weight 53 : 20.0
+weight 54 : 34.0
+weight 94 : 100.0
+weight 95 : 360.0
+weight 96 : 475.0
+weight 97 : 475.0
+weight 98 : 806.0
+solved positions:
+7
+13
+23
+30
+32
+39
+40
+45
+47
+64
+77
+80
+84
+85
+95
+100
+101
+107
+112
+125
+128
+134
+140
+147
+150
+153
+154
+159
+166
+171
+174
+198
+200
+206
+218
+225
+231
+239
+242
+254
+262
+265
+273
+275
+278
+305
+311
+313
+324
+329
+330
+331
+334
+336
+338
+365
+377
+381
+383
+387
+388
+398
+403
+405
+418
+420
+422
+424
+426
+444
+449
+452
+456
+462
+482
+488
+489
+495
+498
+508
+512
+519
+520
+527
+532
+537
+544
+547
+558
+560
+565
+572
+583
+584
+585
+592
+597
+602
+607
+616
+630
+634
+638
+641
+642
+643
+648
+649
+654
+660
+661
+662
+667
+670
+673
+677
+685
+693
+696
+705
+712
+713
+728
+729
+735
+742
+744
+748
+749
+751
+753
+754
+757
+758
+760
+763
+764
+767
+776
+787
+799
+800
+805
+808
+810
+823
+824
+827
+829
+838
+853
+859
+860
+876
+881
+882
+885
+887
+890
+891
+892
+894
+896
+898
+921
+922
+923
+926
+930
+935
+937
+941
+947
+958
+972
+974
+975
+981
+986
+988
+989
+991
+996

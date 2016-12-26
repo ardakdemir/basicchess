@@ -13,6 +13,8 @@ public class UCI {
     Board board;
     MoveGenerator movegen=new MoveGenerator();
     Search search=new Search();
+    Move lastmove;
+    String []games;
     public void uciCommunication() throws IOException {
         Scanner input = new Scanner(System.in);
         while (true)
@@ -68,7 +70,7 @@ public class UCI {
             }
             else if (inputString.startsWith("solve position "))
             {
-            		Solver(inputString.substring(15)+" ");
+            		//Solver(inputString.substring(15)+" ");
             }
         }
     }
@@ -113,20 +115,20 @@ public class UCI {
             	//System.out.println("movestr:"+ mytypemove+"  pieceType:"+ movex.pieceType);
             	if(input.charAt(4)=='q')movex.promotionType=4+(6*board.sideToMove);else if(input.charAt(4)=='n')movex.promotionType=1+(6*board.sideToMove);
             	else if(input.charAt(4)=='b')movex.promotionType=2+(6*board.sideToMove);else if(input.charAt(4)=='r')movex.promotionType=3+(6*board.sideToMove);
-               if (board.sideToMove==0) {// belki kiþiye göre deðiþtirebilirim burayý
+               if (board.sideToMove==0) {// belki kiþiye göre degiþtirebilirim burayi
             	   board.makeMove(movex);
                 } else {
              	   board.makeMove(movex);
                 }
                // algebraToMove(input);position startpos moves e2e4 g8f6 e4e5 f6e4 d2d3 e4c5 b1c3 b8c6 g1f3 b7b6 d3d4 c5e6 f1b5 c6d4 f3d4 c8a6 b5a6 e6c5 a6c4 d7d5 c4d5 c5d3 d1d3 a8b8 d5c6 d8d7 c6d7
-
+               lastmove= movex;
                 input=input.substring(input.indexOf(' ')+1);
             }
         }
     }
     public  void inputGo(String inputstring) {
         String move="131312";
-        int depth=3;
+        int depth=1;
         if(inputstring.contains("depth")){
             inputstring=inputstring.substring(inputstring.indexOf("depth")+6);
           //  System.out.println(inputstring.charAt(0));
@@ -141,7 +143,7 @@ public class UCI {
         search.maxDepth=depth;
        // String movepath= search.minimax(board, board.sideToMove, depth);
         Move nullmove=new Move();
-        Move bestmove=search.minimax2(board, board.sideToMove, depth,-1000000,1000000,nullmove,1);
+        Move bestmove=search.minimax2(board, board.sideToMove, depth,-1000000,1000000,lastmove,1);
     //position startpos moves e2e4 d7d5 e4d5 d8d5 b1c3 d5d4 g1f3 d4f6 f1e2
       //  System.out.println("minimax2: "+ bestmove.move+ "score : "+ bestmove.moveScore);
         //System.out.println("path: "+bestmove.move);
@@ -154,7 +156,7 @@ public class UCI {
         	System.out.println("move : "+ moveToAlgebra(child)+" movescore: "+ child.moveScore);
         }
     }
-    //burada þey hatasý var bu promotion bilgisi gitmiyor
+    //burada sey hatasi var bu promotion bilgisi gitmiyor
     public  String moveToAlgebra(Move moves) {
     	String move=moves.move;
         String append="";
@@ -218,41 +220,48 @@ public class UCI {
     		System.out.println();
     	}
     }
-    public void Solver( String  inputstring) throws IOException{
-    	int count=0;
-    	String num="";
-    	while(inputstring.charAt(count)!=' ')
-    	 num += inputstring.charAt(count++);
-    	int gamenum= Integer.parseInt(num);
-    	String move= "position startpos moves"+Reader(gamenum);
+    public String Solver( int gamenum) throws IOException{
+    	String moves=games[gamenum];
+    	if(moves.charAt(moves.length()-1)=='+')
+    	{
+    	String move= "position startpos moves"+moves.substring(0, moves.length()-6);
     	inputPosition(move);
-    	inputGo("depth 3");
+    	return moves.substring(moves.length()-5);
+    	}
+    	String move= "position startpos moves"+moves.substring(0, moves.length()-5);
+    	inputPosition(move);
+    	return moves.substring(moves.length()-4);
+    	//inputGo("depth 1");
     }
-    public String Reader(int gamenum) throws IOException{
-		BufferedReader reader=new BufferedReader(new FileReader("output.txt"));
+    public void Reader(int gamenum, String inputfile) throws IOException{
+		BufferedReader reader=new BufferedReader(new FileReader(inputfile));
+		System.out.println(gamenum);
 		String line="";
 		int movenum=1;
 		int countgame=0;
 		int countmove=0;
-		String moves="";
 		while(countgame!=gamenum&&(line= reader.readLine())!= null){
-			
+			String moves="";
+			countmove=0;
+			if(!line.contains("end"))
+				line+=reader.readLine();
+			StringTokenizer str=new StringTokenizer(line);
+			int allmove=str.countTokens();
+			movenum=allmove/5;
+			while(movenum!=countmove)
+			{
+				moves+=" "+str.nextToken();
+				countmove++;
+			}
+			games[countgame]=moves;
+			//System.out.println(moves);
 			countgame++;
 		}
-		if(!line.contains("end"))
-			line+=reader.readLine();
-		StringTokenizer str=new StringTokenizer(line);
-		int allmove=str.countTokens();
-		movenum=allmove/7;
-		while(movenum!=countmove)
-		{
-			moves+=" "+str.nextToken();
-			countmove++;
-		}
-		System.out.println(" "+line);
+		
+	/*	System.out.println(" "+line);
 		System.out.println(moves);
-		System.out.println("move num : "+ movenum);
-		return moves;
+		System.out.println("move num : "+ movenum);*/
+	//	return moves;
     }
 	public  void Converter2() throws IOException{
 		BufferedReader reader=new BufferedReader(new FileReader("output.txt"));
@@ -262,7 +271,7 @@ public class UCI {
         String line="";
         while ((line = reader.readLine())!=null) {
             StringTokenizer st = new StringTokenizer(line);
-            if(line.contains("3199"))
+            if(line.contains("1974"))
             	break;
             while(st.hasMoreTokens()){
             	String tok = st.nextToken();
@@ -276,14 +285,14 @@ public class UCI {
         }
         System.out.println(count);
 	}
-	public  void Converter() throws IOException{
-		BufferedReader reader=new BufferedReader(new FileReader("C:\\Users\\toshýba\\Desktop\\Result.pgn"));
-        PrintStream out = new PrintStream(new FileOutputStream("output.txt"));
+	public  void Converter(String inputfile , String outputfile) throws IOException{
+		BufferedReader reader=new BufferedReader(new FileReader(inputfile));
+        PrintStream out = new PrintStream(new FileOutputStream(outputfile));
         System.setOut(out);
 		String line="";
 		String temp="";
 		String game="";
-		String algebraic="position startpos moves ";
+	//	String algebraic="position startpos moves ";
 		int count=0;
         while ((line = reader.readLine()) != null) {
         	game="";
@@ -329,7 +338,7 @@ public class UCI {
 		String move="";
 		long mypaw=0;
 		int dir=0;
-		if(len==2)// pawn forward move büyük ihtimalle doðru çalýþýyor
+		if(len==2)// pawn forward move buyuk ihtimalle dogru caliþiyor
 		{
 			if(side==0){
 				mypaw=board.wP;
@@ -341,7 +350,7 @@ public class UCI {
 			move+=tok.charAt(0);
 			int col=7-(tok.charAt(0)-'a');
 			int orow=(tok.charAt(1)-49);
-			int row=(tok.charAt(1)-49);// burdaki col anlayýþý bizde olan normalin tersi
+			int row=(tok.charAt(1)-49);// burdaki col anlayiþi bizde olan normalin tersi
 			long a=0;
 			for(int i=0;i<2;i++){
 				a=1;

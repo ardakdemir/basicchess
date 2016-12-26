@@ -1,0 +1,68 @@
+Random hamle ortalama
+
+1000
+generation: 0
+individual:  1 position solved: 37
+individual:  2 position solved: 33
+individual:  3 position solved: 35
+individual:  4 position solved: 31
+individual:  5 position solved: 30
+individual:  6 position solved: 47
+individual:  7 position solved: 35
+individual:  8 position solved: 29
+individual:  9 position solved: 28
+individual:  10 position solved: 32
+weight 0 : -2.0
+weight 1 : -9.0
+weight 2 : 5.0
+weight 10 : 8.0
+weight 11 : 2.0
+weight 20 : 2.0
+weight 21 : 5.0
+weight 22 : 33.0
+weight 30 : 9.0
+weight 40 : -4.0
+weight 41 : -7.0
+weight 42 : 5.0
+weight 43 : 36.0
+weight 44 : -1.0
+weight 45 : 9.0
+weight 46 : -3.0
+weight 47 : -7.0
+weight 50 : 15.0
+weight 51 : 15.0
+weight 52 : 33.0
+weight 53 : 4.0
+weight 54 : 7.0
+weight 60 : 3.0
+weight 94 : 100.0
+weight 95 : 157.0
+weight 96 : 173.0
+weight 97 : 408.0
+weight 98 : 870.0
+ortalama : 33
+generation: 1
+individual:  1 position solved: 30
+individual:  2 position solved: 32
+individual:  3 position solved: 31
+individual:  4 position solved: 46
+individual:  5 position solved: 33
+individual:  6 position solved: 32
+individual:  7 position solved: 26
+individual:  8 position solved: 31
+individual:  9 position solved: 30
+individual:  10 position solved: 21
+ortalama : 32
+generation: 2
+individual:  1 position solved: 30
+individual:  2 position solved: 29
+individual:  3 position solved: 23
+individual:  4 position solved: 31
+individual:  5 position solved: 28
+individual:  6 position solved: 35
+individual:  7 position solved: 33
+individual:  8 position solved: 33
+individual:  9 position solved: 25
+individual:  10 position solved: 35
+ortalama : 31
+generation: 3

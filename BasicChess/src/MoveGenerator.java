@@ -1,9 +1,9 @@
 import java.util.ArrayList;
-// burada bir hamlenin capture olup olmadýðýný bilmiyorum ama aslýnda
-// move generator direk move yapmayacaðý için bu bilgileri taþýsam çok iyi olur 
+// burada bir hamlenin capture olup olmadigini bilmiyorum ama aslinda
+// move generator direk move yapmayacagi icin bu bilgileri tasisam cok iyi olur 
 // yada isCapture captureType gibi functionlar yapabilirim not: bunu ekledim
-// move gibi bir class açýýp 4 karakterlik stringden o move hakkýnda her bilgiyi alabilirim
-// önce initial position ile bütün bitboardlar karþýlaþtýrýlýp hamle yapacak taþ bulunur
+// move gibi bir class aciip 4 karakterlik stringden o move hakkinda her bilgiyi alabilirim
+// once initial position ile butun bitboardlar karsilastirilip hamle yapacak tas bulunur
 public class MoveGenerator {
 	public MoveGenerator(){
 
@@ -23,9 +23,9 @@ public class MoveGenerator {
 	// target piece
 	// origin piece
 	// additional info can be added to the back of the string
-	// suan reach deðiþkenlerini moveGenerator iþlemi esnasýnda yapýyorum
-	// yani öncelikle hamle üretmem lazým ki çok mantýksýz deðil ama bu hatasýz çalýþýr mý bilmem
-	// illaki lazým olacak zaten ve 1 taþta iki iþ 
+	// suan reach degiskenlerini moveGenerator islemi esnasinda yapiyorum
+	// yani oncelikle hamle uretmem lazim ki cok mantiksiz degil ama bu hatasiz calisir mi bilmem
+	// illaki lazim olacak zaten ve 1 tasta iki is 
 //position startpos moves d2d4 b8c6 c1f4 d7d5 b1c3 c8g4 h2h3 g4h5 g2g4 h5g6 g1f3 e7e6 f4g5 g6c2 d1c2 c6d4 c2a4 b7b5 a4d4 f8c5 d4c5 g8f6 c5c6 e8f8 c6a8
 
 	public ArrayList<Move> moveGenerator(Board b, int side , int enemycalc, Move lastmove){
@@ -139,7 +139,7 @@ public class MoveGenerator {
 		long a=1;
 		//1:position startpos moves e2e4 e7e5 d2d4 e5d4 d1d4 d7d5 d4d5 d8d5 e4d5 b8c6 d5c6 c8e6 c6b7 e6a2 b7a8q e8d7 a1a2 g8f6 a8f8 h8f8 a2a7 f6e4 a7c7 d7c7 b1c3 e4c3 b2c3 f7f6 f1c4 c7b7 g1f3 b7a7 e1d1 a7b7 h1e1 b7a7 e1e7 a7b6 e7g7 f8f7 g7f7 b6c6 f7h7
 
-		for(int i=0;i<64;i++){// bu yöntemle ilk bitte taþ olduðunda da doðru çalýþýyor
+		for(int i=0;i<64;i++){// bu yontemle ilk bitte tas oldugunda da dogru calisiyor
 			a=1;
 			a<<=i;
 			if((bitboard&a)!=0){ // piece is spotted 
@@ -172,9 +172,9 @@ public class MoveGenerator {
 				capturedown=capturedown&(~revmycol);
 				capturedown=Long.reverse(capturedown);
 				capturedown=maskAntid(capturedown, i);
-				long capture=captureup|capturedown;/// burada bir taþýn bir rowdaki hareketi
+				long capture=captureup|capturedown;/// burada bir tasin bir rowdaki hareketi
 				long c=1;
-				for(int l=0;l<64;l++){// bu yöntemle ilk bitte taþ olduðunda da doðru çalýþýyor
+				for(int l=0;l<64;l++){// bu yontemle ilk bitte tas oldugunda da dogru calisiyor
 					c=1;
 					c<<=l;	
 					if(((capture&c))!=0){ // piece is spotted
@@ -223,7 +223,7 @@ public class MoveGenerator {
 				piecetype=8;
 			}
 		}	
-		for(int i=0;i<64;i++){// bu yöntemle ilk bitte taþ olduðunda da doðru çalýþýyor
+		for(int i=0;i<64;i++){// bu yontemle ilk bitte tas oldugunda da dogru calisiyor
 			long squ=1;
 			squ<<=i;
 			if((bitboard&squ)!=0){ // piece is spotted 
@@ -250,8 +250,8 @@ public class MoveGenerator {
 				capturedown=capturedown&(~revmycol);
 				capturedown=Long.reverse(capturedown);
 				capturedown=maskDiag(capturedown, i);
-				long capture=captureup|capturedown;/// burada bir taþýn bir rowdaki hareketi
-				for(int l=0;l<64;l++){// bu yöntemle ilk bitte taþ olduðunda da doðru çalýþýyor
+				long capture=captureup|capturedown;/// burada bir tasin bir rowdaki hareketi
+				for(int l=0;l<64;l++){// bu yontemle ilk bitte tas oldugunda da dogru calisiyor
 					long squ1=1;
 					squ1<<=l;
 					long squ2=1;
@@ -294,7 +294,7 @@ public class MoveGenerator {
 		return allmoves;
 	}
 	
-		//doðru çalýþýyor gibi ama emin deðilim bundan da
+		//dogru calisiyor gibi ama emin degilim bundan da
 	public long verticalMove(ArrayList<Move>moves,Board b, int side,String piece){
 		long bitboard=0;
 		long mypieces=0;
@@ -326,7 +326,7 @@ public class MoveGenerator {
 			}
 		}
 		long nokta=1;	
-		for(int i=0;i<64;i++){// bu yöntemle ilk bitte taþ olduðunda da doðru çalýþýyor
+		for(int i=0;i<64;i++){// bu yontemle ilk bitte tas oldugunda da dogru calisiyor
 			nokta=1;
 			nokta<<=i;
 			if((bitboard&nokta)!=0){ // piece is spotted 
@@ -352,9 +352,9 @@ public class MoveGenerator {
 				capturedown=capturedown&(~revmycol);
 				capturedown=Long.reverse(capturedown);
 				capturedown=maskCol(capturedown, col);
-				long capture=captureup|capturedown;/// burada bir taþýn bir rowdaki hareketi
+				long capture=captureup|capturedown;/// burada bir tasin bir rowdaki hareketi
 				long noktam=1;
-				for(int l=0;l<64;l++){// bu yöntemle ilk bitte taþ olduðunda da doðru çalýþýyor
+				for(int l=0;l<64;l++){// bu yontemle ilk bitte tas oldugunda da dogru calisiyor
 					noktam=1;
 					noktam<<=l;
 					if(((capture&noktam))!=0){ // piece is spotted
@@ -434,7 +434,7 @@ public class MoveGenerator {
 				captureright=captureright&(~revmyrow);
 				captureright=Long.reverse(captureright);
 				captureright=maskRow(captureright, row);
-				long capture=captureleft|captureright;/// burada bir taþýn bir rowdaki hareketi
+				long capture=captureleft|captureright;/// burada bir tasin bir rowdaki hareketi
 				capture=getFullRow(capture, row);
 				for(int a=0;a<8;a++){
 					if((capture>>a)%2==1){
@@ -542,8 +542,8 @@ public class MoveGenerator {
 			return a;
 		}
 	}
-	//king moves I am only checking the moves if they are possible
-	//I mean at this level I assume all moves are legal 
+	//king moves i am only checking the moves if they are possible
+	//i mean at this level i assume all moves are legal 
 	// without checking if the moves done end up in check which is illegal
 	public long kingMoves(ArrayList<Move>moves,Board b, int side){
 		long bitKing=0b0;
@@ -575,7 +575,7 @@ public class MoveGenerator {
 			a=1;
 			a<<=i;
 			if((bitKing&a)!=0){
-				// þahýn yerini bulduk þimdi buradan hamleleri çýkarýcaz knight gibi
+				// sahin yerini bulduk simdi buradan hamleleri cikaricaz knight gibi
 				int row=7-(i/8);
 				int col=7-(i%8);
 				orow=row;
@@ -681,8 +681,8 @@ public class MoveGenerator {
 			if((enemyR&kingpos)==0){// is not in check
 				if((b.rights[3]==1)&&((myrook&h1)!=0)&&((enemyR&(h1<<2))==0)&&((all&(h1<<2))==0)&&((all&(h1<<1))==0)){
 					//kingside for white
-					//castling hamlesi iki taþý ayný anda hareket ettirdiði için 
-					//iki hamleyi de move içine atmýyoruz
+					//castling hamlesi iki tasi ayni anda hareket ettirdigi icin 
+					//iki hamleyi de move icine atmiyoruz
 					s="";					
 					s=""+7+""+4+""+7+""+6+""+12;
 					Move move1=new Move();
@@ -693,8 +693,8 @@ public class MoveGenerator {
 				}
 				if((b.rights[2]==1)&&((myrook&(h1<<7))!=0)&&((enemyR&(h1<<3))==0)&&((all&(h1<<6))==0)&&((all&(h1<<5))==0)&&((all&(h1<<4))==0)){
 					//queenside for white
-					//castling hamlesi iki taþý ayný anda hareket ettirdiði için 
-					//iki hamleyi de move içine atmýyoruz
+					//castling hamlesi iki tasi ayni anda hareket ettirdigi icin 
+					//iki hamleyi de move icine atmiyoruz
 					s="";					
 					s=""+7+""+4+""+7+""+2+""+12;
 					Move move1=new Move();
@@ -713,8 +713,8 @@ public class MoveGenerator {
 			if((enemyR&kingpos)==0){// is not in check
 				if((b.rights[5]==1)&&((myrook&h8)!=0)&&((enemyR&(h8<<2))==0)&&((all&(h8<<2))==0)&&((all&(h8<<1))==0)){
 					//kingside for black
-					//castling hamlesi iki taþý ayný anda hareket ettirdiði için 
-					//iki hamleyi de move içine atmýyoruz
+					//castling hamlesi iki tasi ayni anda hareket ettirdigi icin 
+					//iki hamleyi de move icine atmiyoruz
 					s="";					
 					s=""+0+""+4+""+0+""+6+""+12;
 					Move move1=new Move();
@@ -727,8 +727,8 @@ public class MoveGenerator {
 
 				if((b.rights[4]==1)&&((myrook&(h8<<7))!=0)&&((enemyR&(h8<<3))==0)&&((all&(h8<<6))==0)&&((all&(h8<<5))==0)&&((all&(h8<<4))==0)){
 					//queenside for black
-					//castling hamlesi iki taþý ayný anda hareket ettirdiði için 
-					//iki hamleyi de move içine atmýyoruz
+					//castling hamlesi iki tasi ayni anda hareket ettirdigi icin 
+					//iki hamleyi de move icine atmiyoruz
 					s="";					
 					s=""+0+""+4+""+0+""+2+""+12;
 					Move move1=new Move();
@@ -743,7 +743,7 @@ public class MoveGenerator {
 		return 0;
 	}
 	
-	// atýn hareketleri garip olduðu için direction gibi iki boyutlu düþünmek daha iyi
+	// atin hareketleri garip oldugu icin direction gibi iki boyutlu dusunmek daha iyi
 	public long knightMoves(ArrayList<Move>moves,Board b, int side){
 		long bitKnight=0;
 		long enemy=0;
@@ -769,8 +769,8 @@ public class MoveGenerator {
 			squ<<=i;
 			if((bitKnight&squ)!=0){
 				int row=7-(i/8);
-				int col=7-(i%8);// burada tasýn nerde olduðunu aldýk sonra ona gore 8 tane hamle verecegiz
-				// clockwise hesaplayalým
+				int col=7-(i%8);// burada tasin nerde oldugunu aldik sonra ona gore 8 tane hamle verecegiz
+				// clockwise hesaplayalim
 				moveclockwise[count][0]=row-2;
 				moveclockwise[count++][1]=col+1;
 				moveclockwise[count][0]=row-1;
@@ -791,7 +791,7 @@ public class MoveGenerator {
 					long hamle=0b1;
 					int newrow=moveclockwise[a][0];
 					int newcol=moveclockwise[a][1];
-					if(newrow>=0&&newrow<=7&&newcol>=0&&newcol<=7){//boardun içine düþüyor
+					if(newrow>=0&&newrow<=7&&newcol>=0&&newcol<=7){//boardun icine dusuyor
 						hamle<<=((7-newrow)*8)+(7-newcol);
 						allmoves|=hamle;
 						String h=Long.toBinaryString((ownPiece>>(((7-newrow)*8)+(7-newcol))));
@@ -814,9 +814,9 @@ public class MoveGenerator {
 	
 	
 	
-	// henüz tam test etmedim çalýþýyor gibi 
-	// siyahlar için de yazdým ama test uðraþmak istemiyorum yav
-	// sadece hamle üretiyorum nedense baþka þeyler de lazým gibi geliyor
+	// henuz tam test etmedim calisiyor gibi 
+	// siyahlar icin de yazdim ama test ugrasmak istemiyorum yav
+	// sadece hamle uretiyorum nedense baska seyler de lazim gibi geliyor
 	public void capturePawnMoves(ArrayList<Move>moves,Board b, long bitPawn,int side){
 		if(side==0){
 			long captureright=(bitPawn<<7)&(~col1&b.blackPieces);
@@ -947,7 +947,7 @@ public class MoveGenerator {
 			}
 		}
 	}
-	//galib bu da oldu emin deððilim
+	//galib bu da oldu emin deggilim
 	public void enPassantMoves(ArrayList<Move>moves,Board b,int side, Move lastmove){
 		if(side==0){//white enpassant check where was the last move made and look at its neighbors
 			if(lastmove!=null&&lastmove.moveType==1){
@@ -966,7 +966,7 @@ public class MoveGenerator {
 					move1.pieceType=0;
 					moves.add(move1);
 				}
-				if((b.wP&(pos>>1))!=0 && (colofpawn!=7)){//saðdan enpas var
+				if((b.wP&(pos>>1))!=0 && (colofpawn!=7)){//sagdan enpas var
 					String s=""+rowofpawn+""+(colofpawn+1)+""+(rowofpawn-1)+""+colofpawn+""+6;
 					Move move1=new Move();
 					move1.move=s;
@@ -993,7 +993,7 @@ public class MoveGenerator {
 					move1.pieceType=6;
 					moves.add(move1);
 				}
-				if((b.bP&(pos>>1))!=0 && (colofpawn!=7)){//saðdan enpas var
+				if((b.bP&(pos>>1))!=0 && (colofpawn!=7)){//sagdan enpas var
 					String s=""+rowofpawn+""+(colofpawn+1)+""+(rowofpawn+1)+""+colofpawn+""+0;
 					//System.out.println("pawn captures: "+s);
 					Move move1=new Move();

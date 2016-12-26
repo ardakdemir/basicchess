@@ -1,0 +1,6536 @@
+100
+generation: 0
+individual:  1 position solved: 14
+individual:  2 position solved: 13
+individual:  3 position solved: 13
+individual:  4 position solved: 13
+individual:  5 position solved: 14
+individual:  6 position solved: 14
+individual:  7 position solved: 13
+individual:  8 position solved: 15
+individual:  9 position solved: 12
+individual:  10 position solved: 15
+weight 0 : -4.0
+weight 1 : -7.0
+weight 2 : 15.0
+weight 10 : 5.0
+weight 11 : -2.0
+weight 20 : 6.0
+weight 21 : 9.0
+weight 22 : 38.0
+weight 30 : 3.0
+weight 40 : -5.0
+weight 41 : -8.0
+weight 42 : 15.0
+weight 43 : 42.0
+weight 44 : -2.0
+weight 45 : 6.0
+weight 46 : -3.0
+weight 47 : -3.0
+weight 50 : 28.0
+weight 51 : 16.0
+weight 52 : 30.0
+weight 53 : 2.0
+weight 54 : 3.0
+weight 60 : 1.0
+weight 94 : 100.0
+weight 95 : 176.0
+weight 96 : 257.0
+weight 97 : 673.0
+weight 98 : 937.0
+ortalama : 13
+generation: 1
+individual:  1 position solved: 15
+individual:  2 position solved: 15
+individual:  3 position solved: 15
+individual:  4 position solved: 15
+individual:  5 position solved: 12
+individual:  6 position solved: 16
+individual:  7 position solved: 14
+individual:  8 position solved: 15
+individual:  9 position solved: 14
+individual:  10 position solved: 14
+ortalama : 14
+generation: 2
+individual:  1 position solved: 16
+individual:  2 position solved: 15
+individual:  3 position solved: 16
+individual:  4 position solved: 15
+individual:  5 position solved: 15
+individual:  6 position solved: 16
+individual:  7 position solved: 16
+individual:  8 position solved: 15
+individual:  9 position solved: 14
+individual:  10 position solved: 16
+ortalama : 14
+generation: 3
+individual:  1 position solved: 16
+individual:  2 position solved: 16
+individual:  3 position solved: 15
+individual:  4 position solved: 16
+individual:  5 position solved: 16
+individual:  6 position solved: 16
+individual:  7 position solved: 16
+individual:  8 position solved: 16
+individual:  9 position solved: 15
+individual:  10 position solved: 16
+ortalama : 14
+generation: 4
+individual:  1 position solved: 16
+individual:  2 position solved: 16
+individual:  3 position solved: 16
+individual:  4 position solved: 16
+individual:  5 position solved: 15
+individual:  6 position solved: 15
+individual:  7 position solved: 13
+individual:  8 position solved: 16
+individual:  9 position solved: 16
+individual:  10 position solved: 14
+ortalama : 14
+generation: 5
+individual:  1 position solved: 16
+individual:  2 position solved: 16
+individual:  3 position solved: 16
+individual:  4 position solved: 16
+individual:  5 position solved: 16
+individual:  6 position solved: 16
+individual:  7 position solved: 16
+individual:  8 position solved: 16
+individual:  9 position solved: 16
+individual:  10 position solved: 16
+ortalama : 15
+generation: 6
+individual:  1 position solved: 16
+individual:  2 position solved: 16
+individual:  3 position solved: 12
+individual:  4 position solved: 16
+individual:  5 position solved: 16
+individual:  6 position solved: 15
+individual:  7 position solved: 16
+individual:  8 position solved: 16
+individual:  9 position solved: 16
+individual:  10 position solved: 16
+ortalama : 15
+generation: 7
+individual:  1 position solved: 16
+individual:  2 position solved: 16
+individual:  3 position solved: 15
+individual:  4 position solved: 16
+individual:  5 position solved: 16
+individual:  6 position solved: 16
+individual:  7 position solved: 16
+individual:  8 position solved: 16
+individual:  9 position solved: 16
+individual:  10 position solved: 16
+no recent improvement
+weight 0 : -5.0
+weight 1 : -7.0
+weight 2 : 8.0
+weight 10 : 9.0
+weight 11 : -2.0
+weight 20 : 6.0
+weight 21 : 9.0
+weight 22 : 22.0
+weight 30 : 3.0
+weight 40 : -5.0
+weight 41 : -8.0
+weight 42 : 15.0
+weight 43 : 27.0
+weight 44 : -2.0
+weight 45 : 9.0
+weight 46 : -7.0
+weight 47 : -3.0
+weight 50 : 28.0
+weight 51 : 16.0
+weight 52 : 30.0
+weight 53 : 6.0
+weight 54 : 7.0
+weight 60 : 1.0
+weight 94 : 100.0
+weight 95 : 176.0
+weight 96 : 257.0
+weight 97 : 468.0
+weight 98 : 887.0
+weight 0 : -4.0
+weight 1 : -5.0
+weight 2 : 4.0
+weight 10 : 13.0
+weight 11 : -1.0
+weight 20 : 7.0
+weight 21 : 5.0
+weight 22 : 26.0
+weight 30 : 3.0
+weight 40 : -4.0
+weight 41 : -10.0
+weight 42 : 17.0
+weight 43 : 27.0
+weight 44 : -1.0
+weight 45 : 11.0
+weight 46 : -3.0
+weight 47 : -1.0
+weight 50 : 42.0
+weight 51 : 8.0
+weight 52 : 41.0
+weight 53 : 6.0
+weight 54 : 3.0
+weight 94 : 99.0
+weight 95 : 154.0
+weight 96 : 152.0
+weight 97 : 519.0
+weight 98 : 488.0
+ortalama : 15
+generation: 1
+individual:  1 position solved: 16
+individual:  2 position solved: 14
+individual:  3 position solved: 17
+individual:  4 position solved: 15
+individual:  5 position solved: 16
+individual:  6 position solved: 16
+individual:  7 position solved: 17
+individual:  8 position solved: 16
+individual:  9 position solved: 18
+individual:  10 position solved: 17
+ortalama : 15
+generation: 2
+individual:  1 position solved: 18
+individual:  2 position solved: 17
+individual:  3 position solved: 18
+individual:  4 position solved: 17
+individual:  5 position solved: 18
+individual:  6 position solved: 18
+individual:  7 position solved: 15
+individual:  8 position solved: 17
+individual:  9 position solved: 17
+individual:  10 position solved: 16
+ortalama : 15
+generation: 3
+individual:  1 position solved: 18
+individual:  2 position solved: 18
+individual:  3 position solved: 18
+individual:  4 position solved: 18
+individual:  5 position solved: 18
+individual:  6 position solved: 14
+individual:  7 position solved: 17
+individual:  8 position solved: 18
+individual:  9 position solved: 17
+individual:  10 position solved: 17
+ortalama : 15
+generation: 4
+individual:  1 position solved: 18
+individual:  2 position solved: 18
+individual:  3 position solved: 18
+individual:  4 position solved: 18
+individual:  5 position solved: 18
+individual:  6 position solved: 18
+individual:  7 position solved: 18
+individual:  8 position solved: 18
+individual:  9 position solved: 18
+individual:  10 position solved: 19
+ortalama : 15
+generation: 5
+individual:  1 position solved: 19
+individual:  2 position solved: 18
+individual:  3 position solved: 19
+individual:  4 position solved: 18
+individual:  5 position solved: 19
+individual:  6 position solved: 17
+individual:  7 position solved: 18
+individual:  8 position solved: 17
+individual:  9 position solved: 16
+individual:  10 position solved: 18
+ortalama : 16
+generation: 6
+individual:  1 position solved: 19
+individual:  2 position solved: 19
+individual:  3 position solved: 19
+individual:  4 position solved: 19
+individual:  5 position solved: 19
+individual:  6 position solved: 16
+individual:  7 position solved: 19
+individual:  8 position solved: 18
+individual:  9 position solved: 18
+individual:  10 position solved: 17
+ortalama : 16
+generation: 7
+individual:  1 position solved: 19
+individual:  2 position solved: 19
+individual:  3 position solved: 19
+individual:  4 position solved: 19
+individual:  5 position solved: 18
+individual:  6 position solved: 19
+individual:  7 position solved: 17
+individual:  8 position solved: 19
+individual:  9 position solved: 16
+individual:  10 position solved: 19
+ortalama : 16
+generation: 8
+individual:  1 position solved: 19
+individual:  2 position solved: 19
+individual:  3 position solved: 19
+individual:  4 position solved: 19
+individual:  5 position solved: 19
+individual:  6 position solved: 19
+individual:  7 position solved: 19
+individual:  8 position solved: 18
+individual:  9 position solved: 15
+individual:  10 position solved: 19
+ortalama : 16
+generation: 9
+individual:  1 position solved: 19
+individual:  2 position solved: 19
+individual:  3 position solved: 19
+individual:  4 position solved: 19
+individual:  5 position solved: 19
+individual:  6 position solved: 16
+individual:  7 position solved: 17
+individual:  8 position solved: 19
+individual:  9 position solved: 19
+individual:  10 position solved: 19
+ortalama : 16
+generation: 10
+individual:  1 position solved: 19
+individual:  2 position solved: 19
+individual:  3 position solved: 15
+individual:  4 position solved: 17
+individual:  5 position solved: 19
+individual:  6 position solved: 19
+individual:  7 position solved: 19
+individual:  8 position solved: 19
+individual:  9 position solved: 18
+individual:  10 position solved: 19
+no recent improvement
+weight 0 : -4.0
+weight 1 : -5.0
+weight 2 : 5.0
+weight 10 : 12.0
+weight 20 : 9.0
+weight 21 : 7.0
+weight 22 : 28.0
+weight 30 : 3.0
+weight 40 : -3.0
+weight 41 : -9.0
+weight 42 : 11.0
+weight 43 : 27.0
+weight 45 : 9.0
+weight 46 : -1.0
+weight 50 : 43.0
+weight 51 : 12.0
+weight 52 : 105.0
+weight 53 : 4.0
+weight 54 : 2.0
+weight 94 : 100.0
+weight 95 : 216.0
+weight 96 : 52.0
+weight 97 : 270.0
+weight 98 : 659.0
+weight 0 : -3.0
+weight 1 : -5.0
+weight 2 : 5.0
+weight 10 : 6.0
+weight 20 : 4.0
+weight 21 : 10.0
+weight 22 : 42.0
+weight 30 : 2.0
+weight 40 : -1.0
+weight 41 : -7.0
+weight 42 : 5.0
+weight 43 : 37.0
+weight 45 : 12.0
+weight 50 : 33.0
+weight 51 : 9.0
+weight 52 : 82.0
+weight 53 : 6.0
+weight 54 : 1.0
+weight 94 : 144.0
+weight 95 : 199.0
+weight 96 : 46.0
+weight 97 : 268.0
+weight 98 : 359.0
+ortalama : 16
+generation: 1
+individual:  1 position solved: 19
+individual:  2 position solved: 16
+individual:  3 position solved: 19
+individual:  4 position solved: 16
+individual:  5 position solved: 18
+individual:  6 position solved: 19
+individual:  7 position solved: 18
+individual:  8 position solved: 12
+individual:  9 position solved: 16
+individual:  10 position solved: 16
+no recent improvement
+weight 0 : -3.0
+weight 1 : -5.0
+weight 2 : 5.0
+weight 10 : 6.0
+weight 20 : 4.0
+weight 21 : 10.0
+weight 22 : 42.0
+weight 30 : 2.0
+weight 40 : -1.0
+weight 41 : -7.0
+weight 42 : 5.0
+weight 43 : 37.0
+weight 45 : 12.0
+weight 50 : 33.0
+weight 51 : 9.0
+weight 52 : 82.0
+weight 53 : 6.0
+weight 54 : 1.0
+weight 94 : 144.0
+weight 95 : 199.0
+weight 96 : 46.0
+weight 97 : 268.0
+weight 98 : 359.0
+weight 0 : -1.0
+weight 1 : -2.0
+weight 2 : 7.0
+weight 10 : 3.0
+weight 20 : 6.0
+weight 21 : 7.0
+weight 22 : 63.0
+weight 30 : 1.0
+weight 41 : -5.0
+weight 42 : 6.0
+weight 43 : 55.0
+weight 45 : 9.0
+weight 50 : 40.0
+weight 51 : 5.0
+weight 52 : 70.0
+weight 53 : 9.0
+weight 94 : 122.0
+weight 95 : 195.0
+weight 96 : 51.0
+weight 97 : 380.0
+weight 98 : 459.0
+ortalama : 16
+generation: 1
+individual:  1 position solved: 18
+individual:  2 position solved: 19
+individual:  3 position solved: 18
+individual:  4 position solved: 19
+individual:  5 position solved: 18
+individual:  6 position solved: 12
+individual:  7 position solved: 13
+individual:  8 position solved: 16
+individual:  9 position solved: 18
+individual:  10 position solved: 17
+no recent improvement
+weight 0 : -1.0
+weight 1 : -2.0
+weight 2 : 7.0
+weight 10 : 3.0
+weight 20 : 6.0
+weight 21 : 7.0
+weight 22 : 63.0
+weight 30 : 1.0
+weight 41 : -5.0
+weight 42 : 6.0
+weight 43 : 55.0
+weight 45 : 9.0
+weight 50 : 40.0
+weight 51 : 5.0
+weight 52 : 70.0
+weight 53 : 9.0
+weight 94 : 122.0
+weight 95 : 195.0
+weight 96 : 51.0
+weight 97 : 380.0
+weight 98 : 459.0
+weight 1 : -1.0
+weight 2 : 7.0
+weight 10 : 1.0
+weight 20 : 7.0
+weight 21 : 4.0
+weight 22 : 51.0
+weight 41 : -4.0
+weight 42 : 6.0
+weight 43 : 72.0
+weight 45 : 13.0
+weight 50 : 30.0
+weight 51 : 7.0
+weight 52 : 90.0
+weight 53 : 4.0
+weight 94 : 73.0
+weight 95 : 231.0
+weight 96 : 44.0
+weight 97 : 295.0
+weight 98 : 434.0
+ortalama : 16
+generation: 1
+individual:  1 position solved: 18
+individual:  2 position solved: 17
+individual:  3 position solved: 18
+individual:  4 position solved: 16
+individual:  5 position solved: 17
+individual:  6 position solved: 18
+individual:  7 position solved: 17
+individual:  8 position solved: 17
+individual:  9 position solved: 17
+individual:  10 position solved: 17
+no recent improvement
+weight 1 : -1.0
+weight 2 : 7.0
+weight 10 : 1.0
+weight 20 : 7.0
+weight 21 : 4.0
+weight 22 : 51.0
+weight 41 : -4.0
+weight 42 : 6.0
+weight 43 : 72.0
+weight 45 : 13.0
+weight 50 : 30.0
+weight 51 : 7.0
+weight 52 : 90.0
+weight 53 : 4.0
+weight 94 : 73.0
+weight 95 : 231.0
+weight 96 : 44.0
+weight 97 : 295.0
+weight 98 : 434.0
+weight 1 : -1.0
+weight 2 : 7.0
+weight 10 : 1.0
+weight 20 : 7.0
+weight 21 : 4.0
+weight 22 : 51.0
+weight 41 : -4.0
+weight 42 : 6.0
+weight 43 : 72.0
+weight 45 : 13.0
+weight 50 : 30.0
+weight 51 : 7.0
+weight 52 : 90.0
+weight 53 : 4.0
+weight 94 : 73.0
+weight 95 : 231.0
+weight 96 : 44.0
+weight 97 : 295.0
+weight 98 : 434.0
+ortalama : 16
+generation: 1
+individual:  1 position solved: 17
+individual:  2 position solved: 17
+individual:  3 position solved: 17
+individual:  4 position solved: 11
+individual:  5 position solved: 11
+individual:  6 position solved: 17
+individual:  7 position solved: 17
+individual:  8 position solved: 17
+individual:  9 position solved: 15
+individual:  10 position solved: 17
+no recent improvement
+weight 1 : -1.0
+weight 2 : 7.0
+weight 10 : 1.0
+weight 20 : 7.0
+weight 21 : 4.0
+weight 22 : 51.0
+weight 41 : -4.0
+weight 42 : 6.0
+weight 43 : 72.0
+weight 45 : 13.0
+weight 50 : 30.0
+weight 51 : 7.0
+weight 52 : 90.0
+weight 53 : 4.0
+weight 94 : 73.0
+weight 95 : 231.0
+weight 96 : 44.0
+weight 97 : 295.0
+weight 98 : 434.0
+weight 1 : -1.0
+weight 2 : 7.0
+weight 10 : 1.0
+weight 20 : 7.0
+weight 21 : 4.0
+weight 22 : 51.0
+weight 41 : -4.0
+weight 42 : 6.0
+weight 43 : 72.0
+weight 45 : 13.0
+weight 50 : 30.0
+weight 51 : 7.0
+weight 52 : 90.0
+weight 53 : 4.0
+weight 94 : 73.0
+weight 95 : 231.0
+weight 96 : 44.0
+weight 97 : 295.0
+weight 98 : 434.0
+ortalama : 16
+generation: 1
+individual:  1 position solved: 17
+individual:  2 position solved: 17
+individual:  3 position solved: 17
+individual:  4 position solved: 17
+individual:  5 position solved: 17
+individual:  6 position solved: 12
+individual:  7 position solved: 17
+individual:  8 position solved: 17
+individual:  9 position solved: 17
+individual:  10 position solved: 17
+no recent improvement
+weight 1 : -1.0
+weight 2 : 7.0
+weight 10 : 1.0
+weight 20 : 7.0
+weight 21 : 4.0
+weight 22 : 51.0
+weight 41 : -4.0
+weight 42 : 6.0
+weight 43 : 72.0
+weight 45 : 13.0
+weight 50 : 30.0
+weight 51 : 7.0
+weight 52 : 90.0
+weight 53 : 4.0
+weight 94 : 73.0
+weight 95 : 231.0
+weight 96 : 44.0
+weight 97 : 295.0
+weight 98 : 434.0
+weight 1 : -1.0
+weight 2 : 7.0
+weight 10 : 1.0
+weight 20 : 7.0
+weight 21 : 4.0
+weight 22 : 51.0
+weight 41 : -4.0
+weight 42 : 6.0
+weight 43 : 72.0
+weight 45 : 13.0
+weight 50 : 30.0
+weight 51 : 7.0
+weight 52 : 90.0
+weight 53 : 4.0
+weight 94 : 73.0
+weight 95 : 231.0
+weight 96 : 44.0
+weight 97 : 295.0
+weight 98 : 434.0
+ortalama : 16
+generation: 1
+individual:  1 position solved: 17
+individual:  2 position solved: 15
+individual:  3 position solved: 17
+individual:  4 position solved: 15
+individual:  5 position solved: 17
+individual:  6 position solved: 17
+individual:  7 position solved: 17
+individual:  8 position solved: 17
+individual:  9 position solved: 17
+individual:  10 position solved: 16
+no recent improvement
+weight 1 : -1.0
+weight 2 : 7.0
+weight 10 : 1.0
+weight 20 : 7.0
+weight 21 : 4.0
+weight 22 : 51.0
+weight 41 : -4.0
+weight 42 : 6.0
+weight 43 : 72.0
+weight 45 : 13.0
+weight 50 : 30.0
+weight 51 : 7.0
+weight 52 : 90.0
+weight 53 : 4.0
+weight 94 : 73.0
+weight 95 : 231.0
+weight 96 : 44.0
+weight 97 : 295.0
+weight 98 : 434.0
+weight 1 : -1.0
+weight 2 : 7.0
+weight 10 : 1.0
+weight 20 : 7.0
+weight 21 : 4.0
+weight 22 : 51.0
+weight 41 : -4.0
+weight 42 : 6.0
+weight 43 : 72.0
+weight 45 : 13.0
+weight 50 : 30.0
+weight 51 : 7.0
+weight 52 : 90.0
+weight 53 : 4.0
+weight 94 : 73.0
+weight 95 : 231.0
+weight 96 : 44.0
+weight 97 : 295.0
+weight 98 : 434.0
+ortalama : 16
+generation: 1
+individual:  1 position solved: 16
+individual:  2 position solved: 16
+individual:  3 position solved: 17
+individual:  4 position solved: 15
+individual:  5 position solved: 17
+individual:  6 position solved: 17
+individual:  7 position solved: 17
+individual:  8 position solved: 17
+individual:  9 position solved: 17
+individual:  10 position solved: 17
+no recent improvement
+weight 1 : -1.0
+weight 2 : 7.0
+weight 10 : 1.0
+weight 20 : 7.0
+weight 21 : 4.0
+weight 22 : 51.0
+weight 41 : -4.0
+weight 42 : 6.0
+weight 43 : 72.0
+weight 45 : 13.0
+weight 50 : 30.0
+weight 51 : 7.0
+weight 52 : 90.0
+weight 53 : 4.0
+weight 94 : 73.0
+weight 95 : 231.0
+weight 96 : 44.0
+weight 97 : 295.0
+weight 98 : 434.0
+weight 1 : -1.0
+weight 2 : 7.0
+weight 10 : 1.0
+weight 20 : 7.0
+weight 21 : 4.0
+weight 22 : 51.0
+weight 41 : -4.0
+weight 42 : 6.0
+weight 43 : 72.0
+weight 45 : 13.0
+weight 50 : 30.0
+weight 51 : 7.0
+weight 52 : 90.0
+weight 53 : 4.0
+weight 94 : 73.0
+weight 95 : 231.0
+weight 96 : 44.0
+weight 97 : 295.0
+weight 98 : 434.0
+ortalama : 16
+generation: 1
+individual:  1 position solved: 18
+individual:  2 position solved: 17
+individual:  3 position solved: 17
+individual:  4 position solved: 11
+individual:  5 position solved: 17
+individual:  6 position solved: 17
+individual:  7 position solved: 17
+individual:  8 position solved: 17
+individual:  9 position solved: 17
+individual:  10 position solved: 17
+no recent improvement
+weight 1 : -1.0
+weight 2 : 7.0
+weight 10 : 1.0
+weight 20 : 7.0
+weight 21 : 4.0
+weight 22 : 51.0
+weight 41 : -4.0
+weight 42 : 6.0
+weight 43 : 72.0
+weight 45 : 13.0
+weight 50 : 30.0
+weight 51 : 7.0
+weight 52 : 90.0
+weight 53 : 4.0
+weight 94 : 73.0
+weight 95 : 231.0
+weight 96 : 44.0
+weight 97 : 295.0
+weight 98 : 434.0
+weight 1 : -1.0
+weight 2 : 7.0
+weight 10 : 1.0
+weight 20 : 7.0
+weight 21 : 4.0
+weight 22 : 51.0
+weight 41 : -4.0
+weight 42 : 6.0
+weight 43 : 72.0
+weight 45 : 13.0
+weight 50 : 30.0
+weight 51 : 7.0
+weight 52 : 90.0
+weight 53 : 4.0
+weight 94 : 73.0
+weight 95 : 231.0
+weight 96 : 44.0
+weight 97 : 295.0
+weight 98 : 434.0
+ortalama : 16
+generation: 1
+individual:  1 position solved: 17
+individual:  2 position solved: 17
+individual:  3 position solved: 17
+individual:  4 position solved: 17
+individual:  5 position solved: 17
+individual:  6 position solved: 17
+individual:  7 position solved: 17
+individual:  8 position solved: 17
+individual:  9 position solved: 16
+individual:  10 position solved: 16
+no recent improvement
+weight 1 : -1.0
+weight 2 : 7.0
+weight 10 : 1.0
+weight 20 : 7.0
+weight 21 : 4.0
+weight 22 : 51.0
+weight 41 : -4.0
+weight 42 : 6.0
+weight 43 : 72.0
+weight 45 : 13.0
+weight 50 : 30.0
+weight 51 : 7.0
+weight 52 : 90.0
+weight 53 : 4.0
+weight 94 : 73.0
+weight 95 : 231.0
+weight 96 : 44.0
+weight 97 : 295.0
+weight 98 : 434.0
+weight 1 : -1.0
+weight 2 : 7.0
+weight 10 : 1.0
+weight 20 : 7.0
+weight 21 : 4.0
+weight 22 : 51.0
+weight 41 : -4.0
+weight 42 : 6.0
+weight 43 : 72.0
+weight 45 : 13.0
+weight 50 : 30.0
+weight 51 : 7.0
+weight 52 : 90.0
+weight 53 : 4.0
+weight 94 : 73.0
+weight 95 : 231.0
+weight 96 : 44.0
+weight 97 : 295.0
+weight 98 : 434.0
+ortalama : 16
+generation: 1
+individual:  1 position solved: 17
+individual:  2 position solved: 17
+individual:  3 position solved: 17
+individual:  4 position solved: 14
+individual:  5 position solved: 17
+individual:  6 position solved: 17
+individual:  7 position solved: 16
+individual:  8 position solved: 17
+individual:  9 position solved: 17
+individual:  10 position solved: 17
+no recent improvement
+weight 1 : -1.0
+weight 2 : 7.0
+weight 10 : 1.0
+weight 20 : 7.0
+weight 21 : 4.0
+weight 22 : 51.0
+weight 41 : -4.0
+weight 42 : 6.0
+weight 43 : 72.0
+weight 45 : 13.0
+weight 50 : 30.0
+weight 51 : 7.0
+weight 52 : 90.0
+weight 53 : 4.0
+weight 94 : 73.0
+weight 95 : 231.0
+weight 96 : 44.0
+weight 97 : 295.0
+weight 98 : 434.0
+weight 1 : -1.0
+weight 2 : 7.0
+weight 10 : 1.0
+weight 20 : 7.0
+weight 21 : 4.0
+weight 22 : 51.0
+weight 41 : -4.0
+weight 42 : 6.0
+weight 43 : 72.0
+weight 45 : 13.0
+weight 50 : 30.0
+weight 51 : 7.0
+weight 52 : 90.0
+weight 53 : 4.0
+weight 94 : 73.0
+weight 95 : 231.0
+weight 96 : 44.0
+weight 97 : 295.0
+weight 98 : 434.0
+ortalama : 16
+generation: 1
+individual:  1 position solved: 15
+individual:  2 position solved: 17
+individual:  3 position solved: 15
+individual:  4 position solved: 17
+individual:  5 position solved: 16
+individual:  6 position solved: 15
+individual:  7 position solved: 17
+individual:  8 position solved: 16
+individual:  9 position solved: 17
+individual:  10 position solved: 17
+no recent improvement
+weight 1 : -1.0
+weight 2 : 7.0
+weight 10 : 1.0
+weight 20 : 7.0
+weight 21 : 4.0
+weight 22 : 51.0
+weight 41 : -4.0
+weight 42 : 6.0
+weight 43 : 72.0
+weight 45 : 13.0
+weight 50 : 30.0
+weight 51 : 7.0
+weight 52 : 90.0
+weight 53 : 4.0
+weight 94 : 73.0
+weight 95 : 231.0
+weight 96 : 44.0
+weight 97 : 295.0
+weight 98 : 434.0
+weight 1 : -1.0
+weight 2 : 7.0
+weight 10 : 1.0
+weight 20 : 7.0
+weight 21 : 4.0
+weight 22 : 51.0
+weight 41 : -4.0
+weight 42 : 6.0
+weight 43 : 72.0
+weight 45 : 13.0
+weight 50 : 30.0
+weight 51 : 7.0
+weight 52 : 90.0
+weight 53 : 4.0
+weight 94 : 73.0
+weight 95 : 231.0
+weight 96 : 44.0
+weight 97 : 295.0
+weight 98 : 434.0
+ortalama : 16
+generation: 1
+individual:  1 position solved: 17
+individual:  2 position solved: 15
+individual:  3 position solved: 17
+individual:  4 position solved: 15
+individual:  5 position solved: 17
+individual:  6 position solved: 17
+individual:  7 position solved: 17
+individual:  8 position solved: 17
+individual:  9 position solved: 17
+individual:  10 position solved: 12
+no recent improvement
+weight 1 : -1.0
+weight 2 : 7.0
+weight 10 : 1.0
+weight 20 : 7.0
+weight 21 : 4.0
+weight 22 : 51.0
+weight 41 : -4.0
+weight 42 : 6.0
+weight 43 : 72.0
+weight 45 : 13.0
+weight 50 : 30.0
+weight 51 : 7.0
+weight 52 : 90.0
+weight 53 : 4.0
+weight 94 : 73.0
+weight 95 : 231.0
+weight 96 : 44.0
+weight 97 : 295.0
+weight 98 : 434.0
+weight 1 : -1.0
+weight 2 : 7.0
+weight 10 : 1.0
+weight 20 : 7.0
+weight 21 : 4.0
+weight 22 : 51.0
+weight 41 : -4.0
+weight 42 : 6.0
+weight 43 : 72.0
+weight 45 : 13.0
+weight 50 : 30.0
+weight 51 : 7.0
+weight 52 : 90.0
+weight 53 : 4.0
+weight 94 : 73.0
+weight 95 : 231.0
+weight 96 : 44.0
+weight 97 : 295.0
+weight 98 : 434.0
+ortalama : 16
+generation: 1
+individual:  1 position solved: 17
+individual:  2 position solved: 17
+individual:  3 position solved: 17
+individual:  4 position solved: 12
+individual:  5 position solved: 17
+individual:  6 position solved: 17
+individual:  7 position solved: 17
+individual:  8 position solved: 17
+individual:  9 position solved: 16
+individual:  10 position solved: 15
+no recent improvement
+weight 1 : -1.0
+weight 2 : 7.0
+weight 10 : 1.0
+weight 20 : 7.0
+weight 21 : 4.0
+weight 22 : 51.0
+weight 41 : -4.0
+weight 42 : 6.0
+weight 43 : 72.0
+weight 45 : 13.0
+weight 50 : 30.0
+weight 51 : 7.0
+weight 52 : 90.0
+weight 53 : 4.0
+weight 94 : 73.0
+weight 95 : 231.0
+weight 96 : 44.0
+weight 97 : 295.0
+weight 98 : 434.0
+weight 1 : -1.0
+weight 2 : 7.0
+weight 10 : 1.0
+weight 20 : 7.0
+weight 21 : 4.0
+weight 22 : 51.0
+weight 41 : -4.0
+weight 42 : 6.0
+weight 43 : 72.0
+weight 45 : 13.0
+weight 50 : 30.0
+weight 51 : 7.0
+weight 52 : 90.0
+weight 53 : 4.0
+weight 94 : 73.0
+weight 95 : 231.0
+weight 96 : 44.0
+weight 97 : 295.0
+weight 98 : 434.0
+ortalama : 16
+generation: 1
+individual:  1 position solved: 17
+individual:  2 position solved: 16
+individual:  3 position solved: 17
+individual:  4 position solved: 16
+individual:  5 position solved: 17
+individual:  6 position solved: 17
+individual:  7 position solved: 17
+individual:  8 position solved: 17
+individual:  9 position solved: 17
+individual:  10 position solved: 15
+no recent improvement
+weight 1 : -1.0
+weight 2 : 7.0
+weight 10 : 1.0
+weight 20 : 7.0
+weight 21 : 4.0
+weight 22 : 51.0
+weight 41 : -4.0
+weight 42 : 6.0
+weight 43 : 72.0
+weight 45 : 13.0
+weight 50 : 30.0
+weight 51 : 7.0
+weight 52 : 90.0
+weight 53 : 4.0
+weight 94 : 73.0
+weight 95 : 231.0
+weight 96 : 44.0
+weight 97 : 295.0
+weight 98 : 434.0
+weight 1 : -1.0
+weight 2 : 7.0
+weight 10 : 1.0
+weight 20 : 7.0
+weight 21 : 4.0
+weight 22 : 51.0
+weight 41 : -4.0
+weight 42 : 6.0
+weight 43 : 72.0
+weight 45 : 13.0
+weight 50 : 30.0
+weight 51 : 7.0
+weight 52 : 90.0
+weight 53 : 4.0
+weight 94 : 73.0
+weight 95 : 231.0
+weight 96 : 44.0
+weight 97 : 295.0
+weight 98 : 434.0
+ortalama : 16
+generation: 1
+individual:  1 position solved: 16
+individual:  2 position solved: 17
+individual:  3 position solved: 17
+individual:  4 position solved: 17
+individual:  5 position solved: 11
+individual:  6 position solved: 11
+individual:  7 position solved: 15
+individual:  8 position solved: 17
+individual:  9 position solved: 17
+individual:  10 position solved: 17
+no recent improvement
+weight 1 : -1.0
+weight 2 : 7.0
+weight 10 : 1.0
+weight 20 : 7.0
+weight 21 : 4.0
+weight 22 : 51.0
+weight 41 : -4.0
+weight 42 : 6.0
+weight 43 : 72.0
+weight 45 : 13.0
+weight 50 : 30.0
+weight 51 : 7.0
+weight 52 : 90.0
+weight 53 : 4.0
+weight 94 : 73.0
+weight 95 : 231.0
+weight 96 : 44.0
+weight 97 : 295.0
+weight 98 : 434.0
+weight 1 : -1.0
+weight 2 : 7.0
+weight 10 : 1.0
+weight 20 : 7.0
+weight 21 : 4.0
+weight 22 : 51.0
+weight 41 : -4.0
+weight 42 : 6.0
+weight 43 : 72.0
+weight 45 : 13.0
+weight 50 : 30.0
+weight 51 : 7.0
+weight 52 : 90.0
+weight 53 : 4.0
+weight 94 : 73.0
+weight 95 : 231.0
+weight 96 : 44.0
+weight 97 : 295.0
+weight 98 : 434.0
+ortalama : 16
+generation: 1
+individual:  1 position solved: 16
+individual:  2 position solved: 16
+individual:  3 position solved: 15
+individual:  4 position solved: 11
+individual:  5 position solved: 17
+individual:  6 position solved: 11
+individual:  7 position solved: 15
+individual:  8 position solved: 18
+individual:  9 position solved: 17
+individual:  10 position solved: 16
+no recent improvement
+weight 1 : -1.0
+weight 2 : 7.0
+weight 10 : 1.0
+weight 20 : 7.0
+weight 21 : 4.0
+weight 22 : 51.0
+weight 41 : -4.0
+weight 42 : 6.0
+weight 43 : 72.0
+weight 45 : 13.0
+weight 50 : 30.0
+weight 51 : 7.0
+weight 52 : 90.0
+weight 53 : 4.0
+weight 94 : 73.0
+weight 95 : 231.0
+weight 96 : 44.0
+weight 97 : 295.0
+weight 98 : 434.0
+weight 1 : -1.0
+weight 2 : 7.0
+weight 10 : 1.0
+weight 20 : 7.0
+weight 21 : 4.0
+weight 22 : 51.0
+weight 41 : -4.0
+weight 42 : 6.0
+weight 43 : 72.0
+weight 45 : 13.0
+weight 50 : 30.0
+weight 51 : 7.0
+weight 52 : 90.0
+weight 53 : 4.0
+weight 94 : 73.0
+weight 95 : 231.0
+weight 96 : 44.0
+weight 97 : 295.0
+weight 98 : 434.0
+ortalama : 16
+generation: 1
+individual:  1 position solved: 16
+individual:  2 position solved: 17
+individual:  3 position solved: 15
+individual:  4 position solved: 17
+individual:  5 position solved: 12
+individual:  6 position solved: 14
+individual:  7 position solved: 17
+individual:  8 position solved: 17
+individual:  9 position solved: 17
+individual:  10 position solved: 17
+no recent improvement
+weight 1 : -1.0
+weight 2 : 7.0
+weight 10 : 1.0
+weight 20 : 7.0
+weight 21 : 4.0
+weight 22 : 51.0
+weight 41 : -4.0
+weight 42 : 6.0
+weight 43 : 72.0
+weight 45 : 13.0
+weight 50 : 30.0
+weight 51 : 7.0
+weight 52 : 90.0
+weight 53 : 4.0
+weight 94 : 73.0
+weight 95 : 231.0
+weight 96 : 44.0
+weight 97 : 295.0
+weight 98 : 434.0
+weight 1 : -1.0
+weight 2 : 7.0
+weight 10 : 1.0
+weight 20 : 7.0
+weight 21 : 4.0
+weight 22 : 51.0
+weight 41 : -4.0
+weight 42 : 6.0
+weight 43 : 72.0
+weight 45 : 13.0
+weight 50 : 30.0
+weight 51 : 7.0
+weight 52 : 90.0
+weight 53 : 4.0
+weight 94 : 73.0
+weight 95 : 231.0
+weight 96 : 44.0
+weight 97 : 295.0
+weight 98 : 434.0
+ortalama : 16
+generation: 1
+individual:  1 position solved: 17
+individual:  2 position solved: 17
+individual:  3 position solved: 17
+individual:  4 position solved: 12
+individual:  5 position solved: 17
+individual:  6 position solved: 17
+individual:  7 position solved: 12
+individual:  8 position solved: 17
+individual:  9 position solved: 11
+individual:  10 position solved: 12
+no recent improvement
+weight 1 : -1.0
+weight 2 : 7.0
+weight 10 : 1.0
+weight 20 : 7.0
+weight 21 : 4.0
+weight 22 : 51.0
+weight 41 : -4.0
+weight 42 : 6.0
+weight 43 : 72.0
+weight 45 : 13.0
+weight 50 : 30.0
+weight 51 : 7.0
+weight 52 : 90.0
+weight 53 : 4.0
+weight 94 : 73.0
+weight 95 : 231.0
+weight 96 : 44.0
+weight 97 : 295.0
+weight 98 : 434.0
+weight 1 : -1.0
+weight 2 : 7.0
+weight 10 : 1.0
+weight 20 : 7.0
+weight 21 : 4.0
+weight 22 : 51.0
+weight 41 : -4.0
+weight 42 : 6.0
+weight 43 : 72.0
+weight 45 : 13.0
+weight 50 : 30.0
+weight 51 : 7.0
+weight 52 : 90.0
+weight 53 : 4.0
+weight 94 : 73.0
+weight 95 : 231.0
+weight 96 : 44.0
+weight 97 : 295.0
+weight 98 : 434.0
+ortalama : 16
+generation: 1
+individual:  1 position solved: 16
+individual:  2 position solved: 15
+individual:  3 position solved: 17
+individual:  4 position solved: 15
+individual:  5 position solved: 16
+individual:  6 position solved: 17
+individual:  7 position solved: 17
+individual:  8 position solved: 13
+individual:  9 position solved: 17
+individual:  10 position solved: 17
+no recent improvement
+weight 1 : -1.0
+weight 2 : 7.0
+weight 10 : 1.0
+weight 20 : 7.0
+weight 21 : 4.0
+weight 22 : 51.0
+weight 41 : -4.0
+weight 42 : 6.0
+weight 43 : 72.0
+weight 45 : 13.0
+weight 50 : 30.0
+weight 51 : 7.0
+weight 52 : 90.0
+weight 53 : 4.0
+weight 94 : 73.0
+weight 95 : 231.0
+weight 96 : 44.0
+weight 97 : 295.0
+weight 98 : 434.0
+weight 1 : -1.0
+weight 2 : 7.0
+weight 10 : 1.0
+weight 20 : 7.0
+weight 21 : 4.0
+weight 22 : 51.0
+weight 41 : -4.0
+weight 42 : 6.0
+weight 43 : 72.0
+weight 45 : 13.0
+weight 50 : 30.0
+weight 51 : 7.0
+weight 52 : 90.0
+weight 53 : 4.0
+weight 94 : 73.0
+weight 95 : 231.0
+weight 96 : 44.0
+weight 97 : 295.0
+weight 98 : 434.0
+ortalama : 16
+generation: 1
+individual:  1 position solved: 17
+individual:  2 position solved: 14
+individual:  3 position solved: 17
+individual:  4 position solved: 14
+individual:  5 position solved: 15
+individual:  6 position solved: 17
+individual:  7 position solved: 14
+individual:  8 position solved: 15
+individual:  9 position solved: 17
+individual:  10 position solved: 17
+no recent improvement
+weight 1 : -1.0
+weight 2 : 7.0
+weight 10 : 1.0
+weight 20 : 7.0
+weight 21 : 4.0
+weight 22 : 51.0
+weight 41 : -4.0
+weight 42 : 6.0
+weight 43 : 72.0
+weight 45 : 13.0
+weight 50 : 30.0
+weight 51 : 7.0
+weight 52 : 90.0
+weight 53 : 4.0
+weight 94 : 73.0
+weight 95 : 231.0
+weight 96 : 44.0
+weight 97 : 295.0
+weight 98 : 434.0
+weight 1 : -1.0
+weight 2 : 7.0
+weight 10 : 1.0
+weight 20 : 7.0
+weight 21 : 4.0
+weight 22 : 51.0
+weight 41 : -4.0
+weight 42 : 6.0
+weight 43 : 72.0
+weight 45 : 13.0
+weight 50 : 30.0
+weight 51 : 7.0
+weight 52 : 90.0
+weight 53 : 4.0
+weight 94 : 73.0
+weight 95 : 231.0
+weight 96 : 44.0
+weight 97 : 295.0
+weight 98 : 434.0
+ortalama : 16
+generation: 1
+individual:  1 position solved: 17
+individual:  2 position solved: 17
+individual:  3 position solved: 17
+individual:  4 position solved: 11
+individual:  5 position solved: 17
+individual:  6 position solved: 11
+individual:  7 position solved: 17
+individual:  8 position solved: 17
+individual:  9 position solved: 17
+individual:  10 position solved: 8
+no recent improvement
+weight 1 : -1.0
+weight 2 : 7.0
+weight 10 : 1.0
+weight 20 : 7.0
+weight 21 : 4.0
+weight 22 : 51.0
+weight 41 : -4.0
+weight 42 : 6.0
+weight 43 : 72.0
+weight 45 : 13.0
+weight 50 : 30.0
+weight 51 : 7.0
+weight 52 : 90.0
+weight 53 : 4.0
+weight 94 : 73.0
+weight 95 : 231.0
+weight 96 : 44.0
+weight 97 : 295.0
+weight 98 : 434.0
+weight 1 : -1.0
+weight 2 : 7.0
+weight 10 : 1.0
+weight 20 : 7.0
+weight 21 : 4.0
+weight 22 : 51.0
+weight 41 : -4.0
+weight 42 : 6.0
+weight 43 : 72.0
+weight 45 : 13.0
+weight 50 : 30.0
+weight 51 : 7.0
+weight 52 : 90.0
+weight 53 : 4.0
+weight 94 : 73.0
+weight 95 : 231.0
+weight 96 : 44.0
+weight 97 : 295.0
+weight 98 : 434.0
+ortalama : 16
+generation: 1
+individual:  1 position solved: 15
+individual:  2 position solved: 17
+individual:  3 position solved: 15
+individual:  4 position solved: 17
+individual:  5 position solved: 17
+individual:  6 position solved: 17
+individual:  7 position solved: 17
+individual:  8 position solved: 17
+individual:  9 position solved: 11
+individual:  10 position solved: 17
+no recent improvement
+weight 1 : -1.0
+weight 2 : 7.0
+weight 10 : 1.0
+weight 20 : 7.0
+weight 21 : 4.0
+weight 22 : 51.0
+weight 41 : -4.0
+weight 42 : 6.0
+weight 43 : 72.0
+weight 45 : 13.0
+weight 50 : 30.0
+weight 51 : 7.0
+weight 52 : 90.0
+weight 53 : 4.0
+weight 94 : 73.0
+weight 95 : 231.0
+weight 96 : 44.0
+weight 97 : 295.0
+weight 98 : 434.0
+weight 1 : -1.0
+weight 2 : 7.0
+weight 10 : 1.0
+weight 20 : 7.0
+weight 21 : 4.0
+weight 22 : 51.0
+weight 41 : -4.0
+weight 42 : 6.0
+weight 43 : 72.0
+weight 45 : 13.0
+weight 50 : 30.0
+weight 51 : 7.0
+weight 52 : 90.0
+weight 53 : 4.0
+weight 94 : 73.0
+weight 95 : 231.0
+weight 96 : 44.0
+weight 97 : 295.0
+weight 98 : 434.0
+ortalama : 16
+generation: 1
+individual:  1 position solved: 17
+individual:  2 position solved: 17
+individual:  3 position solved: 17
+individual:  4 position solved: 17
+individual:  5 position solved: 17
+individual:  6 position solved: 17
+individual:  7 position solved: 16
+individual:  8 position solved: 17
+individual:  9 position solved: 17
+individual:  10 position solved: 16
+no recent improvement
+weight 1 : -1.0
+weight 2 : 7.0
+weight 10 : 1.0
+weight 20 : 7.0
+weight 21 : 4.0
+weight 22 : 51.0
+weight 41 : -4.0
+weight 42 : 6.0
+weight 43 : 72.0
+weight 45 : 13.0
+weight 50 : 30.0
+weight 51 : 7.0
+weight 52 : 90.0
+weight 53 : 4.0
+weight 94 : 73.0
+weight 95 : 231.0
+weight 96 : 44.0
+weight 97 : 295.0
+weight 98 : 434.0
+weight 1 : -1.0
+weight 2 : 7.0
+weight 10 : 1.0
+weight 20 : 7.0
+weight 21 : 4.0
+weight 22 : 51.0
+weight 41 : -4.0
+weight 42 : 6.0
+weight 43 : 72.0
+weight 45 : 13.0
+weight 50 : 30.0
+weight 51 : 7.0
+weight 52 : 90.0
+weight 53 : 4.0
+weight 94 : 73.0
+weight 95 : 231.0
+weight 96 : 44.0
+weight 97 : 295.0
+weight 98 : 434.0
+ortalama : 16
+generation: 1
+individual:  1 position solved: 16
+individual:  2 position solved: 17
+individual:  3 position solved: 15
+individual:  4 position solved: 17
+individual:  5 position solved: 15
+individual:  6 position solved: 17
+individual:  7 position solved: 17
+individual:  8 position solved: 17
+individual:  9 position solved: 17
+individual:  10 position solved: 17
+no recent improvement
+weight 1 : -1.0
+weight 2 : 7.0
+weight 10 : 1.0
+weight 20 : 7.0
+weight 21 : 4.0
+weight 22 : 51.0
+weight 41 : -4.0
+weight 42 : 6.0
+weight 43 : 72.0
+weight 45 : 13.0
+weight 50 : 30.0
+weight 51 : 7.0
+weight 52 : 90.0
+weight 53 : 4.0
+weight 94 : 73.0
+weight 95 : 231.0
+weight 96 : 44.0
+weight 97 : 295.0
+weight 98 : 434.0
+weight 1 : -1.0
+weight 2 : 7.0
+weight 10 : 1.0
+weight 20 : 7.0
+weight 21 : 4.0
+weight 22 : 51.0
+weight 41 : -4.0
+weight 42 : 6.0
+weight 43 : 72.0
+weight 45 : 13.0
+weight 50 : 30.0
+weight 51 : 7.0
+weight 52 : 90.0
+weight 53 : 4.0
+weight 94 : 73.0
+weight 95 : 231.0
+weight 96 : 44.0
+weight 97 : 295.0
+weight 98 : 434.0
+ortalama : 16
+generation: 1
+individual:  1 position solved: 17
+individual:  2 position solved: 15
+individual:  3 position solved: 12
+individual:  4 position solved: 15
+individual:  5 position solved: 15
+individual:  6 position solved: 12
+individual:  7 position solved: 11
+individual:  8 position solved: 16
+individual:  9 position solved: 15
+individual:  10 position solved: 11
+no recent improvement
+weight 1 : -1.0
+weight 2 : 7.0
+weight 10 : 1.0
+weight 20 : 7.0
+weight 21 : 4.0
+weight 22 : 51.0
+weight 41 : -4.0
+weight 42 : 6.0
+weight 43 : 72.0
+weight 45 : 13.0
+weight 50 : 30.0
+weight 51 : 7.0
+weight 52 : 90.0
+weight 53 : 4.0
+weight 94 : 73.0
+weight 95 : 231.0
+weight 96 : 44.0
+weight 97 : 295.0
+weight 98 : 434.0
+weight 1 : -1.0
+weight 2 : 7.0
+weight 10 : 1.0
+weight 20 : 7.0
+weight 21 : 4.0
+weight 22 : 51.0
+weight 41 : -4.0
+weight 42 : 6.0
+weight 43 : 72.0
+weight 45 : 13.0
+weight 50 : 30.0
+weight 51 : 7.0
+weight 52 : 90.0
+weight 53 : 4.0
+weight 94 : 73.0
+weight 95 : 231.0
+weight 96 : 44.0
+weight 97 : 295.0
+weight 98 : 434.0
+ortalama : 16
+generation: 1
+individual:  1 position solved: 15
+individual:  2 position solved: 16
+individual:  3 position solved: 15
+individual:  4 position solved: 11
+individual:  5 position solved: 17
+individual:  6 position solved: 15
+individual:  7 position solved: 16
+individual:  8 position solved: 15
+individual:  9 position solved: 15
+individual:  10 position solved: 17
+no recent improvement
+weight 1 : -1.0
+weight 2 : 7.0
+weight 10 : 1.0
+weight 20 : 7.0
+weight 21 : 4.0
+weight 22 : 51.0
+weight 41 : -4.0
+weight 42 : 6.0
+weight 43 : 72.0
+weight 45 : 13.0
+weight 50 : 30.0
+weight 51 : 7.0
+weight 52 : 90.0
+weight 53 : 4.0
+weight 94 : 73.0
+weight 95 : 231.0
+weight 96 : 44.0
+weight 97 : 295.0
+weight 98 : 434.0
+weight 1 : -1.0
+weight 2 : 7.0
+weight 10 : 1.0
+weight 20 : 7.0
+weight 21 : 4.0
+weight 22 : 51.0
+weight 41 : -4.0
+weight 42 : 6.0
+weight 43 : 72.0
+weight 45 : 13.0
+weight 50 : 30.0
+weight 51 : 7.0
+weight 52 : 90.0
+weight 53 : 4.0
+weight 94 : 73.0
+weight 95 : 231.0
+weight 96 : 44.0
+weight 97 : 295.0
+weight 98 : 434.0
+ortalama : 16
+generation: 1
+individual:  1 position solved: 17
+individual:  2 position solved: 15
+individual:  3 position solved: 17
+individual:  4 position solved: 17
+individual:  5 position solved: 17
+individual:  6 position solved: 16
+individual:  7 position solved: 17
+individual:  8 position solved: 17
+individual:  9 position solved: 17
+individual:  10 position solved: 12
+no recent improvement
+weight 1 : -1.0
+weight 2 : 7.0
+weight 10 : 1.0
+weight 20 : 7.0
+weight 21 : 4.0
+weight 22 : 51.0
+weight 41 : -4.0
+weight 42 : 6.0
+weight 43 : 72.0
+weight 45 : 13.0
+weight 50 : 30.0
+weight 51 : 7.0
+weight 52 : 90.0
+weight 53 : 4.0
+weight 94 : 73.0
+weight 95 : 231.0
+weight 96 : 44.0
+weight 97 : 295.0
+weight 98 : 434.0
+weight 1 : -1.0
+weight 2 : 7.0
+weight 10 : 1.0
+weight 20 : 7.0
+weight 21 : 4.0
+weight 22 : 51.0
+weight 41 : -4.0
+weight 42 : 6.0
+weight 43 : 72.0
+weight 45 : 13.0
+weight 50 : 30.0
+weight 51 : 7.0
+weight 52 : 90.0
+weight 53 : 4.0
+weight 94 : 73.0
+weight 95 : 231.0
+weight 96 : 44.0
+weight 97 : 295.0
+weight 98 : 434.0
+ortalama : 16
+generation: 1
+individual:  1 position solved: 17
+individual:  2 position solved: 14
+individual:  3 position solved: 17
+individual:  4 position solved: 14
+individual:  5 position solved: 17
+individual:  6 position solved: 17
+individual:  7 position solved: 17
+individual:  8 position solved: 17
+individual:  9 position solved: 17
+individual:  10 position solved: 17
+no recent improvement
+weight 1 : -1.0
+weight 2 : 7.0
+weight 10 : 1.0
+weight 20 : 7.0
+weight 21 : 4.0
+weight 22 : 51.0
+weight 41 : -4.0
+weight 42 : 6.0
+weight 43 : 72.0
+weight 45 : 13.0
+weight 50 : 30.0
+weight 51 : 7.0
+weight 52 : 90.0
+weight 53 : 4.0
+weight 94 : 73.0
+weight 95 : 231.0
+weight 96 : 44.0
+weight 97 : 295.0
+weight 98 : 434.0
+weight 1 : -1.0
+weight 2 : 7.0
+weight 10 : 1.0
+weight 20 : 7.0
+weight 21 : 4.0
+weight 22 : 51.0
+weight 41 : -4.0
+weight 42 : 6.0
+weight 43 : 72.0
+weight 45 : 13.0
+weight 50 : 30.0
+weight 51 : 7.0
+weight 52 : 90.0
+weight 53 : 4.0
+weight 94 : 73.0
+weight 95 : 231.0
+weight 96 : 44.0
+weight 97 : 295.0
+weight 98 : 434.0
+ortalama : 16
+generation: 1
+individual:  1 position solved: 17
+individual:  2 position solved: 17
+individual:  3 position solved: 17
+individual:  4 position solved: 12
+individual:  5 position solved: 17
+individual:  6 position solved: 17
+individual:  7 position solved: 17
+individual:  8 position solved: 17
+individual:  9 position solved: 17
+individual:  10 position solved: 17
+no recent improvement
+weight 1 : -1.0
+weight 2 : 7.0
+weight 10 : 1.0
+weight 20 : 7.0
+weight 21 : 4.0
+weight 22 : 51.0
+weight 41 : -4.0
+weight 42 : 6.0
+weight 43 : 72.0
+weight 45 : 13.0
+weight 50 : 30.0
+weight 51 : 7.0
+weight 52 : 90.0
+weight 53 : 4.0
+weight 94 : 73.0
+weight 95 : 231.0
+weight 96 : 44.0
+weight 97 : 295.0
+weight 98 : 434.0
+weight 1 : -1.0
+weight 2 : 7.0
+weight 10 : 1.0
+weight 20 : 7.0
+weight 21 : 4.0
+weight 22 : 51.0
+weight 41 : -4.0
+weight 42 : 6.0
+weight 43 : 72.0
+weight 45 : 13.0
+weight 50 : 30.0
+weight 51 : 7.0
+weight 52 : 90.0
+weight 53 : 4.0
+weight 94 : 73.0
+weight 95 : 231.0
+weight 96 : 44.0
+weight 97 : 295.0
+weight 98 : 434.0
+ortalama : 16
+generation: 1
+individual:  1 position solved: 17
+individual:  2 position solved: 17
+individual:  3 position solved: 17
+individual:  4 position solved: 17
+individual:  5 position solved: 15
+individual:  6 position solved: 17
+individual:  7 position solved: 17
+individual:  8 position solved: 17
+individual:  9 position solved: 17
+individual:  10 position solved: 17
+no recent improvement
+weight 1 : -1.0
+weight 2 : 7.0
+weight 10 : 1.0
+weight 20 : 7.0
+weight 21 : 4.0
+weight 22 : 51.0
+weight 41 : -4.0
+weight 42 : 6.0
+weight 43 : 72.0
+weight 45 : 13.0
+weight 50 : 30.0
+weight 51 : 7.0
+weight 52 : 90.0
+weight 53 : 4.0
+weight 94 : 73.0
+weight 95 : 231.0
+weight 96 : 44.0
+weight 97 : 295.0
+weight 98 : 434.0
+weight 1 : -1.0
+weight 2 : 7.0
+weight 10 : 1.0
+weight 20 : 7.0
+weight 21 : 4.0
+weight 22 : 51.0
+weight 41 : -4.0
+weight 42 : 6.0
+weight 43 : 72.0
+weight 45 : 13.0
+weight 50 : 30.0
+weight 51 : 7.0
+weight 52 : 90.0
+weight 53 : 4.0
+weight 94 : 73.0
+weight 95 : 231.0
+weight 96 : 44.0
+weight 97 : 295.0
+weight 98 : 434.0
+ortalama : 16
+generation: 1
+individual:  1 position solved: 17
+individual:  2 position solved: 16
+individual:  3 position solved: 17
+individual:  4 position solved: 17
+individual:  5 position solved: 17
+individual:  6 position solved: 17
+individual:  7 position solved: 17
+individual:  8 position solved: 17
+individual:  9 position solved: 11
+individual:  10 position solved: 17
+no recent improvement
+weight 1 : -1.0
+weight 2 : 7.0
+weight 10 : 1.0
+weight 20 : 7.0
+weight 21 : 4.0
+weight 22 : 51.0
+weight 41 : -4.0
+weight 42 : 6.0
+weight 43 : 72.0
+weight 45 : 13.0
+weight 50 : 30.0
+weight 51 : 7.0
+weight 52 : 90.0
+weight 53 : 4.0
+weight 94 : 73.0
+weight 95 : 231.0
+weight 96 : 44.0
+weight 97 : 295.0
+weight 98 : 434.0
+weight 1 : -1.0
+weight 2 : 7.0
+weight 10 : 1.0
+weight 20 : 7.0
+weight 21 : 4.0
+weight 22 : 51.0
+weight 41 : -4.0
+weight 42 : 6.0
+weight 43 : 72.0
+weight 45 : 13.0
+weight 50 : 30.0
+weight 51 : 7.0
+weight 52 : 90.0
+weight 53 : 4.0
+weight 94 : 73.0
+weight 95 : 231.0
+weight 96 : 44.0
+weight 97 : 295.0
+weight 98 : 434.0
+ortalama : 16
+generation: 1
+individual:  1 position solved: 17
+individual:  2 position solved: 17
+individual:  3 position solved: 17
+individual:  4 position solved: 17
+individual:  5 position solved: 12
+individual:  6 position solved: 15
+individual:  7 position solved: 16
+individual:  8 position solved: 17
+individual:  9 position solved: 16
+individual:  10 position solved: 17
+no recent improvement
+weight 1 : -1.0
+weight 2 : 7.0
+weight 10 : 1.0
+weight 20 : 7.0
+weight 21 : 4.0
+weight 22 : 51.0
+weight 41 : -4.0
+weight 42 : 6.0
+weight 43 : 72.0
+weight 45 : 13.0
+weight 50 : 30.0
+weight 51 : 7.0
+weight 52 : 90.0
+weight 53 : 4.0
+weight 94 : 73.0
+weight 95 : 231.0
+weight 96 : 44.0
+weight 97 : 295.0
+weight 98 : 434.0
+weight 1 : -1.0
+weight 2 : 7.0
+weight 10 : 1.0
+weight 20 : 7.0
+weight 21 : 4.0
+weight 22 : 51.0
+weight 41 : -4.0
+weight 42 : 6.0
+weight 43 : 72.0
+weight 45 : 13.0
+weight 50 : 30.0
+weight 51 : 7.0
+weight 52 : 90.0
+weight 53 : 4.0
+weight 94 : 73.0
+weight 95 : 231.0
+weight 96 : 44.0
+weight 97 : 295.0
+weight 98 : 434.0
+ortalama : 16
+generation: 1
+individual:  1 position solved: 18
+individual:  2 position solved: 17
+individual:  3 position solved: 17
+individual:  4 position solved: 17
+individual:  5 position solved: 17
+individual:  6 position solved: 17
+individual:  7 position solved: 17
+individual:  8 position solved: 17
+individual:  9 position solved: 15
+individual:  10 position solved: 17
+no recent improvement
+weight 1 : -1.0
+weight 2 : 7.0
+weight 10 : 1.0
+weight 20 : 7.0
+weight 21 : 4.0
+weight 22 : 51.0
+weight 41 : -4.0
+weight 42 : 6.0
+weight 43 : 72.0
+weight 45 : 13.0
+weight 50 : 30.0
+weight 51 : 7.0
+weight 52 : 90.0
+weight 53 : 4.0
+weight 94 : 73.0
+weight 95 : 231.0
+weight 96 : 44.0
+weight 97 : 295.0
+weight 98 : 434.0
+weight 1 : -1.0
+weight 2 : 7.0
+weight 10 : 1.0
+weight 20 : 7.0
+weight 21 : 4.0
+weight 22 : 51.0
+weight 41 : -4.0
+weight 42 : 6.0
+weight 43 : 72.0
+weight 45 : 13.0
+weight 50 : 30.0
+weight 51 : 7.0
+weight 52 : 90.0
+weight 53 : 4.0
+weight 94 : 73.0
+weight 95 : 231.0
+weight 96 : 44.0
+weight 97 : 295.0
+weight 98 : 434.0
+ortalama : 16
+generation: 1
+individual:  1 position solved: 16
+individual:  2 position solved: 17
+individual:  3 position solved: 17
+individual:  4 position solved: 17
+individual:  5 position solved: 17
+individual:  6 position solved: 17
+individual:  7 position solved: 17
+individual:  8 position solved: 17
+individual:  9 position solved: 17
+individual:  10 position solved: 17
+no recent improvement
+weight 1 : -1.0
+weight 2 : 7.0
+weight 10 : 1.0
+weight 20 : 7.0
+weight 21 : 4.0
+weight 22 : 51.0
+weight 41 : -4.0
+weight 42 : 6.0
+weight 43 : 72.0
+weight 45 : 13.0
+weight 50 : 30.0
+weight 51 : 7.0
+weight 52 : 90.0
+weight 53 : 4.0
+weight 94 : 73.0
+weight 95 : 231.0
+weight 96 : 44.0
+weight 97 : 295.0
+weight 98 : 434.0
+weight 1 : -1.0
+weight 2 : 7.0
+weight 10 : 1.0
+weight 20 : 7.0
+weight 21 : 4.0
+weight 22 : 51.0
+weight 41 : -4.0
+weight 42 : 6.0
+weight 43 : 72.0
+weight 45 : 13.0
+weight 50 : 30.0
+weight 51 : 7.0
+weight 52 : 90.0
+weight 53 : 4.0
+weight 94 : 73.0
+weight 95 : 231.0
+weight 96 : 44.0
+weight 97 : 295.0
+weight 98 : 434.0
+ortalama : 16
+generation: 1
+individual:  1 position solved: 17
+individual:  2 position solved: 17
+individual:  3 position solved: 17
+individual:  4 position solved: 17
+individual:  5 position solved: 17
+individual:  6 position solved: 14
+individual:  7 position solved: 14
+individual:  8 position solved: 15
+individual:  9 position solved: 17
+individual:  10 position solved: 17
+no recent improvement
+weight 1 : -1.0
+weight 2 : 7.0
+weight 10 : 1.0
+weight 20 : 7.0
+weight 21 : 4.0
+weight 22 : 51.0
+weight 41 : -4.0
+weight 42 : 6.0
+weight 43 : 72.0
+weight 45 : 13.0
+weight 50 : 30.0
+weight 51 : 7.0
+weight 52 : 90.0
+weight 53 : 4.0
+weight 94 : 73.0
+weight 95 : 231.0
+weight 96 : 44.0
+weight 97 : 295.0
+weight 98 : 434.0
+weight 1 : -1.0
+weight 2 : 7.0
+weight 10 : 1.0
+weight 20 : 7.0
+weight 21 : 4.0
+weight 22 : 51.0
+weight 41 : -4.0
+weight 42 : 6.0
+weight 43 : 72.0
+weight 45 : 13.0
+weight 50 : 30.0
+weight 51 : 7.0
+weight 52 : 90.0
+weight 53 : 4.0
+weight 94 : 73.0
+weight 95 : 231.0
+weight 96 : 44.0
+weight 97 : 295.0
+weight 98 : 434.0
+ortalama : 16
+generation: 1
+individual:  1 position solved: 17
+individual:  2 position solved: 17
+individual:  3 position solved: 15
+individual:  4 position solved: 17
+individual:  5 position solved: 17
+individual:  6 position solved: 12
+individual:  7 position solved: 17
+individual:  8 position solved: 17
+individual:  9 position solved: 18
+individual:  10 position solved: 17
+no recent improvement
+weight 1 : -1.0
+weight 2 : 7.0
+weight 10 : 1.0
+weight 20 : 7.0
+weight 21 : 4.0
+weight 22 : 51.0
+weight 41 : -4.0
+weight 42 : 6.0
+weight 43 : 72.0
+weight 45 : 13.0
+weight 50 : 30.0
+weight 51 : 7.0
+weight 52 : 90.0
+weight 53 : 4.0
+weight 94 : 73.0
+weight 95 : 231.0
+weight 96 : 44.0
+weight 97 : 295.0
+weight 98 : 434.0
+weight 1 : -1.0
+weight 2 : 7.0
+weight 10 : 1.0
+weight 20 : 7.0
+weight 21 : 4.0
+weight 22 : 51.0
+weight 41 : -4.0
+weight 42 : 6.0
+weight 43 : 72.0
+weight 45 : 13.0
+weight 50 : 30.0
+weight 51 : 7.0
+weight 52 : 90.0
+weight 53 : 4.0
+weight 94 : 73.0
+weight 95 : 231.0
+weight 96 : 44.0
+weight 97 : 295.0
+weight 98 : 434.0
+ortalama : 16
+generation: 1
+individual:  1 position solved: 17
+individual:  2 position solved: 16
+individual:  3 position solved: 17
+individual:  4 position solved: 16
+individual:  5 position solved: 17
+individual:  6 position solved: 17
+individual:  7 position solved: 17
+individual:  8 position solved: 17
+individual:  9 position solved: 12
+individual:  10 position solved: 16
+no recent improvement
+weight 1 : -1.0
+weight 2 : 7.0
+weight 10 : 1.0
+weight 20 : 7.0
+weight 21 : 4.0
+weight 22 : 51.0
+weight 41 : -4.0
+weight 42 : 6.0
+weight 43 : 72.0
+weight 45 : 13.0
+weight 50 : 30.0
+weight 51 : 7.0
+weight 52 : 90.0
+weight 53 : 4.0
+weight 94 : 73.0
+weight 95 : 231.0
+weight 96 : 44.0
+weight 97 : 295.0
+weight 98 : 434.0
+weight 1 : -1.0
+weight 2 : 7.0
+weight 10 : 1.0
+weight 20 : 7.0
+weight 21 : 4.0
+weight 22 : 51.0
+weight 41 : -4.0
+weight 42 : 6.0
+weight 43 : 72.0
+weight 45 : 13.0
+weight 50 : 30.0
+weight 51 : 7.0
+weight 52 : 90.0
+weight 53 : 4.0
+weight 94 : 73.0
+weight 95 : 231.0
+weight 96 : 44.0
+weight 97 : 295.0
+weight 98 : 434.0
+ortalama : 16
+generation: 1
+individual:  1 position solved: 17
+individual:  2 position solved: 17
+individual:  3 position solved: 17
+individual:  4 position solved: 17
+individual:  5 position solved: 17
+individual:  6 position solved: 17
+individual:  7 position solved: 16
+individual:  8 position solved: 17
+individual:  9 position solved: 18
+individual:  10 position solved: 15
+no recent improvement
+weight 1 : -1.0
+weight 2 : 7.0
+weight 10 : 1.0
+weight 20 : 7.0
+weight 21 : 4.0
+weight 22 : 51.0
+weight 41 : -4.0
+weight 42 : 6.0
+weight 43 : 72.0
+weight 45 : 13.0
+weight 50 : 30.0
+weight 51 : 7.0
+weight 52 : 90.0
+weight 53 : 4.0
+weight 94 : 73.0
+weight 95 : 231.0
+weight 96 : 44.0
+weight 97 : 295.0
+weight 98 : 434.0
+weight 1 : -1.0
+weight 2 : 7.0
+weight 10 : 1.0
+weight 20 : 7.0
+weight 21 : 4.0
+weight 22 : 51.0
+weight 41 : -4.0
+weight 42 : 6.0
+weight 43 : 72.0
+weight 45 : 13.0
+weight 50 : 30.0
+weight 51 : 7.0
+weight 52 : 90.0
+weight 53 : 4.0
+weight 94 : 73.0
+weight 95 : 231.0
+weight 96 : 44.0
+weight 97 : 295.0
+weight 98 : 434.0
+ortalama : 16
+generation: 1
+individual:  1 position solved: 17
+individual:  2 position solved: 18
+individual:  3 position solved: 17
+individual:  4 position solved: 17
+individual:  5 position solved: 17
+individual:  6 position solved: 17
+individual:  7 position solved: 17
+individual:  8 position solved: 17
+individual:  9 position solved: 15
+individual:  10 position solved: 16
+no recent improvement
+weight 1 : -1.0
+weight 2 : 7.0
+weight 10 : 1.0
+weight 20 : 7.0
+weight 21 : 4.0
+weight 22 : 51.0
+weight 41 : -4.0
+weight 42 : 6.0
+weight 43 : 72.0
+weight 45 : 13.0
+weight 50 : 30.0
+weight 51 : 7.0
+weight 52 : 90.0
+weight 53 : 4.0
+weight 94 : 73.0
+weight 95 : 231.0
+weight 96 : 44.0
+weight 97 : 295.0
+weight 98 : 434.0
+weight 1 : -1.0
+weight 2 : 7.0
+weight 10 : 1.0
+weight 20 : 7.0
+weight 21 : 4.0
+weight 22 : 51.0
+weight 41 : -4.0
+weight 42 : 6.0
+weight 43 : 72.0
+weight 45 : 13.0
+weight 50 : 30.0
+weight 51 : 7.0
+weight 52 : 90.0
+weight 53 : 4.0
+weight 94 : 73.0
+weight 95 : 231.0
+weight 96 : 44.0
+weight 97 : 295.0
+weight 98 : 434.0
+ortalama : 16
+generation: 1
+individual:  1 position solved: 17
+individual:  2 position solved: 17
+individual:  3 position solved: 17
+individual:  4 position solved: 12
+individual:  5 position solved: 17
+individual:  6 position solved: 15
+individual:  7 position solved: 17
+individual:  8 position solved: 17
+individual:  9 position solved: 17
+individual:  10 position solved: 17
+no recent improvement
+weight 1 : -1.0
+weight 2 : 7.0
+weight 10 : 1.0
+weight 20 : 7.0
+weight 21 : 4.0
+weight 22 : 51.0
+weight 41 : -4.0
+weight 42 : 6.0
+weight 43 : 72.0
+weight 45 : 13.0
+weight 50 : 30.0
+weight 51 : 7.0
+weight 52 : 90.0
+weight 53 : 4.0
+weight 94 : 73.0
+weight 95 : 231.0
+weight 96 : 44.0
+weight 97 : 295.0
+weight 98 : 434.0
+weight 1 : -1.0
+weight 2 : 7.0
+weight 10 : 1.0
+weight 20 : 7.0
+weight 21 : 4.0
+weight 22 : 51.0
+weight 41 : -4.0
+weight 42 : 6.0
+weight 43 : 72.0
+weight 45 : 13.0
+weight 50 : 30.0
+weight 51 : 7.0
+weight 52 : 90.0
+weight 53 : 4.0
+weight 94 : 73.0
+weight 95 : 231.0
+weight 96 : 44.0
+weight 97 : 295.0
+weight 98 : 434.0
+ortalama : 16
+generation: 1
+individual:  1 position solved: 15
+individual:  2 position solved: 15
+individual:  3 position solved: 11
+individual:  4 position solved: 14
+individual:  5 position solved: 17
+individual:  6 position solved: 15
+individual:  7 position solved: 11
+individual:  8 position solved: 15
+individual:  9 position solved: 14
+individual:  10 position solved: 14
+no recent improvement
+weight 1 : -1.0
+weight 2 : 7.0
+weight 10 : 1.0
+weight 20 : 7.0
+weight 21 : 4.0
+weight 22 : 51.0
+weight 41 : -4.0
+weight 42 : 6.0
+weight 43 : 72.0
+weight 45 : 13.0
+weight 50 : 30.0
+weight 51 : 7.0
+weight 52 : 90.0
+weight 53 : 4.0
+weight 94 : 73.0
+weight 95 : 231.0
+weight 96 : 44.0
+weight 97 : 295.0
+weight 98 : 434.0
+weight 1 : -1.0
+weight 2 : 7.0
+weight 10 : 1.0
+weight 20 : 7.0
+weight 21 : 4.0
+weight 22 : 51.0
+weight 41 : -4.0
+weight 42 : 6.0
+weight 43 : 72.0
+weight 45 : 13.0
+weight 50 : 30.0
+weight 51 : 7.0
+weight 52 : 90.0
+weight 53 : 4.0
+weight 94 : 73.0
+weight 95 : 231.0
+weight 96 : 44.0
+weight 97 : 295.0
+weight 98 : 434.0
+ortalama : 16
+generation: 1
+individual:  1 position solved: 16
+individual:  2 position solved: 16
+individual:  3 position solved: 17
+individual:  4 position solved: 17
+individual:  5 position solved: 17
+individual:  6 position solved: 17
+individual:  7 position solved: 17
+individual:  8 position solved: 16
+individual:  9 position solved: 17
+individual:  10 position solved: 17
+no recent improvement
+weight 1 : -1.0
+weight 2 : 7.0
+weight 10 : 1.0
+weight 20 : 7.0
+weight 21 : 4.0
+weight 22 : 51.0
+weight 41 : -4.0
+weight 42 : 6.0
+weight 43 : 72.0
+weight 45 : 13.0
+weight 50 : 30.0
+weight 51 : 7.0
+weight 52 : 90.0
+weight 53 : 4.0
+weight 94 : 73.0
+weight 95 : 231.0
+weight 96 : 44.0
+weight 97 : 295.0
+weight 98 : 434.0
+weight 1 : -1.0
+weight 2 : 7.0
+weight 10 : 1.0
+weight 20 : 7.0
+weight 21 : 4.0
+weight 22 : 51.0
+weight 41 : -4.0
+weight 42 : 6.0
+weight 43 : 72.0
+weight 45 : 13.0
+weight 50 : 30.0
+weight 51 : 7.0
+weight 52 : 90.0
+weight 53 : 4.0
+weight 94 : 73.0
+weight 95 : 231.0
+weight 96 : 44.0
+weight 97 : 295.0
+weight 98 : 434.0
+ortalama : 16
+generation: 1
+individual:  1 position solved: 17
+individual:  2 position solved: 18
+individual:  3 position solved: 17
+individual:  4 position solved: 17
+individual:  5 position solved: 17
+individual:  6 position solved: 17
+individual:  7 position solved: 17
+individual:  8 position solved: 16
+individual:  9 position solved: 15
+individual:  10 position solved: 17
+no recent improvement
+weight 1 : -1.0
+weight 2 : 7.0
+weight 10 : 1.0
+weight 20 : 7.0
+weight 21 : 4.0
+weight 22 : 51.0
+weight 41 : -4.0
+weight 42 : 6.0
+weight 43 : 72.0
+weight 45 : 13.0
+weight 50 : 30.0
+weight 51 : 7.0
+weight 52 : 90.0
+weight 53 : 4.0
+weight 94 : 73.0
+weight 95 : 231.0
+weight 96 : 44.0
+weight 97 : 295.0
+weight 98 : 434.0
+weight 1 : -1.0
+weight 2 : 7.0
+weight 10 : 1.0
+weight 20 : 7.0
+weight 21 : 4.0
+weight 22 : 51.0
+weight 41 : -4.0
+weight 42 : 6.0
+weight 43 : 72.0
+weight 45 : 13.0
+weight 50 : 30.0
+weight 51 : 7.0
+weight 52 : 90.0
+weight 53 : 4.0
+weight 94 : 73.0
+weight 95 : 231.0
+weight 96 : 44.0
+weight 97 : 295.0
+weight 98 : 434.0
+ortalama : 16
+generation: 1
+individual:  1 position solved: 17
+individual:  2 position solved: 15
+individual:  3 position solved: 17
+individual:  4 position solved: 15
+individual:  5 position solved: 17
+individual:  6 position solved: 17
+individual:  7 position solved: 17
+individual:  8 position solved: 17
+individual:  9 position solved: 17
+individual:  10 position solved: 17
+no recent improvement
+weight 1 : -1.0
+weight 2 : 7.0
+weight 10 : 1.0
+weight 20 : 7.0
+weight 21 : 4.0
+weight 22 : 51.0
+weight 41 : -4.0
+weight 42 : 6.0
+weight 43 : 72.0
+weight 45 : 13.0
+weight 50 : 30.0
+weight 51 : 7.0
+weight 52 : 90.0
+weight 53 : 4.0
+weight 94 : 73.0
+weight 95 : 231.0
+weight 96 : 44.0
+weight 97 : 295.0
+weight 98 : 434.0
+weight 1 : -1.0
+weight 2 : 7.0
+weight 10 : 1.0
+weight 20 : 7.0
+weight 21 : 4.0
+weight 22 : 51.0
+weight 41 : -4.0
+weight 42 : 6.0
+weight 43 : 72.0
+weight 45 : 13.0
+weight 50 : 30.0
+weight 51 : 7.0
+weight 52 : 90.0
+weight 53 : 4.0
+weight 94 : 73.0
+weight 95 : 231.0
+weight 96 : 44.0
+weight 97 : 295.0
+weight 98 : 434.0
+ortalama : 16
+generation: 1
+individual:  1 position solved: 15
+individual:  2 position solved: 17
+individual:  3 position solved: 17
+individual:  4 position solved: 17
+individual:  5 position solved: 11
+individual:  6 position solved: 15
+individual:  7 position solved: 17
+individual:  8 position solved: 17
+individual:  9 position solved: 17
+individual:  10 position solved: 17
+no recent improvement
+weight 1 : -1.0
+weight 2 : 7.0
+weight 10 : 1.0
+weight 20 : 7.0
+weight 21 : 4.0
+weight 22 : 51.0
+weight 41 : -4.0
+weight 42 : 6.0
+weight 43 : 72.0
+weight 45 : 13.0
+weight 50 : 30.0
+weight 51 : 7.0
+weight 52 : 90.0
+weight 53 : 4.0
+weight 94 : 73.0
+weight 95 : 231.0
+weight 96 : 44.0
+weight 97 : 295.0
+weight 98 : 434.0
+weight 1 : -1.0
+weight 2 : 7.0
+weight 10 : 1.0
+weight 20 : 7.0
+weight 21 : 4.0
+weight 22 : 51.0
+weight 41 : -4.0
+weight 42 : 6.0
+weight 43 : 72.0
+weight 45 : 13.0
+weight 50 : 30.0
+weight 51 : 7.0
+weight 52 : 90.0
+weight 53 : 4.0
+weight 94 : 73.0
+weight 95 : 231.0
+weight 96 : 44.0
+weight 97 : 295.0
+weight 98 : 434.0
+ortalama : 16
+generation: 1
+individual:  1 position solved: 17
+individual:  2 position solved: 15
+individual:  3 position solved: 17
+individual:  4 position solved: 15
+individual:  5 position solved: 17
+individual:  6 position solved: 11
+individual:  7 position solved: 12
+individual:  8 position solved: 17
+individual:  9 position solved: 15
+individual:  10 position solved: 17
+no recent improvement
+weight 1 : -1.0
+weight 2 : 7.0
+weight 10 : 1.0
+weight 20 : 7.0
+weight 21 : 4.0
+weight 22 : 51.0
+weight 41 : -4.0
+weight 42 : 6.0
+weight 43 : 72.0
+weight 45 : 13.0
+weight 50 : 30.0
+weight 51 : 7.0
+weight 52 : 90.0
+weight 53 : 4.0
+weight 94 : 73.0
+weight 95 : 231.0
+weight 96 : 44.0
+weight 97 : 295.0
+weight 98 : 434.0
+weight 1 : -1.0
+weight 2 : 7.0
+weight 10 : 1.0
+weight 20 : 7.0
+weight 21 : 4.0
+weight 22 : 51.0
+weight 41 : -4.0
+weight 42 : 6.0
+weight 43 : 72.0
+weight 45 : 13.0
+weight 50 : 30.0
+weight 51 : 7.0
+weight 52 : 90.0
+weight 53 : 4.0
+weight 94 : 73.0
+weight 95 : 231.0
+weight 96 : 44.0
+weight 97 : 295.0
+weight 98 : 434.0
+ortalama : 16
+generation: 1
+individual:  1 position solved: 17
+individual:  2 position solved: 15
+individual:  3 position solved: 17
+individual:  4 position solved: 15
+individual:  5 position solved: 17
+individual:  6 position solved: 15
+individual:  7 position solved: 15
+individual:  8 position solved: 17
+individual:  9 position solved: 17
+individual:  10 position solved: 17
+no recent improvement
+weight 1 : -1.0
+weight 2 : 7.0
+weight 10 : 1.0
+weight 20 : 7.0
+weight 21 : 4.0
+weight 22 : 51.0
+weight 41 : -4.0
+weight 42 : 6.0
+weight 43 : 72.0
+weight 45 : 13.0
+weight 50 : 30.0
+weight 51 : 7.0
+weight 52 : 90.0
+weight 53 : 4.0
+weight 94 : 73.0
+weight 95 : 231.0
+weight 96 : 44.0
+weight 97 : 295.0
+weight 98 : 434.0
+weight 1 : -1.0
+weight 2 : 7.0
+weight 10 : 1.0
+weight 20 : 7.0
+weight 21 : 4.0
+weight 22 : 51.0
+weight 41 : -4.0
+weight 42 : 6.0
+weight 43 : 72.0
+weight 45 : 13.0
+weight 50 : 30.0
+weight 51 : 7.0
+weight 52 : 90.0
+weight 53 : 4.0
+weight 94 : 73.0
+weight 95 : 231.0
+weight 96 : 44.0
+weight 97 : 295.0
+weight 98 : 434.0
+ortalama : 16
+generation: 1
+individual:  1 position solved: 17
+individual:  2 position solved: 17
+individual:  3 position solved: 14
+individual:  4 position solved: 17
+individual:  5 position solved: 17
+individual:  6 position solved: 16
+individual:  7 position solved: 17
+individual:  8 position solved: 17
+individual:  9 position solved: 17
+individual:  10 position solved: 17
+no recent improvement
+weight 1 : -1.0
+weight 2 : 7.0
+weight 10 : 1.0
+weight 20 : 7.0
+weight 21 : 4.0
+weight 22 : 51.0
+weight 41 : -4.0
+weight 42 : 6.0
+weight 43 : 72.0
+weight 45 : 13.0
+weight 50 : 30.0
+weight 51 : 7.0
+weight 52 : 90.0
+weight 53 : 4.0
+weight 94 : 73.0
+weight 95 : 231.0
+weight 96 : 44.0
+weight 97 : 295.0
+weight 98 : 434.0
+weight 1 : -1.0
+weight 2 : 7.0
+weight 10 : 1.0
+weight 20 : 7.0
+weight 21 : 4.0
+weight 22 : 51.0
+weight 41 : -4.0
+weight 42 : 6.0
+weight 43 : 72.0
+weight 45 : 13.0
+weight 50 : 30.0
+weight 51 : 7.0
+weight 52 : 90.0
+weight 53 : 4.0
+weight 94 : 73.0
+weight 95 : 231.0
+weight 96 : 44.0
+weight 97 : 295.0
+weight 98 : 434.0
+ortalama : 16
+generation: 1
+individual:  1 position solved: 18
+individual:  2 position solved: 17
+individual:  3 position solved: 13
+individual:  4 position solved: 17
+individual:  5 position solved: 17
+individual:  6 position solved: 17
+individual:  7 position solved: 17
+individual:  8 position solved: 17
+individual:  9 position solved: 17
+individual:  10 position solved: 11
+no recent improvement
+weight 1 : -1.0
+weight 2 : 7.0
+weight 10 : 1.0
+weight 20 : 7.0
+weight 21 : 4.0
+weight 22 : 51.0
+weight 41 : -4.0
+weight 42 : 6.0
+weight 43 : 72.0
+weight 45 : 13.0
+weight 50 : 30.0
+weight 51 : 7.0
+weight 52 : 90.0
+weight 53 : 4.0
+weight 94 : 73.0
+weight 95 : 231.0
+weight 96 : 44.0
+weight 97 : 295.0
+weight 98 : 434.0
+weight 1 : -1.0
+weight 2 : 7.0
+weight 10 : 1.0
+weight 20 : 7.0
+weight 21 : 4.0
+weight 22 : 51.0
+weight 41 : -4.0
+weight 42 : 6.0
+weight 43 : 72.0
+weight 45 : 13.0
+weight 50 : 30.0
+weight 51 : 7.0
+weight 52 : 90.0
+weight 53 : 4.0
+weight 94 : 73.0
+weight 95 : 231.0
+weight 96 : 44.0
+weight 97 : 295.0
+weight 98 : 434.0
+ortalama : 16
+generation: 1
+individual:  1 position solved: 17
+individual:  2 position solved: 17
+individual:  3 position solved: 12
+individual:  4 position solved: 17
+individual:  5 position solved: 17
+individual:  6 position solved: 17
+individual:  7 position solved: 17
+individual:  8 position solved: 17
+individual:  9 position solved: 11
+individual:  10 position solved: 15
+no recent improvement
+weight 1 : -1.0
+weight 2 : 7.0
+weight 10 : 1.0
+weight 20 : 7.0
+weight 21 : 4.0
+weight 22 : 51.0
+weight 41 : -4.0
+weight 42 : 6.0
+weight 43 : 72.0
+weight 45 : 13.0
+weight 50 : 30.0
+weight 51 : 7.0
+weight 52 : 90.0
+weight 53 : 4.0
+weight 94 : 73.0
+weight 95 : 231.0
+weight 96 : 44.0
+weight 97 : 295.0
+weight 98 : 434.0
+weight 1 : -1.0
+weight 2 : 7.0
+weight 10 : 1.0
+weight 20 : 7.0
+weight 21 : 4.0
+weight 22 : 51.0
+weight 41 : -4.0
+weight 42 : 6.0
+weight 43 : 72.0
+weight 45 : 13.0
+weight 50 : 30.0
+weight 51 : 7.0
+weight 52 : 90.0
+weight 53 : 4.0
+weight 94 : 73.0
+weight 95 : 231.0
+weight 96 : 44.0
+weight 97 : 295.0
+weight 98 : 434.0
+ortalama : 16
+generation: 1
+individual:  1 position solved: 17
+individual:  2 position solved: 15
+individual:  3 position solved: 12
+individual:  4 position solved: 15
+individual:  5 position solved: 17
+individual:  6 position solved: 12
+individual:  7 position solved: 12
+individual:  8 position solved: 17
+individual:  9 position solved: 16
+individual:  10 position solved: 17
+no recent improvement
+weight 1 : -1.0
+weight 2 : 7.0
+weight 10 : 1.0
+weight 20 : 7.0
+weight 21 : 4.0
+weight 22 : 51.0
+weight 41 : -4.0
+weight 42 : 6.0
+weight 43 : 72.0
+weight 45 : 13.0
+weight 50 : 30.0
+weight 51 : 7.0
+weight 52 : 90.0
+weight 53 : 4.0
+weight 94 : 73.0
+weight 95 : 231.0
+weight 96 : 44.0
+weight 97 : 295.0
+weight 98 : 434.0
+weight 1 : -1.0
+weight 2 : 7.0
+weight 10 : 1.0
+weight 20 : 7.0
+weight 21 : 4.0
+weight 22 : 51.0
+weight 41 : -4.0
+weight 42 : 6.0
+weight 43 : 72.0
+weight 45 : 13.0
+weight 50 : 30.0
+weight 51 : 7.0
+weight 52 : 90.0
+weight 53 : 4.0
+weight 94 : 73.0
+weight 95 : 231.0
+weight 96 : 44.0
+weight 97 : 295.0
+weight 98 : 434.0
+ortalama : 16
+generation: 1
+individual:  1 position solved: 17
+individual:  2 position solved: 17
+individual:  3 position solved: 17
+individual:  4 position solved: 12
+individual:  5 position solved: 17
+individual:  6 position solved: 17
+individual:  7 position solved: 17
+individual:  8 position solved: 17
+individual:  9 position solved: 17
+individual:  10 position solved: 17
+no recent improvement
+weight 1 : -1.0
+weight 2 : 7.0
+weight 10 : 1.0
+weight 20 : 7.0
+weight 21 : 4.0
+weight 22 : 51.0
+weight 41 : -4.0
+weight 42 : 6.0
+weight 43 : 72.0
+weight 45 : 13.0
+weight 50 : 30.0
+weight 51 : 7.0
+weight 52 : 90.0
+weight 53 : 4.0
+weight 94 : 73.0
+weight 95 : 231.0
+weight 96 : 44.0
+weight 97 : 295.0
+weight 98 : 434.0
+weight 1 : -1.0
+weight 2 : 7.0
+weight 10 : 1.0
+weight 20 : 7.0
+weight 21 : 4.0
+weight 22 : 51.0
+weight 41 : -4.0
+weight 42 : 6.0
+weight 43 : 72.0
+weight 45 : 13.0
+weight 50 : 30.0
+weight 51 : 7.0
+weight 52 : 90.0
+weight 53 : 4.0
+weight 94 : 73.0
+weight 95 : 231.0
+weight 96 : 44.0
+weight 97 : 295.0
+weight 98 : 434.0
+ortalama : 16
+generation: 1
+individual:  1 position solved: 17
+individual:  2 position solved: 16
+individual:  3 position solved: 17
+individual:  4 position solved: 16
+individual:  5 position solved: 17
+individual:  6 position solved: 17
+individual:  7 position solved: 17
+individual:  8 position solved: 17
+individual:  9 position solved: 15
+individual:  10 position solved: 17
+no recent improvement
+weight 1 : -1.0
+weight 2 : 7.0
+weight 10 : 1.0
+weight 20 : 7.0
+weight 21 : 4.0
+weight 22 : 51.0
+weight 41 : -4.0
+weight 42 : 6.0
+weight 43 : 72.0
+weight 45 : 13.0
+weight 50 : 30.0
+weight 51 : 7.0
+weight 52 : 90.0
+weight 53 : 4.0
+weight 94 : 73.0
+weight 95 : 231.0
+weight 96 : 44.0
+weight 97 : 295.0
+weight 98 : 434.0
+weight 1 : -1.0
+weight 2 : 7.0
+weight 10 : 1.0
+weight 20 : 7.0
+weight 21 : 4.0
+weight 22 : 51.0
+weight 41 : -4.0
+weight 42 : 6.0
+weight 43 : 72.0
+weight 45 : 13.0
+weight 50 : 30.0
+weight 51 : 7.0
+weight 52 : 90.0
+weight 53 : 4.0
+weight 94 : 73.0
+weight 95 : 231.0
+weight 96 : 44.0
+weight 97 : 295.0
+weight 98 : 434.0
+ortalama : 16
+generation: 1
+individual:  1 position solved: 17
+individual:  2 position solved: 16
+individual:  3 position solved: 12
+individual:  4 position solved: 12
+individual:  5 position solved: 16
+individual:  6 position solved: 17
+individual:  7 position solved: 17
+individual:  8 position solved: 17
+individual:  9 position solved: 17
+individual:  10 position solved: 17
+no recent improvement
+weight 1 : -1.0
+weight 2 : 7.0
+weight 10 : 1.0
+weight 20 : 7.0
+weight 21 : 4.0
+weight 22 : 51.0
+weight 41 : -4.0
+weight 42 : 6.0
+weight 43 : 72.0
+weight 45 : 13.0
+weight 50 : 30.0
+weight 51 : 7.0
+weight 52 : 90.0
+weight 53 : 4.0
+weight 94 : 73.0
+weight 95 : 231.0
+weight 96 : 44.0
+weight 97 : 295.0
+weight 98 : 434.0
+weight 1 : -1.0
+weight 2 : 7.0
+weight 10 : 1.0
+weight 20 : 7.0
+weight 21 : 4.0
+weight 22 : 51.0
+weight 41 : -4.0
+weight 42 : 6.0
+weight 43 : 72.0
+weight 45 : 13.0
+weight 50 : 30.0
+weight 51 : 7.0
+weight 52 : 90.0
+weight 53 : 4.0
+weight 94 : 73.0
+weight 95 : 231.0
+weight 96 : 44.0
+weight 97 : 295.0
+weight 98 : 434.0
+ortalama : 16
+generation: 1
+individual:  1 position solved: 17
+individual:  2 position solved: 17
+individual:  3 position solved: 18
+individual:  4 position solved: 17
+individual:  5 position solved: 17
+individual:  6 position solved: 17
+individual:  7 position solved: 17
+individual:  8 position solved: 17
+individual:  9 position solved: 11
+individual:  10 position solved: 17
+no recent improvement
+weight 1 : -1.0
+weight 2 : 7.0
+weight 10 : 1.0
+weight 20 : 7.0
+weight 21 : 4.0
+weight 22 : 51.0
+weight 41 : -4.0
+weight 42 : 6.0
+weight 43 : 72.0
+weight 45 : 13.0
+weight 50 : 30.0
+weight 51 : 7.0
+weight 52 : 90.0
+weight 53 : 4.0
+weight 94 : 73.0
+weight 95 : 231.0
+weight 96 : 44.0
+weight 97 : 295.0
+weight 98 : 434.0
+weight 1 : -1.0
+weight 2 : 7.0
+weight 10 : 1.0
+weight 20 : 7.0
+weight 21 : 4.0
+weight 22 : 51.0
+weight 41 : -4.0
+weight 42 : 6.0
+weight 43 : 72.0
+weight 45 : 13.0
+weight 50 : 30.0
+weight 51 : 7.0
+weight 52 : 90.0
+weight 53 : 4.0
+weight 94 : 73.0
+weight 95 : 231.0
+weight 96 : 44.0
+weight 97 : 295.0
+weight 98 : 434.0
+ortalama : 16
+generation: 1
+individual:  1 position solved: 17
+individual:  2 position solved: 17
+individual:  3 position solved: 17
+individual:  4 position solved: 17
+individual:  5 position solved: 17
+individual:  6 position solved: 16
+individual:  7 position solved: 16
+individual:  8 position solved: 16
+individual:  9 position solved: 17
+individual:  10 position solved: 17
+no recent improvement
+weight 1 : -1.0
+weight 2 : 7.0
+weight 10 : 1.0
+weight 20 : 7.0
+weight 21 : 4.0
+weight 22 : 51.0
+weight 41 : -4.0
+weight 42 : 6.0
+weight 43 : 72.0
+weight 45 : 13.0
+weight 50 : 30.0
+weight 51 : 7.0
+weight 52 : 90.0
+weight 53 : 4.0
+weight 94 : 73.0
+weight 95 : 231.0
+weight 96 : 44.0
+weight 97 : 295.0
+weight 98 : 434.0
+weight 1 : -1.0
+weight 2 : 7.0
+weight 10 : 1.0
+weight 20 : 7.0
+weight 21 : 4.0
+weight 22 : 51.0
+weight 41 : -4.0
+weight 42 : 6.0
+weight 43 : 72.0
+weight 45 : 13.0
+weight 50 : 30.0
+weight 51 : 7.0
+weight 52 : 90.0
+weight 53 : 4.0
+weight 94 : 73.0
+weight 95 : 231.0
+weight 96 : 44.0
+weight 97 : 295.0
+weight 98 : 434.0
+ortalama : 16
+generation: 1
+individual:  1 position solved: 14
+individual:  2 position solved: 16
+individual:  3 position solved: 14
+individual:  4 position solved: 16
+individual:  5 position solved: 15
+individual:  6 position solved: 17
+individual:  7 position solved: 16
+individual:  8 position solved: 17
+individual:  9 position solved: 17
+individual:  10 position solved: 17
+no recent improvement
+weight 1 : -1.0
+weight 2 : 7.0
+weight 10 : 1.0
+weight 20 : 7.0
+weight 21 : 4.0
+weight 22 : 51.0
+weight 41 : -4.0
+weight 42 : 6.0
+weight 43 : 72.0
+weight 45 : 13.0
+weight 50 : 30.0
+weight 51 : 7.0
+weight 52 : 90.0
+weight 53 : 4.0
+weight 94 : 73.0
+weight 95 : 231.0
+weight 96 : 44.0
+weight 97 : 295.0
+weight 98 : 434.0
+weight 1 : -1.0
+weight 2 : 7.0
+weight 10 : 1.0
+weight 20 : 7.0
+weight 21 : 4.0
+weight 22 : 51.0
+weight 41 : -4.0
+weight 42 : 6.0
+weight 43 : 72.0
+weight 45 : 13.0
+weight 50 : 30.0
+weight 51 : 7.0
+weight 52 : 90.0
+weight 53 : 4.0
+weight 94 : 73.0
+weight 95 : 231.0
+weight 96 : 44.0
+weight 97 : 295.0
+weight 98 : 434.0
+ortalama : 16
+generation: 1
+individual:  1 position solved: 17
+individual:  2 position solved: 16
+individual:  3 position solved: 17
+individual:  4 position solved: 12
+individual:  5 position solved: 17
+individual:  6 position solved: 17
+individual:  7 position solved: 17
+individual:  8 position solved: 17
+individual:  9 position solved: 17
+individual:  10 position solved: 16
+no recent improvement
+weight 1 : -1.0
+weight 2 : 7.0
+weight 10 : 1.0
+weight 20 : 7.0
+weight 21 : 4.0
+weight 22 : 51.0
+weight 41 : -4.0
+weight 42 : 6.0
+weight 43 : 72.0
+weight 45 : 13.0
+weight 50 : 30.0
+weight 51 : 7.0
+weight 52 : 90.0
+weight 53 : 4.0
+weight 94 : 73.0
+weight 95 : 231.0
+weight 96 : 44.0
+weight 97 : 295.0
+weight 98 : 434.0
+weight 1 : -1.0
+weight 2 : 7.0
+weight 10 : 1.0
+weight 20 : 7.0
+weight 21 : 4.0
+weight 22 : 51.0
+weight 41 : -4.0
+weight 42 : 6.0
+weight 43 : 72.0
+weight 45 : 13.0
+weight 50 : 30.0
+weight 51 : 7.0
+weight 52 : 90.0
+weight 53 : 4.0
+weight 94 : 73.0
+weight 95 : 231.0
+weight 96 : 44.0
+weight 97 : 295.0
+weight 98 : 434.0
+ortalama : 16
+generation: 1
+individual:  1 position solved: 16
+individual:  2 position solved: 17
+individual:  3 position solved: 12
+individual:  4 position solved: 17
+individual:  5 position solved: 11
+individual:  6 position solved: 16
+individual:  7 position solved: 11
+individual:  8 position solved: 17
+individual:  9 position solved: 11
+individual:  10 position solved: 17
+no recent improvement
+weight 1 : -1.0
+weight 2 : 7.0
+weight 10 : 1.0
+weight 20 : 7.0
+weight 21 : 4.0
+weight 22 : 51.0
+weight 41 : -4.0
+weight 42 : 6.0
+weight 43 : 72.0
+weight 45 : 13.0
+weight 50 : 30.0
+weight 51 : 7.0
+weight 52 : 90.0
+weight 53 : 4.0
+weight 94 : 73.0
+weight 95 : 231.0
+weight 96 : 44.0
+weight 97 : 295.0
+weight 98 : 434.0
+weight 1 : -1.0
+weight 2 : 7.0
+weight 10 : 1.0
+weight 20 : 7.0
+weight 21 : 4.0
+weight 22 : 51.0
+weight 41 : -4.0
+weight 42 : 6.0
+weight 43 : 72.0
+weight 45 : 13.0
+weight 50 : 30.0
+weight 51 : 7.0
+weight 52 : 90.0
+weight 53 : 4.0
+weight 94 : 73.0
+weight 95 : 231.0
+weight 96 : 44.0
+weight 97 : 295.0
+weight 98 : 434.0
+ortalama : 16
+generation: 1
+individual:  1 position solved: 16
+individual:  2 position solved: 17
+individual:  3 position solved: 17
+individual:  4 position solved: 12
+individual:  5 position solved: 17
+individual:  6 position solved: 14
+individual:  7 position solved: 16
+individual:  8 position solved: 17
+individual:  9 position solved: 17
+individual:  10 position solved: 17
+no recent improvement
+weight 1 : -1.0
+weight 2 : 7.0
+weight 10 : 1.0
+weight 20 : 7.0
+weight 21 : 4.0
+weight 22 : 51.0
+weight 41 : -4.0
+weight 42 : 6.0
+weight 43 : 72.0
+weight 45 : 13.0
+weight 50 : 30.0
+weight 51 : 7.0
+weight 52 : 90.0
+weight 53 : 4.0
+weight 94 : 73.0
+weight 95 : 231.0
+weight 96 : 44.0
+weight 97 : 295.0
+weight 98 : 434.0
+weight 1 : -1.0
+weight 2 : 7.0
+weight 10 : 1.0
+weight 20 : 7.0
+weight 21 : 4.0
+weight 22 : 51.0
+weight 41 : -4.0
+weight 42 : 6.0
+weight 43 : 72.0
+weight 45 : 13.0
+weight 50 : 30.0
+weight 51 : 7.0
+weight 52 : 90.0
+weight 53 : 4.0
+weight 94 : 73.0
+weight 95 : 231.0
+weight 96 : 44.0
+weight 97 : 295.0
+weight 98 : 434.0
+ortalama : 16
+generation: 1
+individual:  1 position solved: 17
+individual:  2 position solved: 17
+individual:  3 position solved: 17
+individual:  4 position solved: 17
+individual:  5 position solved: 17
+individual:  6 position solved: 17
+individual:  7 position solved: 17
+individual:  8 position solved: 17
+individual:  9 position solved: 17
+individual:  10 position solved: 17
+no recent improvement
+weight 1 : -1.0
+weight 2 : 7.0
+weight 10 : 1.0
+weight 20 : 7.0
+weight 21 : 4.0
+weight 22 : 51.0
+weight 41 : -4.0
+weight 42 : 6.0
+weight 43 : 72.0
+weight 45 : 13.0
+weight 50 : 30.0
+weight 51 : 7.0
+weight 52 : 90.0
+weight 53 : 4.0
+weight 94 : 73.0
+weight 95 : 231.0
+weight 96 : 44.0
+weight 97 : 295.0
+weight 98 : 434.0
+weight 1 : -1.0
+weight 2 : 7.0
+weight 10 : 1.0
+weight 20 : 7.0
+weight 21 : 4.0
+weight 22 : 51.0
+weight 41 : -4.0
+weight 42 : 6.0
+weight 43 : 72.0
+weight 45 : 13.0
+weight 50 : 30.0
+weight 51 : 7.0
+weight 52 : 90.0
+weight 53 : 4.0
+weight 94 : 73.0
+weight 95 : 231.0
+weight 96 : 44.0
+weight 97 : 295.0
+weight 98 : 434.0
+ortalama : 16
+generation: 1
+individual:  1 position solved: 16
+individual:  2 position solved: 17
+individual:  3 position solved: 11
+individual:  4 position solved: 16
+individual:  5 position solved: 17
+individual:  6 position solved: 17
+individual:  7 position solved: 12
+individual:  8 position solved: 17
+individual:  9 position solved: 17
+individual:  10 position solved: 16
+no recent improvement
+weight 1 : -1.0
+weight 2 : 7.0
+weight 10 : 1.0
+weight 20 : 7.0
+weight 21 : 4.0
+weight 22 : 51.0
+weight 41 : -4.0
+weight 42 : 6.0
+weight 43 : 72.0
+weight 45 : 13.0
+weight 50 : 30.0
+weight 51 : 7.0
+weight 52 : 90.0
+weight 53 : 4.0
+weight 94 : 73.0
+weight 95 : 231.0
+weight 96 : 44.0
+weight 97 : 295.0
+weight 98 : 434.0
+weight 1 : -1.0
+weight 2 : 7.0
+weight 10 : 1.0
+weight 20 : 7.0
+weight 21 : 4.0
+weight 22 : 51.0
+weight 41 : -4.0
+weight 42 : 6.0
+weight 43 : 72.0
+weight 45 : 13.0
+weight 50 : 30.0
+weight 51 : 7.0
+weight 52 : 90.0
+weight 53 : 4.0
+weight 94 : 73.0
+weight 95 : 231.0
+weight 96 : 44.0
+weight 97 : 295.0
+weight 98 : 434.0
+ortalama : 16
+generation: 1
+individual:  1 position solved: 17
+individual:  2 position solved: 16
+individual:  3 position solved: 17
+individual:  4 position solved: 14
+individual:  5 position solved: 17
+individual:  6 position solved: 17
+individual:  7 position solved: 17
+individual:  8 position solved: 16
+individual:  9 position solved: 17
+individual:  10 position solved: 17
+no recent improvement
+weight 1 : -1.0
+weight 2 : 7.0
+weight 10 : 1.0
+weight 20 : 7.0
+weight 21 : 4.0
+weight 22 : 51.0
+weight 41 : -4.0
+weight 42 : 6.0
+weight 43 : 72.0
+weight 45 : 13.0
+weight 50 : 30.0
+weight 51 : 7.0
+weight 52 : 90.0
+weight 53 : 4.0
+weight 94 : 73.0
+weight 95 : 231.0
+weight 96 : 44.0
+weight 97 : 295.0
+weight 98 : 434.0
+weight 1 : -1.0
+weight 2 : 7.0
+weight 10 : 1.0
+weight 20 : 7.0
+weight 21 : 4.0
+weight 22 : 51.0
+weight 41 : -4.0
+weight 42 : 6.0
+weight 43 : 72.0
+weight 45 : 13.0
+weight 50 : 30.0
+weight 51 : 7.0
+weight 52 : 90.0
+weight 53 : 4.0
+weight 94 : 73.0
+weight 95 : 231.0
+weight 96 : 44.0
+weight 97 : 295.0
+weight 98 : 434.0
+ortalama : 16
+generation: 1
+individual:  1 position solved: 17
+individual:  2 position solved: 17
+individual:  3 position solved: 17
+individual:  4 position solved: 17
+individual:  5 position solved: 17
+individual:  6 position solved: 15
+individual:  7 position solved: 17
+individual:  8 position solved: 16
+individual:  9 position solved: 17
+individual:  10 position solved: 12
+no recent improvement
+weight 1 : -1.0
+weight 2 : 7.0
+weight 10 : 1.0
+weight 20 : 7.0
+weight 21 : 4.0
+weight 22 : 51.0
+weight 41 : -4.0
+weight 42 : 6.0
+weight 43 : 72.0
+weight 45 : 13.0
+weight 50 : 30.0
+weight 51 : 7.0
+weight 52 : 90.0
+weight 53 : 4.0
+weight 94 : 73.0
+weight 95 : 231.0
+weight 96 : 44.0
+weight 97 : 295.0
+weight 98 : 434.0
+weight 1 : -1.0
+weight 2 : 7.0
+weight 10 : 1.0
+weight 20 : 7.0
+weight 21 : 4.0
+weight 22 : 51.0
+weight 41 : -4.0
+weight 42 : 6.0
+weight 43 : 72.0
+weight 45 : 13.0
+weight 50 : 30.0
+weight 51 : 7.0
+weight 52 : 90.0
+weight 53 : 4.0
+weight 94 : 73.0
+weight 95 : 231.0
+weight 96 : 44.0
+weight 97 : 295.0
+weight 98 : 434.0
+ortalama : 16
+generation: 1
+individual:  1 position solved: 17
+individual:  2 position solved: 16
+individual:  3 position solved: 17
+individual:  4 position solved: 11
+individual:  5 position solved: 17
+individual:  6 position solved: 17
+individual:  7 position solved: 12
+individual:  8 position solved: 17
+individual:  9 position solved: 17
+individual:  10 position solved: 17
+no recent improvement
+weight 1 : -1.0
+weight 2 : 7.0
+weight 10 : 1.0
+weight 20 : 7.0
+weight 21 : 4.0
+weight 22 : 51.0
+weight 41 : -4.0
+weight 42 : 6.0
+weight 43 : 72.0
+weight 45 : 13.0
+weight 50 : 30.0
+weight 51 : 7.0
+weight 52 : 90.0
+weight 53 : 4.0
+weight 94 : 73.0
+weight 95 : 231.0
+weight 96 : 44.0
+weight 97 : 295.0
+weight 98 : 434.0
+weight 1 : -1.0
+weight 2 : 7.0
+weight 10 : 1.0
+weight 20 : 7.0
+weight 21 : 4.0
+weight 22 : 51.0
+weight 41 : -4.0
+weight 42 : 6.0
+weight 43 : 72.0
+weight 45 : 13.0
+weight 50 : 30.0
+weight 51 : 7.0
+weight 52 : 90.0
+weight 53 : 4.0
+weight 94 : 73.0
+weight 95 : 231.0
+weight 96 : 44.0
+weight 97 : 295.0
+weight 98 : 434.0
+ortalama : 16
+generation: 1
+individual:  1 position solved: 16
+individual:  2 position solved: 16
+individual:  3 position solved: 16
+individual:  4 position solved: 15
+individual:  5 position solved: 17
+individual:  6 position solved: 16
+individual:  7 position solved: 16
+individual:  8 position solved: 17
+individual:  9 position solved: 15
+individual:  10 position solved: 17
+no recent improvement
+weight 1 : -1.0
+weight 2 : 7.0
+weight 10 : 1.0
+weight 20 : 7.0
+weight 21 : 4.0
+weight 22 : 51.0
+weight 41 : -4.0
+weight 42 : 6.0
+weight 43 : 72.0
+weight 45 : 13.0
+weight 50 : 30.0
+weight 51 : 7.0
+weight 52 : 90.0
+weight 53 : 4.0
+weight 94 : 73.0
+weight 95 : 231.0
+weight 96 : 44.0
+weight 97 : 295.0
+weight 98 : 434.0
+weight 1 : -1.0
+weight 2 : 7.0
+weight 10 : 1.0
+weight 20 : 7.0
+weight 21 : 4.0
+weight 22 : 51.0
+weight 41 : -4.0
+weight 42 : 6.0
+weight 43 : 72.0
+weight 45 : 13.0
+weight 50 : 30.0
+weight 51 : 7.0
+weight 52 : 90.0
+weight 53 : 4.0
+weight 94 : 73.0
+weight 95 : 231.0
+weight 96 : 44.0
+weight 97 : 295.0
+weight 98 : 434.0
+ortalama : 16
+generation: 1
+individual:  1 position solved: 17
+individual:  2 position solved: 17
+individual:  3 position solved: 17
+individual:  4 position solved: 17
+individual:  5 position solved: 17
+individual:  6 position solved: 17
+individual:  7 position solved: 12
+individual:  8 position solved: 17
+individual:  9 position solved: 16
+individual:  10 position solved: 17
+no recent improvement
+weight 1 : -1.0
+weight 2 : 7.0
+weight 10 : 1.0
+weight 20 : 7.0
+weight 21 : 4.0
+weight 22 : 51.0
+weight 41 : -4.0
+weight 42 : 6.0
+weight 43 : 72.0
+weight 45 : 13.0
+weight 50 : 30.0
+weight 51 : 7.0
+weight 52 : 90.0
+weight 53 : 4.0
+weight 94 : 73.0
+weight 95 : 231.0
+weight 96 : 44.0
+weight 97 : 295.0
+weight 98 : 434.0
+weight 1 : -1.0
+weight 2 : 7.0
+weight 10 : 1.0
+weight 20 : 7.0
+weight 21 : 4.0
+weight 22 : 51.0
+weight 41 : -4.0
+weight 42 : 6.0
+weight 43 : 72.0
+weight 45 : 13.0
+weight 50 : 30.0
+weight 51 : 7.0
+weight 52 : 90.0
+weight 53 : 4.0
+weight 94 : 73.0
+weight 95 : 231.0
+weight 96 : 44.0
+weight 97 : 295.0
+weight 98 : 434.0
+ortalama : 16
+generation: 1
+individual:  1 position solved: 17
+individual:  2 position solved: 17
+individual:  3 position solved: 17
+individual:  4 position solved: 17
+individual:  5 position solved: 17
+individual:  6 position solved: 12
+individual:  7 position solved: 14
+individual:  8 position solved: 17
+individual:  9 position solved: 17
+individual:  10 position solved: 17
+no recent improvement
+weight 1 : -1.0
+weight 2 : 7.0
+weight 10 : 1.0
+weight 20 : 7.0
+weight 21 : 4.0
+weight 22 : 51.0
+weight 41 : -4.0
+weight 42 : 6.0
+weight 43 : 72.0
+weight 45 : 13.0
+weight 50 : 30.0
+weight 51 : 7.0
+weight 52 : 90.0
+weight 53 : 4.0
+weight 94 : 73.0
+weight 95 : 231.0
+weight 96 : 44.0
+weight 97 : 295.0
+weight 98 : 434.0
+weight 1 : -1.0
+weight 2 : 7.0
+weight 10 : 1.0
+weight 20 : 7.0
+weight 21 : 4.0
+weight 22 : 51.0
+weight 41 : -4.0
+weight 42 : 6.0
+weight 43 : 72.0
+weight 45 : 13.0
+weight 50 : 30.0
+weight 51 : 7.0
+weight 52 : 90.0
+weight 53 : 4.0
+weight 94 : 73.0
+weight 95 : 231.0
+weight 96 : 44.0
+weight 97 : 295.0
+weight 98 : 434.0
+ortalama : 16
+generation: 1
+individual:  1 position solved: 17
+individual:  2 position solved: 17
+individual:  3 position solved: 17
+individual:  4 position solved: 17
+individual:  5 position solved: 17
+individual:  6 position solved: 16
+individual:  7 position solved: 14
+individual:  8 position solved: 15
+individual:  9 position solved: 17
+individual:  10 position solved: 17
+no recent improvement
+weight 1 : -1.0
+weight 2 : 7.0
+weight 10 : 1.0
+weight 20 : 7.0
+weight 21 : 4.0
+weight 22 : 51.0
+weight 41 : -4.0
+weight 42 : 6.0
+weight 43 : 72.0
+weight 45 : 13.0
+weight 50 : 30.0
+weight 51 : 7.0
+weight 52 : 90.0
+weight 53 : 4.0
+weight 94 : 73.0
+weight 95 : 231.0
+weight 96 : 44.0
+weight 97 : 295.0
+weight 98 : 434.0
+weight 1 : -1.0
+weight 2 : 7.0
+weight 10 : 1.0
+weight 20 : 7.0
+weight 21 : 4.0
+weight 22 : 51.0
+weight 41 : -4.0
+weight 42 : 6.0
+weight 43 : 72.0
+weight 45 : 13.0
+weight 50 : 30.0
+weight 51 : 7.0
+weight 52 : 90.0
+weight 53 : 4.0
+weight 94 : 73.0
+weight 95 : 231.0
+weight 96 : 44.0
+weight 97 : 295.0
+weight 98 : 434.0
+ortalama : 16
+generation: 1
+individual:  1 position solved: 15
+individual:  2 position solved: 17
+individual:  3 position solved: 15
+individual:  4 position solved: 17
+individual:  5 position solved: 16
+individual:  6 position solved: 17
+individual:  7 position solved: 15
+individual:  8 position solved: 12
+individual:  9 position solved: 17
+individual:  10 position solved: 15
+no recent improvement
+weight 1 : -1.0
+weight 2 : 7.0
+weight 10 : 1.0
+weight 20 : 7.0
+weight 21 : 4.0
+weight 22 : 51.0
+weight 41 : -4.0
+weight 42 : 6.0
+weight 43 : 72.0
+weight 45 : 13.0
+weight 50 : 30.0
+weight 51 : 7.0
+weight 52 : 90.0
+weight 53 : 4.0
+weight 94 : 73.0
+weight 95 : 231.0
+weight 96 : 44.0
+weight 97 : 295.0
+weight 98 : 434.0
+weight 1 : -1.0
+weight 2 : 7.0
+weight 10 : 1.0
+weight 20 : 7.0
+weight 21 : 4.0
+weight 22 : 51.0
+weight 41 : -4.0
+weight 42 : 6.0
+weight 43 : 72.0
+weight 45 : 13.0
+weight 50 : 30.0
+weight 51 : 7.0
+weight 52 : 90.0
+weight 53 : 4.0
+weight 94 : 73.0
+weight 95 : 231.0
+weight 96 : 44.0
+weight 97 : 295.0
+weight 98 : 434.0
+ortalama : 16
+generation: 1
+individual:  1 position solved: 17
+individual:  2 position solved: 17
+individual:  3 position solved: 17
+individual:  4 position solved: 11
+individual:  5 position solved: 16
+individual:  6 position solved: 17
+individual:  7 position solved: 15
+individual:  8 position solved: 17
+individual:  9 position solved: 11
+individual:  10 position solved: 17
+no recent improvement
+weight 1 : -1.0
+weight 2 : 7.0
+weight 10 : 1.0
+weight 20 : 7.0
+weight 21 : 4.0
+weight 22 : 51.0
+weight 41 : -4.0
+weight 42 : 6.0
+weight 43 : 72.0
+weight 45 : 13.0
+weight 50 : 30.0
+weight 51 : 7.0
+weight 52 : 90.0
+weight 53 : 4.0
+weight 94 : 73.0
+weight 95 : 231.0
+weight 96 : 44.0
+weight 97 : 295.0
+weight 98 : 434.0
+weight 1 : -1.0
+weight 2 : 7.0
+weight 10 : 1.0
+weight 20 : 7.0
+weight 21 : 4.0
+weight 22 : 51.0
+weight 41 : -4.0
+weight 42 : 6.0
+weight 43 : 72.0
+weight 45 : 13.0
+weight 50 : 30.0
+weight 51 : 7.0
+weight 52 : 90.0
+weight 53 : 4.0
+weight 94 : 73.0
+weight 95 : 231.0
+weight 96 : 44.0
+weight 97 : 295.0
+weight 98 : 434.0
+ortalama : 16
+generation: 1
+individual:  1 position solved: 17
+individual:  2 position solved: 17
+individual:  3 position solved: 17
+individual:  4 position solved: 17
+individual:  5 position solved: 16
+individual:  6 position solved: 17
+individual:  7 position solved: 17
+individual:  8 position solved: 17
+individual:  9 position solved: 11
+individual:  10 position solved: 15
+no recent improvement
+weight 1 : -1.0
+weight 2 : 7.0
+weight 10 : 1.0
+weight 20 : 7.0
+weight 21 : 4.0
+weight 22 : 51.0
+weight 41 : -4.0
+weight 42 : 6.0
+weight 43 : 72.0
+weight 45 : 13.0
+weight 50 : 30.0
+weight 51 : 7.0
+weight 52 : 90.0
+weight 53 : 4.0
+weight 94 : 73.0
+weight 95 : 231.0
+weight 96 : 44.0
+weight 97 : 295.0
+weight 98 : 434.0
+weight 1 : -1.0
+weight 2 : 7.0
+weight 10 : 1.0
+weight 20 : 7.0
+weight 21 : 4.0
+weight 22 : 51.0
+weight 41 : -4.0
+weight 42 : 6.0
+weight 43 : 72.0
+weight 45 : 13.0
+weight 50 : 30.0
+weight 51 : 7.0
+weight 52 : 90.0
+weight 53 : 4.0
+weight 94 : 73.0
+weight 95 : 231.0
+weight 96 : 44.0
+weight 97 : 295.0
+weight 98 : 434.0
+ortalama : 16
+generation: 1
+individual:  1 position solved: 17
+individual:  2 position solved: 17
+individual:  3 position solved: 15
+individual:  4 position solved: 17
+individual:  5 position solved: 14
+individual:  6 position solved: 16
+individual:  7 position solved: 16
+individual:  8 position solved: 16
+individual:  9 position solved: 17
+individual:  10 position solved: 17
+no recent improvement
+weight 1 : -1.0
+weight 2 : 7.0
+weight 10 : 1.0
+weight 20 : 7.0
+weight 21 : 4.0
+weight 22 : 51.0
+weight 41 : -4.0
+weight 42 : 6.0
+weight 43 : 72.0
+weight 45 : 13.0
+weight 50 : 30.0
+weight 51 : 7.0
+weight 52 : 90.0
+weight 53 : 4.0
+weight 94 : 73.0
+weight 95 : 231.0
+weight 96 : 44.0
+weight 97 : 295.0
+weight 98 : 434.0
+weight 1 : -1.0
+weight 2 : 7.0
+weight 10 : 1.0
+weight 20 : 7.0
+weight 21 : 4.0
+weight 22 : 51.0
+weight 41 : -4.0
+weight 42 : 6.0
+weight 43 : 72.0
+weight 45 : 13.0
+weight 50 : 30.0
+weight 51 : 7.0
+weight 52 : 90.0
+weight 53 : 4.0
+weight 94 : 73.0
+weight 95 : 231.0
+weight 96 : 44.0
+weight 97 : 295.0
+weight 98 : 434.0
+ortalama : 16
+generation: 1
+individual:  1 position solved: 17
+individual:  2 position solved: 15
+individual:  3 position solved: 17
+individual:  4 position solved: 15
+individual:  5 position solved: 17
+individual:  6 position solved: 17
+individual:  7 position solved: 17
+individual:  8 position solved: 17
+individual:  9 position solved: 17
+individual:  10 position solved: 17
+no recent improvement
+weight 1 : -1.0
+weight 2 : 7.0
+weight 10 : 1.0
+weight 20 : 7.0
+weight 21 : 4.0
+weight 22 : 51.0
+weight 41 : -4.0
+weight 42 : 6.0
+weight 43 : 72.0
+weight 45 : 13.0
+weight 50 : 30.0
+weight 51 : 7.0
+weight 52 : 90.0
+weight 53 : 4.0
+weight 94 : 73.0
+weight 95 : 231.0
+weight 96 : 44.0
+weight 97 : 295.0
+weight 98 : 434.0
+weight 1 : -1.0
+weight 2 : 7.0
+weight 10 : 1.0
+weight 20 : 7.0
+weight 21 : 4.0
+weight 22 : 51.0
+weight 41 : -4.0
+weight 42 : 6.0
+weight 43 : 72.0
+weight 45 : 13.0
+weight 50 : 30.0
+weight 51 : 7.0
+weight 52 : 90.0
+weight 53 : 4.0
+weight 94 : 73.0
+weight 95 : 231.0
+weight 96 : 44.0
+weight 97 : 295.0
+weight 98 : 434.0
+ortalama : 16
+generation: 1
+individual:  1 position solved: 16
+individual:  2 position solved: 17
+individual:  3 position solved: 15
+individual:  4 position solved: 17
+individual:  5 position solved: 17
+individual:  6 position solved: 17
+individual:  7 position solved: 17
+individual:  8 position solved: 17
+individual:  9 position solved: 17
+individual:  10 position solved: 17
+no recent improvement
+weight 1 : -1.0
+weight 2 : 7.0
+weight 10 : 1.0
+weight 20 : 7.0
+weight 21 : 4.0
+weight 22 : 51.0
+weight 41 : -4.0
+weight 42 : 6.0
+weight 43 : 72.0
+weight 45 : 13.0
+weight 50 : 30.0
+weight 51 : 7.0
+weight 52 : 90.0
+weight 53 : 4.0
+weight 94 : 73.0
+weight 95 : 231.0
+weight 96 : 44.0
+weight 97 : 295.0
+weight 98 : 434.0
+weight 1 : -1.0
+weight 2 : 7.0
+weight 10 : 1.0
+weight 20 : 7.0
+weight 21 : 4.0
+weight 22 : 51.0
+weight 41 : -4.0
+weight 42 : 6.0
+weight 43 : 72.0
+weight 45 : 13.0
+weight 50 : 30.0
+weight 51 : 7.0
+weight 52 : 90.0
+weight 53 : 4.0
+weight 94 : 73.0
+weight 95 : 231.0
+weight 96 : 44.0
+weight 97 : 295.0
+weight 98 : 434.0
+ortalama : 16
+generation: 1
+individual:  1 position solved: 16
+individual:  2 position solved: 16
+individual:  3 position solved: 15
+individual:  4 position solved: 17
+individual:  5 position solved: 15
+individual:  6 position solved: 15
+individual:  7 position solved: 17
+individual:  8 position solved: 17
+individual:  9 position solved: 17
+individual:  10 position solved: 17
+no recent improvement
+weight 1 : -1.0
+weight 2 : 7.0
+weight 10 : 1.0
+weight 20 : 7.0
+weight 21 : 4.0
+weight 22 : 51.0
+weight 41 : -4.0
+weight 42 : 6.0
+weight 43 : 72.0
+weight 45 : 13.0
+weight 50 : 30.0
+weight 51 : 7.0
+weight 52 : 90.0
+weight 53 : 4.0
+weight 94 : 73.0
+weight 95 : 231.0
+weight 96 : 44.0
+weight 97 : 295.0
+weight 98 : 434.0
+weight 1 : -1.0
+weight 2 : 7.0
+weight 10 : 1.0
+weight 20 : 7.0
+weight 21 : 4.0
+weight 22 : 51.0
+weight 41 : -4.0
+weight 42 : 6.0
+weight 43 : 72.0
+weight 45 : 13.0
+weight 50 : 30.0
+weight 51 : 7.0
+weight 52 : 90.0
+weight 53 : 4.0
+weight 94 : 73.0
+weight 95 : 231.0
+weight 96 : 44.0
+weight 97 : 295.0
+weight 98 : 434.0
+ortalama : 16
+generation: 1
+individual:  1 position solved: 17
+individual:  2 position solved: 17
+individual:  3 position solved: 16
+individual:  4 position solved: 17
+individual:  5 position solved: 16
+individual:  6 position solved: 16
+individual:  7 position solved: 17
+individual:  8 position solved: 17
+individual:  9 position solved: 17
+individual:  10 position solved: 16
+no recent improvement
+weight 1 : -1.0
+weight 2 : 7.0
+weight 10 : 1.0
+weight 20 : 7.0
+weight 21 : 4.0
+weight 22 : 51.0
+weight 41 : -4.0
+weight 42 : 6.0
+weight 43 : 72.0
+weight 45 : 13.0
+weight 50 : 30.0
+weight 51 : 7.0
+weight 52 : 90.0
+weight 53 : 4.0
+weight 94 : 73.0
+weight 95 : 231.0
+weight 96 : 44.0
+weight 97 : 295.0
+weight 98 : 434.0
+weight 1 : -1.0
+weight 2 : 7.0
+weight 10 : 1.0
+weight 20 : 7.0
+weight 21 : 4.0
+weight 22 : 51.0
+weight 41 : -4.0
+weight 42 : 6.0
+weight 43 : 72.0
+weight 45 : 13.0
+weight 50 : 30.0
+weight 51 : 7.0
+weight 52 : 90.0
+weight 53 : 4.0
+weight 94 : 73.0
+weight 95 : 231.0
+weight 96 : 44.0
+weight 97 : 295.0
+weight 98 : 434.0
+ortalama : 16
+generation: 1
+individual:  1 position solved: 17
+individual:  2 position solved: 17
+individual:  3 position solved: 17
+individual:  4 position solved: 17
+individual:  5 position solved: 17
+individual:  6 position solved: 17
+individual:  7 position solved: 17
+individual:  8 position solved: 17
+individual:  9 position solved: 17
+individual:  10 position solved: 17
+no recent improvement
+weight 1 : -1.0
+weight 2 : 7.0
+weight 10 : 1.0
+weight 20 : 7.0
+weight 21 : 4.0
+weight 22 : 51.0
+weight 41 : -4.0
+weight 42 : 6.0
+weight 43 : 72.0
+weight 45 : 13.0
+weight 50 : 30.0
+weight 51 : 7.0
+weight 52 : 90.0
+weight 53 : 4.0
+weight 94 : 73.0
+weight 95 : 231.0
+weight 96 : 44.0
+weight 97 : 295.0
+weight 98 : 434.0
+weight 1 : -1.0
+weight 2 : 7.0
+weight 10 : 1.0
+weight 20 : 7.0
+weight 21 : 4.0
+weight 22 : 51.0
+weight 41 : -4.0
+weight 42 : 6.0
+weight 43 : 72.0
+weight 45 : 13.0
+weight 50 : 30.0
+weight 51 : 7.0
+weight 52 : 90.0
+weight 53 : 4.0
+weight 94 : 73.0
+weight 95 : 231.0
+weight 96 : 44.0
+weight 97 : 295.0
+weight 98 : 434.0
+ortalama : 16
+generation: 1
+individual:  1 position solved: 17
+individual:  2 position solved: 17
+individual:  3 position solved: 17
+individual:  4 position solved: 17
+individual:  5 position solved: 17
+individual:  6 position solved: 17
+individual:  7 position solved: 17
+individual:  8 position solved: 17
+individual:  9 position solved: 17
+individual:  10 position solved: 12
+no recent improvement
+weight 1 : -1.0
+weight 2 : 7.0
+weight 10 : 1.0
+weight 20 : 7.0
+weight 21 : 4.0
+weight 22 : 51.0
+weight 41 : -4.0
+weight 42 : 6.0
+weight 43 : 72.0
+weight 45 : 13.0
+weight 50 : 30.0
+weight 51 : 7.0
+weight 52 : 90.0
+weight 53 : 4.0
+weight 94 : 73.0
+weight 95 : 231.0
+weight 96 : 44.0
+weight 97 : 295.0
+weight 98 : 434.0
+weight 1 : -1.0
+weight 2 : 7.0
+weight 10 : 1.0
+weight 20 : 7.0
+weight 21 : 4.0
+weight 22 : 51.0
+weight 41 : -4.0
+weight 42 : 6.0
+weight 43 : 72.0
+weight 45 : 13.0
+weight 50 : 30.0
+weight 51 : 7.0
+weight 52 : 90.0
+weight 53 : 4.0
+weight 94 : 73.0
+weight 95 : 231.0
+weight 96 : 44.0
+weight 97 : 295.0
+weight 98 : 434.0
+ortalama : 16
+generation: 1
+individual:  1 position solved: 17
+individual:  2 position solved: 17
+individual:  3 position solved: 17
+individual:  4 position solved: 17
+individual:  5 position solved: 16
+individual:  6 position solved: 17
+individual:  7 position solved: 17
+individual:  8 position solved: 17
+individual:  9 position solved: 17
+individual:  10 position solved: 15
+no recent improvement
+weight 1 : -1.0
+weight 2 : 7.0
+weight 10 : 1.0
+weight 20 : 7.0
+weight 21 : 4.0
+weight 22 : 51.0
+weight 41 : -4.0
+weight 42 : 6.0
+weight 43 : 72.0
+weight 45 : 13.0
+weight 50 : 30.0
+weight 51 : 7.0
+weight 52 : 90.0
+weight 53 : 4.0
+weight 94 : 73.0
+weight 95 : 231.0
+weight 96 : 44.0
+weight 97 : 295.0
+weight 98 : 434.0
+weight 1 : -1.0
+weight 2 : 7.0
+weight 10 : 1.0
+weight 20 : 7.0
+weight 21 : 4.0
+weight 22 : 51.0
+weight 41 : -4.0
+weight 42 : 6.0
+weight 43 : 72.0
+weight 45 : 13.0
+weight 50 : 30.0
+weight 51 : 7.0
+weight 52 : 90.0
+weight 53 : 4.0
+weight 94 : 73.0
+weight 95 : 231.0
+weight 96 : 44.0
+weight 97 : 295.0
+weight 98 : 434.0
+ortalama : 16
+generation: 1
+individual:  1 position solved: 17
+individual:  2 position solved: 17
+individual:  3 position solved: 17
+individual:  4 position solved: 17
+individual:  5 position solved: 17
+individual:  6 position solved: 17
+individual:  7 position solved: 17
+individual:  8 position solved: 17
+individual:  9 position solved: 17
+individual:  10 position solved: 15
+no recent improvement
+weight 1 : -1.0
+weight 2 : 7.0
+weight 10 : 1.0
+weight 20 : 7.0
+weight 21 : 4.0
+weight 22 : 51.0
+weight 41 : -4.0
+weight 42 : 6.0
+weight 43 : 72.0
+weight 45 : 13.0
+weight 50 : 30.0
+weight 51 : 7.0
+weight 52 : 90.0
+weight 53 : 4.0
+weight 94 : 73.0
+weight 95 : 231.0
+weight 96 : 44.0
+weight 97 : 295.0
+weight 98 : 434.0
+weight 1 : -1.0
+weight 2 : 7.0
+weight 10 : 1.0
+weight 20 : 7.0
+weight 21 : 4.0
+weight 22 : 51.0
+weight 41 : -4.0
+weight 42 : 6.0
+weight 43 : 72.0
+weight 45 : 13.0
+weight 50 : 30.0
+weight 51 : 7.0
+weight 52 : 90.0
+weight 53 : 4.0
+weight 94 : 73.0
+weight 95 : 231.0
+weight 96 : 44.0
+weight 97 : 295.0
+weight 98 : 434.0
+ortalama : 16
+generation: 1
+individual:  1 position solved: 16
+individual:  2 position solved: 16
+individual:  3 position solved: 17
+individual:  4 position solved: 15
+individual:  5 position solved: 11
+individual:  6 position solved: 16
+individual:  7 position solved: 16
+individual:  8 position solved: 12
+individual:  9 position solved: 15
+individual:  10 position solved: 17
+no recent improvement
+weight 1 : -1.0
+weight 2 : 7.0
+weight 10 : 1.0
+weight 20 : 7.0
+weight 21 : 4.0
+weight 22 : 51.0
+weight 41 : -4.0
+weight 42 : 6.0
+weight 43 : 72.0
+weight 45 : 13.0
+weight 50 : 30.0
+weight 51 : 7.0
+weight 52 : 90.0
+weight 53 : 4.0
+weight 94 : 73.0
+weight 95 : 231.0
+weight 96 : 44.0
+weight 97 : 295.0
+weight 98 : 434.0
+weight 1 : -1.0
+weight 2 : 7.0
+weight 10 : 1.0
+weight 20 : 7.0
+weight 21 : 4.0
+weight 22 : 51.0
+weight 41 : -4.0
+weight 42 : 6.0
+weight 43 : 72.0
+weight 45 : 13.0
+weight 50 : 30.0
+weight 51 : 7.0
+weight 52 : 90.0
+weight 53 : 4.0
+weight 94 : 73.0
+weight 95 : 231.0
+weight 96 : 44.0
+weight 97 : 295.0
+weight 98 : 434.0
+ortalama : 16
+generation: 1
+individual:  1 position solved: 16
+individual:  2 position solved: 17
+individual:  3 position solved: 16
+individual:  4 position solved: 17
+individual:  5 position solved: 17
+individual:  6 position solved: 11
+individual:  7 position solved: 17
+individual:  8 position solved: 11
+individual:  9 position solved: 16
+individual:  10 position solved: 17
+no recent improvement
+weight 1 : -1.0
+weight 2 : 7.0
+weight 10 : 1.0
+weight 20 : 7.0
+weight 21 : 4.0
+weight 22 : 51.0
+weight 41 : -4.0
+weight 42 : 6.0
+weight 43 : 72.0
+weight 45 : 13.0
+weight 50 : 30.0
+weight 51 : 7.0
+weight 52 : 90.0
+weight 53 : 4.0
+weight 94 : 73.0
+weight 95 : 231.0
+weight 96 : 44.0
+weight 97 : 295.0
+weight 98 : 434.0
+weight 1 : -1.0
+weight 2 : 7.0
+weight 10 : 1.0
+weight 20 : 7.0
+weight 21 : 4.0
+weight 22 : 51.0
+weight 41 : -4.0
+weight 42 : 6.0
+weight 43 : 72.0
+weight 45 : 13.0
+weight 50 : 30.0
+weight 51 : 7.0
+weight 52 : 90.0
+weight 53 : 4.0
+weight 94 : 73.0
+weight 95 : 231.0
+weight 96 : 44.0
+weight 97 : 295.0
+weight 98 : 434.0
+ortalama : 16
+generation: 1
+individual:  1 position solved: 17
+individual:  2 position solved: 16
+individual:  3 position solved: 17
+individual:  4 position solved: 17
+individual:  5 position solved: 17
+individual:  6 position solved: 15
+individual:  7 position solved: 12
+individual:  8 position solved: 17
+individual:  9 position solved: 17
+individual:  10 position solved: 17
+no recent improvement
+weight 1 : -1.0
+weight 2 : 7.0
+weight 10 : 1.0
+weight 20 : 7.0
+weight 21 : 4.0
+weight 22 : 51.0
+weight 41 : -4.0
+weight 42 : 6.0
+weight 43 : 72.0
+weight 45 : 13.0
+weight 50 : 30.0
+weight 51 : 7.0
+weight 52 : 90.0
+weight 53 : 4.0
+weight 94 : 73.0
+weight 95 : 231.0
+weight 96 : 44.0
+weight 97 : 295.0
+weight 98 : 434.0
+weight 1 : -1.0
+weight 2 : 7.0
+weight 10 : 1.0
+weight 20 : 7.0
+weight 21 : 4.0
+weight 22 : 51.0
+weight 41 : -4.0
+weight 42 : 6.0
+weight 43 : 72.0
+weight 45 : 13.0
+weight 50 : 30.0
+weight 51 : 7.0
+weight 52 : 90.0
+weight 53 : 4.0
+weight 94 : 73.0
+weight 95 : 231.0
+weight 96 : 44.0
+weight 97 : 295.0
+weight 98 : 434.0
+ortalama : 16
+generation: 1
+individual:  1 position solved: 15
+individual:  2 position solved: 17
+individual:  3 position solved: 16
+individual:  4 position solved: 15
+individual:  5 position solved: 15
+individual:  6 position solved: 17
+individual:  7 position solved: 12
+individual:  8 position solved: 17
+individual:  9 position solved: 17
+individual:  10 position solved: 15
+no recent improvement
+weight 1 : -1.0
+weight 2 : 7.0
+weight 10 : 1.0
+weight 20 : 7.0
+weight 21 : 4.0
+weight 22 : 51.0
+weight 41 : -4.0
+weight 42 : 6.0
+weight 43 : 72.0
+weight 45 : 13.0
+weight 50 : 30.0
+weight 51 : 7.0
+weight 52 : 90.0
+weight 53 : 4.0
+weight 94 : 73.0
+weight 95 : 231.0
+weight 96 : 44.0
+weight 97 : 295.0
+weight 98 : 434.0
+weight 1 : -1.0
+weight 2 : 7.0
+weight 10 : 1.0
+weight 20 : 7.0
+weight 21 : 4.0
+weight 22 : 51.0
+weight 41 : -4.0
+weight 42 : 6.0
+weight 43 : 72.0
+weight 45 : 13.0
+weight 50 : 30.0
+weight 51 : 7.0
+weight 52 : 90.0
+weight 53 : 4.0
+weight 94 : 73.0
+weight 95 : 231.0
+weight 96 : 44.0
+weight 97 : 295.0
+weight 98 : 434.0
+ortalama : 16
+generation: 1
+individual:  1 position solved: 15
+individual:  2 position solved: 15
+individual:  3 position solved: 16
+individual:  4 position solved: 15
+individual:  5 position solved: 15
+individual:  6 position solved: 11
+individual:  7 position solved: 15
+individual:  8 position solved: 18
+individual:  9 position solved: 18
+individual:  10 position solved: 15
+no recent improvement
+weight 1 : -1.0
+weight 2 : 7.0
+weight 10 : 1.0
+weight 20 : 7.0
+weight 21 : 4.0
+weight 22 : 51.0
+weight 41 : -4.0
+weight 42 : 6.0
+weight 43 : 72.0
+weight 45 : 13.0
+weight 50 : 30.0
+weight 51 : 7.0
+weight 52 : 90.0
+weight 53 : 4.0
+weight 94 : 73.0
+weight 95 : 231.0
+weight 96 : 44.0
+weight 97 : 295.0
+weight 98 : 434.0
+weight 1 : -1.0
+weight 2 : 7.0
+weight 10 : 1.0
+weight 20 : 7.0
+weight 21 : 4.0
+weight 22 : 51.0
+weight 41 : -4.0
+weight 42 : 6.0
+weight 43 : 72.0
+weight 45 : 13.0
+weight 50 : 30.0
+weight 51 : 7.0
+weight 52 : 90.0
+weight 53 : 4.0
+weight 94 : 73.0
+weight 95 : 231.0
+weight 96 : 44.0
+weight 97 : 295.0
+weight 98 : 434.0
+ortalama : 16
+generation: 1
+individual:  1 position solved: 17
+individual:  2 position solved: 17
+individual:  3 position solved: 17
+individual:  4 position solved: 17
+individual:  5 position solved: 17
+individual:  6 position solved: 12
+individual:  7 position solved: 17
+individual:  8 position solved: 16
+individual:  9 position solved: 17
+individual:  10 position solved: 18
+no recent improvement
+weight 1 : -1.0
+weight 2 : 7.0
+weight 10 : 1.0
+weight 20 : 7.0
+weight 21 : 4.0
+weight 22 : 51.0
+weight 41 : -4.0
+weight 42 : 6.0
+weight 43 : 72.0
+weight 45 : 13.0
+weight 50 : 30.0
+weight 51 : 7.0
+weight 52 : 90.0
+weight 53 : 4.0
+weight 94 : 73.0
+weight 95 : 231.0
+weight 96 : 44.0
+weight 97 : 295.0
+weight 98 : 434.0
+weight 1 : -1.0
+weight 2 : 7.0
+weight 10 : 1.0
+weight 20 : 7.0
+weight 21 : 4.0
+weight 22 : 51.0
+weight 41 : -4.0
+weight 42 : 6.0
+weight 43 : 72.0
+weight 45 : 13.0
+weight 50 : 30.0
+weight 51 : 7.0
+weight 52 : 90.0
+weight 53 : 4.0
+weight 94 : 73.0
+weight 95 : 231.0
+weight 96 : 44.0
+weight 97 : 295.0
+weight 98 : 434.0
+ortalama : 16
+generation: 1
+individual:  1 position solved: 17
+individual:  2 position solved: 16
+individual:  3 position solved: 11
+individual:  4 position solved: 17
+individual:  5 position solved: 17
+individual:  6 position solved: 17
+individual:  7 position solved: 17
+individual:  8 position solved: 17
+individual:  9 position solved: 17
+individual:  10 position solved: 11
+no recent improvement
+weight 1 : -1.0
+weight 2 : 7.0
+weight 10 : 1.0
+weight 20 : 7.0
+weight 21 : 4.0
+weight 22 : 51.0
+weight 41 : -4.0
+weight 42 : 6.0
+weight 43 : 72.0
+weight 45 : 13.0
+weight 50 : 30.0
+weight 51 : 7.0
+weight 52 : 90.0
+weight 53 : 4.0
+weight 94 : 73.0
+weight 95 : 231.0
+weight 96 : 44.0
+weight 97 : 295.0
+weight 98 : 434.0
+weight 1 : -1.0
+weight 2 : 7.0
+weight 10 : 1.0
+weight 20 : 7.0
+weight 21 : 4.0
+weight 22 : 51.0
+weight 41 : -4.0
+weight 42 : 6.0
+weight 43 : 72.0
+weight 45 : 13.0
+weight 50 : 30.0
+weight 51 : 7.0
+weight 52 : 90.0
+weight 53 : 4.0
+weight 94 : 73.0
+weight 95 : 231.0
+weight 96 : 44.0
+weight 97 : 295.0
+weight 98 : 434.0
+ortalama : 16
+generation: 1
+individual:  1 position solved: 16
+individual:  2 position solved: 17
+individual:  3 position solved: 17
+individual:  4 position solved: 11
+individual:  5 position solved: 17
+individual:  6 position solved: 17
+individual:  7 position solved: 17
+individual:  8 position solved: 17
+individual:  9 position solved: 17
+individual:  10 position solved: 17
+no recent improvement
+weight 1 : -1.0
+weight 2 : 7.0
+weight 10 : 1.0
+weight 20 : 7.0
+weight 21 : 4.0
+weight 22 : 51.0
+weight 41 : -4.0
+weight 42 : 6.0
+weight 43 : 72.0
+weight 45 : 13.0
+weight 50 : 30.0
+weight 51 : 7.0
+weight 52 : 90.0
+weight 53 : 4.0
+weight 94 : 73.0
+weight 95 : 231.0
+weight 96 : 44.0
+weight 97 : 295.0
+weight 98 : 434.0
+weight 1 : -1.0
+weight 2 : 7.0
+weight 10 : 1.0
+weight 20 : 7.0
+weight 21 : 4.0
+weight 22 : 51.0
+weight 41 : -4.0
+weight 42 : 6.0
+weight 43 : 72.0
+weight 45 : 13.0
+weight 50 : 30.0
+weight 51 : 7.0
+weight 52 : 90.0
+weight 53 : 4.0
+weight 94 : 73.0
+weight 95 : 231.0
+weight 96 : 44.0
+weight 97 : 295.0
+weight 98 : 434.0
+ortalama : 16
+generation: 1
+individual:  1 position solved: 17
+individual:  2 position solved: 17
+individual:  3 position solved: 17
+individual:  4 position solved: 17
+individual:  5 position solved: 17
+individual:  6 position solved: 17
+individual:  7 position solved: 17
+individual:  8 position solved: 17
+individual:  9 position solved: 11
+individual:  10 position solved: 17
+no recent improvement
+weight 1 : -1.0
+weight 2 : 7.0
+weight 10 : 1.0
+weight 20 : 7.0
+weight 21 : 4.0
+weight 22 : 51.0
+weight 41 : -4.0
+weight 42 : 6.0
+weight 43 : 72.0
+weight 45 : 13.0
+weight 50 : 30.0
+weight 51 : 7.0
+weight 52 : 90.0
+weight 53 : 4.0
+weight 94 : 73.0
+weight 95 : 231.0
+weight 96 : 44.0
+weight 97 : 295.0
+weight 98 : 434.0
+weight 1 : -1.0
+weight 2 : 7.0
+weight 10 : 1.0
+weight 20 : 7.0
+weight 21 : 4.0
+weight 22 : 51.0
+weight 41 : -4.0
+weight 42 : 6.0
+weight 43 : 72.0
+weight 45 : 13.0
+weight 50 : 30.0
+weight 51 : 7.0
+weight 52 : 90.0
+weight 53 : 4.0
+weight 94 : 73.0
+weight 95 : 231.0
+weight 96 : 44.0
+weight 97 : 295.0
+weight 98 : 434.0
+ortalama : 16
+generation: 1
+individual:  1 position solved: 16
+individual:  2 position solved: 17
+individual:  3 position solved: 16
+individual:  4 position solved: 17
+individual:  5 position solved: 17
+individual:  6 position solved: 17
+individual:  7 position solved: 17
+individual:  8 position solved: 16
+individual:  9 position solved: 17
+individual:  10 position solved: 17
+no recent improvement
+weight 1 : -1.0
+weight 2 : 7.0
+weight 10 : 1.0
+weight 20 : 7.0
+weight 21 : 4.0
+weight 22 : 51.0
+weight 41 : -4.0
+weight 42 : 6.0
+weight 43 : 72.0
+weight 45 : 13.0
+weight 50 : 30.0
+weight 51 : 7.0
+weight 52 : 90.0
+weight 53 : 4.0
+weight 94 : 73.0
+weight 95 : 231.0
+weight 96 : 44.0
+weight 97 : 295.0
+weight 98 : 434.0
+weight 1 : -1.0
+weight 2 : 7.0
+weight 10 : 1.0
+weight 20 : 7.0
+weight 21 : 4.0
+weight 22 : 51.0
+weight 41 : -4.0
+weight 42 : 6.0
+weight 43 : 72.0
+weight 45 : 13.0
+weight 50 : 30.0
+weight 51 : 7.0
+weight 52 : 90.0
+weight 53 : 4.0
+weight 94 : 73.0
+weight 95 : 231.0
+weight 96 : 44.0
+weight 97 : 295.0
+weight 98 : 434.0
+ortalama : 16
+generation: 1
+individual:  1 position solved: 17
+individual:  2 position solved: 17
+individual:  3 position solved: 15
+individual:  4 position solved: 17
+individual:  5 position solved: 17
+individual:  6 position solved: 17
+individual:  7 position solved: 11
+individual:  8 position solved: 17
+individual:  9 position solved: 17
+individual:  10 position solved: 17
+no recent improvement
+weight 1 : -1.0
+weight 2 : 7.0
+weight 10 : 1.0
+weight 20 : 7.0
+weight 21 : 4.0
+weight 22 : 51.0
+weight 41 : -4.0
+weight 42 : 6.0
+weight 43 : 72.0
+weight 45 : 13.0
+weight 50 : 30.0
+weight 51 : 7.0
+weight 52 : 90.0
+weight 53 : 4.0
+weight 94 : 73.0
+weight 95 : 231.0
+weight 96 : 44.0
+weight 97 : 295.0
+weight 98 : 434.0
+weight 1 : -1.0
+weight 2 : 7.0
+weight 10 : 1.0
+weight 20 : 7.0
+weight 21 : 4.0
+weight 22 : 51.0
+weight 41 : -4.0
+weight 42 : 6.0
+weight 43 : 72.0
+weight 45 : 13.0
+weight 50 : 30.0
+weight 51 : 7.0
+weight 52 : 90.0
+weight 53 : 4.0
+weight 94 : 73.0
+weight 95 : 231.0
+weight 96 : 44.0
+weight 97 : 295.0
+weight 98 : 434.0
+ortalama : 16
+generation: 1
+individual:  1 position solved: 17
+individual:  2 position solved: 17
+individual:  3 position solved: 17
+individual:  4 position solved: 12
+individual:  5 position solved: 17
+individual:  6 position solved: 17
+individual:  7 position solved: 17
+individual:  8 position solved: 16
+individual:  9 position solved: 15
+individual:  10 position solved: 12
+no recent improvement
+weight 1 : -1.0
+weight 2 : 7.0
+weight 10 : 1.0
+weight 20 : 7.0
+weight 21 : 4.0
+weight 22 : 51.0
+weight 41 : -4.0
+weight 42 : 6.0
+weight 43 : 72.0
+weight 45 : 13.0
+weight 50 : 30.0
+weight 51 : 7.0
+weight 52 : 90.0
+weight 53 : 4.0
+weight 94 : 73.0
+weight 95 : 231.0
+weight 96 : 44.0
+weight 97 : 295.0
+weight 98 : 434.0
+weight 1 : -1.0
+weight 2 : 7.0
+weight 10 : 1.0
+weight 20 : 7.0
+weight 21 : 4.0
+weight 22 : 51.0
+weight 41 : -4.0
+weight 42 : 6.0
+weight 43 : 72.0
+weight 45 : 13.0
+weight 50 : 30.0
+weight 51 : 7.0
+weight 52 : 90.0
+weight 53 : 4.0
+weight 94 : 73.0
+weight 95 : 231.0
+weight 96 : 44.0
+weight 97 : 295.0
+weight 98 : 434.0
+ortalama : 16
+generation: 1
+individual:  1 position solved: 17
+individual:  2 position solved: 17
+individual:  3 position solved: 17
+individual:  4 position solved: 17
+individual:  5 position solved: 17
+individual:  6 position solved: 18
+individual:  7 position solved: 17
+individual:  8 position solved: 17
+individual:  9 position solved: 15
+individual:  10 position solved: 15
+no recent improvement
+weight 1 : -1.0
+weight 2 : 7.0
+weight 10 : 1.0
+weight 20 : 7.0
+weight 21 : 4.0
+weight 22 : 51.0
+weight 41 : -4.0
+weight 42 : 6.0
+weight 43 : 72.0
+weight 45 : 13.0
+weight 50 : 30.0
+weight 51 : 7.0
+weight 52 : 90.0
+weight 53 : 4.0
+weight 94 : 73.0
+weight 95 : 231.0
+weight 96 : 44.0
+weight 97 : 295.0
+weight 98 : 434.0
+weight 1 : -1.0
+weight 2 : 7.0
+weight 10 : 1.0
+weight 20 : 7.0
+weight 21 : 4.0
+weight 22 : 51.0
+weight 41 : -4.0
+weight 42 : 6.0
+weight 43 : 72.0
+weight 45 : 13.0
+weight 50 : 30.0
+weight 51 : 7.0
+weight 52 : 90.0
+weight 53 : 4.0
+weight 94 : 73.0
+weight 95 : 231.0
+weight 96 : 44.0
+weight 97 : 295.0
+weight 98 : 434.0
+ortalama : 16
+generation: 1
+individual:  1 position solved: 17
+individual:  2 position solved: 16
+individual:  3 position solved: 17
+individual:  4 position solved: 17
+individual:  5 position solved: 16
+individual:  6 position solved: 18
+individual:  7 position solved: 16
+individual:  8 position solved: 18
+individual:  9 position solved: 17
+individual:  10 position solved: 17
+no recent improvement
+weight 1 : -1.0
+weight 2 : 7.0
+weight 10 : 1.0
+weight 20 : 7.0
+weight 21 : 4.0
+weight 22 : 51.0
+weight 41 : -4.0
+weight 42 : 6.0
+weight 43 : 72.0
+weight 45 : 13.0
+weight 50 : 30.0
+weight 51 : 7.0
+weight 52 : 90.0
+weight 53 : 4.0
+weight 94 : 73.0
+weight 95 : 231.0
+weight 96 : 44.0
+weight 97 : 295.0
+weight 98 : 434.0
+weight 1 : -1.0
+weight 2 : 7.0
+weight 10 : 1.0
+weight 20 : 7.0
+weight 21 : 4.0
+weight 22 : 51.0
+weight 41 : -4.0
+weight 42 : 6.0
+weight 43 : 72.0
+weight 45 : 13.0
+weight 50 : 30.0
+weight 51 : 7.0
+weight 52 : 90.0
+weight 53 : 4.0
+weight 94 : 73.0
+weight 95 : 231.0
+weight 96 : 44.0
+weight 97 : 295.0
+weight 98 : 434.0
+ortalama : 16
+generation: 1
+individual:  1 position solved: 17
+individual:  2 position solved: 17
+individual:  3 position solved: 11
+individual:  4 position solved: 17
+individual:  5 position solved: 12
+individual:  6 position solved: 11
+individual:  7 position solved: 18
+individual:  8 position solved: 17
+individual:  9 position solved: 16
+individual:  10 position solved: 17
+no recent improvement
+weight 1 : -1.0
+weight 2 : 7.0
+weight 10 : 1.0
+weight 20 : 7.0
+weight 21 : 4.0
+weight 22 : 51.0
+weight 41 : -4.0
+weight 42 : 6.0
+weight 43 : 72.0
+weight 45 : 13.0
+weight 50 : 30.0
+weight 51 : 7.0
+weight 52 : 90.0
+weight 53 : 4.0
+weight 94 : 73.0
+weight 95 : 231.0
+weight 96 : 44.0
+weight 97 : 295.0
+weight 98 : 434.0
+weight 1 : -1.0
+weight 2 : 7.0
+weight 10 : 1.0
+weight 20 : 7.0
+weight 21 : 4.0
+weight 22 : 51.0
+weight 41 : -4.0
+weight 42 : 6.0
+weight 43 : 72.0
+weight 45 : 13.0
+weight 50 : 30.0
+weight 51 : 7.0
+weight 52 : 90.0
+weight 53 : 4.0
+weight 94 : 73.0
+weight 95 : 231.0
+weight 96 : 44.0
+weight 97 : 295.0
+weight 98 : 434.0
+ortalama : 16
+generation: 1
+individual:  1 position solved: 16
+individual:  2 position solved: 17
+individual:  3 position solved: 17
+individual:  4 position solved: 17
+individual:  5 position solved: 15
+individual:  6 position solved: 14
+individual:  7 position solved: 15
+individual:  8 position solved: 11
+individual:  9 position solved: 17
+individual:  10 position solved: 17
+no recent improvement
+weight 1 : -1.0
+weight 2 : 7.0
+weight 10 : 1.0
+weight 20 : 7.0
+weight 21 : 4.0
+weight 22 : 51.0
+weight 41 : -4.0
+weight 42 : 6.0
+weight 43 : 72.0
+weight 45 : 13.0
+weight 50 : 30.0
+weight 51 : 7.0
+weight 52 : 90.0
+weight 53 : 4.0
+weight 94 : 73.0
+weight 95 : 231.0
+weight 96 : 44.0
+weight 97 : 295.0
+weight 98 : 434.0
+weight 1 : -1.0
+weight 2 : 7.0
+weight 10 : 1.0
+weight 20 : 7.0
+weight 21 : 4.0
+weight 22 : 51.0
+weight 41 : -4.0
+weight 42 : 6.0
+weight 43 : 72.0
+weight 45 : 13.0
+weight 50 : 30.0
+weight 51 : 7.0
+weight 52 : 90.0
+weight 53 : 4.0
+weight 94 : 73.0
+weight 95 : 231.0
+weight 96 : 44.0
+weight 97 : 295.0
+weight 98 : 434.0
+ortalama : 16
+generation: 1
+individual:  1 position solved: 17
+individual:  2 position solved: 17
+individual:  3 position solved: 11
+individual:  4 position solved: 17
+individual:  5 position solved: 17
+individual:  6 position solved: 12
+individual:  7 position solved: 17
+individual:  8 position solved: 15
+individual:  9 position solved: 18
+individual:  10 position solved: 17
+no recent improvement
+weight 1 : -1.0
+weight 2 : 7.0
+weight 10 : 1.0
+weight 20 : 7.0
+weight 21 : 4.0
+weight 22 : 51.0
+weight 41 : -4.0
+weight 42 : 6.0
+weight 43 : 72.0
+weight 45 : 13.0
+weight 50 : 30.0
+weight 51 : 7.0
+weight 52 : 90.0
+weight 53 : 4.0
+weight 94 : 73.0
+weight 95 : 231.0
+weight 96 : 44.0
+weight 97 : 295.0
+weight 98 : 434.0
+weight 1 : -1.0
+weight 2 : 7.0
+weight 10 : 1.0
+weight 20 : 7.0
+weight 21 : 4.0
+weight 22 : 51.0
+weight 41 : -4.0
+weight 42 : 6.0
+weight 43 : 72.0
+weight 45 : 13.0
+weight 50 : 30.0
+weight 51 : 7.0
+weight 52 : 90.0
+weight 53 : 4.0
+weight 94 : 73.0
+weight 95 : 231.0
+weight 96 : 44.0
+weight 97 : 295.0
+weight 98 : 434.0
+ortalama : 16
+generation: 1
+individual:  1 position solved: 17
+individual:  2 position solved: 16
+individual:  3 position solved: 17
+individual:  4 position solved: 15
+individual:  5 position solved: 17
+individual:  6 position solved: 17
+individual:  7 position solved: 15
+individual:  8 position solved: 11
+individual:  9 position solved: 17
+individual:  10 position solved: 17
+no recent improvement
+weight 1 : -1.0
+weight 2 : 7.0
+weight 10 : 1.0
+weight 20 : 7.0
+weight 21 : 4.0
+weight 22 : 51.0
+weight 41 : -4.0
+weight 42 : 6.0
+weight 43 : 72.0
+weight 45 : 13.0
+weight 50 : 30.0
+weight 51 : 7.0
+weight 52 : 90.0
+weight 53 : 4.0
+weight 94 : 73.0
+weight 95 : 231.0
+weight 96 : 44.0
+weight 97 : 295.0
+weight 98 : 434.0
+weight 1 : -1.0
+weight 2 : 7.0
+weight 10 : 1.0
+weight 20 : 7.0
+weight 21 : 4.0
+weight 22 : 51.0
+weight 41 : -4.0
+weight 42 : 6.0
+weight 43 : 72.0
+weight 45 : 13.0
+weight 50 : 30.0
+weight 51 : 7.0
+weight 52 : 90.0
+weight 53 : 4.0
+weight 94 : 73.0
+weight 95 : 231.0
+weight 96 : 44.0
+weight 97 : 295.0
+weight 98 : 434.0
+ortalama : 16
+generation: 1
+individual:  1 position solved: 16
+individual:  2 position solved: 17
+individual:  3 position solved: 17
+individual:  4 position solved: 11
+individual:  5 position solved: 17
+individual:  6 position solved: 17
+individual:  7 position solved: 16
+individual:  8 position solved: 11
+individual:  9 position solved: 17
+individual:  10 position solved: 15
+no recent improvement
+weight 1 : -1.0
+weight 2 : 7.0
+weight 10 : 1.0
+weight 20 : 7.0
+weight 21 : 4.0
+weight 22 : 51.0
+weight 41 : -4.0
+weight 42 : 6.0
+weight 43 : 72.0
+weight 45 : 13.0
+weight 50 : 30.0
+weight 51 : 7.0
+weight 52 : 90.0
+weight 53 : 4.0
+weight 94 : 73.0
+weight 95 : 231.0
+weight 96 : 44.0
+weight 97 : 295.0
+weight 98 : 434.0
+weight 1 : -1.0
+weight 2 : 7.0
+weight 10 : 1.0
+weight 20 : 7.0
+weight 21 : 4.0
+weight 22 : 51.0
+weight 41 : -4.0
+weight 42 : 6.0
+weight 43 : 72.0
+weight 45 : 13.0
+weight 50 : 30.0
+weight 51 : 7.0
+weight 52 : 90.0
+weight 53 : 4.0
+weight 94 : 73.0
+weight 95 : 231.0
+weight 96 : 44.0
+weight 97 : 295.0
+weight 98 : 434.0
+ortalama : 16
+generation: 1
+individual:  1 position solved: 17
+individual:  2 position solved: 15
+individual:  3 position solved: 17
+individual:  4 position solved: 15
+individual:  5 position solved: 17
+individual:  6 position solved: 17
+individual:  7 position solved: 15
+individual:  8 position solved: 17
+individual:  9 position solved: 17
+individual:  10 position solved: 17
+no recent improvement
+weight 1 : -1.0
+weight 2 : 7.0
+weight 10 : 1.0
+weight 20 : 7.0
+weight 21 : 4.0
+weight 22 : 51.0
+weight 41 : -4.0
+weight 42 : 6.0
+weight 43 : 72.0
+weight 45 : 13.0
+weight 50 : 30.0
+weight 51 : 7.0
+weight 52 : 90.0
+weight 53 : 4.0
+weight 94 : 73.0
+weight 95 : 231.0
+weight 96 : 44.0
+weight 97 : 295.0
+weight 98 : 434.0
+weight 1 : -1.0
+weight 2 : 7.0
+weight 10 : 1.0
+weight 20 : 7.0
+weight 21 : 4.0
+weight 22 : 51.0
+weight 41 : -4.0
+weight 42 : 6.0
+weight 43 : 72.0
+weight 45 : 13.0
+weight 50 : 30.0
+weight 51 : 7.0
+weight 52 : 90.0
+weight 53 : 4.0
+weight 94 : 73.0
+weight 95 : 231.0
+weight 96 : 44.0
+weight 97 : 295.0
+weight 98 : 434.0
+ortalama : 16
+generation: 1
+individual:  1 position solved: 17
+individual:  2 position solved: 17
+individual:  3 position solved: 17
+individual:  4 position solved: 17
+individual:  5 position solved: 15
+individual:  6 position solved: 17
+individual:  7 position solved: 17
+individual:  8 position solved: 15
+individual:  9 position solved: 16
+individual:  10 position solved: 16
+no recent improvement
+weight 1 : -1.0
+weight 2 : 7.0
+weight 10 : 1.0
+weight 20 : 7.0
+weight 21 : 4.0
+weight 22 : 51.0
+weight 41 : -4.0
+weight 42 : 6.0
+weight 43 : 72.0
+weight 45 : 13.0
+weight 50 : 30.0
+weight 51 : 7.0
+weight 52 : 90.0
+weight 53 : 4.0
+weight 94 : 73.0
+weight 95 : 231.0
+weight 96 : 44.0
+weight 97 : 295.0
+weight 98 : 434.0
+weight 1 : -1.0
+weight 2 : 7.0
+weight 10 : 1.0
+weight 20 : 7.0
+weight 21 : 4.0
+weight 22 : 51.0
+weight 41 : -4.0
+weight 42 : 6.0
+weight 43 : 72.0
+weight 45 : 13.0
+weight 50 : 30.0
+weight 51 : 7.0
+weight 52 : 90.0
+weight 53 : 4.0
+weight 94 : 73.0
+weight 95 : 231.0
+weight 96 : 44.0
+weight 97 : 295.0
+weight 98 : 434.0
+ortalama : 16
+generation: 1
+individual:  1 position solved: 17
+individual:  2 position solved: 16
+individual:  3 position solved: 17
+individual:  4 position solved: 17
+individual:  5 position solved: 17
+individual:  6 position solved: 17
+individual:  7 position solved: 17
+individual:  8 position solved: 17
+individual:  9 position solved: 18
+individual:  10 position solved: 11
+no recent improvement
+weight 1 : -1.0
+weight 2 : 7.0
+weight 10 : 1.0
+weight 20 : 7.0
+weight 21 : 4.0
+weight 22 : 51.0
+weight 41 : -4.0
+weight 42 : 6.0
+weight 43 : 72.0
+weight 45 : 13.0
+weight 50 : 30.0
+weight 51 : 7.0
+weight 52 : 90.0
+weight 53 : 4.0
+weight 94 : 73.0
+weight 95 : 231.0
+weight 96 : 44.0
+weight 97 : 295.0
+weight 98 : 434.0
+weight 1 : -1.0
+weight 2 : 7.0
+weight 10 : 1.0
+weight 20 : 7.0
+weight 21 : 4.0
+weight 22 : 51.0
+weight 41 : -4.0
+weight 42 : 6.0
+weight 43 : 72.0
+weight 45 : 13.0
+weight 50 : 30.0
+weight 51 : 7.0
+weight 52 : 90.0
+weight 53 : 4.0
+weight 94 : 73.0
+weight 95 : 231.0
+weight 96 : 44.0
+weight 97 : 295.0
+weight 98 : 434.0
+ortalama : 16
+generation: 1
+individual:  1 position solved: 17
+individual:  2 position solved: 17
+individual:  3 position solved: 12
+individual:  4 position solved: 17
+individual:  5 position solved: 17
+individual:  6 position solved: 18
+individual:  7 position solved: 17
+individual:  8 position solved: 18
+individual:  9 position solved: 17
+individual:  10 position solved: 17
+no recent improvement
+weight 1 : -1.0
+weight 2 : 7.0
+weight 10 : 1.0
+weight 20 : 7.0
+weight 21 : 4.0
+weight 22 : 51.0
+weight 41 : -4.0
+weight 42 : 6.0
+weight 43 : 72.0
+weight 45 : 13.0
+weight 50 : 30.0
+weight 51 : 7.0
+weight 52 : 90.0
+weight 53 : 4.0
+weight 94 : 73.0
+weight 95 : 231.0
+weight 96 : 44.0
+weight 97 : 295.0
+weight 98 : 434.0
+weight 1 : -1.0
+weight 2 : 7.0
+weight 10 : 1.0
+weight 20 : 7.0
+weight 21 : 4.0
+weight 22 : 51.0
+weight 41 : -4.0
+weight 42 : 6.0
+weight 43 : 72.0
+weight 45 : 13.0
+weight 50 : 30.0
+weight 51 : 7.0
+weight 52 : 90.0
+weight 53 : 4.0
+weight 94 : 73.0
+weight 95 : 231.0
+weight 96 : 44.0
+weight 97 : 295.0
+weight 98 : 434.0
+ortalama : 16
+generation: 1
+individual:  1 position solved: 17
+individual:  2 position solved: 17
+individual:  3 position solved: 17
+individual:  4 position solved: 17
+individual:  5 position solved: 17
+individual:  6 position solved: 17
+individual:  7 position solved: 11
+individual:  8 position solved: 16
+individual:  9 position solved: 17
+individual:  10 position solved: 17
+no recent improvement
+weight 1 : -1.0
+weight 2 : 7.0
+weight 10 : 1.0
+weight 20 : 7.0
+weight 21 : 4.0
+weight 22 : 51.0
+weight 41 : -4.0
+weight 42 : 6.0
+weight 43 : 72.0
+weight 45 : 13.0
+weight 50 : 30.0
+weight 51 : 7.0
+weight 52 : 90.0
+weight 53 : 4.0
+weight 94 : 73.0
+weight 95 : 231.0
+weight 96 : 44.0
+weight 97 : 295.0
+weight 98 : 434.0
+weight 1 : -1.0
+weight 2 : 7.0
+weight 10 : 1.0
+weight 20 : 7.0
+weight 21 : 4.0
+weight 22 : 51.0
+weight 41 : -4.0
+weight 42 : 6.0
+weight 43 : 72.0
+weight 45 : 13.0
+weight 50 : 30.0
+weight 51 : 7.0
+weight 52 : 90.0
+weight 53 : 4.0
+weight 94 : 73.0
+weight 95 : 231.0
+weight 96 : 44.0
+weight 97 : 295.0
+weight 98 : 434.0
+ortalama : 16
+generation: 1
+individual:  1 position solved: 17
+individual:  2 position solved: 17
+individual:  3 position solved: 17
+individual:  4 position solved: 17
+individual:  5 position solved: 17
+individual:  6 position solved: 17
+individual:  7 position solved: 17
+individual:  8 position solved: 17
+individual:  9 position solved: 17
+individual:  10 position solved: 11
+no recent improvement
+weight 1 : -1.0
+weight 2 : 7.0
+weight 10 : 1.0
+weight 20 : 7.0
+weight 21 : 4.0
+weight 22 : 51.0
+weight 41 : -4.0
+weight 42 : 6.0
+weight 43 : 72.0
+weight 45 : 13.0
+weight 50 : 30.0
+weight 51 : 7.0
+weight 52 : 90.0
+weight 53 : 4.0
+weight 94 : 73.0
+weight 95 : 231.0
+weight 96 : 44.0
+weight 97 : 295.0
+weight 98 : 434.0
+weight 1 : -1.0
+weight 2 : 7.0
+weight 10 : 1.0
+weight 20 : 7.0
+weight 21 : 4.0
+weight 22 : 51.0
+weight 41 : -4.0
+weight 42 : 6.0
+weight 43 : 72.0
+weight 45 : 13.0
+weight 50 : 30.0
+weight 51 : 7.0
+weight 52 : 90.0
+weight 53 : 4.0
+weight 94 : 73.0
+weight 95 : 231.0
+weight 96 : 44.0
+weight 97 : 295.0
+weight 98 : 434.0
+ortalama : 16
+generation: 1
+individual:  1 position solved: 17
+individual:  2 position solved: 17
+individual:  3 position solved: 17
+individual:  4 position solved: 17
+individual:  5 position solved: 18
+individual:  6 position solved: 17
+individual:  7 position solved: 17
+individual:  8 position solved: 15
+individual:  9 position solved: 17
+individual:  10 position solved: 15
+no recent improvement
+weight 1 : -1.0
+weight 2 : 7.0
+weight 10 : 1.0
+weight 20 : 7.0
+weight 21 : 4.0
+weight 22 : 51.0
+weight 41 : -4.0
+weight 42 : 6.0
+weight 43 : 72.0
+weight 45 : 13.0
+weight 50 : 30.0
+weight 51 : 7.0
+weight 52 : 90.0
+weight 53 : 4.0
+weight 94 : 73.0
+weight 95 : 231.0
+weight 96 : 44.0
+weight 97 : 295.0
+weight 98 : 434.0
+weight 1 : -1.0
+weight 2 : 7.0
+weight 10 : 1.0
+weight 20 : 7.0
+weight 21 : 4.0
+weight 22 : 51.0
+weight 41 : -4.0
+weight 42 : 6.0
+weight 43 : 72.0
+weight 45 : 13.0
+weight 50 : 30.0
+weight 51 : 7.0
+weight 52 : 90.0
+weight 53 : 4.0
+weight 94 : 73.0
+weight 95 : 231.0
+weight 96 : 44.0
+weight 97 : 295.0
+weight 98 : 434.0
+ortalama : 16
+generation: 1
+individual:  1 position solved: 15
+individual:  2 position solved: 17
+individual:  3 position solved: 15
+individual:  4 position solved: 17
+individual:  5 position solved: 15
+individual:  6 position solved: 17
+individual:  7 position solved: 12
+individual:  8 position solved: 16
+individual:  9 position solved: 17
+individual:  10 position solved: 17
+no recent improvement
+weight 1 : -1.0
+weight 2 : 7.0
+weight 10 : 1.0
+weight 20 : 7.0
+weight 21 : 4.0
+weight 22 : 51.0
+weight 41 : -4.0
+weight 42 : 6.0
+weight 43 : 72.0
+weight 45 : 13.0
+weight 50 : 30.0
+weight 51 : 7.0
+weight 52 : 90.0
+weight 53 : 4.0
+weight 94 : 73.0
+weight 95 : 231.0
+weight 96 : 44.0
+weight 97 : 295.0
+weight 98 : 434.0
+weight 1 : -1.0
+weight 2 : 7.0
+weight 10 : 1.0
+weight 20 : 7.0
+weight 21 : 4.0
+weight 22 : 51.0
+weight 41 : -4.0
+weight 42 : 6.0
+weight 43 : 72.0
+weight 45 : 13.0
+weight 50 : 30.0
+weight 51 : 7.0
+weight 52 : 90.0
+weight 53 : 4.0
+weight 94 : 73.0
+weight 95 : 231.0
+weight 96 : 44.0
+weight 97 : 295.0
+weight 98 : 434.0
+ortalama : 16
+generation: 1
+individual:  1 position solved: 17
+individual:  2 position solved: 17
+individual:  3 position solved: 17
+individual:  4 position solved: 17
+individual:  5 position solved: 17
+individual:  6 position solved: 17
+individual:  7 position solved: 17
+individual:  8 position solved: 16
+individual:  9 position solved: 17
+individual:  10 position solved: 17
+no recent improvement
+weight 1 : -1.0
+weight 2 : 7.0
+weight 10 : 1.0
+weight 20 : 7.0
+weight 21 : 4.0
+weight 22 : 51.0
+weight 41 : -4.0
+weight 42 : 6.0
+weight 43 : 72.0
+weight 45 : 13.0
+weight 50 : 30.0
+weight 51 : 7.0
+weight 52 : 90.0
+weight 53 : 4.0
+weight 94 : 73.0
+weight 95 : 231.0
+weight 96 : 44.0
+weight 97 : 295.0
+weight 98 : 434.0
+weight 1 : -1.0
+weight 2 : 7.0
+weight 10 : 1.0
+weight 20 : 7.0
+weight 21 : 4.0
+weight 22 : 51.0
+weight 41 : -4.0
+weight 42 : 6.0
+weight 43 : 72.0
+weight 45 : 13.0
+weight 50 : 30.0
+weight 51 : 7.0
+weight 52 : 90.0
+weight 53 : 4.0
+weight 94 : 73.0
+weight 95 : 231.0
+weight 96 : 44.0
+weight 97 : 295.0
+weight 98 : 434.0
+ortalama : 16
+generation: 1
+individual:  1 position solved: 17
+individual:  2 position solved: 17
+individual:  3 position solved: 17
+individual:  4 position solved: 17
+individual:  5 position solved: 14
+individual:  6 position solved: 17
+individual:  7 position solved: 17
+individual:  8 position solved: 17
+individual:  9 position solved: 17
+individual:  10 position solved: 17
+no recent improvement
+weight 1 : -1.0
+weight 2 : 7.0
+weight 10 : 1.0
+weight 20 : 7.0
+weight 21 : 4.0
+weight 22 : 51.0
+weight 41 : -4.0
+weight 42 : 6.0
+weight 43 : 72.0
+weight 45 : 13.0
+weight 50 : 30.0
+weight 51 : 7.0
+weight 52 : 90.0
+weight 53 : 4.0
+weight 94 : 73.0
+weight 95 : 231.0
+weight 96 : 44.0
+weight 97 : 295.0
+weight 98 : 434.0
+weight 1 : -1.0
+weight 2 : 7.0
+weight 10 : 1.0
+weight 20 : 7.0
+weight 21 : 4.0
+weight 22 : 51.0
+weight 41 : -4.0
+weight 42 : 6.0
+weight 43 : 72.0
+weight 45 : 13.0
+weight 50 : 30.0
+weight 51 : 7.0
+weight 52 : 90.0
+weight 53 : 4.0
+weight 94 : 73.0
+weight 95 : 231.0
+weight 96 : 44.0
+weight 97 : 295.0
+weight 98 : 434.0
+ortalama : 16
+generation: 1
+individual:  1 position solved: 15
+individual:  2 position solved: 17
+individual:  3 position solved: 11
+individual:  4 position solved: 12
+individual:  5 position solved: 12
+individual:  6 position solved: 15
+individual:  7 position solved: 17
+individual:  8 position solved: 17
+individual:  9 position solved: 17
+individual:  10 position solved: 17
+no recent improvement
+weight 1 : -1.0
+weight 2 : 7.0
+weight 10 : 1.0
+weight 20 : 7.0
+weight 21 : 4.0
+weight 22 : 51.0
+weight 41 : -4.0
+weight 42 : 6.0
+weight 43 : 72.0
+weight 45 : 13.0
+weight 50 : 30.0
+weight 51 : 7.0
+weight 52 : 90.0
+weight 53 : 4.0
+weight 94 : 73.0
+weight 95 : 231.0
+weight 96 : 44.0
+weight 97 : 295.0
+weight 98 : 434.0
+weight 1 : -1.0
+weight 2 : 7.0
+weight 10 : 1.0
+weight 20 : 7.0
+weight 21 : 4.0
+weight 22 : 51.0
+weight 41 : -4.0
+weight 42 : 6.0
+weight 43 : 72.0
+weight 45 : 13.0
+weight 50 : 30.0
+weight 51 : 7.0
+weight 52 : 90.0
+weight 53 : 4.0
+weight 94 : 73.0
+weight 95 : 231.0
+weight 96 : 44.0
+weight 97 : 295.0
+weight 98 : 434.0
+ortalama : 16
+generation: 1
+individual:  1 position solved: 17
+individual:  2 position solved: 17
+individual:  3 position solved: 12
+individual:  4 position solved: 17
+individual:  5 position solved: 17
+individual:  6 position solved: 17
+individual:  7 position solved: 17
+individual:  8 position solved: 15
+individual:  9 position solved: 17
+individual:  10 position solved: 16
+no recent improvement
+weight 1 : -1.0
+weight 2 : 7.0
+weight 10 : 1.0
+weight 20 : 7.0
+weight 21 : 4.0
+weight 22 : 51.0
+weight 41 : -4.0
+weight 42 : 6.0
+weight 43 : 72.0
+weight 45 : 13.0
+weight 50 : 30.0
+weight 51 : 7.0
+weight 52 : 90.0
+weight 53 : 4.0
+weight 94 : 73.0
+weight 95 : 231.0
+weight 96 : 44.0
+weight 97 : 295.0
+weight 98 : 434.0
+weight 1 : -1.0
+weight 2 : 7.0
+weight 10 : 1.0
+weight 20 : 7.0
+weight 21 : 4.0
+weight 22 : 51.0
+weight 41 : -4.0
+weight 42 : 6.0
+weight 43 : 72.0
+weight 45 : 13.0
+weight 50 : 30.0
+weight 51 : 7.0
+weight 52 : 90.0
+weight 53 : 4.0
+weight 94 : 73.0
+weight 95 : 231.0
+weight 96 : 44.0
+weight 97 : 295.0
+weight 98 : 434.0
+ortalama : 16
+generation: 1
+individual:  1 position solved: 17
+individual:  2 position solved: 16
+individual:  3 position solved: 17
+individual:  4 position solved: 15
+individual:  5 position solved: 15
+individual:  6 position solved: 17
+individual:  7 position solved: 17
+individual:  8 position solved: 11
+individual:  9 position solved: 17
+individual:  10 position solved: 17
+no recent improvement
+weight 1 : -1.0
+weight 2 : 7.0
+weight 10 : 1.0
+weight 20 : 7.0
+weight 21 : 4.0
+weight 22 : 51.0
+weight 41 : -4.0
+weight 42 : 6.0
+weight 43 : 72.0
+weight 45 : 13.0
+weight 50 : 30.0
+weight 51 : 7.0
+weight 52 : 90.0
+weight 53 : 4.0
+weight 94 : 73.0
+weight 95 : 231.0
+weight 96 : 44.0
+weight 97 : 295.0
+weight 98 : 434.0
+weight 1 : -1.0
+weight 2 : 7.0
+weight 10 : 1.0
+weight 20 : 7.0
+weight 21 : 4.0
+weight 22 : 51.0
+weight 41 : -4.0
+weight 42 : 6.0
+weight 43 : 72.0
+weight 45 : 13.0
+weight 50 : 30.0
+weight 51 : 7.0
+weight 52 : 90.0
+weight 53 : 4.0
+weight 94 : 73.0
+weight 95 : 231.0
+weight 96 : 44.0
+weight 97 : 295.0
+weight 98 : 434.0
+ortalama : 16
+generation: 1
+individual:  1 position solved: 16
+individual:  2 position solved: 17
+individual:  3 position solved: 16
+individual:  4 position solved: 17
+individual:  5 position solved: 15
+individual:  6 position solved: 16
+individual:  7 position solved: 15
+individual:  8 position solved: 16
+individual:  9 position solved: 17
+individual:  10 position solved: 17
+no recent improvement
+weight 1 : -1.0
+weight 2 : 7.0
+weight 10 : 1.0
+weight 20 : 7.0
+weight 21 : 4.0
+weight 22 : 51.0
+weight 41 : -4.0
+weight 42 : 6.0
+weight 43 : 72.0
+weight 45 : 13.0
+weight 50 : 30.0
+weight 51 : 7.0
+weight 52 : 90.0
+weight 53 : 4.0
+weight 94 : 73.0
+weight 95 : 231.0
+weight 96 : 44.0
+weight 97 : 295.0
+weight 98 : 434.0
+weight 1 : -1.0
+weight 2 : 7.0
+weight 10 : 1.0
+weight 20 : 7.0
+weight 21 : 4.0
+weight 22 : 51.0
+weight 41 : -4.0
+weight 42 : 6.0
+weight 43 : 72.0
+weight 45 : 13.0
+weight 50 : 30.0
+weight 51 : 7.0
+weight 52 : 90.0
+weight 53 : 4.0
+weight 94 : 73.0
+weight 95 : 231.0
+weight 96 : 44.0
+weight 97 : 295.0
+weight 98 : 434.0
+ortalama : 16
+generation: 1
+individual:  1 position solved: 17
+individual:  2 position solved: 17
+individual:  3 position solved: 17
+individual:  4 position solved: 17
+individual:  5 position solved: 17
+individual:  6 position solved: 16
+individual:  7 position solved: 17
+individual:  8 position solved: 16
+individual:  9 position solved: 11
+individual:  10 position solved: 17
+no recent improvement
+weight 1 : -1.0
+weight 2 : 7.0
+weight 10 : 1.0
+weight 20 : 7.0
+weight 21 : 4.0
+weight 22 : 51.0
+weight 41 : -4.0
+weight 42 : 6.0
+weight 43 : 72.0
+weight 45 : 13.0
+weight 50 : 30.0
+weight 51 : 7.0
+weight 52 : 90.0
+weight 53 : 4.0
+weight 94 : 73.0
+weight 95 : 231.0
+weight 96 : 44.0
+weight 97 : 295.0
+weight 98 : 434.0
+weight 1 : -1.0
+weight 2 : 7.0
+weight 10 : 1.0
+weight 20 : 7.0
+weight 21 : 4.0
+weight 22 : 51.0
+weight 41 : -4.0
+weight 42 : 6.0
+weight 43 : 72.0
+weight 45 : 13.0
+weight 50 : 30.0
+weight 51 : 7.0
+weight 52 : 90.0
+weight 53 : 4.0
+weight 94 : 73.0
+weight 95 : 231.0
+weight 96 : 44.0
+weight 97 : 295.0
+weight 98 : 434.0
+ortalama : 16
+generation: 1
+individual:  1 position solved: 17
+individual:  2 position solved: 17
+individual:  3 position solved: 17
+individual:  4 position solved: 17
+individual:  5 position solved: 17
+individual:  6 position solved: 17
+individual:  7 position solved: 17
+individual:  8 position solved: 17
+individual:  9 position solved: 15
+individual:  10 position solved: 15
+no recent improvement
+weight 1 : -1.0
+weight 2 : 7.0
+weight 10 : 1.0
+weight 20 : 7.0
+weight 21 : 4.0
+weight 22 : 51.0
+weight 41 : -4.0
+weight 42 : 6.0
+weight 43 : 72.0
+weight 45 : 13.0
+weight 50 : 30.0
+weight 51 : 7.0
+weight 52 : 90.0
+weight 53 : 4.0
+weight 94 : 73.0
+weight 95 : 231.0
+weight 96 : 44.0
+weight 97 : 295.0
+weight 98 : 434.0
+weight 1 : -1.0
+weight 2 : 7.0
+weight 10 : 1.0
+weight 20 : 7.0
+weight 21 : 4.0
+weight 22 : 51.0
+weight 41 : -4.0
+weight 42 : 6.0
+weight 43 : 72.0
+weight 45 : 13.0
+weight 50 : 30.0
+weight 51 : 7.0
+weight 52 : 90.0
+weight 53 : 4.0
+weight 94 : 73.0
+weight 95 : 231.0
+weight 96 : 44.0
+weight 97 : 295.0
+weight 98 : 434.0
+ortalama : 16
+generation: 1
+individual:  1 position solved: 16
+individual:  2 position solved: 16
+individual:  3 position solved: 17
+individual:  4 position solved: 16
+individual:  5 position solved: 11
+individual:  6 position solved: 17
+individual:  7 position solved: 15
+individual:  8 position solved: 11
+individual:  9 position solved: 16
+individual:  10 position solved: 16
+no recent improvement
+weight 1 : -1.0
+weight 2 : 7.0
+weight 10 : 1.0
+weight 20 : 7.0
+weight 21 : 4.0
+weight 22 : 51.0
+weight 41 : -4.0
+weight 42 : 6.0
+weight 43 : 72.0
+weight 45 : 13.0
+weight 50 : 30.0
+weight 51 : 7.0
+weight 52 : 90.0
+weight 53 : 4.0
+weight 94 : 73.0
+weight 95 : 231.0
+weight 96 : 44.0
+weight 97 : 295.0
+weight 98 : 434.0
+weight 1 : -1.0
+weight 2 : 7.0
+weight 10 : 1.0
+weight 20 : 7.0
+weight 21 : 4.0
+weight 22 : 51.0
+weight 41 : -4.0
+weight 42 : 6.0
+weight 43 : 72.0
+weight 45 : 13.0
+weight 50 : 30.0
+weight 51 : 7.0
+weight 52 : 90.0
+weight 53 : 4.0
+weight 94 : 73.0
+weight 95 : 231.0
+weight 96 : 44.0
+weight 97 : 295.0
+weight 98 : 434.0
+ortalama : 16
+generation: 1
+individual:  1 position solved: 16
+individual:  2 position solved: 17
+individual:  3 position solved: 17
+individual:  4 position solved: 17
+individual:  5 position solved: 17
+individual:  6 position solved: 17
+individual:  7 position solved: 18
+individual:  8 position solved: 17
+individual:  9 position solved: 17
+individual:  10 position solved: 17
+no recent improvement
+weight 1 : -1.0
+weight 2 : 7.0
+weight 10 : 1.0
+weight 20 : 7.0
+weight 21 : 4.0
+weight 22 : 51.0
+weight 41 : -4.0
+weight 42 : 6.0
+weight 43 : 72.0
+weight 45 : 13.0
+weight 50 : 30.0
+weight 51 : 7.0
+weight 52 : 90.0
+weight 53 : 4.0
+weight 94 : 73.0
+weight 95 : 231.0
+weight 96 : 44.0
+weight 97 : 295.0
+weight 98 : 434.0
+weight 1 : -1.0
+weight 2 : 7.0
+weight 10 : 1.0
+weight 20 : 7.0
+weight 21 : 4.0
+weight 22 : 51.0
+weight 41 : -4.0
+weight 42 : 6.0
+weight 43 : 72.0
+weight 45 : 13.0
+weight 50 : 30.0
+weight 51 : 7.0
+weight 52 : 90.0
+weight 53 : 4.0
+weight 94 : 73.0
+weight 95 : 231.0
+weight 96 : 44.0
+weight 97 : 295.0
+weight 98 : 434.0
+ortalama : 16
+generation: 1
+individual:  1 position solved: 18
+individual:  2 position solved: 17
+individual:  3 position solved: 17
+individual:  4 position solved: 17
+individual:  5 position solved: 17
+individual:  6 position solved: 17
+individual:  7 position solved: 17
+individual:  8 position solved: 17
+individual:  9 position solved: 17
+individual:  10 position solved: 17
+no recent improvement
+weight 1 : -1.0
+weight 2 : 7.0
+weight 10 : 1.0
+weight 20 : 7.0
+weight 21 : 4.0
+weight 22 : 51.0
+weight 41 : -4.0
+weight 42 : 6.0
+weight 43 : 72.0
+weight 45 : 13.0
+weight 50 : 30.0
+weight 51 : 7.0
+weight 52 : 90.0
+weight 53 : 4.0
+weight 94 : 73.0
+weight 95 : 231.0
+weight 96 : 44.0
+weight 97 : 295.0
+weight 98 : 434.0
+weight 1 : -1.0
+weight 2 : 7.0
+weight 10 : 1.0
+weight 20 : 7.0
+weight 21 : 4.0
+weight 22 : 51.0
+weight 41 : -4.0
+weight 42 : 6.0
+weight 43 : 72.0
+weight 45 : 13.0
+weight 50 : 30.0
+weight 51 : 7.0
+weight 52 : 90.0
+weight 53 : 4.0
+weight 94 : 73.0
+weight 95 : 231.0
+weight 96 : 44.0
+weight 97 : 295.0
+weight 98 : 434.0
+ortalama : 16
+generation: 1
+individual:  1 position solved: 16
+individual:  2 position solved: 16
+individual:  3 position solved: 15
+individual:  4 position solved: 17
+individual:  5 position solved: 17
+individual:  6 position solved: 16
+individual:  7 position solved: 16
+individual:  8 position solved: 17
+individual:  9 position solved: 17
+individual:  10 position solved: 15
+no recent improvement
+weight 1 : -1.0
+weight 2 : 7.0
+weight 10 : 1.0
+weight 20 : 7.0
+weight 21 : 4.0
+weight 22 : 51.0
+weight 41 : -4.0
+weight 42 : 6.0
+weight 43 : 72.0
+weight 45 : 13.0
+weight 50 : 30.0
+weight 51 : 7.0
+weight 52 : 90.0
+weight 53 : 4.0
+weight 94 : 73.0
+weight 95 : 231.0
+weight 96 : 44.0
+weight 97 : 295.0
+weight 98 : 434.0
+weight 1 : -1.0
+weight 2 : 7.0
+weight 10 : 1.0
+weight 20 : 7.0
+weight 21 : 4.0
+weight 22 : 51.0
+weight 41 : -4.0
+weight 42 : 6.0
+weight 43 : 72.0
+weight 45 : 13.0
+weight 50 : 30.0
+weight 51 : 7.0
+weight 52 : 90.0
+weight 53 : 4.0
+weight 94 : 73.0
+weight 95 : 231.0
+weight 96 : 44.0
+weight 97 : 295.0
+weight 98 : 434.0
+ortalama : 16
+generation: 1
+individual:  1 position solved: 17
+individual:  2 position solved: 17
+individual:  3 position solved: 17
+individual:  4 position solved: 17
+individual:  5 position solved: 17
+individual:  6 position solved: 17
+individual:  7 position solved: 17
+individual:  8 position solved: 17
+individual:  9 position solved: 17
+individual:  10 position solved: 15
+no recent improvement
+weight 1 : -1.0
+weight 2 : 7.0
+weight 10 : 1.0
+weight 20 : 7.0
+weight 21 : 4.0
+weight 22 : 51.0
+weight 41 : -4.0
+weight 42 : 6.0
+weight 43 : 72.0
+weight 45 : 13.0
+weight 50 : 30.0
+weight 51 : 7.0
+weight 52 : 90.0
+weight 53 : 4.0
+weight 94 : 73.0
+weight 95 : 231.0
+weight 96 : 44.0
+weight 97 : 295.0
+weight 98 : 434.0
+weight 1 : -1.0
+weight 2 : 7.0
+weight 10 : 1.0
+weight 20 : 7.0
+weight 21 : 4.0
+weight 22 : 51.0
+weight 41 : -4.0
+weight 42 : 6.0
+weight 43 : 72.0
+weight 45 : 13.0
+weight 50 : 30.0
+weight 51 : 7.0
+weight 52 : 90.0
+weight 53 : 4.0
+weight 94 : 73.0
+weight 95 : 231.0
+weight 96 : 44.0
+weight 97 : 295.0
+weight 98 : 434.0
+ortalama : 16
+generation: 1
+individual:  1 position solved: 17
+individual:  2 position solved: 16
+individual:  3 position solved: 11
+individual:  4 position solved: 16
+individual:  5 position solved: 17
+individual:  6 position solved: 17
+individual:  7 position solved: 17

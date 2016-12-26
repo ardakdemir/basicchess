@@ -20,6 +20,24 @@ public class Search {
 	public Search(){
 		
 	}
+	public Move randomSearch(Board b , int side){
+		ArrayList<Move>list=movegen.moveGenerator(b, side,1, null);
+		ArrayList<Move> legallist=new ArrayList<>();
+		for (Move hamle: list){
+			b.makeMove(hamle);
+			int check= movegen.isCheck(b,side);
+			if(check==0)
+			{
+				legallist.add(hamle);
+			}
+			b.unmakeMove(hamle);
+		}
+		int size = legallist.size();
+		double rand = Math.random();
+		int get = (int) (rand * size) ;
+		Move randMove = legallist.get(get);
+		return randMove;
+	}
 	// this is shorter minimax
 	//position startpos moves e2e4 d7d5 e4d5 d8d5 b1c3 d5c6 d2d4 g8f6 f1b5
 	public Move minimax2(Board b,int side, int depth,double alpha,double beta, Move lastmove ,int qui){
@@ -73,8 +91,10 @@ public class Search {
 				b.makeMove(hamle);
 				if(depth==1){
 				eval=new Evaluate(b);
-				hamle.moveScore=eval.materialcount()+eval.positionalValues();
-				if(side==0){
+				hamle.moveScore=eval.positionalValues();
+				
+				// quiescence search with errors
+			/*	if(side==0){
 					impPieces=b.wN|b.wB|b.wQ|b.wK|b.wR;
 					if((eval.bReach&impPieces)!=0)
 						if(hamle.moveScore>alpha&&qui==1){
@@ -86,8 +106,7 @@ public class Search {
 					if((eval.wReach&impPieces)!=0&&qui==1)
 						if(hamle.moveScore<beta){
 							   hamle.moveScore=quiescence(b,alpha,beta,1-side,2);// white to move
-						}
-				}
+						} */
 				//System.out.println("depth: "+depth+"  score: "+ hamle.moveScore+"  "+ hamle.move +" alpha "+alpha +" beta "+beta);
 			}else if(depth>1){
 				//System.out.println("depth: "+depth+"  alpha: "+ alpha +"  beta: "+ beta);
@@ -114,7 +133,64 @@ public class Search {
 		}
 		return bestmove;
 	}
-	// ilk pozisyon çok önemli 
+	public Move minimax3(Board b,int side, int depth,double alpha,double beta, Move lastmove ,int qui,Individual ind){
+		ArrayList<Move>list=movegen.moveGenerator(b, side,1, lastmove);
+		Move bestmove=new Move();
+		if(side==0)
+			bestmove.moveScore=-99999;
+		else
+			bestmove.moveScore= 99999;
+		ArrayList<Move> legallist=new ArrayList<>();
+		for (Move hamle: list){
+			b.makeMove(hamle);
+			int check= movegen.isCheck(b,side);
+			if(check==0)
+			{
+				legallist.add(hamle);
+			}
+			b.unmakeMove(hamle);
+		}
+		if(legallist.size()==0){//stalemate hatasi var
+			int check= movegen.isCheck(b,side);
+			if(check==0)
+			{
+				bestmove.moveScore=0;
+				return bestmove;
+			}
+			bestmove.moveScore=bestmove.moveScore/(maxDepth-depth+1);// mata gitmesi icin
+			return bestmove;
+		}
+		for(Move hamle: legallist){
+				b.makeMove(hamle);
+				if(depth==1){
+				eval=new Evaluate(b,ind);
+				hamle.moveScore=eval.positionalValues();
+			}else if(depth>1){
+				//System.out.println("depth: "+depth+"  alpha: "+ alpha +"  beta: "+ beta);
+				hamle.child=minimax3(b, 1-side, depth-1,alpha,beta,hamle,1,ind);
+				hamle.moveScore=hamle.child.moveScore;
+			}
+				b.unmakeMove(hamle);
+			if(side==0){
+				if(hamle.moveScore>=bestmove.moveScore){
+					bestmove=hamle;
+					//System.out.println("depth: "+depth+"  score: "+ hamle.moveScore+"  "+ hamle.move +" alpha "+alpha +" beta "+beta);
+				}
+				if(bestmove.moveScore>alpha) alpha = bestmove.moveScore;
+				if(alpha > beta ) return bestmove;
+				
+			}else if(side==1){
+				if(hamle.moveScore<=bestmove.moveScore){
+					bestmove=hamle;
+				}
+					if(bestmove.moveScore<beta) beta = bestmove.moveScore;
+					if(alpha > beta ) return bestmove;
+					//System.out.println("side: "+side +" depth: "+depth+" best sofar: "+ bestmove.move+ "  score: "+bestmove.moveScore);
+			}
+		}
+		return bestmove;
+	}
+	// ilk pozisyon cok onemli 
 //position startpos moves g2g3 d7d5 f1g2 e7e5 e2e3 b8c6 d2d4 e5d4 e3d4 f8b4 c1d2 d8e7 d1e2 b4d2 b1d2 c6d4 e2e7 g8e7 e1c1 e8d8 d2e4 e7f5 e4g5 c8e6 g3g4 h7h6 g5e6 f7e6 g4f5 d4f5 g2d5 e6d5 d1d5
 //position startpos moves e2e4 g8f6 b1c3 e7e5 d2d3 f8b4 c1g5 b4c3 b2c3 b8c6 g1f3 d7d6 d3d4 e5d4 f3d4 c8g4 f2f3 c6d4 c3d4 g4d7 f1c4 a7a5 a1b1 b7b6 e4e5 h7h6 e5f6 h6g5 f6g7 d8e7 d1e2
 //position startpos moves d2d4 g7g6 c2c4 f8g7 e2e4 d7d6 b1c3 e7e5 g1f3 c8g4 d4d5 b8d7 f1d3 g7h6 c1h6 g8h6 e1g1 f7f5 d1d2 f5f4 f3e1 d7f6 f2f3 g4d7 d3c2 g6g5 c2a4 g5g4 e1d3 d7a4 c3a4 d8d7 a4c3 h8g8 c4c5 h6f7 a1c1 g4f3 f1f3 d7g4 g1h1 f6e4 c3e4 g4g2
@@ -126,7 +202,14 @@ public class Search {
 	//returns a score
 	// generate moves until no important captures left
 	 int quiescence(Board b,double alpha, double beta, int side,int depth) {
+			Evaluate eval1=new Evaluate(b);
+			double movescore1=eval.materialcount()+eval.positionalValues();
 		// TODO Auto-generated method stub
+			if(movescore1<alpha&&side==1)
+				return (int) alpha;
+			if(movescore1>beta&&side==0)
+				return (int) beta;
+			
 		int score=0;
 		int captAval=1;
 		do{
@@ -135,10 +218,9 @@ public class Search {
 			list=movegen.moveGenerator(b, side, 1, null);
 			ArrayList<Move> legalcaplist=new ArrayList<>();
 			if(depth==0){
-				Evaluate eval=new Evaluate(b);
-				double movescore=eval.materialcount()+eval.positionalValues();
-				return (int) movescore;
-			}
+
+				return (int) movescore1;
+	 		}
 			for (Move hamle: list){
 				String to=hamle.move.substring(2, 4);
  				int cap= movegen.isCapture(b, to);
@@ -185,9 +267,9 @@ public class Search {
 		return score;
 	}
 	//this minimax checks all nodes and returns best path with score	
-	// çok sakat var
-	//þuan program çalýþýyor ve yaklaþýk 1dkda 4ply için sonucu buldu
-	// yani 5 ply için yaklaþýk yarým saatte bulacak hamleyi hahaha
+	// cok sakat var
+	//suan program calisiyor ve yaklasik 1dkda 4ply icin sonucu buldu
+	// yani 5 ply icin yaklasik yarim saatte bulacak hamleyi hahaha
 	// also returns the best path
 	public String minimax(Board b,int side, int depth,Move lastmove){
 		

@@ -1,0 +1,7 @@
+gamefile : carlsen.txt
+generation num: 50
+position num: 100
+population size: 10
+Best rates: 
+i: 6
+j: 11

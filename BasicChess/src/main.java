@@ -1,15 +1,23 @@
+import java.awt.Graphics;
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
 import java.io.FileReader;
 import java.io.IOException;
+import java.io.PrintStream;
 import java.util.ArrayList;
+import java.util.List;
 import java.util.StringTokenizer;
 
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+import java.awt.*;
 import javax.swing.text.ChangedCharSetException;
 import javax.swing.text.MaskFormatter;
-//projemdeki þuan için en büyük sorun her hamlenin legal olup olmadýðýný anlamak 
-//için çok fazla iþlem yapýyorum gereksiz hamle üretiyorum
-public class main {
+import javax.swing.text.html.MinimalHTMLWriter;
+//projemdeki suan icin en buyuk sorun her hamlenin legal olup olmadÄ±gÄ±nÄ± anlamak 
+//icin cok fazla islem yapÄ±yorum gereksiz hamle uretiyorum
+public class main extends JPanel{
 
 	public static void main(String[] args) throws IOException {
 		// TODO Auto-generated method stub
@@ -19,29 +27,113 @@ public class main {
 		//startB.unmovePiece("672010");
 		//startB.printBoard();
 		//startB.printBitboard(startB.whitePieces);
-		
 		UCI uci = new UCI(startB);
-		
+		//System.out.println((int)(Math.log(startB.bK)/Math.log(2)));
 
-		while(true)
+		String inputfile = "C:\\Users\\toshÄ±ba\\Desktop\\Result.pgn";
+		//uci.Converter(inputfile,outputfile);
+/*
+			while(true)
 		{
 			uci.uciCommunication();
 		}
-		
-		
+	*/	 
+
+		//DrawGraph.draw();
+		simul();
+		// adjacent calculator
+
+		/*		
+		Evaluate eval = new Evaluate(startB);
+		long adjac = eval.adjacentSquCalc(44);
+		for(int i = 0;i<64;i++){
+			long a =1;
+			a<<= i;
+			if((a&adjac)!=0)
+				System.out.println(i);
+		}  */
+
+
+
+		//attacked point
+		/*		Evaluate eval = new Evaluate(startB);
+		eval.positionalValues();
+		startB.printBoard();
+		System.out.println(eval.blackkingattackedpoint);
+		System.out.println(eval.whitekingattackedpoint); */
+
+		/*	ArrayList<Individual> indlist = evol.initializeGeneration(4);
+		ArrayList<Individual> next = evol.nextGen(indlist, 0.75, 0);
+		 int count =  0 ; 
+		for(Individual i : indlist){
+			System.out.println("Ä°lk Individual weights : "+ count++);
+			i.printWeights();
+		}
+		for(Individual i : next){
+			System.out.println(" Individual weights : "+count++);
+			i.printWeights();
+		} */
+			
+			
+			
+			// grid
+
+	
+				
+	/*	PrintStream out = new PrintStream(new FileOutputStream("genel.txt"));
+		System.setOut(out);
+		System.out.println("gamefile : "+gamefile);
+		System.out.println("generation num: "+generationnum);
+		System.out.println("position num: "+positionnum);
+		System.out.println("population size: "+populationsize);
+		System.out.println("Best rates: ");
+		System.out.println("i: "+ besti);
+		System.out.println("j: "+ bestj);
+	*/
+
+
+		// mutation
+		/*	ArrayList<Individual> indlist = evol.initializeGeneration(1);
+		for(Individual i : indlist){
+			System.out.println("Initial weights "+i);
+			i.printWeights();
+			i = evol.mutate(i, 0);
+			System.out.println("then weights "+i);
+			i.printWeights();
+		}  */
+
+
+
+		// statik pozisyon cozdurme
+		/*	Search src = new Search();
+		int count=0;
+		for(int i = 0; i<1000;i++){
+			String move = uci.Solver(i);
+			System.out.print(i+"  grandmaster move: "+ move);
+			Move bestmove= src.minimax2(startB, 0, 1, -99999, 99999, null, 0);// simdilik nullmove veriyorum enpas
+			String bstmv=uci.moveToAlgebra(bestmove);
+			System.out.println("  my bestmove: "+ bstmv);
+			if(move.substring(0,4).equals(bstmv)){
+				count++;
+			}
+		}
+		System.out.println("tutturdum: "+ count); */
+
+
+
 		/*BufferedReader reader=new BufferedReader(new FileReader("output2.txt"));
 		StringTokenizer st=new StringTokenizer(reader.readLine());
-		String hamle="startpos moves ";// burada þey hatasý var yani ben zaten hamleleri çevirdim
+		String hamle="startpos moves ";// burada sey hatasÄ± var yani ben zaten hamleleri cevirdim
 		for(int i=0;i<20;i++){
 			hamle+=st.nextToken()+" ";
 		}
 		uci.inputPosition(hamle);
 		//uci.inputGo("depth 1");
 		uci.inputPrint(); */
-//position startpos moves d2d4 b8c6 c1f4 d7d5 b1c3 c8g4 h2h3 g4h5 g2g4 h5g6 g1f3 e7e6 f4g5 g6c2 d1c2 c6d4 c2a4 b7b5 a4d4 f8c5 d4c5 d8d7 c3b5 h7h6 b5c7 d7c7 c5c7 h6g5 c7c6 e8e7 c6a8 e7d6 f3g5 f7f6 g5f7 d6c5 a8a7 c5c4 f7h8 f6f5 a7g7 f5g4 h3g4 d5d4 g7g8 c4d5 f1g2 d5e5 h8g6 e5f6 h1h7 e6e5 g8f7
+		//position startpos moves d2d4 b8c6 c1f4 d7d5 b1c3 c8g4 h2h3 g4h5 g2g4 h5g6 g1f3 e7e6 f4g5 g6c2 d1c2 c6d4 c2a4 b7b5 a4d4 f8c5 d4c5 d8d7 c3b5 h7h6 b5c7 d7c7 c5c7 h6g5 c7c6 e8e7 c6a8 e7d6 f3g5 f7f6 g5f7 d6c5 a8a7 c5c4 f7h8 f6f5 a7g7 f5g4 h3g4 d5d4 g7g8 c4d5 f1g2 d5e5 h8g6 e5f6 h1h7 e6e5 g8f7
 
-		
-		
+
+
 		// Enpassant debugger
 		/*ArrayList< Move> list = new ArrayList<>();
 		startB.printBoard();
@@ -60,18 +152,18 @@ public class main {
 			startB.unmakeMove(hamle);
 		}
 		startB.printBoard(); */
-		
-		
-		
+
+
+
 		/*uci.inputPosition("startpos moves e2e3 e7e5 g1e2 b8c6 f2f4 d7d5 e2c3 d5d4 c3e4 d4e3 f1b5 c6b4");
 		MoveGenerator movegen=new MoveGenerator();
 		int i =movegen.isCheck(startB, 1);*/
 		//uci.Converter2();
 		//uci.Reader();
 
-		
+
 		/*System.out.println("arda");
-		BufferedReader reader=new BufferedReader(new FileReader("C:\\Users\\toshýba\\Desktop\\twic1148.pgn"));
+		BufferedReader reader=new BufferedReader(new FileReader("C:\\Users\\toshÄ±ba\\Desktop\\twic1148.pgn"));
 		String line;
 		int count=0;
         while ((line = reader.readLine()) != null) {
@@ -80,9 +172,9 @@ public class main {
             }
 
         }
-        System.out.println("oyun sayýsý: "+ count);
+        System.out.println("oyun sayÄ±sÄ±: "+ count);
         uci.Reader();*/
-        //System.out.println(uci.pgnToAlg("h6", 1));
+		//System.out.println(uci.pgnToAlg("h6", 1));
 		/*
 		Evaluate eval=new Evaluate(startB);
 		System.out.println("passed pawn: "+ eval.passedPawn(15, 0));
@@ -98,37 +190,62 @@ public class main {
 		System.out.println("iso passed: "+ eval.isoPawn(48, 1));*/
 
 
-/*
-		MoveGenerator movegen=new MoveGenerator();
+		
+	/*	MoveGenerator movegen=new MoveGenerator();
 		ArrayList<Move> allmoves=new ArrayList<>();
-		startB.changeSide();
 		startB.printBoard();
 		//System.out.println("lastmove: "+ startB.lastmove.move+" movetype: "+ startB.lastmove.moveType);
-		movegen.diagonalMove(allmoves, startB, 1, "B");
+		allmoves = movegen.moveGenerator(startB, 0, 1, null);
 		for(Move i:allmoves){
-			System.out.println("bishop antidiag black : "+ i.move);
+			startB.makeMove(i);
+			Evaluate eval = new Evaluate(startB);
+			double score = eval.positionalValues();
+			i.moveScore=score;
+			System.out.println("move: "+ i.move+" movetype: "+ i.moveType+" score: "+i.moveScore);
+			startB.unmakeMove(i);
 			}  */
 		//long e=movegen.maskAntid(startB.whitePieces, 33);
 		//System.out.println("aa"+Long.toBinaryString(e));
 		//for(int i=0;i<64;i++)
-			//if((startB.whitePieces>>i)%2==1)
-				//System.out.print("1");
-			//else
-				//System.out.print("0");
-		
+		//if((startB.whitePieces>>i)%2==1)
+		//System.out.print("1");
+		//else
+		//System.out.print("0");
+
 		//System.out.println("is Occupied"+startB.isOccupied(14));
 		//Search search=new Search(startB, 0, 3);
 		//String s=search.minimax(startB, 0, 3);
 		//System.out.println(" hamle seq: "+ s);
-		
+
 		//startB.printBoard();
 		//search.printPath();
-//		Evaluate eval=new Evaluate();
-//		System.out.println(eval.materialcount(startB));
-//			System.out.println("blackreach: "+Long.toBinaryString(startB.blackReach));
-			//System.out.println("a"+i);
+		//		Evaluate eval=new Evaluate();
+		//		System.out.println(eval.materialcount(startB));
+		//			System.out.println("blackreach: "+Long.toBinaryString(startB.blackReach));
+		//System.out.println("a"+i);
 		//System.out.print(Long.toBinaryString(~startB.whitePieces));
 		//System.out.println(Long.toBinaryString(e));
 		//System.out.println(a+"  "+b+"  c: "+c);
+	}
+	public static void simul() throws IOException{
+
+		String outputfile="carlsenout.txt";
+		// evolution
+		Evolution evol = new Evolution();
+		String gamefile= "output.txt";	
+		int generationnum=500;
+		int populationsize=10;
+		int positionnum=1000;
+		double crossoverrate=0.26;
+		double mutationrate=0.07; 
+		int upperbound=2;// bu positional parametreler icin taslara 3 verdim aklÄ±mdan
+		Individual bestind = new Individual();
+		int besti=0;
+		int bestj=0;
+		bestind.positionssolved=0;
+		// grid search
+
+				Individual a = evol.startEvol(generationnum, populationsize, positionnum , 
+						crossoverrate, mutationrate,upperbound,gamefile,"longsearchout20.txt");
 	}
 }

@@ -7,6 +7,7 @@ public class Move implements Comparable <Move>{
 	public String move;
 	public int pieceType;
 	public int moveType=0;
+	public int pinned=0;
 	public int side=0;// whose move is this
 	public double moveScore=0;
 	public Move child;

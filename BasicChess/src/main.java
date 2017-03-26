@@ -7,6 +7,7 @@ import java.io.IOException;
 import java.io.PrintStream;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Scanner;
 import java.util.StringTokenizer;
 
 import javax.swing.JFrame;
@@ -21,6 +22,7 @@ public class main extends JPanel{
 
 	public static void main(String[] args) throws IOException {
 		// TODO Auto-generated method stub
+		Board.generateZobrist();
 		Board startB=new Board(1);
 		startB.cBoard=startB.iniB;
 		//startB.movePiece("207312");
@@ -28,19 +30,84 @@ public class main extends JPanel{
 		//startB.printBoard();
 		//startB.printBitboard(startB.whitePieces);
 		UCI uci = new UCI(startB);
+		String inputfile="gamesout.txt";
+		String outputfile="elleyap.txt";
+		//simul();
+		ArrayList<Move> moves=new ArrayList<>();
+		MoveGenerator movegen=new MoveGenerator();
+		//movegen.addMove(moves, startB, 0, 53, 45);
+	/*	MoveGenerator movegen=new MoveGenerator();
+		System.out.println("isbet: "+		movegen.isbetween(51, 37, 58));
+		long b=1;
+   	 System.out.println("bakalım olacak mı"+(b<<0));
+		@SuppressWarnings("resource")
+		Scanner input = new Scanner(System.in);
+        String board="";
+	    	for(int i =0;i<8;i++)
+	        {
+	             String a = input.nextLine();
+	             board=board+a;
+	        }
+	    	int side=input.nextInt();
+	     startB.texttoBoard(board,side);
+	     startB.printBoard();
+	     ArrayList<Move>movelist=new ArrayList<>();
+	     movelist=movegen.legalMoves(startB, side, null);
+	     for(Move move: movelist){
+	    	 startB.makeMove(move);
+	    	 startB.printBoard();
+		     ArrayList<Move>movelist1=new ArrayList<>();
+		     movelist1=movegen.legalMoves(startB, 1-side, null);
+		     for(Move move2:movelist1){
+		    	 System.out.println("move: "+ move2.move);
+		     }
+		     startB.unmakeMove(move);
+	     } */
+		//System.out.println(movegen.isbetween(52, 38, 59));
+	/*	MoveGenerator movegen=new MoveGenerator();
+		ArrayList<Move>moves=new ArrayList<>();
+		moves=movegen.legalMoves(startB, 0, null);
+		startB.printBoard();
+		long reach=0;
+		for(int i =6;i<12;i++)
+			reach|=movegen.pieceReach[i];
+		String a= "13" ;
+		for(int i=0;i<movegen.pinnedcount;i++)
+			System.out.println("açmazda: "+movegen.pinnedpiece[i]);
+		for(int i=0;i<6;i++)
+			System.out.println("şah çekiyor: "+movegen.checkpiece[6+i]);
+		System.out.println("incheck: "+startB.inCheck);
+		for(Move movex: moves){
+			System.out.println("legal: "+movex.move);
+		}*/
 		//System.out.println((int)(Math.log(startB.bK)/Math.log(2)));
-
-		String inputfile = "C:\\Users\\toshıba\\Desktop\\Result.pgn";
+		//String outputfile="gamesout.txt";
+		//String inputfile = "C:\\Users\\toshıba\\Desktop\\Hepsi.pgn";
 		//uci.Converter(inputfile,outputfile);
-/*
-			while(true)
+		
+		while(true)
 		{
+				
 			uci.uciCommunication();
 		}
-	*/	 
+	//position startpos moves e2e4 b8c6 d2d4 e7e5 d4d5 f8b4 c2c3 d8h4 c3b4 h4e4 g1e2 e4b4 c1d2
+	//position startpos moves e2e4 b8c6 d2d4 e7e5 d4d5 f8b4 c2c3 d8h4 c3b4 h4e4 g1e2 e4b4 c1d2 b4b2 d5c6 d7c6 d2c3 b2c3
+	//position startpos moves e2e4 b8c6 d2d4 e7e5 d4d5 d8h4 d5c6 h4e4 g1e2 d7c6 b1c3 e4h4 g2g3 h4g4 f1g2 c8f5 e1g1 f8c5 c1e3 c5e3 f2e3 g8f6 e3e4 f5e6
 
+		
 		//DrawGraph.draw();
-		simul();
+		//readWrite();
+
+		
+		//startB.printBoard();
+		//position startpos moves e2e4 d7d5 e4d5 d8d5 b1c3 d5a5 g1f3 a5c5 d2d4 c5a5 f1c4 c8g4 e1g1 b8d7 d1d3 e7e6 f3e5 d7e5 d4e5 a8d8 d3e4 g4f5 e4b7
+
+		//String input = "position startpos moves e2e4 d7d5 e4d5 d8d5 b1c3 d5a5 g1f3 a5c5 d2d4 c5a5 f1c4 c8g4 e1g1 b8d7 d1d3 e7e6 f3e5 d7e5 d4e5 a8d8 d3e4 g4f5 e4b7";
+		//uci.inputPosition("startpos moves e2e3 e7e5 g1e2 b8c6 f2f4 d7d5 e2c3 d5d4 c3e4 d4e3 f1b5 c6b4");
+		//uci.inputPosition(input);
+		//startB.printBoard();
+		//Evaluate eval = new Evaluate(startB);
+		//eval.positionalValues1();
 		// adjacent calculator
 
 		/*		
@@ -227,25 +294,45 @@ public class main extends JPanel{
 		//System.out.println(Long.toBinaryString(e));
 		//System.out.println(a+"  "+b+"  c: "+c);
 	}
+	public static void readWrite() throws IOException{
+		String inputfile="grap4rastgele.txt";
+		String outputfile="deneme.txt";
+		BufferedReader reader=new BufferedReader(new FileReader(inputfile));
+		PrintStream out = new PrintStream(new FileOutputStream(outputfile));
+		System.setOut(out);
+		String line = reader.readLine();
+		int count =1;
+		int total=0;
+		 while ((line = reader.readLine()) != null) {
+			 if(line.startsWith("individual: ")){
+				 int i=line.indexOf("solved");
+				 line=line.substring(i+8);
+				 int a = Integer.parseInt(line);
+				 total+=a;
+				 //System.out.println(count);
+				 count++;
+			 }
+		 }
+		 System.out.println(total/count);
+	}
+	
 	public static void simul() throws IOException{
-
-		String outputfile="carlsenout.txt";
+	
+		String outputfile="3hamleli2li.txt";
 		// evolution
 		Evolution evol = new Evolution();
-		String gamefile= "output.txt";	
-		int generationnum=500;
-		int populationsize=10;
+		String gamefile= "gamesout.txt";	
+		int generationnum=100;
+		int populationsize=10;// 10 cok az
 		int positionnum=1000;
-		double crossoverrate=0.26;
+		double crossoverrate=0.25;
 		double mutationrate=0.07; 
-		int upperbound=2;// bu positional parametreler icin taslara 3 verdim aklımdan
+		int upperbound=2;// bu positional parametreler icin taslara 3 verdim aklımdan kullanmıyorum
 		Individual bestind = new Individual();
 		int besti=0;
 		int bestj=0;
 		bestind.positionssolved=0;
-		// grid search
-
-				Individual a = evol.startEvol(generationnum, populationsize, positionnum , 
-						crossoverrate, mutationrate,upperbound,gamefile,"longsearchout20.txt");
+		evol.startEvol(generationnum, populationsize, positionnum , 
+						crossoverrate, mutationrate,upperbound,gamefile,outputfile);
 	}
 }

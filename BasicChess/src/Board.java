@@ -1,5 +1,6 @@
 
 import java.util.ArrayList;
+import java.security.*;
 
 public class Board {
 	public String [][]iniB= {
@@ -12,6 +13,9 @@ public class Board {
 			{"p","p","p","p","p","p","p","p"},
 			{"r","n","b","q","k","b","n","r"}
 	};
+	public long hashKey=0;
+	public static long[] []zobristKeys=new long[64][12];
+	public static long []zobristRights=new long [13];//first 4, castling, 8 enpas, 1 sidetoMove
 	public 	String[][]cBoard=new String[8][8];
 	public long iwP=0b0000000000000000000000000000000000000000000000001111111100000000L;
 	public long ibP=0b0000000011111111000000000000000000000000000000000000000000000000L;
@@ -38,6 +42,7 @@ public class Board {
 	long wK;
 	long bK;
 	int sideToMove=0;
+	int moveNumber=0;
 	int isWhiteCastled=0;
 	int isBlackCastled=0;
 	int whiteqscastle=1;
@@ -45,8 +50,10 @@ public class Board {
 	int blackqscastle=1;
 	int blackkscastle=1;
 	int enpas=0;
+	int inirights[]={0,0,1,1,1,1,0};
 	int rights[]={0,0,1,1,1,1,0};
-	int temp[]=new int[7];
+	int temp[]={0,0,1,1,1,1,0};
+	int inCheck=0;//is current board position is check if plural means plural check
 	Move lastmove;
 	long  whitePieces=iwB|iwQ|iwR|iwP|iwN|iwK;
 	long  blackPieces=ibB|ibQ|ibR|ibP|ibN|ibK;
@@ -170,7 +177,7 @@ public class Board {
 			}
 			else{
 				isBlackCastled=1;
-				rights[0]=1;
+				rights[1]=1;
 				if(moves.charAt(3)=='6'){//kingside
 					movePiece("070512");
 				}
@@ -205,7 +212,7 @@ public class Board {
 				int fcol=movex.move.charAt(3)-48;
 				int squ=56+(7-fcol);
 				addPiece(squ, movex.promotionType);
-				removePiece(squ, movex.pieceType);
+				removePiece(squ, 0);
 			}
 			else if(sideToMove==1){
 				int col=movex.move.charAt(1)-48;
@@ -213,7 +220,7 @@ public class Board {
 				int squ=(7-fcol);
 				//System.out.println("move: "+movex.move +" side "+ sideToMove+"col:  "+ col+" squ: "+ squ);
 				addPiece(squ, movex.promotionType);
-				removePiece(squ, movex.pieceType);
+				removePiece(squ, 6);
 			}
 		}
 		whitePieces=wB|wQ|wR|wP|wN|wK;
@@ -525,6 +532,14 @@ public class Board {
 		bN=ibN;
 		bK=ibK;
 		sideToMove=0;
+		whiteReach=0;
+		blackReach=0;
+		resetrights();
+	}
+	private void resetrights() {
+		// TODO Auto-generated method stub
+		for(int i = 0;i<7;i++)
+			rights[i]=inirights[i];
 	}
 	public void printBitboard(long a){
 		for(int i=0;i<8;i++){
@@ -534,7 +549,7 @@ public class Board {
     			if((squ&a)!=0)
     				System.out.print("*");
     			else
-    				System.out.print(" ");
+    				System.out.print("0");
 			}
     		System.out.println();
     	}
@@ -544,7 +559,7 @@ public class Board {
 		String [][] board=new String [8][8];
 		for (int i = 0; i < 8; i++) {
 			for (int j = 0; j < 8; j++) {
-				board[i][j]=" ";
+				board[i][j]="*";
 			}
 		}
 		for (int i = 0; i < 8; i++) {
@@ -592,6 +607,60 @@ public class Board {
 			}
 			System.out.println();
 		}
+		System.out.println("side to move: "+sideToMove);
+	}
+	//this takes input a text image of the board and changes the bitboards
+	public void texttoBoard(String text,int side){
+		resetbitboards();
+		for(int i =0;i<64;i++){
+			char x=text.charAt(i);
+			long squ=1;
+			squ<<=63-i;
+			if(x=='*'){}
+			else if(x=='Y'){
+				bP|=squ;
+			}else if(x=='N'){
+				bN|=squ;
+			}else if(x=='B'){
+				bB|=squ;
+			}else if(x=='R'){
+				bR|=squ;
+			}else if(x=='Q'){
+				bQ|=squ;
+			}else if(x=='K'){
+				bK|=squ;
+			}else if(x=='p'){
+				wP|=squ;
+			}else if(x=='n'){
+				wN|=squ;
+			}else if(x=='r'){
+				wR|=squ;
+			}else if(x=='q'){
+				wQ|=squ;
+			}else if(x=='k'){
+				wK|=squ;
+			}else if(x=='b'){
+				wB|=squ;
+			}
+		}
+		whitePieces=wP|wB|wN|wR|wQ|wK;
+		blackPieces=bP|bB|bN|bR|bQ|bK;
+		sideToMove=side;
+	}
+	private void resetbitboards() {
+		// TODO Auto-generated method stub
+		wK=0;
+		wB=0;
+		wP=0;
+		wN=0;
+		wR=0;
+		wQ=0;
+		bK=0;
+		bQ=0;
+		bB=0;
+		bR=0;
+		bN=0;
+		bP=0;
 	}
 	//"rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1" input syntax
 	void importFEN(String s){
@@ -629,9 +698,18 @@ public class Board {
 			long squ=1;
 			squ<<=pos;
 			long bitb=0;
-			if(pieceType==0)bitb=wP&=~squ;else if(pieceType==1)bitb=wN&=~squ;else if(pieceType==2)wB&=~squ;else if(pieceType==3)wR&=~squ;
-			else if(pieceType==4)wQ&=~squ;else if(pieceType==5)wK&=~squ;else if(pieceType==6)bP&=~squ;else if(pieceType==7)bN&=~squ;
-			else if(pieceType==8)bB&=~squ;else if(pieceType==9)bR&=~squ;else if(pieceType==10)bQ&=~squ;else if(pieceType==11)bK&=~squ;
+			if(pieceType==0)wP&=~squ;
+			else if(pieceType==1)wN&=~squ;
+			else if(pieceType==2)wB&=~squ;
+			else if(pieceType==3)wR&=~squ;
+			else if(pieceType==4)wQ&=~squ;
+			else if(pieceType==5)wK&=~squ;
+			else if(pieceType==6)bP&=~squ;
+			else if(pieceType==7)bN&=~squ;
+			else if(pieceType==8)bB&=~squ;
+			else if(pieceType==9)bR&=~squ;
+			else if(pieceType==10)bQ&=~squ;
+			else if(pieceType==11)bK&=~squ;
 
 		}
 		void storeRights(){
@@ -640,7 +718,7 @@ public class Board {
 		}
 		void restoreRights(){
 			for(int i=0;i<7;i++)
-				temp[i]=rights[i];
+				rights[i]=temp[i];
 		}
 		void updateRights(Move movex){
 			if(movex.pieceType==5)
@@ -668,4 +746,71 @@ public class Board {
 					rights[5]=0;
 			}
 		}
+		public static void generateZobrist() {
+			SecureRandom rand=new SecureRandom();
+			
+			// TODO Auto-generated method stub
+			for(int i = 0;i<64;i++){
+				for(int j=0;j<12;j++){
+					zobristKeys[i][j]=rand.nextLong();
+				}
+			}
+			for(int i=0;i<13;i++){
+				zobristRights[i]=rand.nextLong();
+			}	
+		}
+		
+		public void calculateHashVal(){
+			long returnKey=0;
+			for(int i =0;i<64;i++){
+				long a =1;
+				if((wP&(a<<i))!=0){
+					returnKey^=zobristKeys[i][0];
+				}
+				else if((bP&(a<<i))!=0){
+					returnKey^=zobristKeys[i][6];
+					
+				}else if((wN&(a<<i))!=0){
+					returnKey^=zobristKeys[i][1];
+
+				}else if((bN&(a<<i))!=0){
+					returnKey^=zobristKeys[i][7];
+					
+				}else if((wK&(a<<i))!=0){
+					returnKey^=zobristKeys[i][2];
+					
+				}else if((bK&(a<<i))!=0){
+					returnKey^=zobristKeys[i][8];
+					
+				}else if((wR&(a<<i))!=0){
+					returnKey^=zobristKeys[i][3];
+					
+				}else if((bR&(a<<i))!=0){
+					returnKey^=zobristKeys[i][9];
+					
+				}else if((wQ&(a<<i))!=0){
+					returnKey^=zobristKeys[i][4];
+					
+				}else if((bQ&(a<<i))!=0){
+					returnKey^=zobristKeys[i][10];
+					
+				}else if((wK&(a<<i))!=0){
+					returnKey^=zobristKeys[i][5];
+					
+				}else if((bK&(a<<i))!=0){
+					returnKey^=zobristKeys[i][11];
+					
+				}
+				
+			}
+			for(int i = 2;i<6;i++){
+				if(rights[i]==1)
+					returnKey^=zobristRights[i-2];
+			}
+			if(sideToMove==0)
+				returnKey^=zobristRights[12];
+			
+			hashKey=returnKey;
+		}
+		
 }

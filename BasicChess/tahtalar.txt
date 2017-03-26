@@ -1,0 +1,264 @@
+20
+generation: 0
+R*BQ*RK*
+YY****B*
+***Y***Y
+**ppNYY*
+*p*n*Y**
+**n*****
+p**q*ppp
+***rrbk*
+side to move: 1
+R*B*R*K*
+YYY**YYY
+*****Q**
+****n***
+********
+**p*****
+pp**qppp
+**kr*b*r
+side to move: 1
+R***K**R
+Y*Y*BYYY
+**Y*YNB*
+*****Q**
+***p****
+**n*r**p
+ppp**pp*
+r*bqn*k*
+side to move: 1
+R*BQ*RK*
+Y***NYB*
+*YNYY*Y*
+**Y****Y
+p***p**p
+***p*np*
+*ppn*pb*
+r*bqr*k*
+side to move: 0
+R*****K*
+YYY**Y*Y
+**N**NY*
+********
+**p*p***
+*pn*QppB
+p****r*p
+r**q**k*
+side to move: 0
+R*B**RK*
+YY**NYBY
+*Q****Y*
+***Y****
+***Ypp**
+***p**n*
+ppb***pp
+r*bq*rk*
+side to move: 1
+RR****K*
+*****YYY
+B*Y*Y***
+Y**Np***
+**Ypnp**
+Q*p*****
+p*nq**pp
+r****rk*
+side to move: 1
+R**R**K*
+YY**QYBY
+**Y*BNY*
+**p*****
+**npY***
+**q*p**p
+p***bppb
+r****rk*
+side to move: 1
+RNB*KB*R
+YY*Y*YYY
+*****N**
+**YY****
+***Qp***
+**n**p**
+pp*bn*pp
+r**qkb*r
+side to move: 1
+*R**K**R
+****BY*Y
+YQBYYY**
+*Y******
+***qpp**
+**n**b**
+ppp***pp
+**kr***r
+side to move: 0
+R****RK*
+YYYQ*YBN
+**NY**Y*
+***nY**Y
+*pp***Bn
+***p**p*
+p**bppbp
+*r*q*rk*
+side to move: 1
+b*Q*NRK*
+**YB*YYY
+Y**Y****
+*Y**p***
+***b*p*B
+**n****p
+ppp***p*
+r**qk**r
+side to move: 0
+*R*Q*RK*
+****BY*Y
+Y*NYB***
+*Y*nYY**
+****p***
+**p**pp*
+ppn***bp
+r**q*rk*
+side to move: 1
+R*BQK**R
+YY***YB*
+******YY
+***N****
+***p****
+**n*b*p*
+pp*q**bp
+r***k**r
+side to move: 1
+****RR*K
+Y**QN**Y
+**BY*YY*
+**Y*****
+*Y**pn**
+*****nq*
+ppp***pp
+****rrk*
+side to move: 0
+RR******
+**Q*KY*Y
+****BY**
+Y**YY***
+********
+**p*q***
+p*p*bppp
+*r*r**k*
+side to move: 1
+R*B*K**R
+*YQ**YBY
+Y***Y*Y*
+p*Y*****
+**p*np**
+**p**q**
+*p****pp
+r*b*k**r
+side to move: 1
+**BR**K*
+**Q*NYB*
+Y*NYY*Y*
+*RY****Y
+****p**p
+**pp*np*
+*p*nqpb*
+r*b*r*k*
+side to move: 0
+R*B*K**R
+*YQ*NYBY
+Y***Y*Y*
+**Y*****
+p*b*np**
+**pp*N**
+*p****pp
+r*bqk**r
+side to move: 0
+*RBQ*RK*
+*****YBY
+Y**Y**Y*
+NYYpY**N
+**p*****
+*pnq**p*
+pb*nppbp
+*r***rk*
+side to move: 1
+one generation: 80
+individual:  1 position solved: 6
+fitness: 5.4  first: 4
+best individual weights: 
+weight 0 : -27.0
+weight 1 : -2.0
+weight 2 : 51.0
+weight 10 : 40.0
+weight 11 : -19.0
+weight 12 : 48.0
+weight 20 : 2.0
+weight 21 : 35.0
+weight 22 : 84.0
+weight 30 : 8.0
+weight 31 : 70.0
+weight 32 : -85.0
+weight 33 : -58.0
+weight 34 : -5.0
+weight 35 : 11.0
+weight 40 : -37.0
+weight 41 : -39.0
+weight 42 : 24.0
+weight 43 : 25.0
+weight 44 : -63.0
+weight 45 : -20.0
+weight 50 : 32.0
+weight 51 : 52.0
+weight 52 : 50.0
+weight 53 : 1.0
+weight 54 : 7.0
+weight 55 : -55.0
+weight 60 : 1.0
+weight 94 : 100.0
+weight 95 : 205.0
+weight 96 : 289.0
+weight 97 : 478.0
+weight 98 : 810.0
+mutation rate: 0.07
+improvements by crossover:0
+improvements by mutation:0
+Best individual
+number of positions solved: 6 generation: 0
+weight 0 : -27.0
+weight 1 : -2.0
+weight 2 : 51.0
+weight 10 : 40.0
+weight 11 : -19.0
+weight 12 : 48.0
+weight 20 : 2.0
+weight 21 : 35.0
+weight 22 : 84.0
+weight 30 : 8.0
+weight 31 : 70.0
+weight 32 : -85.0
+weight 33 : -58.0
+weight 34 : -5.0
+weight 35 : 11.0
+weight 40 : -37.0
+weight 41 : -39.0
+weight 42 : 24.0
+weight 43 : 25.0
+weight 44 : -63.0
+weight 45 : -20.0
+weight 50 : 32.0
+weight 51 : 52.0
+weight 52 : 50.0
+weight 53 : 1.0
+weight 54 : 7.0
+weight 55 : -55.0
+weight 60 : 1.0
+weight 94 : 100.0
+weight 95 : 205.0
+weight 96 : 289.0
+weight 97 : 478.0
+weight 98 : 810.0
+solved positions:
+5
+6
+8
+10
+17
+18

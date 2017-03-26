@@ -18,6 +18,376 @@ public class MoveGenerator {
 	long row8=0b1111111100000000000000000000000000000000000000000000000000000000L;
 	long col1=0b1000000010000000100000001000000010000000100000001000000010000000L;
 	long col8=0b0000000100000001000000010000000100000001000000010000000100000001L;
+	int[] dirs={-9,-8,-7,-1,1,7,8,9};
+	long []pieceReach=new long[12];
+	int checkpiece[]=new int [12];
+	int pinnedpiece[]=new int[10];
+	int pinnedcount=0;
+	int pinite=0;
+	int [] pieceMobs=new int  [12];
+	public ArrayList<Move> legalMoves(Board b, int side, Move lastmove){
+		b.inCheck=0;
+		reset();
+		int kingsqu=1;
+		if(side==0)
+			kingsqu=(int) (Math.log(b.wK)/Math.log(2));
+		if(side==1)
+			kingsqu=(int)(Math.log(b.bK)/Math.log(2));
+		pinnedCalc(b,kingsqu,side);	
+		ArrayList<Move> legalmoves = new ArrayList<>();
+		ArrayList<Move>moves = newmoveGenerator(b, side, lastmove);
+		long kingmove=1;
+		long enemyreach=0;
+		for(int i =0;i<6;i++){
+			enemyreach|=pieceReach[(1-side)*6+i];
+		}
+		/*for(int i =0;i<pinnedcount;i++){
+			System.out.println("pinnedpiece: "+pinnedpiece[i]);
+		}
+		*/
+		//b.printBitboard(enemyreach);
+		//position startpos moves e2e4 e7e5 g1f3 b8c6 f1b5 f8c5 e1g1 g8f6 d2d3 c6b4 a2a3 b4a6 c1g5
+
+		if(b.inCheck==0){//pinned piece hamlelerini zaten çýkarmýþ olucam geriye þah kontrolü kaldý
+			for(Move movex: moves){
+				kingmove = 1;
+				if(movex.pieceType==(5+side*6)){
+					int row=7-(movex.move.charAt(2)-48);
+					int col=7-(movex.move.charAt(3)-48);
+					kingmove<<=row*8+col;
+					if((kingmove&enemyreach)==0){
+						legalmoves.add(movex);
+					}
+				}
+				else{
+					if(movex.pinned==0)
+						legalmoves.add(movex);
+				}
+			}
+		}
+		else if(b.inCheck==1){//3 ihtimal var			
+			int checksqu=0;//taþý al veya önünü kapa veya kac
+			for(int i=0;i<6;i++){
+				int a=checkpiece[i+(1-side)*6];
+				if(a!=0){
+					checksqu=a;
+				}
+			}
+			for(Move movex: moves){//sahi kac
+				kingmove = 1;
+				int row=7-(movex.move.charAt(2)-48);
+				int col=7-(movex.move.charAt(3)-48);
+				if(movex.pieceType==(5+side*6)&&movex.moveType!=4){
+					kingmove<<=row*8+col;
+					if((kingmove&enemyreach)==0){
+						legalmoves.add(movex);
+					}
+				}
+				else if(row*8+col==checksqu){//capture
+					legalmoves.add(movex);
+				}
+				else if(isbetween(row*8+col,checksqu,kingsqu)){//araya koy
+					if(movex.pinned==0)
+						legalmoves.add(movex);
+			
+				}
+			}
+		}
+		else{//multiple checks only king moves
+			for(Move movex: moves){
+				kingmove = 1;
+				if(movex.pieceType==(5+side*6)){
+					int row=7-(movex.move.charAt(2)-48);
+					int col=7-(movex.move.charAt(3)-48);
+					kingmove<<=row*8+col;
+					if((kingmove&enemyreach)==0){
+						legalmoves.add(movex);
+					}
+				}
+			}
+		}
+		//System.out.println("is check ?:"+ b.inCheck);
+		//for(Move movex: legalmoves){
+		//	System.out.println("hamle: "+ movex.move + " tas: "+movex.pieceType);
+		//}
+		/*if(legalmoves.size()==0){
+			System.out.println("empty");
+			System.out.println("check: "+b.inCheck);
+			for(int i=0;i<pinnedcount;i++){
+				System.out.println("pinned: "+pinnedpiece[i]);
+			}
+			b.printBoard();
+		}*/
+		return legalmoves;
+	}
+	private void reset() {
+		// TODO Auto-generated method stub
+		for(int i =0;i<12;i++){
+			pieceReach[i]=0;
+			checkpiece[i]=0;
+			
+		}
+		for(int i=0;i<10;i++)
+			pinnedpiece[i]=0;
+		pinnedcount=0;
+		pinite=0;
+	}
+	// true if squ is between checksqu and kingsqu
+	public boolean isbetween(int squ, int checksqu, int kingsqu) {
+		// TODO Auto-generated method stub
+		int checkrow=checksqu/8;
+		int checkcol=checksqu%8;
+		int kingrow=kingsqu/8;
+		int kingcol=kingsqu%8;
+		int squrow=squ/8;
+		int squcol=squ%8;
+		if(checksqu==squ)
+			return true;
+		else if(checkrow==kingrow&&kingrow==squrow){
+			if((checkcol<=squcol&&kingcol>=squcol)||(checkcol>=squcol&&kingcol<=squcol))
+				return true;
+		}
+		else if(checkcol==kingcol&&kingcol==squcol){
+			if((checkrow<=squrow&&kingrow>squrow)||(checkrow>=squrow&&kingrow<squrow))
+				return true;
+		}
+		else if(Math.abs(kingsqu-checksqu)%9==0&&Math.abs(squ-checksqu)%9==0){
+			if((kingsqu<squ&&checksqu>=squ)||(kingsqu>squ&&checksqu<=squ))
+				return true;
+		}
+		else if(Math.abs(kingsqu-checksqu)%7==0&&Math.abs(squ-checksqu)%7==0){
+			if((kingsqu<squ&&checksqu>=squ)||(kingsqu>squ&&checksqu<=squ))
+				return true;
+		}
+		return false;
+	}
+	public void pinnedCalc(Board b, int kingsqu, int side) {
+		// TODO Auto-generated method stub
+		long enemyqueen=1;
+		long enemybishop=1;
+		long enemyrook=1;
+		long allpieces=b.whitePieces|b.blackPieces;
+		long myall=1;
+		long enmall=1;
+		if(side==0){
+			enemyqueen=b.bQ;
+			enemybishop=b.bB;
+			enemyrook=b.bR;
+			myall=b.whitePieces;
+			enmall=b.blackPieces;
+		}
+		else{
+			enemyqueen=b.wQ;
+			enemybishop=b.wB; 
+			enemyrook=b.wR;
+			myall=b.blackPieces;
+			enmall=b.whitePieces;
+		}
+		//sað çapraza git
+		int temp =kingsqu;
+		long squ=1;
+		while(temp>8&&temp%8!=0){
+			squ=1;
+			temp-=9;
+			squ<<=temp;
+			if((myall&squ)!=0){
+				int pinpos=temp;
+				while(temp>8&&temp%8!=0){
+					squ=1;
+					temp-=9;
+					squ<<=temp;
+					if((allpieces&squ)!=0){
+						if((enemybishop&squ)!=0||(enemyqueen&squ)!=0){
+							pinnedpiece[pinnedcount++]=pinpos;
+						}
+						else{
+							break;
+						}
+					}
+				}
+				break;
+			}
+		}
+		//sol - üst çapraz git
+		temp =kingsqu;
+		squ=1;
+		while(temp<55&&temp%8!=7){
+			squ=1;
+			temp+=9;
+			squ<<=temp;
+			if((myall&squ)!=0){
+				int pinpos=temp;
+				while(temp<55&&temp%8!=7){
+					squ=1;
+					temp+=9;
+					squ<<=temp;
+					if((allpieces&squ)!=0){
+						if((enemybishop&squ)!=0||(enemyqueen&squ)!=0){
+							pinnedpiece[pinnedcount++]=pinpos;
+						}
+						else{
+							break;
+						}
+					}
+				}
+				break;
+			}
+		}
+		//sol - alt çapraz git
+		temp =kingsqu;
+		squ=1;
+		while(temp>=8&&temp%8!=7){
+			squ=1;
+			temp-=7;
+			squ<<=temp;
+			if((myall&squ)!=0){
+				int pinpos=temp;
+				while(temp>=8&&temp%8!=7){
+					squ=1;
+					temp-=7;
+					squ<<=temp;
+					if((allpieces&squ)!=0){
+						if((enemybishop&squ)!=0||(enemyqueen&squ)!=0){
+							pinnedpiece[pinnedcount++]=pinpos;
+						}
+						else{
+							break;
+						}
+					}
+				}
+				break;
+			}
+		}
+		//sqð - üst çapraz git
+		temp =kingsqu;
+		squ=1;
+		while(temp<=55&&temp%8!=0){
+			squ=1;
+			temp+=7;
+			squ<<=temp;
+			if((myall&squ)!=0){
+				int pinpos=temp;
+				while(temp<=55&&temp%8!=0){
+					squ=1;
+					temp+=7;
+					squ<<=temp;
+					if((allpieces&squ)!=0){
+						if((enemybishop&squ)!=0||(enemyqueen&squ)!=0){
+							pinnedpiece[pinnedcount++]=pinpos;
+							break;
+						}
+						else{
+							break;
+						}
+					}
+				}
+				break;
+			}
+		}
+		//sol git
+		temp =kingsqu;
+		squ=1;
+		while(temp%8!=7){
+			squ=1;
+			temp+=1;
+			squ<<=temp;
+			if((myall&squ)!=0){
+				int pinpos=temp;
+				while(temp%8!=7){
+					squ=1;
+					temp+=1;
+					squ<<=temp;
+					if((allpieces&squ)!=0){
+						if((enemyrook&squ)!=0||(enemyqueen&squ)!=0){
+							pinnedpiece[pinnedcount++]=pinpos;
+							break;
+						}
+						else{
+							break;
+						}
+					}
+				}
+				break;
+			}
+		}
+		//sað git
+		temp =kingsqu;
+		squ=1;
+		while(temp%8!=0){
+			squ=1;
+			temp-=1;
+			squ<<=temp;
+			if((myall&squ)!=0){
+				int pinpos=temp;
+				while(temp%8!=7){
+					squ=1;
+					temp-=1;
+					squ<<=temp;
+					if((allpieces&squ)!=0){
+						if((enemyrook&squ)!=0||(enemyqueen&squ)!=0){
+							pinnedpiece[pinnedcount++]=pinpos;
+							break;
+						}
+						else{
+							break;
+						}
+					}
+				}
+				break;
+			}
+		}//üst git
+		temp =kingsqu;
+		squ=1;
+		while(temp<=55){
+			squ=1;
+			temp+=8;
+			squ<<=temp;
+			if((myall&squ)!=0){
+				int pinpos=temp;
+				while(temp<=55){
+					squ=1;
+					temp+=8;
+					squ<<=temp;
+					if((allpieces&squ)!=0){
+						if((enemyrook&squ)!=0||(enemyqueen&squ)!=0){
+							pinnedpiece[pinnedcount++]=pinpos;
+							break;
+						}
+						else{
+							break;
+						}
+					}
+				}
+				break;
+			}
+		}
+		//alt git
+		temp =kingsqu;
+		squ=1;
+		while(temp>=8){
+			squ=1;
+			temp-=8;
+			squ<<=temp;
+			if((myall&squ)!=0){
+				int pinpos=temp;
+				while(temp>=8){
+					squ=1;
+					temp-=8;
+					squ<<=temp;
+					if((allpieces&squ)!=0){
+						if((enemyrook&squ)!=0||(enemyqueen&squ)!=0){
+							pinnedpiece[pinnedcount++]=pinpos;
+							break;
+						}
+						else{
+							break;
+						}
+					}
+				}
+				break;
+			}
+		}
+	}
 	//returns a list of available moves
 	// a move can have additional info about the move such as 
 	// target piece
@@ -26,8 +396,969 @@ public class MoveGenerator {
 	// suan reach degiskenlerini moveGenerator islemi esnasinda yapiyorum
 	// yani oncelikle hamle uretmem lazim ki cok mantiksiz degil ama bu hatasiz calisir mi bilmem
 	// illaki lazim olacak zaten ve 1 tasta iki is 
-//position startpos moves d2d4 b8c6 c1f4 d7d5 b1c3 c8g4 h2h3 g4h5 g2g4 h5g6 g1f3 e7e6 f4g5 g6c2 d1c2 c6d4 c2a4 b7b5 a4d4 f8c5 d4c5 g8f6 c5c6 e8f8 c6a8
+	//position startpos moves d2d4 b8c6 c1f4 d7d5 b1c3 c8g4 h2h3 g4h5 g2g4 h5g6 g1f3 e7e6 f4g5 g6c2 d1c2 c6d4 c2a4 b7b5 a4d4 f8c5 d4c5 g8f6 c5c6 e8f8 c6a8
+	public ArrayList<Move> newmoveGenerator(Board b, int side , Move lastmove){
+		ArrayList<Move> moves=new ArrayList<>();
+		long allp= b.whitePieces|b.blackPieces;
+		long pawncap=0;
+		if(side==0){
+			pawncap|=(b.bP<<7)&~col1;
+			pawncap|=(b.bP<<9)&~col8;
+			pieceReach[6]=pawncap;
+		}
+		if(side==1){
+			pawncap|=(b.wP<<7)&~col1;
+			pawncap|=(b.wP<<9)&~col8;
+			pieceReach[0]=pawncap;
+		}
+//		System.out.println("whiteknight: "+Long.toBinaryString(b.wN));
+//		System.out.println("whitebishop: "+Long.toBinaryString(b.wB));
+//		System.out.println("whiterook: "+Long.toBinaryString(b.wR));
+//		System.out.println("whiteking: "+Long.toBinaryString(b.wK));
+//		System.out.println("whitepawn: "+Long.toBinaryString(b.wP));
+//		System.out.println("blackpawn: "+Long.toBinaryString(b.bP));		
+		for(int i =0;i<64;i++){
+			long a=1;
+			a<<=i;
+			if((allp&a)==0||(b.wP&a)!=0||(b.bP&a)!=0){
+			}
+			else if((a&b.wQ)!=0){
+				QueenMovements(moves, b, i, 4, side, 0);
+			}
+			else if((a&b.wN)!=0){
+				KnightMovements(moves, b, i, 1, side, 0);
+			}
+			else if((a&b.wB)!=0){	
+				BishopMovements(moves, b, i, 2, side, 0);
+			}
+			else if((a&b.wR)!=0){
+				RookMovements(moves, b, i, 3, side, 0);
+			}
+			else if((a&b.wK)!=0){
+				KingMovement(moves, b, i, 5, side, 0);
+			}
+			
+			else if((a&b.bN)!=0){
+				KnightMovements(moves, b, i, 7, side, 1);
+			}
+			else if((a&b.bB)!=0){	
+				BishopMovements(moves, b, i, 8, side, 1);
+			}
+			else if((a&b.bR)!=0){
+				RookMovements(moves, b, i, 9, side, 1);
+			}
+			else if((a&b.bK)!=0){
+				KingMovement(moves, b, i, 11, side, 1);
+			}
+			else if((a&b.bQ)!=0){
+				QueenMovements(moves, b, i, 10, side, 1);
+			}
+		}
+		enPassantMoves(moves, b, side, b.lastmove);
+		pawnMoves(moves, b, side);
+		//after generating all reaches look whether incheck
+		isCheck(b);
+		return moves;
+	}
+	public void isCheck(Board b) {
+		// TODO Auto-generated method stub
+		int side=b.sideToMove;
+		long king=0;
+		if(side==0)
+			king=b.wK;
+		else
+			king=b.bK;
+		long reach=0;
+		for(int i=0;i<6;i++){
+			reach=pieceReach[6*(1-side)+i];
+			if((reach&king)!=0){
+				b.inCheck++;
+			}
+		}
+	}
+	public void QueenMovements(ArrayList<Move>moves,Board b,int squ,int piecetype,int side,int pieceside){
+		if(side==pieceside){
+			diagonalMoves(moves,b,squ,piecetype,side);		
+			antidiagonalMoves(moves,b,squ,piecetype,side);	
+			verticalMoves(moves, b, squ, piecetype,side);
+			horizontalMoves(moves, b, squ, piecetype,side);
+		}
+		else{
+			diagonalReach(b, squ, piecetype, pieceside);
+			antidiagonalReach(b, squ, piecetype, pieceside);
+			verticalReach(b, squ, piecetype, pieceside);
+			horizontalReach(b, squ, piecetype, pieceside);
+		}
+	}
+	public void BishopMovements(ArrayList<Move>moves,Board b,int squ,int piecetype,int side,int pieceside){
+		if(side==pieceside){
+			diagonalMoves(moves,b,squ,piecetype,side);		
+			antidiagonalMoves(moves,b,squ,piecetype,side);	
+		}
+		else{
+			diagonalReach(b, squ, piecetype, pieceside);
+			antidiagonalReach(b, squ, piecetype, pieceside);
+		}
+	}
+	public void RookMovements(ArrayList<Move>moves,Board b,int squ,int piecetype,int side,int pieceside){
+		if(side==pieceside){
+			verticalMoves(moves,b,squ,piecetype,side);		
+			horizontalMoves(moves,b,squ,piecetype,side);	
+		}
+		else{
+			verticalReach(b, squ, piecetype, pieceside);
+			horizontalReach(b, squ, piecetype, pieceside);
+		}
+	}
+	public void KnightMovements(ArrayList<Move>moves,Board b,int squ,int piecetype,int side,int pieceside){
+		if(side==pieceside){
+			knightMoves(moves, b, squ, piecetype, pieceside);
+		}else{
+			knightReach(b, squ, piecetype, pieceside);
+		}
+	}
+	public void KingMovement(ArrayList<Move>moves,Board b,int squ,int piecetype,int side,int pieceside){
+		if(side==pieceside){
+			castlingMoves(moves, b, pieceside);
+			kingMoves(moves, b, squ, piecetype, pieceside);
+		}else{
+			kingReach(b, squ, piecetype, pieceside);
+		}
+	}
+	public void kingReach( Board b, int squ, int piecetype, int side) {
+		long bitKing=0b0;
+		long enemy=0;
+		long allmoves=0;
+		long ownPiece=0;
+		long enemyreach=0;
+		if(side==0){
+			bitKing=b.wK;
+			enemy=b.blackPieces;
+			ownPiece=b.whitePieces;
+			enemyreach=b.blackReach;
+			piecetype=5;
+		}
+		if(side==1){
+			bitKing=b.bK;
+			enemy=b.whitePieces;
+			ownPiece=b.blackPieces;
+			piecetype=11;
+			enemyreach=b.whiteReach;
+		}
+		int moveclockwise[][]=new int[8][2];
+		// sahin yerini bulduk simdi buradan hamleleri cikaricaz knight gibi
+		int row=7-(squ/8);
+		int col=7-(squ%8);
+		int orow=row;
+		int ocol=col;
+		int count=0;
+		moveclockwise[count][0]=row-1;
+		moveclockwise[count++][1]=col;
+		moveclockwise[count][0]=row-1;
+		moveclockwise[count++][1]=col+1;
+		moveclockwise[count][0]=row;
+		moveclockwise[count++][1]=col+1;
+		moveclockwise[count][0]=row+1;
+		moveclockwise[count++][1]=col+1;
+		moveclockwise[count][0]=row+1;
+		moveclockwise[count++][1]=col;
+		moveclockwise[count][0]=row+1;
+		moveclockwise[count++][1]=col-1;
+		moveclockwise[count][0]=row;
+		moveclockwise[count++][1]=col-1;
+		moveclockwise[count][0]=row-1;
+		moveclockwise[count++][1]=col-1;
+		long possiblemoves=0;//list of possible moves to be checked with pieces
+		for(int i=0;i<8;i++){
+			int row1=moveclockwise[i][0];
+			int col1=moveclockwise[i][1];
+			if(row1>=0&row1<8&col1>=0&col1<8){//possible moves
+				int finalsqu=((7-row1)*8)+(7-col1);
+				long thismove=1;
+				thismove<<=finalsqu;
+				possiblemoves|=thismove;
+			}
+		}
+		long legalmoves=possiblemoves&~ownPiece;
+		pieceReach[piecetype]=legalmoves;
+	}
+	public void kingMoves(ArrayList<Move> moves, Board b, int squ, int piecetype, int side) {
+		long bitKing=0b0;
+		long enemy=0;
+		long allmoves=0;
+		long ownPiece=0;
+		long enemyreach=0;
+		if(side==0){
+			bitKing=b.wK;
+			enemy=b.blackPieces;
+			ownPiece=b.whitePieces;
+			enemyreach=b.blackReach;
+			piecetype=5;
+		}
+		if(side==1){
+			bitKing=b.bK;
+			enemy=b.whitePieces;
+			ownPiece=b.blackPieces;
+			piecetype=11;
+			enemyreach=b.whiteReach;
+		}
+		int moveclockwise[][]=new int[8][2];
+		// sahin yerini bulduk simdi buradan hamleleri cikaricaz knight gibi
+		int row=7-(squ/8);
+		int col=7-(squ%8);
+		int orow=row;
+		int ocol=col;
+		int count=0;
+		moveclockwise[count][0]=row-1;
+		moveclockwise[count++][1]=col;
+		moveclockwise[count][0]=row-1;
+		moveclockwise[count++][1]=col+1;
+		moveclockwise[count][0]=row;
+		moveclockwise[count++][1]=col+1;
+		moveclockwise[count][0]=row+1;
+		moveclockwise[count++][1]=col+1;
+		moveclockwise[count][0]=row+1;
+		moveclockwise[count++][1]=col;
+		moveclockwise[count][0]=row+1;
+		moveclockwise[count++][1]=col-1;
+		moveclockwise[count][0]=row;
+		moveclockwise[count++][1]=col-1;
+		moveclockwise[count][0]=row-1;
+		moveclockwise[count++][1]=col-1;
+		long possiblemoves=0;//list of possible moves to be checked with pieces
+		for(int i=0;i<8;i++){
+			int row1=moveclockwise[i][0];
+			int col1=moveclockwise[i][1];
+			if(row1>=0&row1<8&col1>=0&col1<8){//possible moves
+				int finalsqu=((7-row1)*8)+(7-col1);
+				long thismove=1;
+				thismove<<=finalsqu;
+				possiblemoves|=thismove;
+				if((thismove&ownPiece)==0){
+					addMove(moves, b, piecetype, squ, finalsqu);
+				}
+			}
+		}
+		long legalmoves=possiblemoves&~ownPiece;
+		pieceReach[piecetype]|=legalmoves;
+	}
+	private void knightReach(Board b, int squ, int piecetype, int side) {
+		int count=0;// # of available moves
+		long mypiece=0;
+		long reach=0;
+		char piece = 'N';
+		long enemyking=0;
+		if(side==0){
+			mypiece=b.whitePieces;
+			enemyking=b.bK;
+		}
+		else {
+			mypiece=b.blackPieces;
+			enemyking=b.wK;
+		}
+		int row=squ/8;
+		int col=squ%8;
+		if(row+1<8&&col+2<8){
+			reach|=(1L<<8*(row+1)+col+2);
+			if((mypiece&(1L<<8*(row+1)+col+2))==0){
+				if((enemyking&(1L<<8*(row+1)+col+2))!=0){
+					checkpiece[piecetype]=squ;
+				}
+				count++;
+			}
+		}
+		if(row+2<8&&col+1<8){reach|=(1L<<8*(row+2)+col+1);
+		if((mypiece&(1L<<8*(row+2)+col+1))==0){
+			count++;
+			if((enemyking&(1L<<8*(row+2)+col+1))!=0){
+				checkpiece[piecetype]=squ;
+			}
+		}
+		}
+		if(row+1<8&&col-2>=0){reach|=(1L<<8*(row+1)+col-2);
+		if((mypiece&(1L<<8*(row+1)+col-2))==0){
+			count++;
+			if((enemyking&(1L<<8*(row+1)+col-2))!=0){
+				checkpiece[piecetype]=squ;
+			}
+		}
+		}
+		if(row+2<8&&col-1>=0){reach|=(1L<<8*(row+2)+col-1);
+		if((mypiece&(1L<<8*(row+2)+col-1))==0){
+			count++;
+			if((enemyking&(1L<<8*(row+2)+col-1))!=0){
+				checkpiece[piecetype]=squ;
+			}
+		}
+		}
+		if(row-1>=0&&col+2<8){reach|=(1L<<8*(row-1)+col+2);
+		if((mypiece&(1L<<8*(row-1)+col+2))==0){
+			count++;
+			if((enemyking&(1L<<8*(row-1)+col+2))!=0){
+				checkpiece[piecetype]=squ;
+			}
+		}
+		}
+		if(row-2>=0&&col+1<8){reach|=(1L<<8*(row-2)+col+1);
+		if((mypiece&(1L<<8*(row-2)+col+1))==0){
+			count++;
+			if((enemyking&(1L<<8*(row-2)+col+1))!=0){
+				checkpiece[piecetype]=squ;
+			}
+		}
+		}
+		if(row-1>=0&&col-2>=0){reach|=(1L<<8*(row-1)+col-2);
+		if((mypiece&(1L<<8*(row-1)+col-2))==0){
+			count++;
+			if((enemyking&(1L<<8*(row-1)+col-2))!=0){
+				checkpiece[piecetype]=squ;
+			}
+		}
+		}
+		if(row-2>=0&&col-1>=0){reach|=(1L<<8*(row-2)+col-1);
+		if((mypiece&(1L<<8*(row-2)+col-1))==0){
+			count++;
+			if((enemyking&(1L<<8*(row-2)+col-1))!=0){
+				checkpiece[piecetype]=squ;
+			}
+		}
+		}
+		pieceReach[piecetype]=reach;
+	}
+	private void knightMoves(ArrayList<Move> moves, Board b, int squ, int piecetype, int side) {
+		// TODO Auto-generated method stub
+		int count=0;// # of available moves
+		long mypiece=0;
+		long reach=0;
+		char piece = 'N'; 
+		if(side==0){
+			mypiece=b.whitePieces;
+		}
+		else {
+			mypiece=b.blackPieces;
+		}
+		int row=squ/8;
+		int col=squ%8;
+		if(row+1<8&&col+2<8){
+			reach|=(1L<<8*(row+1)+col+2);
+			if((mypiece&(1L<<8*(row+1)+col+2))==0){
+				count++;
+			int squt=8*(row+1)+col+2;
+			addMove(moves,b,piecetype,squ,squt);
+		}
+		}
+		if(row+2<8&&col+1<8){reach|=(1L<<8*(row+2)+col+1);
+		if((mypiece&(1L<<8*(row+2)+col+1))==0){
+			count++;
+		int squt=8*(row+2)+col+1;
+		addMove(moves,b,piecetype,squ,squt);
+		}
+		}
+		if(row+1<8&&col-2>=0){reach|=(1L<<8*(row+1)+col-2);
+		if((mypiece&(1L<<8*(row+1)+col-2))==0){
+			count++;
+		int squt=8*(row+1)+col-2;
+		addMove(moves,b,piecetype,squ,squt);
+		}
+		}
+		if(row+2<8&&col-1>=0){reach|=(1L<<8*(row+2)+col-1);
+		if((mypiece&(1L<<8*(row+2)+col-1))==0){
+			count++;
+		int squt=8*(row+2)+col-1;
+		addMove(moves,b,piecetype,squ,squt);
+		}
+		}
+		if(row-1>=0&&col+2<8){reach|=(1L<<8*(row-1)+col+2);
+		if((mypiece&(1L<<8*(row-1)+col+2))==0){
+			count++;
+		int squt=8*(row-1)+col+2;
+		addMove(moves,b,piecetype,squ,squt);
+		}
+		}
+		if(row-2>=0&&col+1<8){reach|=(1L<<8*(row-2)+col+1);
+		if((mypiece&(1L<<8*(row-2)+col+1))==0){
+			count++;
+		int squt=8*(row-2)+col+1;
+		addMove(moves,b,piecetype,squ,squt);
+		}
+		}
+		if(row-1>=0&&col-2>=0){reach|=(1L<<8*(row-1)+col-2);
+		if((mypiece&(1L<<8*(row-1)+col-2))==0){
+			count++;
+		int squt=8*(row-1)+col-2;
+		addMove(moves,b,piecetype,squ,squt);
+		}
+		}
+		if(row-2>=0&&col-1>=0){reach|=(1L<<8*(row-2)+col-1);
+		if((mypiece&(1L<<8*(row-2)+col-1))==0){
+			count++;
+		int squt=8*(row-2)+col-1;
+		addMove(moves,b,piecetype,squ,squt);
+		}
+		}
+		pieceReach[piecetype]|=reach;
+	}
+	private void horizontalMoves(ArrayList<Move> moves, Board b, int squ, int piecetype, int side) {
+		// TODO Auto-generated method stub
+		long my=0;
+		long enemy=0;
+		long reach=0;
+		if(side==0){
+			my=b.whitePieces;
+			enemy=b.blackPieces;
+		}if(side==1){
+			enemy=b.whitePieces;
+			my=b.blackPieces;
+		}
+		long squbit=1;
+		int count=0;
+		int squt=squ;
+		while((squt%8!=0)){
+			squt--;
+			squbit=1;
+			squbit<<=squt;
+			if((my&squbit)!=0){
+				reach|=squbit;
+				break;
+			}
+			else if((enemy&squbit)!=0){
+				reach|=squbit;
+				count++;
+				addMove(moves,b,piecetype,squ,squt);
+				break;
+			}
+			else{
+				reach|=squbit;
+				count++;
+				addMove(moves,b,piecetype,squ,squt);
+			}
+		}
+		squt=squ;
+		while((squt%8!=7)){
+			squt++;
+			squbit=1;
+			squbit<<=squt;
+			if((my&squbit)!=0){
+				break;
+			}
+			else if((enemy&squbit)!=0){
+				count++;
+				reach|=squbit;
+				addMove(moves,b,piecetype,squ,squt);
+				break;
+			}
+			else{
+				reach|=squbit;
+				addMove(moves,b,piecetype,squ,squt);
+				count++;
+			}
+		}
+		pieceReach[piecetype]|=reach;
+	}
+	private void verticalReach( Board b, int squ, int piecetype, int side) {
+		long my=0;
+		long enemy=0;
+		long reach=0;
+		long enemyking=0;
+		if(side==0){
+			my=b.whitePieces;
+			enemy=b.blackPieces;
+			enemyking=b.bK;
+		}if(side==1){
+			enemy=b.whitePieces;
+			my=b.blackPieces;
+			enemyking=b.wK;
+		}
+		long squbit=1;  
+		int count=0;
+		int squt=squ;
+		while((squt>=8)){
+			squt-=8;
+			squbit=1;
+			squbit<<=squt;
+			if((my&squbit)!=0){
+				reach|=squbit;
+				break;
+			}
+			else if((enemy&squbit)!=0){
+				count++;
+				reach|=squbit;
+				if((enemyking&squbit)!=0){
+					checkpiece[piecetype]=squ;
+					if(squt>=8){
+						squt-=8;
+						squbit=1;
+						squbit<<=squt;
+						reach|=squbit;
+					}
+				}
+				break;
+			}
+			else{
+				reach|=squbit;
+				count++;
+			}
+		}
+		squt=squ;
+		while((squt<=55)){
+			squt+=8;
+			squbit=1;
+			squbit<<=squt;
+			if((my&squbit)!=0){
+				break;
+			}
+			else if((enemy&squbit)!=0){
+				count++;
+				reach|=squbit;
+				if((enemyking&squbit)!=0){
+					checkpiece[piecetype]=squ;
+					if(squt<=55){
+						squt+=8;
+						squbit=1;
+						squbit<<=squt;
+						reach|=squbit;
+					}
+				}
+				break;
+			}
+			else{
+				reach|=squbit;
+				count++;
+			}
+		}
+		pieceReach[piecetype]|=reach;
+	}
+	private void horizontalReach(Board b, int squ, int piecetype, int side) {
+		long my=0;
+		long enemy=0;
+		long reach=0;
+		long enemyking=0;
+		if(side==0){
+			my=b.whitePieces;
+			enemy=b.blackPieces;
+			enemyking=b.bK;
+		}if(side==1){
+			enemy=b.whitePieces;
+			my=b.blackPieces;
+			enemyking=b.wK;
+		}
+		long squbit=1;
+		int count=0;
+		int squt=squ;
+		while((squt%8!=0)){
+			squt--;
+			squbit=1;
+			squbit<<=squt;
+			if((my&squbit)!=0){
+				reach|=squbit;
+				break;
+			}
+			else if((enemy&squbit)!=0){
+				reach|=squbit;
+				count++;
+				if((enemyking&squbit)!=0){
+					checkpiece[piecetype]=squ;
+					if(squt%8!=0){
+						squt--;
+						squbit=1;
+						squbit<<=squt;
+						reach|=squbit;
+					}
+				}
+				break;
+			}
+			else{
+				reach|=squbit;
+				count++;
+			}
+		}
+		squt=squ;
+		while((squt%8!=7)){
+			squt++;
+			squbit=1;
+			squbit<<=squt;
+			if((my&squbit)!=0){
+				break;
+			}
+			else if((enemy&squbit)!=0){
+				count++;
+				reach|=squbit;
+				if((enemyking&squbit)!=0){
+					checkpiece[piecetype]=squ;
+					if(squt%8!=7){
+						squt++;
+						squbit=1;
+						squbit<<=squt;
+						reach|=squbit;
+					}
+				}
+				break;
+			}
+			else{
+				reach|=squbit;
+				count++;
+			}
+		}
+		pieceReach[piecetype]|=reach;
+	}
+	private void verticalMoves(ArrayList<Move> moves, Board b, int squ, int piecetype, int side) {
+		// TODO Auto-generated method stub
+		long my=0;
+		long enemy=0;
+		long reach=0;
+		if(side==0){
+			my=b.whitePieces;
+			enemy=b.blackPieces;
+		}if(side==1){
+			enemy=b.whitePieces;
+			my=b.blackPieces;
+		}
+		long squbit=1;
+		int count=0;
+		int squt=squ;
+		while((squt>=8)){
+			squt-=8;
+			squbit=1;
+			squbit<<=squt;
+			if((my&squbit)!=0){
+				reach|=squbit;
+				break;
+			}
+			else if((enemy&squbit)!=0){
+				count++;
+				reach|=squbit;
+				addMove(moves,b,piecetype,squ,squt);
+				break;
+			}
+			else{
+				reach|=squbit;
+				addMove(moves,b,piecetype,squ,squt);
+				count++;
+			}
+		}
+		squt=squ;
+		while((squt<=55)){
+			squt+=8;
+			squbit=1;
+			squbit<<=squt;
+			if((my&squbit)!=0){
+				break;
+			}
+			else if((enemy&squbit)!=0){
+				count++;
+				reach|=squbit;
+				addMove(moves,b,piecetype,squ,squt);
+				break;
+			}
+			else{
+				reach|=squbit;
+				addMove(moves,b,piecetype,squ,squt);
+				count++;
+			}
+		}
+		pieceReach[piecetype]|=reach;
+	}
+	private void antidiagonalMoves(ArrayList<Move> moves, Board b, int squ, int piecetype, int side) {
+		long my=0;
+		long enemy=0;
+		long reach=0;
+		if(side==0){
+			my=b.whitePieces;
+			enemy=b.blackPieces;
+		}if(side==1){
+			enemy=b.whitePieces;
+			my=b.blackPieces;
+		}
+		long squbit=1;
+		int count=0;
+		int squt=squ;
+		while((squt>8)&&(squt%8!=7)){
+			squt-=7;
+			squbit=1;
+			squbit<<=squt;
+			if((my&squbit)!=0){
+				reach|=squbit;
+				break;
+			}
+			else if((enemy&squbit)!=0){
+				count++;
+				reach|=squbit;
+				addMove(moves, b, piecetype, squ, squt);
+				break;
+			}
+			else{
+				count++;
+				reach|=squbit;
+				addMove(moves, b, piecetype, squ, squt);
+			}
+		}
+		squt=squ;
+		while((squt<55)&&(squt%8!=0)){
+			squt+=7;
+			squbit=1;
+			squbit<<=squt;
+			if((my&squbit)!=0){
+				reach|=squbit;
+				break;
+			}
+			else if((enemy&squbit)!=0){
+				count++;
+				reach|=squbit;
+				addMove(moves, b, piecetype, squ, squt);
+				break;
+			}
+			else{
+				count++;
+				reach|=squbit;
+				addMove(moves, b, piecetype, squ, squt);
+			}
+		}
+		pieceReach[piecetype]|=reach;
+	}
+	private void antidiagonalReach( Board b, int squ, int piecetype, int side) {
+		// TODO Auto-generated method stub
+		long my=0;
+		long enemy=0;
+		long reach=0;
+		long enemyking=0;
+		if(side==0){
+			my=b.whitePieces;
+			enemy=b.blackPieces;
+			enemyking=b.bK;
+		}if(side==1){
+			enemy=b.whitePieces;
+			my=b.blackPieces;
+			enemyking=b.wK;
+		}
+		long squbit=1;
+		int count=0;
+		int squt=squ;
+		while((squt>=8)&&(squt%8!=7)){
+			squt-=7;
+			squbit=1;
+			squbit<<=squt;
+			if((my&squbit)!=0){
+				reach|=squbit;
+				break;
+			}
+			else if((enemy&squbit)!=0){
+				count++;
+				reach|=squbit;
+				if((enemyking&squbit)!=0){
+					checkpiece[piecetype]=squ;
+					if((squt>=8)&&(squt%8!=7)){
+						squt-=7;
+						squbit=1;
+						squbit<<=squt;
+						reach|=squbit;
+					}
+				}
+				break;
+			}
+			else{
+				count++;
+				reach|=squbit;
 
+			}
+		}
+		squt=squ;
+		while((squt<=55)&&(squt%8!=0)){
+			squt+=7;
+			squbit=1;
+			squbit<<=squt;
+			if((my&squbit)!=0){
+				reach|=squbit;
+				break;
+			}
+			else if((enemy&squbit)!=0){
+				count++;
+				reach|=squbit;
+				if((enemyking&squbit)!=0){
+					checkpiece[piecetype]=squ;
+					if((squt<=55)&&(squt%8!=0)){
+						squt+=7;
+						squbit=1;
+						squbit<<=squt;
+						reach|=squbit;
+					}
+				}
+				break;
+			}
+			else{
+				count++;
+				reach|=squbit;
+
+			}
+		}
+		pieceReach[piecetype]|=reach;
+	}
+	private void diagonalMoves(ArrayList<Move> moves, Board b, int squ, int piecetype, int side) {
+		// TODO Auto-generated method stub
+		long my=0;
+		long enemy=0;
+		long reach=0;
+		if(side==0){
+			my=b.whitePieces;
+			enemy=b.blackPieces;
+		}else{
+			my=b.blackPieces;
+			enemy=b.whitePieces;
+		}
+		long squbit=1;
+		int count=0;
+		int squt=squ;
+//position startpos moves e2e4 b8c6 d2d4 g8f6 e4e5 f6d5 g1f3 e7e6 f1b5 h7h6 e1g1 a7a6 b5c6 d7c6 c1d2
+
+		while((squt>8)&&(squt%8!=0)){
+			squt-=9;
+			squbit=1;
+			squbit<<=squt;
+			if((my&squbit)!=0){
+				reach|=squbit;
+				break;
+			}
+			else if((enemy&squbit)!=0){
+				count++;
+				reach|=squbit;
+				addMove(moves,b,piecetype,squ,squt);
+				break;
+			}
+			else{
+				reach|=squbit;
+				addMove(moves,b,piecetype,squ,squt);
+				count++;
+			}
+		}
+		squt=squ;
+		while((squt<55)&&(squt%8!=7)){
+			squt+=9;
+			squbit=1;
+			squbit<<=squt;
+			if((my&squbit)!=0){
+				reach|=squbit;
+				break;
+			}
+			else if((enemy&squbit)!=0){
+				count++;
+				reach|=squbit;
+				addMove(moves,b,piecetype,squ,squt);
+				break;
+			}
+			else{
+				reach|=squbit;
+				addMove(moves,b,piecetype,squ,squt);
+				count++;
+			}
+		}
+		pieceReach[piecetype]|=reach;
+	}
+	private void diagonalReach(Board b, int squ,int piecetype,int side) {
+		// TODO Auto-generated method stub
+		long my=0;
+		long enemy=0;
+		long reach=0;
+		long enemyking=0;
+		if(side==0){
+			my=b.whitePieces;
+			enemy=b.blackPieces;
+			enemyking=b.bK;
+		}else{
+			my=b.blackPieces;
+			enemy=b.whitePieces;
+			enemyking=b.wK;
+		}
+		long squbit=1;
+		int count=0;
+		int squt=squ;
+		while((squt>8)&&(squt%8!=0)){
+			squt-=9;
+			squbit=1;
+			squbit<<=squt;
+			if((my&squbit)!=0){
+				reach|=squbit;
+				break;
+			}
+			else if((enemy&squbit)!=0){
+				count++;
+				reach|=squbit;
+				if((enemyking&squbit)!=0){
+					checkpiece[piecetype]=squ;
+					if((squt>=8)&&(squt%8!=0)){
+						squt-=9;
+						squbit=1;
+						squbit<<=squt;
+						reach|=squbit;
+					}
+				}
+				break;
+			}
+			else{
+				reach|=squbit;
+				count++;
+			}
+		}
+		squt=squ;
+		while((squt<55)&&(squt%8!=7)){
+			squt+=9;
+			squbit=1;
+			squbit<<=squt;
+			if((my&squbit)!=0){
+				reach|=squbit;
+				break;
+			}
+			else if((enemy&squbit)!=0){
+				count++;
+				reach|=squbit;
+				if((enemyking&squbit)!=0){
+					checkpiece[piecetype]=squ;
+					if((squt<55)&&(squt%8!=7)){
+						squt+=9;
+						squbit=1;
+						squbit<<=squt;
+						reach|=squbit;
+					}
+				}
+				break;
+			}
+			else{
+				reach|=squbit;
+				count++;
+			}
+		}
+		pieceReach[piecetype]|=reach;
+	}
+	public void addMove(ArrayList<Move> moves, Board b, int piecetype, int squ, int finsqu) {
+		// TODO Auto-generated method stub
+		int kingsqu=1;
+		if(piecetype<6)
+			kingsqu=(int)(Math.log(b.wK)/Math.log(2)) ;
+		else
+			kingsqu=(int)(Math.log(b.bK)/Math.log(2));
+		int frow=7-(finsqu/8);
+		int fcol=7-(finsqu%8);
+		int orow=7-(squ/8);
+		int ocol=7-(squ%8);			
+		String s="";
+		int capt=isCapture(b,""+frow+""+fcol);
+		s=""+orow+""+ocol+""+frow+""+fcol+""+capt;
+		Move move1=new Move();
+		for(int a=0;a<pinnedcount;a++){
+				int pinsqu=pinnedpiece[a];
+				if(pinsqu==squ){
+					if(isbetween(pinsqu, finsqu, kingsqu)||isbetween(finsqu, pinsqu, kingsqu)){
+						move1.pinned=0;
+					}
+					else{
+						move1.pinned=1;
+						pinite++;
+					}
+					break;
+				}
+		}
+		move1.move=s;
+		move1.pieceType=piecetype;
+		moves.add(move1);
+	}
 	public ArrayList<Move> moveGenerator(Board b, int side , int enemycalc, Move lastmove){
 		if(enemycalc==1)
 			moveGenerator(b, 1-side, 0, lastmove);
@@ -46,12 +1377,13 @@ public class MoveGenerator {
 		myreach|=pawncap;
 		ArrayList<Move> moves=new ArrayList<>();
 		if(enemycalc==1){
-		pawnMoves(moves, b, side);
-		enPassantMoves(moves, b, side,lastmove);
+			pawnMoves(moves, b, side);
+			enPassantMoves(moves, b, side,lastmove);
+			kingMoves(moves, b, side);
 		}
 		myreach|=knightMoves(moves, b, side);
 		//System.out.println("pawn+knight reach:"+ Long.toBinaryString(myreach));
-		myreach|=kingMoves(moves, b, side);
+
 		castlingMoves(moves, b, side);
 		//horizontal(moves, b, side, "Q");
 		myreach|=queenMoves(moves, b, side);
@@ -293,8 +1625,8 @@ public class MoveGenerator {
 		}
 		return allmoves;
 	}
-	
-		//dogru calisiyor gibi ama emin degilim bundan da
+
+	//dogru calisiyor gibi ama emin degilim bundan da
 	public long verticalMove(ArrayList<Move>moves,Board b, int side,String piece){
 		long bitboard=0;
 		long mypieces=0;
@@ -474,13 +1806,13 @@ public class MoveGenerator {
 		}
 		return bitboard&mask;
 	}
-	
+
 	public long maskDiag(long bitboard,int loc){//this finds the corresponding diagonal of a position
 		int pos=loc;
 		long mask=0;
 		while(pos<64&&(pos%8!=7)){
 			pos+=9;
-			
+
 		}
 		//position startpos moves e2e4 g8f6 b1c3 e7e5 g1f3 f8b4 a2a3 b4a5 f3e5 d8e7 d2d4 a5c3 b2c3 e7e6 f2f3
 
@@ -519,28 +1851,28 @@ public class MoveGenerator {
 		long temp=a;
 		while(temp!=0){
 			temp>>=1;
-			size++;
+		size++;
 		}
 		int b=0;
 		while (a!=0){
-			  b<<=1;
-			  b|=( a &1);
-			  a>>=1;
-			}
-        //for(int i=size;i<8;i++)
-        	//b<<=1;
+			b<<=1;
+			b|=( a &1);
+			a>>=1;
+		}
+		//for(int i=size;i<8;i++)
+		//b<<=1;
 		return b; 
 	}
 	//this method will return the corresponding row from a bitboard
 	public long getFullRow(long bitboard, int row){
 		long a = bitboard>>=((7-row)*8);
-		long b=0b11111111L;
-		if(row==7)
-			return a;
-		else{
-			a=a&b;
-			return a;
-		}
+			long b=0b11111111L;
+			if(row==7)
+				return a;
+			else{
+				a=a&b;
+				return a;
+			}
 	}
 	//king moves i am only checking the moves if they are possible
 	//i mean at this level i assume all moves are legal 
@@ -649,26 +1981,26 @@ public class MoveGenerator {
 		return ret;
 	}
 	//checks if the current board position is check
-		// which makes it illegal
-		// one means is check
-		public int isCheck(Board b,int side){
-			moveGenerator(b, 1-side, 0,null);
-			long enemy=0;
-			if(side==0){
-				enemy=b.blackReach;
-				if((b.wK&enemy)!=0)
-					return 1;
-				else
-					return 0;
-			}
-			else{
-				enemy=b.whiteReach;
-				if((b.bK&enemy)!=0)
-					return 1;
-				else
-					return 0;
-			}
+	// which makes it illegal
+	// one means is check
+	public int isCheck(Board b,int side){
+		moveGenerator(b, 1-side, 0,null);
+		long enemy=0;
+		if(side==0){
+			enemy=b.blackReach;
+			if((b.wK&enemy)!=0)
+				return 1;
+			else
+				return 0;
 		}
+		else{
+			enemy=b.whiteReach;
+			if((b.bK&enemy)!=0)
+				return 1;
+			else
+				return 0;
+		}
+	}
 
 	public long castlingMoves(ArrayList<Move>moves,Board b, int side){
 		long all=b.blackPieces|b.whitePieces;
@@ -676,7 +2008,10 @@ public class MoveGenerator {
 		if(side==0){
 			int kingpos=1<<3;
 			long h1=0b1;
-			long enemyR=b.blackReach;
+			long enemyR=1;
+			for(int i=0;i<6;i++){
+				enemyR|=pieceReach[(1-side)*6+i];
+			}
 			long myrook=b.wR;
 			if((enemyR&kingpos)==0){// is not in check
 				if((b.rights[3]==1)&&((myrook&h1)!=0)&&((enemyR&(h1<<2))==0)&&((all&(h1<<2))==0)&&((all&(h1<<1))==0)){
@@ -708,7 +2043,10 @@ public class MoveGenerator {
 		if(side==1){
 			int kingpos=1<<59;
 			long h8=(0b1L<<56);
-			long enemyR=b.whiteReach;
+			long enemyR=1;
+			for(int i=0;i<6;i++){
+				enemyR|=pieceReach[(1-side)*6+i];
+			}
 			long myrook=b.bR;
 			if((enemyR&kingpos)==0){// is not in check
 				if((b.rights[5]==1)&&((myrook&h8)!=0)&&((enemyR&(h8<<2))==0)&&((all&(h8<<2))==0)&&((all&(h8<<1))==0)){
@@ -723,7 +2061,7 @@ public class MoveGenerator {
 					move1.moveType=4;
 					moves.add(move1);
 				}
-	//position startpos moves e2e3 e7e6 d2d4 d8g5 g1f3 g5a5 b1c3 f8b4 c1d2 b8c6 a2a3 b4c3 d2c3 a5d5 f1e2 g8f6 e1g1 f6e4 c3e1
+				//position startpos moves e2e3 e7e6 d2d4 d8g5 g1f3 g5a5 b1c3 f8b4 c1d2 b8c6 a2a3 b4c3 d2c3 a5d5 f1e2 g8f6 e1g1 f6e4 c3e1
 
 				if((b.rights[4]==1)&&((myrook&(h8<<7))!=0)&&((enemyR&(h8<<3))==0)&&((all&(h8<<6))==0)&&((all&(h8<<5))==0)&&((all&(h8<<4))==0)){
 					//queenside for black
@@ -739,10 +2077,10 @@ public class MoveGenerator {
 				}
 			}
 		}
-		
+
 		return 0;
 	}
-	
+
 	// atin hareketleri garip oldugu icin direction gibi iki boyutlu dusunmek daha iyi
 	public long knightMoves(ArrayList<Move>moves,Board b, int side){
 		long bitKnight=0;
@@ -811,9 +2149,6 @@ public class MoveGenerator {
 		}
 		return allmoves;
 	}
-	
-	
-	
 	// henuz tam test etmedim calisiyor gibi 
 	// siyahlar icin de yazdim ama test ugrasmak istemiyorum yav
 	// sadece hamle uretiyorum nedense baska seyler de lazim gibi geliyor
@@ -831,56 +2166,22 @@ public class MoveGenerator {
 				squ<<=i;
 				if((captureright&squ)!=0){
 					int row=i/8;// bu degerler 00 olarak h1i kabul ediyor buna dikkat 
-					int column= i%8;
-					int frow=7-row;
-					int fcol=7-column;
-					int ocol=fcol-1;
-					int orow=frow+1;
-					int capt=isCapture(b,""+frow+""+fcol);
-					s=""+orow+""+ocol+""+frow+""+fcol+""+capt;
-					Move move1=new Move();
-					move1.move=s;
-					move1.pieceType=0;
 					if(row==7){
-					for(int a=0;a<4;a++){
-						Move move2=new Move();
-						move2.move=s;
-						move2.pieceType=0;
-						move2.moveType=2;
-						move2.promotionType=a+1;
-						moves.add(move2);
-					}
+						addMove1(moves, b, 0, i-7, i, 2);
 					}
 					else
-					moves.add(move1);
+						addMove(moves, b, 0, i-7, i);
 				}
 				if((captureleft&squ)!=0){
 					int row=i/8;// bu degerler 00 olarak h1i kabul ediyor buna dikkat 
-					int column= i%8;
-					int frow=7-row;
-					int fcol=7-column;
-					int ocol=fcol+1;
-					int orow=frow+1;
-					int capt=isCapture(b,""+frow+""+fcol);
-					s=""+orow+""+ocol+""+frow+""+fcol+""+capt;
-					//System.out.println("s: "+s);
-					Move move1=new Move();
-					move1.move=s;
-					move1.pieceType=0;
 					if(row==7){
-					for(int a=0;a<4;a++){
-						Move move2=new Move();
-						move2.move=s;
-						move2.pieceType=0;
-						move2.moveType=2;
-						move2.promotionType=a+1;
-						moves.add(move2);
-					}
+						addMove1(moves, b, 0, i-9, i, 2);
 					}
 					else
-					moves.add(move1);		
+						addMove(moves, b, 0, i-9, i);	
 				}
 			}
+			pieceReach[0]|=whitecap;
 		}
 		if(side==1){
 			long captureright=(bitPawn>>9)&(~col1&b.whitePieces);
@@ -894,57 +2195,22 @@ public class MoveGenerator {
 				squ<<=i;
 				if((captureright&squ)!=0){
 					int row=i/8;// bu degerler 00 olarak h1i kabul ediyor buna dikkat 
-					int column= i%8;
-					int frow=7-row;
-					int fcol=7-column;
-					int ocol=fcol-1;
-					int orow=frow-1;
-					int capt=isCapture(b,""+frow+""+fcol);
-					s=""+orow+""+ocol+""+frow+""+fcol+""+capt;
-					//System.out.println("pawn captures: "+s);
-					Move move1=new Move();
-					move1.move=s;
-					move1.pieceType=6;
 					if(row==0){
-					for(int a=0;a<4;a++){
-						Move move2=new Move();
-						move2.move=s;
-						move2.pieceType=6;
-						move2.moveType=2;
-						move2.promotionType=a+7;
-						moves.add(move2);
-					}
+						addMove1(moves, b, 6, i+9, i, 2);
 					}
 					else
-					moves.add(move1);
+						addMove(moves, b, 6, i+9, i);
 				}
 				if((captureleft&squ)!=0){
 					int row=i/8;// bu degerler 00 olarak h1i kabul ediyor buna dikkat 
-					int column= i%8;
-					int frow=7-row;
-					int fcol=7-column;
-					int ocol=fcol+1;
-					int orow=frow-1;
-					int capt=isCapture(b,""+frow+""+fcol);
-					s=""+orow+""+ocol+""+frow+""+fcol+""+capt;
-					//System.out.println("s: "+s);
-					Move move1=new Move();
-					move1.move=s;
-					move1.pieceType=6;
 					if(row==0){
-					for(int a=0;a<4;a++){
-						Move move2=new Move();
-						move2.move=s;
-						move2.pieceType=6;
-						move2.moveType=2;
-						move2.promotionType=a+7;
-						moves.add(move2);
-					}
+						addMove1(moves, b, 6, i+7, i, 2);
 					}
 					else
-					moves.add(move1);		
+						addMove(moves, b, 6, i+7, i);		
 				}
 			}
+			pieceReach[6]|=blackcapture;
 		}
 	}
 	//galib bu da oldu emin deggilim
@@ -960,19 +2226,11 @@ public class MoveGenerator {
 				if((b.wP&(pos<<1))!=0 && (colofpawn!=0)){//soldan enpas var
 					String s=""+rowofpawn+""+(colofpawn-1)+""+(rowofpawn-1)+""+colofpawn+""+6;
 					//System.out.println("pawn captures: "+s);
-					Move move1=new Move();
-					move1.move=s;
-					move1.moveType=3;
-					move1.pieceType=0;
-					moves.add(move1);
+					addMove1(moves, b, 0, a+1, a+8, 3);
 				}
 				if((b.wP&(pos>>1))!=0 && (colofpawn!=7)){//sagdan enpas var
 					String s=""+rowofpawn+""+(colofpawn+1)+""+(rowofpawn-1)+""+colofpawn+""+6;
-					Move move1=new Move();
-					move1.move=s;
-					move1.moveType=3;
-					move1.pieceType=0;
-					moves.add(move1);
+					addMove1(moves, b, 0, a-1, a+8, 3);
 				}
 			}
 		}
@@ -987,20 +2245,12 @@ public class MoveGenerator {
 				if((b.bP&(pos<<1))!=0 && (colofpawn!=0)){//soldan enpas var
 					String s=""+rowofpawn+""+(colofpawn-1)+""+(rowofpawn+1)+""+colofpawn+""+0;
 					//System.out.println("pawn captures: "+s);
-					Move move1=new Move();
-					move1.move=s;
-					move1.moveType=3;
-					move1.pieceType=6;
-					moves.add(move1);
+					addMove1(moves, b, 6, a+1, a-8, 3);
 				}
 				if((b.bP&(pos>>1))!=0 && (colofpawn!=7)){//sagdan enpas var
 					String s=""+rowofpawn+""+(colofpawn+1)+""+(rowofpawn+1)+""+colofpawn+""+0;
 					//System.out.println("pawn captures: "+s);
-					Move move1=new Move();
-					move1.move=s;
-					move1.moveType=3;
-					move1.pieceType=6;
-					moves.add(move1);
+					addMove1(moves, b, 6, a-1, a-8, 3);
 				}
 			}
 		}
@@ -1019,52 +2269,29 @@ public class MoveGenerator {
 			{
 				String s="";
 				if((finalaval>>i)%2==1){
-					int row=i/8;// bu degerler 00 olarak h1i kabul ediyor buna dikkat 
 					int column= i%8;
-					int frow=4;
-					int fcol=7-column;
-					int orow=6;
-					int capt=isCapture(b,""+frow+""+fcol);
-					s=""+orow+""+fcol+""+frow+""+fcol+""+capt;
-					//System.out.println("twos: "+s);
-					Move move1=new Move();
-					move1.move=s;
-					move1.pieceType=0;
-					move1.moveType=1;
-					moves.add(move1);
+					addMove1(moves, b, 0, 8+column, 24+column,1);
 				}
 			}
 		}
 		if(side==1){
 			long row2pawns=bitPawn&row7;
 			long oneforward=row2pawns>>8;
-			long twoforward=row2pawns>>16;
-			long row6pieces=row6&(b.whitePieces|b.blackPieces);
-			long row5pieces=row5&(b.whitePieces|b.blackPieces);
-			long oneflegal=oneforward&~(row6pieces);
-			long twoflegal=twoforward&~(row5pieces);
-			long finalaval=(oneflegal<<8)&(twoflegal<<16);
-			//System.out.println("legalmoves: "+Long.toBinaryString(twoflegal));
-			//System.out.println("twof: "+Long.toBinaryString(finalaval));
-			for(int i=48;i<56;i++)
-			{
-				String s="";
-				if((finalaval>>i)%2==1){
-					int row=i/8;// bu degerler 00 olarak h1i kabul ediyor buna dikkat 
-					int column= i%8;
-					int frow=3;
-					int fcol=7-column;
-					int orow=1;
-					int capt=isCapture(b,""+frow+""+fcol);
-					s=""+orow+""+fcol+""+frow+""+fcol+""+capt;
-					//System.out.println("twos: "+s);
-					Move move1=new Move();
-					move1.move=s;
-					move1.pieceType=6;
-					move1.moveType=1;
-					moves.add(move1);
+				long twoforward=row2pawns>>16;
+				long row6pieces=row6&(b.whitePieces|b.blackPieces);
+				long row5pieces=row5&(b.whitePieces|b.blackPieces);
+				long oneflegal=oneforward&~(row6pieces);
+				long twoflegal=twoforward&~(row5pieces);
+				long finalaval=(oneflegal<<8)&(twoflegal<<16);
+				//System.out.println("legalmoves: "+Long.toBinaryString(twoflegal));
+				//System.out.println("twof: "+Long.toBinaryString(finalaval));
+				for(int i=48;i<56;i++)
+				{
+					if((finalaval>>i)%2==1){
+						int column= i%8;
+						addMove1(moves, b, 6, 48+column, 32+column,1);
+					}
 				}
-			}
 		}
 	}
 	public void oneForwardPawnMoves(ArrayList<Move>moves,Board b, long bitPawn,int side){
@@ -1089,117 +2316,155 @@ public class MoveGenerator {
 					move1.pieceType=0;
 					move1.moveType=0;
 					if(frow==0){
-						for(int a=0;a<4;a++){
-							Move move2=new Move();
-							move2.move=s;
-							move2.pieceType=0;
-							move2.moveType=2;
-							move2.promotionType=a+1;
-							moves.add(move2);
-						}
+						addMove1(moves, b, 0, i-8, i, 2);
 					}
 					else
-						moves.add(move1);
+						addMove(moves, b, 0, i-8, i);
 				}
 			}
 		}
 		if(side==1){
 			long oneforward=bitPawn>>8;
-			long oneflegal=oneforward&~(b.whitePieces|b.blackPieces);
-			//System.out.println("onf: "+Long.toBinaryString(oneflegal));
-			for(int i=0;i<48;i++)
-			{
-				String s="";
-				if(((oneflegal)>>i)%2==1){
-					int row=i/8;// bu degerler 00 olarak h1i kabul ediyor buna dikkat 
-					int column= i%8;
-					int frow=7-row;
-					int fcol=7-column;
-					int orow=frow-1;
-					//int capt=isCapture(b,""+frow+""+fcol);
-					s=""+orow+""+fcol+""+frow+""+fcol+""+12;
-					Move move1=new Move();
-					move1.move=s;
-					move1.pieceType=6;
-					if(frow==7){
-						for(int a=0;a<4;a++){
-							Move move2=new Move();
-							move2.move=s;
-							move2.pieceType=6;
-							move2.moveType=2;
-							move2.promotionType=a+7;
-							moves.add(move2);
+						long oneflegal=oneforward&~(b.whitePieces|b.blackPieces);
+						//System.out.println("onf: "+Long.toBinaryString(oneflegal));
+						for(int i=0;i<48;i++)
+						{
+							String s="";
+							if(((oneflegal)>>i)%2==1){
+								int row=i/8;// bu degerler 00 olarak h1i kabul ediyor buna dikkat 
+								int column= i%8;
+								int frow=7-row;
+								int fcol=7-column;
+								int orow=frow-1;
+								//int capt=isCapture(b,""+frow+""+fcol);
+								s=""+orow+""+fcol+""+frow+""+fcol+""+12;
+								Move move1=new Move();
+								move1.move=s;
+								move1.pieceType=6;
+								if(frow==7){
+									addMove1(moves, b, 6, i+8, i, 2);
+
+								}
+								else
+									addMove(moves, b, 6, i+8, i);
+							}
 						}
-						
-					}
-					else
-					moves.add(move1);
-				}
-			}
 		}
 	}
-	
+
+	private void addMove1(ArrayList<Move> moves, Board b, int piecetype, int squ, int finalsqu, int movetype) {
+		// TODO Auto-generated method stub
+		// TODO Auto-generated method stub
+				int kingsqu=1;
+				if(piecetype<6)
+					kingsqu=(int) (Math.log(b.wK)/Math.log(2)) ;
+				else
+					kingsqu=(int)(Math.log(b.bK)/Math.log(2));
+				int frow=7-(finalsqu/8);
+				int fcol=7-(finalsqu%8);
+				int orow=7-(squ/8);
+				int ocol=7-(squ%8);			
+				String s="";
+				int capt=isCapture(b,""+frow+""+fcol);
+				s=""+orow+""+ocol+""+frow+""+fcol+""+capt;
+				Move move1=new Move();
+				for(int a=0;a<pinnedcount;a++){
+						int pinsqu=pinnedpiece[a];
+						if(pinsqu==squ){
+							if(isbetween(pinsqu, finalsqu, kingsqu)||isbetween(finalsqu, pinsqu, kingsqu)){
+								move1.pinned=0;
+							}
+							else{
+								move1.pinned=1;
+								pinite++;
+							}
+							break;
+						}
+				}
+				if(piecetype==0&&movetype==2){
+					for(int a=0;a<4;a++){
+						Move move2=new Move();
+						move2.move=s;
+						move2.pinned=move1.pinned;
+						move2.pieceType=0;
+						move2.moveType=2;
+						move2.promotionType=a+1;
+						moves.add(move2);
+					}
+				}
+				if(piecetype==6&&movetype==2){
+					for(int a=0;a<4;a++){
+						Move move2=new Move();
+						move2.move=s;
+						move2.pinned=move1.pinned;
+						move2.pieceType=0;
+						move2.moveType=2;
+						move2.promotionType=a+7;
+						moves.add(move2);
+					}
+				}
+	}
 	//checks if the given position is empty or not 
 	// if empty return 12 
 	public int isCapture(Board b, String move){
-			String cp= move.substring(0,2);
-			int cr=Integer.parseInt(cp.substring(0,1));
-			int cc=Integer.parseInt(cp.substring(1));
-			//System.out.println("cr: "+cr+" cc: "+cc+" fr: "+fr+" fc: "+ fc);
-			long root=0b1;
-			long newPos=((7-cr)*8)+(7-cc);
-			long newP=root<<newPos;
-			//		System.out.println("root: "+root+"oldP: "+ oldP +"  "+ slide+"  longsuz: "+Math.pow(2, slide));
+		String cp= move.substring(0,2);
+		int cr=Integer.parseInt(cp.substring(0,1));
+		int cc=Integer.parseInt(cp.substring(1));
+		//System.out.println("cr: "+cr+" cc: "+cc+" fr: "+fr+" fc: "+ fc);
+		long root=0b1;
+		long newPos=((7-cr)*8)+(7-cc);
+		long newP=root<<newPos;
+		//		System.out.println("root: "+root+"oldP: "+ oldP +"  "+ slide+"  longsuz: "+Math.pow(2, slide));
 		//	System.out.println("newbit: "+Long.toBinaryString(newP));
-			//		System.out.println("newP: "+ newP+"  "+ newPos+"  longsuz: "+Math.pow(2, newPos));
-			if((b.wB&newP)!=0)
-			{
-				return 2;
-			}
-			if((b.bB&newP)!=0)
-			{
-				return 8;
-			}
-			if((b.wP&newP)!=0)
-			{
-				return 0;
-			}
-			if((b.bP&newP)!=0)
-			{
-				return 6;
-			}
-			if((b.wN&newP)!=0)
-			{
-				return 1;
-			}
-			if((b.bN&newP)!=0)	
-			{
-				return 7;
-			}
-			if((b.wR&newP)!=0)
-			{
-				return 3;
-			}
-			if((b.bR&newP)!=0)
-			{
-				return 9;
-			}
-			if((b.wQ&newP)!=0)
-			{
-				return 4;
-			}
-			if((b.bQ&newP)!=0)
-			{
-				return 10;
-			}
-			if((b.wK&newP)!=0)
-			{
-				return 5;
-			}
-			if((b.bK&newP)!=0)
-			{
-				return 11;
-			}
+		//		System.out.println("newP: "+ newP+"  "+ newPos+"  longsuz: "+Math.pow(2, newPos));
+		if((b.wB&newP)!=0)
+		{
+			return 2;
+		}
+		if((b.bB&newP)!=0)
+		{
+			return 8;
+		}
+		if((b.wP&newP)!=0)
+		{
+			return 0;
+		}
+		if((b.bP&newP)!=0)
+		{
+			return 6;
+		}
+		if((b.wN&newP)!=0)
+		{
+			return 1;
+		}
+		if((b.bN&newP)!=0)	
+		{
+			return 7;
+		}
+		if((b.wR&newP)!=0)
+		{
+			return 3;
+		}
+		if((b.bR&newP)!=0)
+		{
+			return 9;
+		}
+		if((b.wQ&newP)!=0)
+		{
+			return 4;
+		}
+		if((b.bQ&newP)!=0)
+		{
+			return 10;
+		}
+		if((b.wK&newP)!=0)
+		{
+			return 5;
+		}
+		if((b.bK&newP)!=0)
+		{
+			return 11;
+		}
 		return 12;
 	}
 	int moveTypeDetector(Board b,String moves, int pieceType){
@@ -1223,7 +2488,7 @@ public class MoveGenerator {
 				else
 					return 0;//regular pawn capture
 			}
-		return 0;
+			return 0;
 		}
 		else if(pieceType==5||pieceType==11){//king
 			if(ocol>(fcol+1)||ocol<(fcol-1)) //castling

@@ -1,0 +1,7142 @@
+1000
+generation: 0
+one generation: 1672
+individual:  1 position solved: 279
+individual:  2 position solved: 250
+individual:  3 position solved: 353
+individual:  4 position solved: 303
+individual:  5 position solved: 285
+individual:  6 position solved: 364
+individual:  7 position solved: 274
+individual:  8 position solved: 315
+individual:  9 position solved: 302
+individual:  10 position solved: 318
+fitness: 319.80000000000064
+fitness: 312.60000000000053
+fitness: 270.8000000000003
+fitness: 270.40000000000015
+fitness: 256.8000000000003
+fitness: 254.60000000000034
+fitness: 238.00000000000009
+fitness: 233.80000000000024
+fitness: 226.40000000000003
+fitness: 208.6
+best individual weights: 
+weight 0 : -35.0
+weight 1 : -53.0
+weight 2 : -16.0
+weight 10 : 94.0
+weight 11 : -8.0
+weight 12 : 7.0
+weight 20 : 11.0
+weight 21 : 30.0
+weight 22 : 51.0
+weight 30 : 11.0
+weight 31 : 64.0
+weight 32 : -13.0
+weight 33 : -54.0
+weight 34 : 34.0
+weight 35 : 27.0
+weight 40 : -20.0
+weight 41 : -2.0
+weight 42 : 92.0
+weight 43 : 69.0
+weight 44 : -31.0
+weight 45 : 23.0
+weight 50 : 81.0
+weight 51 : 25.0
+weight 52 : 98.0
+weight 54 : 7.0
+weight 55 : -14.0
+weight 60 : 5.0
+weight 94 : 100.0
+weight 95 : 316.0
+weight 96 : 249.0
+weight 97 : 506.0
+weight 98 : 869.0
+crossladım: 0 + 6
+crossladım: 1 + 2
+mutation rate: 0.07
+generation: 1
+one generation: 258
+individual:  1 position solved: 364
+individual:  2 position solved: 353
+individual:  3 position solved: 318
+individual:  4 position solved: 315
+individual:  5 position solved: 303
+individual:  6 position solved: 302
+individual:  7 position solved: 285
+individual:  8 position solved: 279
+individual:  9 position solved: 290
+individual:  10 position solved: 362
+fitness: 319.80000000000064
+fitness: 318.60000000000065
+fitness: 312.60000000000053
+fitness: 270.8000000000003
+fitness: 270.40000000000015
+fitness: 256.8000000000003
+fitness: 254.60000000000034
+fitness: 240.40000000000018
+fitness: 238.00000000000009
+fitness: 233.80000000000024
+best individual weights: 
+weight 0 : -35.0
+weight 1 : -53.0
+weight 2 : -16.0
+weight 10 : 94.0
+weight 11 : -8.0
+weight 12 : 7.0
+weight 20 : 11.0
+weight 21 : 30.0
+weight 22 : 51.0
+weight 30 : 11.0
+weight 31 : 64.0
+weight 32 : -13.0
+weight 33 : -54.0
+weight 34 : 34.0
+weight 35 : 27.0
+weight 40 : -20.0
+weight 41 : -2.0
+weight 42 : 92.0
+weight 43 : 69.0
+weight 44 : -31.0
+weight 45 : 23.0
+weight 50 : 81.0
+weight 51 : 25.0
+weight 52 : 98.0
+weight 54 : 7.0
+weight 55 : -14.0
+weight 60 : 5.0
+weight 94 : 100.0
+weight 95 : 316.0
+weight 96 : 249.0
+weight 97 : 506.0
+weight 98 : 869.0
+mutation rate: 0.07
+generation: 2
+one generation: 579
+individual:  1 position solved: 364
+individual:  2 position solved: 362
+individual:  3 position solved: 353
+individual:  4 position solved: 318
+individual:  5 position solved: 315
+individual:  6 position solved: 375
+individual:  7 position solved: 362
+individual:  8 position solved: 353
+individual:  9 position solved: 318
+individual:  10 position solved: 319
+fitness: 328.20000000000084
+fitness: 319.80000000000064
+fitness: 318.80000000000064
+fitness: 318.60000000000065
+fitness: 313.20000000000056
+fitness: 312.60000000000053
+fitness: 273.0000000000003
+fitness: 270.8000000000003
+fitness: 270.8000000000003
+fitness: 270.40000000000015
+best individual weights: 
+weight 0 : -35.0
+weight 1 : -53.0
+weight 2 : -16.0
+weight 10 : 94.0
+weight 11 : -8.0
+weight 12 : 7.0
+weight 20 : 11.0
+weight 21 : 30.0
+weight 22 : 51.0
+weight 30 : 11.0
+weight 31 : 64.0
+weight 32 : -13.0
+weight 33 : -54.0
+weight 34 : 34.0
+weight 35 : 27.0
+weight 40 : -20.0
+weight 41 : -2.0
+weight 42 : 92.0
+weight 43 : 69.0
+weight 44 : -31.0
+weight 45 : 23.0
+weight 50 : 81.0
+weight 51 : 25.0
+weight 52 : 98.0
+weight 54 : 7.0
+weight 55 : -14.0
+weight 60 : 5.0
+weight 94 : 100.0
+weight 95 : 316.0
+weight 96 : 316.0
+weight 97 : 506.0
+weight 98 : 836.0
+crossladım: 0 + 5
+crossladım: 1 + 0
+mutation rate: 0.07
+generation: 3
+one generation: 290
+individual:  1 position solved: 375
+individual:  2 position solved: 364
+individual:  3 position solved: 362
+individual:  4 position solved: 362
+individual:  5 position solved: 353
+individual:  6 position solved: 353
+individual:  7 position solved: 319
+individual:  8 position solved: 318
+individual:  9 position solved: 385
+individual:  10 position solved: 374
+fitness: 337.0000000000009
+fitness: 328.20000000000084
+fitness: 327.60000000000076
+fitness: 319.80000000000064
+fitness: 318.80000000000064
+fitness: 318.60000000000065
+fitness: 313.20000000000056
+fitness: 312.60000000000053
+fitness: 273.0000000000003
+fitness: 270.8000000000003
+best individual weights: 
+weight 0 : -35.0
+weight 1 : -61.0
+weight 2 : 66.0
+weight 10 : 99.0
+weight 11 : -8.0
+weight 12 : 7.0
+weight 20 : 11.0
+weight 21 : 9.0
+weight 22 : 51.0
+weight 31 : 64.0
+weight 32 : -67.0
+weight 33 : -54.0
+weight 34 : 31.0
+weight 35 : 27.0
+weight 40 : -43.0
+weight 41 : -2.0
+weight 42 : 99.0
+weight 43 : 92.0
+weight 44 : -55.0
+weight 45 : 23.0
+weight 50 : 76.0
+weight 51 : 94.0
+weight 52 : 54.0
+weight 53 : 3.0
+weight 54 : 49.0
+weight 55 : -14.0
+weight 60 : 6.0
+weight 94 : 100.0
+weight 95 : 316.0
+weight 96 : 316.0
+weight 97 : 517.0
+weight 98 : 865.0
+mutation rate: 0.07
+generation: 4
+one generation: 517
+individual:  1 position solved: 385
+individual:  2 position solved: 375
+individual:  3 position solved: 374
+individual:  4 position solved: 364
+individual:  5 position solved: 362
+individual:  6 position solved: 391
+individual:  7 position solved: 378
+individual:  8 position solved: 382
+individual:  9 position solved: 363
+individual:  10 position solved: 357
+fitness: 341.200000000001
+fitness: 337.0000000000009
+fitness: 332.80000000000086
+fitness: 329.2000000000008
+fitness: 328.20000000000084
+fitness: 327.60000000000076
+fitness: 319.80000000000064
+fitness: 318.80000000000064
+fitness: 318.0000000000007
+fitness: 315.4000000000006
+best individual weights: 
+weight 0 : -35.0
+weight 1 : -61.0
+weight 2 : 66.0
+weight 10 : 99.0
+weight 11 : -8.0
+weight 12 : 7.0
+weight 20 : 11.0
+weight 21 : 9.0
+weight 22 : 51.0
+weight 31 : 64.0
+weight 32 : -67.0
+weight 33 : 2.0
+weight 34 : 47.0
+weight 35 : 33.0
+weight 40 : -43.0
+weight 41 : -2.0
+weight 42 : 99.0
+weight 43 : 92.0
+weight 44 : -64.0
+weight 45 : 23.0
+weight 50 : 76.0
+weight 51 : 94.0
+weight 52 : 54.0
+weight 53 : 3.0
+weight 54 : 7.0
+weight 55 : -14.0
+weight 60 : 6.0
+weight 94 : 100.0
+weight 95 : 316.0
+weight 96 : 316.0
+weight 97 : 517.0
+weight 98 : 865.0
+crossladım: 0 + 4
+crossladım: 1 + 4
+mutation rate: 0.07
+generation: 5
+one generation: 205
+individual:  1 position solved: 391
+individual:  2 position solved: 385
+individual:  3 position solved: 382
+individual:  4 position solved: 378
+individual:  5 position solved: 375
+individual:  6 position solved: 374
+individual:  7 position solved: 364
+individual:  8 position solved: 362
+individual:  9 position solved: 390
+individual:  10 position solved: 380
+fitness: 342.6000000000009
+fitness: 341.200000000001
+fitness: 337.0000000000009
+fitness: 333.20000000000095
+fitness: 332.80000000000086
+fitness: 329.2000000000008
+fitness: 328.20000000000084
+fitness: 327.60000000000076
+fitness: 319.80000000000064
+fitness: 318.80000000000064
+best individual weights: 
+weight 0 : -35.0
+weight 1 : -53.0
+weight 2 : -16.0
+weight 10 : 99.0
+weight 11 : -8.0
+weight 12 : 7.0
+weight 20 : 11.0
+weight 21 : 9.0
+weight 22 : 51.0
+weight 30 : 11.0
+weight 31 : 64.0
+weight 32 : -67.0
+weight 33 : 2.0
+weight 34 : 34.0
+weight 35 : 33.0
+weight 40 : -20.0
+weight 41 : -2.0
+weight 42 : 92.0
+weight 43 : 69.0
+weight 44 : -64.0
+weight 45 : 23.0
+weight 50 : 76.0
+weight 51 : 25.0
+weight 52 : 98.0
+weight 53 : 3.0
+weight 54 : 7.0
+weight 55 : -14.0
+weight 60 : 5.0
+weight 94 : 100.0
+weight 95 : 316.0
+weight 96 : 316.0
+weight 97 : 517.0
+weight 98 : 836.0
+mutation rate: 0.07
+generation: 6
+one generation: 471
+individual:  1 position solved: 390
+individual:  2 position solved: 391
+individual:  3 position solved: 385
+individual:  4 position solved: 380
+individual:  5 position solved: 382
+individual:  6 position solved: 390
+individual:  7 position solved: 389
+individual:  8 position solved: 379
+individual:  9 position solved: 377
+individual:  10 position solved: 381
+fitness: 342.6000000000009
+fitness: 342.6000000000009
+fitness: 341.200000000001
+fitness: 340.80000000000103
+fitness: 337.0000000000009
+fitness: 333.20000000000095
+fitness: 333.20000000000084
+fitness: 332.80000000000086
+fitness: 332.20000000000095
+fitness: 329.80000000000086
+best individual weights: 
+weight 0 : -35.0
+weight 1 : -53.0
+weight 2 : -16.0
+weight 10 : 99.0
+weight 11 : -8.0
+weight 12 : 7.0
+weight 20 : 11.0
+weight 21 : 9.0
+weight 22 : 51.0
+weight 30 : 11.0
+weight 31 : 64.0
+weight 32 : -67.0
+weight 33 : 2.0
+weight 34 : 34.0
+weight 35 : 33.0
+weight 40 : -20.0
+weight 41 : -2.0
+weight 42 : 92.0
+weight 43 : 69.0
+weight 44 : -64.0
+weight 45 : 23.0
+weight 50 : 76.0
+weight 51 : 25.0
+weight 52 : 98.0
+weight 53 : 3.0
+weight 54 : 7.0
+weight 55 : -14.0
+weight 60 : 5.0
+weight 94 : 100.0
+weight 95 : 316.0
+weight 96 : 316.0
+weight 97 : 517.0
+weight 98 : 836.0
+crossladım: 0 + 6
+crossladım: 1 + 1
+mutation rate: 0.07
+generation: 7
+one generation: 223
+individual:  1 position solved: 390
+individual:  2 position solved: 390
+individual:  3 position solved: 391
+individual:  4 position solved: 389
+individual:  5 position solved: 385
+individual:  6 position solved: 380
+individual:  7 position solved: 381
+individual:  8 position solved: 382
+individual:  9 position solved: 386
+individual:  10 position solved: 390
+fitness: 343.0000000000009
+fitness: 342.6000000000009
+fitness: 342.6000000000009
+fitness: 341.200000000001
+fitness: 340.80000000000103
+fitness: 337.0000000000009
+fitness: 336.20000000000084
+fitness: 333.20000000000095
+fitness: 333.20000000000084
+fitness: 332.80000000000086
+best individual weights: 
+weight 0 : -35.0
+weight 1 : -53.0
+weight 2 : -16.0
+weight 10 : 99.0
+weight 11 : -8.0
+weight 12 : 7.0
+weight 20 : 11.0
+weight 21 : 9.0
+weight 22 : 51.0
+weight 30 : 11.0
+weight 31 : 64.0
+weight 32 : -67.0
+weight 33 : 2.0
+weight 34 : 34.0
+weight 35 : 33.0
+weight 40 : -20.0
+weight 41 : -2.0
+weight 42 : 95.0
+weight 43 : 69.0
+weight 44 : -64.0
+weight 45 : 23.0
+weight 50 : 76.0
+weight 51 : 25.0
+weight 52 : 98.0
+weight 53 : 3.0
+weight 54 : 7.0
+weight 55 : -14.0
+weight 60 : 5.0
+weight 94 : 100.0
+weight 95 : 316.0
+weight 96 : 316.0
+weight 97 : 517.0
+weight 98 : 836.0
+mutation rate: 0.07
+generation: 8
+one generation: 475
+individual:  1 position solved: 390
+individual:  2 position solved: 390
+individual:  3 position solved: 390
+individual:  4 position solved: 391
+individual:  5 position solved: 389
+individual:  6 position solved: 380
+individual:  7 position solved: 387
+individual:  8 position solved: 381
+individual:  9 position solved: 395
+individual:  10 position solved: 399
+fitness: 347.60000000000093
+fitness: 344.0000000000011
+fitness: 343.0000000000009
+fitness: 342.6000000000009
+fitness: 342.6000000000009
+fitness: 342.00000000000074
+fitness: 341.200000000001
+fitness: 340.80000000000103
+fitness: 336.4000000000008
+fitness: 336.00000000000074
+best individual weights: 
+weight 0 : -35.0
+weight 1 : -61.0
+weight 2 : 66.0
+weight 10 : 99.0
+weight 11 : -8.0
+weight 12 : 7.0
+weight 20 : 11.0
+weight 21 : 9.0
+weight 22 : 51.0
+weight 31 : 17.0
+weight 32 : -67.0
+weight 33 : 2.0
+weight 34 : 47.0
+weight 35 : 56.0
+weight 40 : -43.0
+weight 41 : -2.0
+weight 42 : 99.0
+weight 43 : 92.0
+weight 44 : -64.0
+weight 45 : 23.0
+weight 50 : 76.0
+weight 51 : 94.0
+weight 52 : 54.0
+weight 53 : 3.0
+weight 54 : 7.0
+weight 55 : -14.0
+weight 60 : 6.0
+weight 94 : 100.0
+weight 95 : 316.0
+weight 96 : 378.0
+weight 97 : 514.0
+weight 98 : 865.0
+crossladım: 0 + 7
+crossladım: 1 + 6
+mutation rate: 0.07
+generation: 9
+one generation: 203
+individual:  1 position solved: 399
+individual:  2 position solved: 395
+individual:  3 position solved: 390
+individual:  4 position solved: 390
+individual:  5 position solved: 390
+individual:  6 position solved: 387
+individual:  7 position solved: 391
+individual:  8 position solved: 389
+individual:  9 position solved: 390
+individual:  10 position solved: 390
+fitness: 347.60000000000093
+fitness: 344.0000000000011
+fitness: 343.0000000000009
+fitness: 342.6000000000009
+fitness: 342.6000000000009
+fitness: 342.00000000000074
+fitness: 341.200000000001
+fitness: 341.0000000000011
+fitness: 341.000000000001
+fitness: 340.80000000000103
+best individual weights: 
+weight 0 : -35.0
+weight 1 : -61.0
+weight 2 : 66.0
+weight 10 : 99.0
+weight 11 : -8.0
+weight 12 : 7.0
+weight 20 : 11.0
+weight 21 : 9.0
+weight 22 : 51.0
+weight 31 : 17.0
+weight 32 : -67.0
+weight 33 : 2.0
+weight 34 : 47.0
+weight 35 : 56.0
+weight 40 : -43.0
+weight 41 : -2.0
+weight 42 : 99.0
+weight 43 : 92.0
+weight 44 : -64.0
+weight 45 : 23.0
+weight 50 : 76.0
+weight 51 : 94.0
+weight 52 : 54.0
+weight 53 : 3.0
+weight 54 : 7.0
+weight 55 : -14.0
+weight 60 : 6.0
+weight 94 : 100.0
+weight 95 : 316.0
+weight 96 : 378.0
+weight 97 : 514.0
+weight 98 : 865.0
+mutation rate: 0.07
+generation: 10
+one generation: 472
+individual:  1 position solved: 399
+individual:  2 position solved: 395
+individual:  3 position solved: 390
+individual:  4 position solved: 390
+individual:  5 position solved: 390
+individual:  6 position solved: 409
+individual:  7 position solved: 391
+individual:  8 position solved: 379
+individual:  9 position solved: 382
+individual:  10 position solved: 383
+fitness: 355.80000000000126
+fitness: 347.60000000000093
+fitness: 344.0000000000011
+fitness: 343.0000000000009
+fitness: 342.6000000000009
+fitness: 342.6000000000009
+fitness: 342.200000000001
+fitness: 337.8000000000008
+fitness: 336.8000000000008
+fitness: 334.80000000000075
+best individual weights: 
+weight 0 : -35.0
+weight 1 : -61.0
+weight 2 : 66.0
+weight 10 : 99.0
+weight 11 : -8.0
+weight 12 : 7.0
+weight 20 : 6.0
+weight 21 : 9.0
+weight 22 : 51.0
+weight 31 : 17.0
+weight 32 : -67.0
+weight 33 : 34.0
+weight 34 : 47.0
+weight 35 : 56.0
+weight 40 : -43.0
+weight 41 : -2.0
+weight 42 : 99.0
+weight 43 : 12.0
+weight 44 : -64.0
+weight 45 : 23.0
+weight 50 : 76.0
+weight 51 : 94.0
+weight 52 : 54.0
+weight 53 : 3.0
+weight 54 : 7.0
+weight 55 : -14.0
+weight 60 : 6.0
+weight 94 : 100.0
+weight 95 : 316.0
+weight 96 : 378.0
+weight 97 : 514.0
+weight 98 : 865.0
+crossladım: 0 + 6
+crossladım: 1 + 5
+mutation rate: 0.07
+generation: 11
+one generation: 200
+individual:  1 position solved: 409
+individual:  2 position solved: 399
+individual:  3 position solved: 395
+individual:  4 position solved: 390
+individual:  5 position solved: 390
+individual:  6 position solved: 390
+individual:  7 position solved: 391
+individual:  8 position solved: 383
+individual:  9 position solved: 396
+individual:  10 position solved: 396
+fitness: 355.80000000000126
+fitness: 350.00000000000074
+fitness: 347.60000000000093
+fitness: 346.00000000000114
+fitness: 344.0000000000011
+fitness: 343.0000000000009
+fitness: 342.6000000000009
+fitness: 342.6000000000009
+fitness: 342.200000000001
+fitness: 337.8000000000008
+best individual weights: 
+weight 0 : -35.0
+weight 1 : -61.0
+weight 2 : 66.0
+weight 10 : 99.0
+weight 11 : -8.0
+weight 12 : 7.0
+weight 20 : 6.0
+weight 21 : 9.0
+weight 22 : 51.0
+weight 31 : 17.0
+weight 32 : -67.0
+weight 33 : 34.0
+weight 34 : 47.0
+weight 35 : 56.0
+weight 40 : -43.0
+weight 41 : -2.0
+weight 42 : 99.0
+weight 43 : 12.0
+weight 44 : -64.0
+weight 45 : 23.0
+weight 50 : 76.0
+weight 51 : 94.0
+weight 52 : 54.0
+weight 53 : 3.0
+weight 54 : 7.0
+weight 55 : -14.0
+weight 60 : 6.0
+weight 94 : 100.0
+weight 95 : 316.0
+weight 96 : 378.0
+weight 97 : 514.0
+weight 98 : 865.0
+mutation rate: 0.07
+generation: 12
+one generation: 467
+individual:  1 position solved: 409
+individual:  2 position solved: 396
+individual:  3 position solved: 399
+individual:  4 position solved: 396
+individual:  5 position solved: 395
+individual:  6 position solved: 407
+individual:  7 position solved: 398
+individual:  8 position solved: 388
+individual:  9 position solved: 392
+individual:  10 position solved: 394
+fitness: 355.80000000000126
+fitness: 354.00000000000125
+fitness: 351.40000000000083
+fitness: 350.00000000000074
+fitness: 347.60000000000093
+fitness: 346.00000000000114
+fitness: 344.0000000000011
+fitness: 342.800000000001
+fitness: 342.60000000000105
+fitness: 339.4000000000009
+best individual weights: 
+weight 0 : -35.0
+weight 1 : -61.0
+weight 2 : 66.0
+weight 10 : 99.0
+weight 11 : -8.0
+weight 12 : 7.0
+weight 20 : 6.0
+weight 21 : 9.0
+weight 22 : 51.0
+weight 31 : 17.0
+weight 32 : -67.0
+weight 33 : 34.0
+weight 34 : 47.0
+weight 35 : 56.0
+weight 40 : -43.0
+weight 41 : -2.0
+weight 42 : 99.0
+weight 43 : 12.0
+weight 44 : -64.0
+weight 45 : 23.0
+weight 50 : 76.0
+weight 51 : 94.0
+weight 52 : 54.0
+weight 53 : 3.0
+weight 54 : 7.0
+weight 55 : -14.0
+weight 60 : 6.0
+weight 94 : 100.0
+weight 95 : 316.0
+weight 96 : 378.0
+weight 97 : 514.0
+weight 98 : 865.0
+crossladım: 0 + 3
+crossladım: 1 + 4
+mutation rate: 0.07
+generation: 13
+one generation: 200
+individual:  1 position solved: 409
+individual:  2 position solved: 407
+individual:  3 position solved: 398
+individual:  4 position solved: 396
+individual:  5 position solved: 399
+individual:  6 position solved: 396
+individual:  7 position solved: 395
+individual:  8 position solved: 392
+individual:  9 position solved: 396
+individual:  10 position solved: 406
+fitness: 355.80000000000126
+fitness: 354.20000000000107
+fitness: 354.00000000000125
+fitness: 351.40000000000083
+fitness: 350.00000000000074
+fitness: 347.60000000000093
+fitness: 347.2000000000009
+fitness: 346.00000000000114
+fitness: 344.0000000000011
+fitness: 342.800000000001
+best individual weights: 
+weight 0 : -35.0
+weight 1 : -61.0
+weight 2 : 66.0
+weight 10 : 99.0
+weight 11 : -8.0
+weight 12 : 7.0
+weight 20 : 6.0
+weight 21 : 9.0
+weight 22 : 51.0
+weight 31 : 17.0
+weight 32 : -67.0
+weight 33 : 34.0
+weight 34 : 47.0
+weight 35 : 56.0
+weight 40 : -43.0
+weight 41 : -2.0
+weight 42 : 99.0
+weight 43 : 12.0
+weight 44 : -64.0
+weight 45 : 23.0
+weight 50 : 76.0
+weight 51 : 94.0
+weight 52 : 54.0
+weight 53 : 3.0
+weight 54 : 7.0
+weight 55 : -14.0
+weight 60 : 6.0
+weight 94 : 100.0
+weight 95 : 316.0
+weight 96 : 378.0
+weight 97 : 514.0
+weight 98 : 865.0
+mutation rate: 0.07
+generation: 14
+one generation: 467
+individual:  1 position solved: 409
+individual:  2 position solved: 406
+individual:  3 position solved: 407
+individual:  4 position solved: 398
+individual:  5 position solved: 396
+individual:  6 position solved: 401
+individual:  7 position solved: 401
+individual:  8 position solved: 396
+individual:  9 position solved: 393
+individual:  10 position solved: 391
+fitness: 355.80000000000126
+fitness: 354.20000000000107
+fitness: 354.00000000000125
+fitness: 353.40000000000083
+fitness: 351.40000000000083
+fitness: 350.00000000000074
+fitness: 349.2000000000013
+fitness: 346.0000000000008
+fitness: 344.20000000000107
+fitness: 344.2000000000008
+best individual weights: 
+weight 0 : -35.0
+weight 1 : -61.0
+weight 2 : 66.0
+weight 10 : 99.0
+weight 11 : -8.0
+weight 12 : 7.0
+weight 20 : 6.0
+weight 21 : 9.0
+weight 22 : 51.0
+weight 31 : 17.0
+weight 32 : -67.0
+weight 33 : 34.0
+weight 34 : 47.0
+weight 35 : 56.0
+weight 40 : -43.0
+weight 41 : -2.0
+weight 42 : 99.0
+weight 43 : 12.0
+weight 44 : -64.0
+weight 45 : 23.0
+weight 50 : 76.0
+weight 51 : 94.0
+weight 52 : 54.0
+weight 53 : 3.0
+weight 54 : 7.0
+weight 55 : -14.0
+weight 60 : 6.0
+weight 94 : 100.0
+weight 95 : 316.0
+weight 96 : 378.0
+weight 97 : 514.0
+weight 98 : 865.0
+crossladım: 0 + 4
+crossladım: 1 + 7
+mutation rate: 0.07
+generation: 15
+one generation: 204
+individual:  1 position solved: 409
+individual:  2 position solved: 406
+individual:  3 position solved: 407
+individual:  4 position solved: 401
+individual:  5 position solved: 398
+individual:  6 position solved: 396
+individual:  7 position solved: 401
+individual:  8 position solved: 393
+individual:  9 position solved: 400
+individual:  10 position solved: 402
+fitness: 355.80000000000126
+fitness: 354.20000000000107
+fitness: 354.00000000000125
+fitness: 353.40000000000083
+fitness: 352.6000000000009
+fitness: 351.40000000000083
+fitness: 350.80000000000086
+fitness: 350.00000000000074
+fitness: 349.2000000000013
+fitness: 346.0000000000008
+best individual weights: 
+weight 0 : -35.0
+weight 1 : -61.0
+weight 2 : 66.0
+weight 10 : 99.0
+weight 11 : -8.0
+weight 12 : 7.0
+weight 20 : 6.0
+weight 21 : 9.0
+weight 22 : 51.0
+weight 31 : 17.0
+weight 32 : -67.0
+weight 33 : 34.0
+weight 34 : 47.0
+weight 35 : 56.0
+weight 40 : -43.0
+weight 41 : -2.0
+weight 42 : 99.0
+weight 43 : 12.0
+weight 44 : -64.0
+weight 45 : 23.0
+weight 50 : 76.0
+weight 51 : 94.0
+weight 52 : 54.0
+weight 53 : 3.0
+weight 54 : 7.0
+weight 55 : -14.0
+weight 60 : 6.0
+weight 94 : 100.0
+weight 95 : 316.0
+weight 96 : 378.0
+weight 97 : 514.0
+weight 98 : 865.0
+mutation rate: 0.07
+generation: 16
+one generation: 482
+individual:  1 position solved: 409
+individual:  2 position solved: 406
+individual:  3 position solved: 407
+individual:  4 position solved: 401
+individual:  5 position solved: 402
+individual:  6 position solved: 410
+individual:  7 position solved: 405
+individual:  8 position solved: 398
+individual:  9 position solved: 333
+individual:  10 position solved: 274
+fitness: 355.80000000000126
+fitness: 355.60000000000133
+fitness: 354.20000000000107
+fitness: 354.00000000000125
+fitness: 353.40000000000083
+fitness: 352.60000000000105
+fitness: 352.6000000000009
+fitness: 345.80000000000115
+fitness: 283.6000000000006
+fitness: 233.2000000000002
+best individual weights: 
+weight 0 : -35.0
+weight 1 : -61.0
+weight 2 : 66.0
+weight 10 : 99.0
+weight 11 : -8.0
+weight 12 : 7.0
+weight 20 : 6.0
+weight 21 : 9.0
+weight 22 : 51.0
+weight 31 : 17.0
+weight 32 : -67.0
+weight 33 : 34.0
+weight 34 : 47.0
+weight 35 : 56.0
+weight 40 : -43.0
+weight 41 : -2.0
+weight 42 : 99.0
+weight 43 : 12.0
+weight 44 : -64.0
+weight 45 : 23.0
+weight 50 : 76.0
+weight 51 : 94.0
+weight 52 : 54.0
+weight 53 : 3.0
+weight 54 : 7.0
+weight 55 : -14.0
+weight 60 : 6.0
+weight 94 : 100.0
+weight 95 : 316.0
+weight 96 : 378.0
+weight 97 : 514.0
+weight 98 : 865.0
+crossladım: 0 + 0
+crossladım: 1 + 4
+mutation rate: 0.081
+generation: 17
+one generation: 203
+individual:  1 position solved: 409
+individual:  2 position solved: 410
+individual:  3 position solved: 406
+individual:  4 position solved: 407
+individual:  5 position solved: 401
+individual:  6 position solved: 405
+individual:  7 position solved: 402
+individual:  8 position solved: 398
+individual:  9 position solved: 409
+individual:  10 position solved: 412
+fitness: 358.4000000000014
+fitness: 355.80000000000126
+fitness: 355.80000000000126
+fitness: 355.60000000000133
+fitness: 354.20000000000107
+fitness: 354.00000000000125
+fitness: 353.40000000000083
+fitness: 352.60000000000105
+fitness: 352.6000000000009
+fitness: 345.80000000000115
+best individual weights: 
+weight 0 : -35.0
+weight 1 : -61.0
+weight 2 : 66.0
+weight 10 : 99.0
+weight 11 : -8.0
+weight 12 : 7.0
+weight 20 : 6.0
+weight 21 : 9.0
+weight 22 : 51.0
+weight 31 : 17.0
+weight 32 : -56.0
+weight 33 : 37.0
+weight 34 : 47.0
+weight 35 : 56.0
+weight 40 : -43.0
+weight 41 : -2.0
+weight 42 : 99.0
+weight 43 : 12.0
+weight 44 : -64.0
+weight 45 : 3.0
+weight 50 : 76.0
+weight 51 : 94.0
+weight 52 : 54.0
+weight 53 : 3.0
+weight 54 : 7.0
+weight 55 : -14.0
+weight 60 : 6.0
+weight 94 : 100.0
+weight 95 : 316.0
+weight 96 : 378.0
+weight 97 : 514.0
+weight 98 : 865.0
+mutation rate: 0.07
+generation: 18
+one generation: 474
+individual:  1 position solved: 412
+individual:  2 position solved: 409
+individual:  3 position solved: 409
+individual:  4 position solved: 410
+individual:  5 position solved: 406
+individual:  6 position solved: 415
+individual:  7 position solved: 413
+individual:  8 position solved: 388
+individual:  9 position solved: 400
+individual:  10 position solved: 399
+fitness: 360.00000000000136
+fitness: 359.0000000000013
+fitness: 358.4000000000014
+fitness: 355.80000000000126
+fitness: 355.80000000000126
+fitness: 355.60000000000133
+fitness: 354.20000000000107
+fitness: 347.4000000000013
+fitness: 347.200000000001
+fitness: 337.8000000000011
+best individual weights: 
+weight 0 : -38.0
+weight 1 : -61.0
+weight 2 : 66.0
+weight 10 : 99.0
+weight 11 : -8.0
+weight 12 : 7.0
+weight 20 : 6.0
+weight 21 : 48.0
+weight 22 : 51.0
+weight 31 : 17.0
+weight 32 : -67.0
+weight 33 : 34.0
+weight 34 : 47.0
+weight 35 : 56.0
+weight 40 : -43.0
+weight 41 : -2.0
+weight 42 : 99.0
+weight 43 : 12.0
+weight 44 : -64.0
+weight 45 : 23.0
+weight 50 : 76.0
+weight 51 : 94.0
+weight 52 : 54.0
+weight 53 : 3.0
+weight 54 : 7.0
+weight 55 : -14.0
+weight 60 : 6.0
+weight 94 : 100.0
+weight 95 : 316.0
+weight 96 : 378.0
+weight 97 : 514.0
+weight 98 : 865.0
+crossladım: 0 + 7
+crossladım: 1 + 7
+mutation rate: 0.07
+generation: 19
+one generation: 215
+individual:  1 position solved: 413
+individual:  2 position solved: 415
+individual:  3 position solved: 412
+individual:  4 position solved: 409
+individual:  5 position solved: 409
+individual:  6 position solved: 410
+individual:  7 position solved: 406
+individual:  8 position solved: 400
+individual:  9 position solved: 410
+individual:  10 position solved: 407
+fitness: 360.00000000000136
+fitness: 359.0000000000013
+fitness: 358.4000000000014
+fitness: 355.80000000000126
+fitness: 355.80000000000126
+fitness: 355.60000000000133
+fitness: 355.60000000000133
+fitness: 354.20000000000107
+fitness: 353.6000000000013
+fitness: 347.4000000000013
+best individual weights: 
+weight 0 : -38.0
+weight 1 : -61.0
+weight 2 : 66.0
+weight 10 : 99.0
+weight 11 : -8.0
+weight 12 : 7.0
+weight 20 : 6.0
+weight 21 : 48.0
+weight 22 : 51.0
+weight 31 : 17.0
+weight 32 : -67.0
+weight 33 : 34.0
+weight 34 : 47.0
+weight 35 : 56.0
+weight 40 : -43.0
+weight 41 : -2.0
+weight 42 : 99.0
+weight 43 : 12.0
+weight 44 : -64.0
+weight 45 : 23.0
+weight 50 : 76.0
+weight 51 : 94.0
+weight 52 : 54.0
+weight 53 : 3.0
+weight 54 : 7.0
+weight 55 : -14.0
+weight 60 : 6.0
+weight 94 : 100.0
+weight 95 : 316.0
+weight 96 : 378.0
+weight 97 : 514.0
+weight 98 : 865.0
+mutation rate: 0.07
+generation: 20
+one generation: 484
+individual:  1 position solved: 413
+individual:  2 position solved: 415
+individual:  3 position solved: 412
+individual:  4 position solved: 409
+individual:  5 position solved: 409
+individual:  6 position solved: 413
+individual:  7 position solved: 414
+individual:  8 position solved: 401
+individual:  9 position solved: 407
+individual:  10 position solved: 398
+fitness: 361.0000000000014
+fitness: 360.00000000000136
+fitness: 359.20000000000124
+fitness: 359.0000000000013
+fitness: 358.4000000000014
+fitness: 355.80000000000126
+fitness: 355.80000000000126
+fitness: 353.0000000000012
+fitness: 347.4000000000011
+fitness: 346.00000000000114
+best individual weights: 
+weight 0 : -24.0
+weight 1 : -61.0
+weight 2 : 66.0
+weight 10 : 99.0
+weight 11 : -8.0
+weight 12 : 7.0
+weight 20 : 6.0
+weight 21 : 9.0
+weight 22 : 51.0
+weight 31 : 17.0
+weight 32 : -79.0
+weight 33 : 37.0
+weight 34 : 47.0
+weight 35 : 54.0
+weight 40 : -43.0
+weight 41 : -2.0
+weight 42 : 99.0
+weight 43 : 12.0
+weight 44 : -64.0
+weight 45 : 3.0
+weight 50 : 76.0
+weight 51 : 94.0
+weight 52 : 17.0
+weight 53 : 3.0
+weight 54 : 7.0
+weight 55 : -11.0
+weight 60 : 6.0
+weight 94 : 100.0
+weight 95 : 316.0
+weight 96 : 378.0
+weight 97 : 514.0
+weight 98 : 865.0
+crossladım: 0 + 2
+crossladım: 1 + 2
+mutation rate: 0.07
+generation: 21
+one generation: 205
+individual:  1 position solved: 414
+individual:  2 position solved: 413
+individual:  3 position solved: 413
+individual:  4 position solved: 415
+individual:  5 position solved: 412
+individual:  6 position solved: 409
+individual:  7 position solved: 409
+individual:  8 position solved: 407
+individual:  9 position solved: 410
+individual:  10 position solved: 413
+fitness: 361.0000000000014
+fitness: 360.00000000000136
+fitness: 360.0000000000013
+fitness: 359.20000000000124
+fitness: 359.0000000000013
+fitness: 358.4000000000014
+fitness: 355.80000000000126
+fitness: 355.80000000000126
+fitness: 355.40000000000117
+fitness: 353.0000000000012
+best individual weights: 
+weight 0 : -24.0
+weight 1 : -61.0
+weight 2 : 66.0
+weight 10 : 99.0
+weight 11 : -8.0
+weight 12 : 7.0
+weight 20 : 6.0
+weight 21 : 9.0
+weight 22 : 51.0
+weight 31 : 17.0
+weight 32 : -79.0
+weight 33 : 37.0
+weight 34 : 47.0
+weight 35 : 54.0
+weight 40 : -43.0
+weight 41 : -2.0
+weight 42 : 99.0
+weight 43 : 12.0
+weight 44 : -64.0
+weight 45 : 3.0
+weight 50 : 76.0
+weight 51 : 94.0
+weight 52 : 17.0
+weight 53 : 3.0
+weight 54 : 7.0
+weight 55 : -11.0
+weight 60 : 6.0
+weight 94 : 100.0
+weight 95 : 316.0
+weight 96 : 378.0
+weight 97 : 514.0
+weight 98 : 865.0
+mutation rate: 0.07
+generation: 22
+one generation: 476
+individual:  1 position solved: 414
+individual:  2 position solved: 413
+individual:  3 position solved: 413
+individual:  4 position solved: 413
+individual:  5 position solved: 415
+individual:  6 position solved: 411
+individual:  7 position solved: 397
+individual:  8 position solved: 406
+individual:  9 position solved: 407
+individual:  10 position solved: 409
+fitness: 361.0000000000014
+fitness: 360.4000000000012
+fitness: 360.00000000000136
+fitness: 360.0000000000013
+fitness: 359.20000000000124
+fitness: 359.0000000000013
+fitness: 353.6000000000013
+fitness: 353.40000000000134
+fitness: 353.00000000000097
+fitness: 345.6000000000011
+best individual weights: 
+weight 0 : -24.0
+weight 1 : -61.0
+weight 2 : 66.0
+weight 10 : 99.0
+weight 11 : -8.0
+weight 12 : 7.0
+weight 20 : 6.0
+weight 21 : 9.0
+weight 22 : 51.0
+weight 31 : 17.0
+weight 32 : -79.0
+weight 33 : 37.0
+weight 34 : 47.0
+weight 35 : 54.0
+weight 40 : -43.0
+weight 41 : -2.0
+weight 42 : 99.0
+weight 43 : 12.0
+weight 44 : -64.0
+weight 45 : 3.0
+weight 50 : 76.0
+weight 51 : 94.0
+weight 52 : 17.0
+weight 53 : 3.0
+weight 54 : 7.0
+weight 55 : -11.0
+weight 60 : 6.0
+weight 94 : 100.0
+weight 95 : 316.0
+weight 96 : 378.0
+weight 97 : 514.0
+weight 98 : 865.0
+crossladım: 0 + 6
+crossladım: 1 + 1
+mutation rate: 0.07
+generation: 23
+one generation: 205
+individual:  1 position solved: 414
+individual:  2 position solved: 411
+individual:  3 position solved: 413
+individual:  4 position solved: 413
+individual:  5 position solved: 413
+individual:  6 position solved: 415
+individual:  7 position solved: 407
+individual:  8 position solved: 409
+individual:  9 position solved: 421
+individual:  10 position solved: 413
+fitness: 366.0000000000013
+fitness: 362.00000000000125
+fitness: 361.0000000000014
+fitness: 360.4000000000012
+fitness: 360.00000000000136
+fitness: 360.0000000000013
+fitness: 359.20000000000124
+fitness: 359.0000000000013
+fitness: 353.6000000000013
+fitness: 353.40000000000134
+best individual weights: 
+weight 0 : -24.0
+weight 1 : -82.0
+weight 2 : 66.0
+weight 10 : 99.0
+weight 11 : -8.0
+weight 12 : 93.0
+weight 20 : 6.0
+weight 21 : 48.0
+weight 22 : 51.0
+weight 31 : 17.0
+weight 32 : -79.0
+weight 33 : 37.0
+weight 34 : 47.0
+weight 35 : 54.0
+weight 40 : -43.0
+weight 41 : -1.0
+weight 42 : 99.0
+weight 43 : 12.0
+weight 44 : -64.0
+weight 45 : 23.0
+weight 50 : 76.0
+weight 51 : 98.0
+weight 52 : 54.0
+weight 53 : 3.0
+weight 54 : 7.0
+weight 55 : -14.0
+weight 60 : 6.0
+weight 94 : 100.0
+weight 95 : 316.0
+weight 96 : 378.0
+weight 97 : 514.0
+weight 98 : 865.0
+mutation rate: 0.07
+generation: 24
+one generation: 478
+individual:  1 position solved: 421
+individual:  2 position solved: 413
+individual:  3 position solved: 414
+individual:  4 position solved: 411
+individual:  5 position solved: 413
+individual:  6 position solved: 420
+individual:  7 position solved: 413
+individual:  8 position solved: 404
+individual:  9 position solved: 398
+individual:  10 position solved: 400
+fitness: 366.0000000000013
+fitness: 365.0000000000013
+fitness: 362.00000000000125
+fitness: 362.00000000000125
+fitness: 361.0000000000014
+fitness: 360.4000000000012
+fitness: 360.00000000000136
+fitness: 351.0000000000012
+fitness: 350.4000000000011
+fitness: 347.80000000000115
+best individual weights: 
+weight 0 : -24.0
+weight 1 : -82.0
+weight 2 : 66.0
+weight 10 : 99.0
+weight 11 : -8.0
+weight 12 : 93.0
+weight 20 : 6.0
+weight 21 : 48.0
+weight 22 : 51.0
+weight 31 : 17.0
+weight 32 : -79.0
+weight 33 : 37.0
+weight 34 : 47.0
+weight 35 : 54.0
+weight 40 : -43.0
+weight 41 : -1.0
+weight 42 : 99.0
+weight 43 : 12.0
+weight 44 : -64.0
+weight 45 : 23.0
+weight 50 : 76.0
+weight 51 : 98.0
+weight 52 : 54.0
+weight 53 : 3.0
+weight 54 : 7.0
+weight 55 : -14.0
+weight 60 : 6.0
+weight 94 : 100.0
+weight 95 : 316.0
+weight 96 : 378.0
+weight 97 : 514.0
+weight 98 : 865.0
+crossladım: 0 + 6
+crossladım: 1 + 7
+mutation rate: 0.07
+generation: 25
+one generation: 204
+individual:  1 position solved: 421
+individual:  2 position solved: 420
+individual:  3 position solved: 413
+individual:  4 position solved: 413
+individual:  5 position solved: 414
+individual:  6 position solved: 411
+individual:  7 position solved: 413
+individual:  8 position solved: 404
+individual:  9 position solved: 415
+individual:  10 position solved: 415
+fitness: 366.0000000000013
+fitness: 365.0000000000013
+fitness: 362.00000000000136
+fitness: 362.00000000000125
+fitness: 362.00000000000125
+fitness: 361.20000000000135
+fitness: 361.0000000000014
+fitness: 360.4000000000012
+fitness: 360.00000000000136
+fitness: 351.0000000000012
+best individual weights: 
+weight 0 : -24.0
+weight 1 : -82.0
+weight 2 : 66.0
+weight 10 : 99.0
+weight 11 : -8.0
+weight 12 : 93.0
+weight 20 : 6.0
+weight 21 : 48.0
+weight 22 : 51.0
+weight 31 : 17.0
+weight 32 : -79.0
+weight 33 : 37.0
+weight 34 : 47.0
+weight 35 : 54.0
+weight 40 : -43.0
+weight 41 : -1.0
+weight 42 : 99.0
+weight 43 : 12.0
+weight 44 : -64.0
+weight 45 : 23.0
+weight 50 : 76.0
+weight 51 : 98.0
+weight 52 : 54.0
+weight 53 : 3.0
+weight 54 : 7.0
+weight 55 : -14.0
+weight 60 : 6.0
+weight 94 : 100.0
+weight 95 : 316.0
+weight 96 : 378.0
+weight 97 : 514.0
+weight 98 : 865.0
+mutation rate: 0.07
+generation: 26
+one generation: 513
+individual:  1 position solved: 421
+individual:  2 position solved: 420
+individual:  3 position solved: 415
+individual:  4 position solved: 413
+individual:  5 position solved: 413
+individual:  6 position solved: 423
+individual:  7 position solved: 418
+individual:  8 position solved: 404
+individual:  9 position solved: 403
+individual:  10 position solved: 411
+fitness: 368.8000000000013
+fitness: 366.80000000000126
+fitness: 366.0000000000013
+fitness: 365.0000000000013
+fitness: 362.00000000000136
+fitness: 362.00000000000125
+fitness: 362.00000000000125
+fitness: 357.4000000000012
+fitness: 353.0000000000013
+fitness: 351.40000000000106
+best individual weights: 
+weight 0 : -24.0
+weight 1 : -82.0
+weight 2 : 66.0
+weight 10 : 77.0
+weight 11 : -8.0
+weight 12 : 93.0
+weight 20 : 6.0
+weight 21 : 48.0
+weight 22 : 51.0
+weight 31 : 17.0
+weight 32 : -79.0
+weight 33 : 37.0
+weight 34 : 47.0
+weight 35 : 54.0
+weight 40 : -43.0
+weight 41 : -1.0
+weight 42 : 99.0
+weight 43 : 12.0
+weight 44 : -64.0
+weight 45 : 23.0
+weight 50 : 76.0
+weight 51 : 98.0
+weight 52 : 54.0
+weight 53 : 3.0
+weight 54 : 7.0
+weight 55 : -14.0
+weight 60 : 7.0
+weight 94 : 100.0
+weight 95 : 316.0
+weight 96 : 378.0
+weight 97 : 514.0
+weight 98 : 865.0
+crossladım: 0 + 5
+crossladım: 1 + 4
+mutation rate: 0.07
+generation: 27
+one generation: 220
+individual:  1 position solved: 423
+individual:  2 position solved: 418
+individual:  3 position solved: 421
+individual:  4 position solved: 420
+individual:  5 position solved: 415
+individual:  6 position solved: 413
+individual:  7 position solved: 413
+individual:  8 position solved: 411
+individual:  9 position solved: 409
+individual:  10 position solved: 415
+fitness: 368.8000000000013
+fitness: 366.80000000000126
+fitness: 366.0000000000013
+fitness: 365.0000000000013
+fitness: 362.00000000000136
+fitness: 362.00000000000125
+fitness: 362.00000000000125
+fitness: 361.4000000000014
+fitness: 358.4000000000012
+fitness: 357.4000000000012
+best individual weights: 
+weight 0 : -24.0
+weight 1 : -82.0
+weight 2 : 66.0
+weight 10 : 77.0
+weight 11 : -8.0
+weight 12 : 93.0
+weight 20 : 6.0
+weight 21 : 48.0
+weight 22 : 51.0
+weight 31 : 17.0
+weight 32 : -79.0
+weight 33 : 37.0
+weight 34 : 47.0
+weight 35 : 54.0
+weight 40 : -43.0
+weight 41 : -1.0
+weight 42 : 99.0
+weight 43 : 12.0
+weight 44 : -64.0
+weight 45 : 23.0
+weight 50 : 76.0
+weight 51 : 98.0
+weight 52 : 54.0
+weight 53 : 3.0
+weight 54 : 7.0
+weight 55 : -14.0
+weight 60 : 7.0
+weight 94 : 100.0
+weight 95 : 316.0
+weight 96 : 378.0
+weight 97 : 514.0
+weight 98 : 865.0
+mutation rate: 0.07
+generation: 28
+one generation: 484
+individual:  1 position solved: 423
+individual:  2 position solved: 418
+individual:  3 position solved: 421
+individual:  4 position solved: 420
+individual:  5 position solved: 415
+individual:  6 position solved: 423
+individual:  7 position solved: 418
+individual:  8 position solved: 407
+individual:  9 position solved: 386
+individual:  10 position solved: 408
+fitness: 368.8000000000013
+fitness: 368.8000000000013
+fitness: 366.80000000000126
+fitness: 366.80000000000126
+fitness: 366.0000000000013
+fitness: 365.0000000000013
+fitness: 362.00000000000136
+fitness: 356.2000000000011
+fitness: 354.6000000000013
+fitness: 338.000000000001
+best individual weights: 
+weight 0 : -24.0
+weight 1 : -82.0
+weight 2 : 66.0
+weight 10 : 77.0
+weight 11 : -8.0
+weight 12 : 93.0
+weight 20 : 6.0
+weight 21 : 48.0
+weight 22 : 51.0
+weight 31 : 17.0
+weight 32 : -79.0
+weight 33 : 37.0
+weight 34 : 47.0
+weight 35 : 54.0
+weight 40 : -43.0
+weight 41 : -1.0
+weight 42 : 99.0
+weight 43 : 12.0
+weight 44 : -64.0
+weight 45 : 23.0
+weight 50 : 76.0
+weight 51 : 98.0
+weight 52 : 54.0
+weight 53 : 3.0
+weight 54 : 7.0
+weight 55 : -14.0
+weight 60 : 7.0
+weight 94 : 100.0
+weight 95 : 316.0
+weight 96 : 378.0
+weight 97 : 514.0
+weight 98 : 865.0
+crossladım: 0 + 4
+crossladım: 1 + 5
+mutation rate: 0.07
+generation: 29
+one generation: 219
+individual:  1 position solved: 423
+individual:  2 position solved: 423
+individual:  3 position solved: 418
+individual:  4 position solved: 418
+individual:  5 position solved: 421
+individual:  6 position solved: 420
+individual:  7 position solved: 415
+individual:  8 position solved: 407
+individual:  9 position solved: 424
+individual:  10 position solved: 424
+fitness: 369.2000000000013
+fitness: 369.2000000000013
+fitness: 368.8000000000013
+fitness: 368.8000000000013
+fitness: 366.80000000000126
+fitness: 366.80000000000126
+fitness: 366.0000000000013
+fitness: 365.0000000000013
+fitness: 362.00000000000136
+fitness: 356.2000000000011
+best individual weights: 
+weight 0 : -24.0
+weight 1 : -82.0
+weight 2 : 66.0
+weight 10 : 77.0
+weight 11 : -8.0
+weight 12 : 93.0
+weight 20 : 6.0
+weight 21 : 48.0
+weight 22 : 51.0
+weight 31 : 17.0
+weight 32 : -79.0
+weight 33 : 37.0
+weight 34 : 47.0
+weight 35 : 54.0
+weight 40 : -43.0
+weight 41 : -1.0
+weight 42 : 99.0
+weight 43 : 12.0
+weight 44 : -64.0
+weight 45 : 23.0
+weight 50 : 76.0
+weight 51 : 98.0
+weight 52 : 54.0
+weight 53 : 3.0
+weight 54 : 7.0
+weight 55 : -14.0
+weight 60 : 6.0
+weight 94 : 100.0
+weight 95 : 316.0
+weight 96 : 378.0
+weight 97 : 514.0
+weight 98 : 865.0
+mutation rate: 0.07
+generation: 30
+one generation: 483
+individual:  1 position solved: 424
+individual:  2 position solved: 424
+individual:  3 position solved: 423
+individual:  4 position solved: 423
+individual:  5 position solved: 418
+individual:  6 position solved: 420
+individual:  7 position solved: 424
+individual:  8 position solved: 403
+individual:  9 position solved: 407
+individual:  10 position solved: 407
+fitness: 369.2000000000013
+fitness: 369.2000000000013
+fitness: 369.2000000000013
+fitness: 368.8000000000013
+fitness: 368.8000000000013
+fitness: 368.00000000000125
+fitness: 366.80000000000126
+fitness: 356.20000000000107
+fitness: 350.6000000000013
+fitness: 347.000000000001
+best individual weights: 
+weight 0 : -24.0
+weight 1 : -82.0
+weight 2 : 66.0
+weight 10 : 77.0
+weight 11 : -8.0
+weight 12 : 93.0
+weight 20 : 6.0
+weight 21 : 48.0
+weight 22 : 51.0
+weight 31 : 17.0
+weight 32 : -79.0
+weight 33 : 37.0
+weight 34 : 47.0
+weight 35 : 54.0
+weight 40 : -43.0
+weight 41 : -1.0
+weight 42 : 99.0
+weight 43 : 12.0
+weight 44 : -64.0
+weight 45 : 23.0
+weight 50 : 76.0
+weight 51 : 98.0
+weight 52 : 54.0
+weight 53 : 3.0
+weight 54 : 7.0
+weight 55 : -14.0
+weight 60 : 6.0
+weight 94 : 100.0
+weight 95 : 316.0
+weight 96 : 378.0
+weight 97 : 514.0
+weight 98 : 865.0
+crossladım: 0 + 5
+crossladım: 1 + 0
+mutation rate: 0.07
+generation: 31
+one generation: 233
+individual:  1 position solved: 424
+individual:  2 position solved: 424
+individual:  3 position solved: 424
+individual:  4 position solved: 423
+individual:  5 position solved: 423
+individual:  6 position solved: 420
+individual:  7 position solved: 418
+individual:  8 position solved: 407
+individual:  9 position solved: 420
+individual:  10 position solved: 424
+fitness: 369.2000000000013
+fitness: 369.2000000000013
+fitness: 369.2000000000013
+fitness: 369.2000000000013
+fitness: 368.8000000000013
+fitness: 368.8000000000013
+fitness: 368.00000000000125
+fitness: 368.00000000000125
+fitness: 366.80000000000126
+fitness: 356.20000000000107
+best individual weights: 
+weight 0 : -24.0
+weight 1 : -82.0
+weight 2 : 66.0
+weight 10 : 77.0
+weight 11 : -8.0
+weight 12 : 93.0
+weight 20 : 6.0
+weight 21 : 48.0
+weight 22 : 51.0
+weight 31 : 17.0
+weight 32 : -79.0
+weight 33 : 37.0
+weight 34 : 47.0
+weight 35 : 54.0
+weight 40 : -43.0
+weight 41 : -1.0
+weight 42 : 99.0
+weight 43 : 12.0
+weight 44 : -64.0
+weight 45 : 23.0
+weight 50 : 76.0
+weight 51 : 98.0
+weight 52 : 54.0
+weight 53 : 3.0
+weight 54 : 7.0
+weight 55 : -14.0
+weight 60 : 6.0
+weight 94 : 100.0
+weight 95 : 316.0
+weight 96 : 378.0
+weight 97 : 514.0
+weight 98 : 865.0
+mutation rate: 0.07
+generation: 32
+one generation: 500
+individual:  1 position solved: 424
+individual:  2 position solved: 424
+individual:  3 position solved: 424
+individual:  4 position solved: 424
+individual:  5 position solved: 423
+individual:  6 position solved: 422
+individual:  7 position solved: 417
+individual:  8 position solved: 415
+individual:  9 position solved: 413
+individual:  10 position solved: 411
+fitness: 371.400000000001
+fitness: 369.2000000000013
+fitness: 369.2000000000013
+fitness: 369.2000000000013
+fitness: 369.2000000000013
+fitness: 368.8000000000013
+fitness: 365.8000000000012
+fitness: 360.80000000000115
+fitness: 360.6000000000013
+fitness: 359.60000000000105
+best individual weights: 
+weight 0 : -24.0
+weight 1 : -82.0
+weight 2 : 10.0
+weight 10 : 77.0
+weight 11 : -8.0
+weight 12 : 93.0
+weight 20 : 6.0
+weight 21 : 48.0
+weight 22 : 51.0
+weight 31 : 17.0
+weight 32 : -79.0
+weight 33 : 37.0
+weight 34 : 47.0
+weight 35 : 54.0
+weight 40 : -43.0
+weight 41 : -1.0
+weight 42 : 99.0
+weight 43 : 12.0
+weight 44 : -64.0
+weight 45 : 23.0
+weight 50 : 76.0
+weight 51 : 98.0
+weight 52 : 54.0
+weight 53 : 3.0
+weight 54 : 7.0
+weight 55 : 21.0
+weight 60 : 6.0
+weight 94 : 100.0
+weight 95 : 316.0
+weight 96 : 378.0
+weight 97 : 514.0
+weight 98 : 865.0
+crossladım: 0 + 1
+crossladım: 1 + 7
+mutation rate: 0.07
+generation: 33
+one generation: 202
+individual:  1 position solved: 422
+individual:  2 position solved: 424
+individual:  3 position solved: 424
+individual:  4 position solved: 424
+individual:  5 position solved: 424
+individual:  6 position solved: 423
+individual:  7 position solved: 417
+individual:  8 position solved: 413
+individual:  9 position solved: 424
+individual:  10 position solved: 424
+fitness: 371.400000000001
+fitness: 369.2000000000013
+fitness: 369.2000000000013
+fitness: 369.2000000000013
+fitness: 369.2000000000013
+fitness: 369.2000000000013
+fitness: 368.8000000000013
+fitness: 368.80000000000126
+fitness: 365.8000000000012
+fitness: 360.80000000000115
+best individual weights: 
+weight 0 : -24.0
+weight 1 : -82.0
+weight 2 : 10.0
+weight 10 : 77.0
+weight 11 : -8.0
+weight 12 : 93.0
+weight 20 : 6.0
+weight 21 : 48.0
+weight 22 : 51.0
+weight 31 : 17.0
+weight 32 : -79.0
+weight 33 : 37.0
+weight 34 : 47.0
+weight 35 : 54.0
+weight 40 : -43.0
+weight 41 : -1.0
+weight 42 : 99.0
+weight 43 : 12.0
+weight 44 : -64.0
+weight 45 : 23.0
+weight 50 : 76.0
+weight 51 : 98.0
+weight 52 : 54.0
+weight 53 : 3.0
+weight 54 : 7.0
+weight 55 : 21.0
+weight 60 : 6.0
+weight 94 : 100.0
+weight 95 : 316.0
+weight 96 : 378.0
+weight 97 : 514.0
+weight 98 : 865.0
+mutation rate: 0.07
+generation: 34
+one generation: 464
+individual:  1 position solved: 422
+individual:  2 position solved: 424
+individual:  3 position solved: 424
+individual:  4 position solved: 424
+individual:  5 position solved: 424
+individual:  6 position solved: 422
+individual:  7 position solved: 423
+individual:  8 position solved: 396
+individual:  9 position solved: 412
+individual:  10 position solved: 412
+fitness: 372.60000000000093
+fitness: 371.400000000001
+fitness: 369.2000000000013
+fitness: 369.2000000000013
+fitness: 369.2000000000013
+fitness: 369.2000000000013
+fitness: 367.8000000000013
+fitness: 359.4000000000013
+fitness: 359.20000000000124
+fitness: 346.8000000000011
+best individual weights: 
+weight 0 : -24.0
+weight 1 : -77.0
+weight 2 : 10.0
+weight 10 : 77.0
+weight 11 : -8.0
+weight 12 : 93.0
+weight 20 : 6.0
+weight 21 : 48.0
+weight 22 : 51.0
+weight 31 : 17.0
+weight 32 : -79.0
+weight 33 : 37.0
+weight 34 : 57.0
+weight 35 : 54.0
+weight 40 : -48.0
+weight 41 : -1.0
+weight 42 : 99.0
+weight 43 : 12.0
+weight 44 : -64.0
+weight 45 : 23.0
+weight 50 : 76.0
+weight 51 : 98.0
+weight 52 : 54.0
+weight 53 : 3.0
+weight 54 : 7.0
+weight 55 : 21.0
+weight 60 : 6.0
+weight 94 : 100.0
+weight 95 : 327.0
+weight 96 : 378.0
+weight 97 : 514.0
+weight 98 : 865.0
+crossladım: 0 + 4
+crossladım: 1 + 3
+mutation rate: 0.07
+generation: 35
+one generation: 202
+individual:  1 position solved: 422
+individual:  2 position solved: 422
+individual:  3 position solved: 424
+individual:  4 position solved: 424
+individual:  5 position solved: 424
+individual:  6 position solved: 424
+individual:  7 position solved: 423
+individual:  8 position solved: 412
+individual:  9 position solved: 422
+individual:  10 position solved: 428
+fitness: 372.8000000000012
+fitness: 372.60000000000093
+fitness: 371.400000000001
+fitness: 370.4000000000011
+fitness: 369.2000000000013
+fitness: 369.2000000000013
+fitness: 369.2000000000013
+fitness: 369.2000000000013
+fitness: 367.8000000000013
+fitness: 359.4000000000013
+best individual weights: 
+weight 0 : -24.0
+weight 1 : -82.0
+weight 2 : 10.0
+weight 10 : 77.0
+weight 11 : -8.0
+weight 12 : 93.0
+weight 20 : 6.0
+weight 21 : 48.0
+weight 22 : 51.0
+weight 31 : 17.0
+weight 32 : -79.0
+weight 33 : 37.0
+weight 34 : 47.0
+weight 35 : 54.0
+weight 40 : -43.0
+weight 41 : -1.0
+weight 42 : 99.0
+weight 43 : 12.0
+weight 44 : -64.0
+weight 45 : 23.0
+weight 50 : 76.0
+weight 51 : 98.0
+weight 52 : 54.0
+weight 53 : 3.0
+weight 54 : 7.0
+weight 55 : -14.0
+weight 60 : 6.0
+weight 94 : 100.0
+weight 95 : 316.0
+weight 96 : 378.0
+weight 97 : 561.0
+weight 98 : 865.0
+mutation rate: 0.07
+generation: 36
+one generation: 468
+individual:  1 position solved: 428
+individual:  2 position solved: 422
+individual:  3 position solved: 422
+individual:  4 position solved: 422
+individual:  5 position solved: 424
+individual:  6 position solved: 428
+individual:  7 position solved: 423
+individual:  8 position solved: 410
+individual:  9 position solved: 416
+individual:  10 position solved: 415
+fitness: 374.200000000001
+fitness: 373.60000000000116
+fitness: 372.8000000000012
+fitness: 372.60000000000093
+fitness: 371.400000000001
+fitness: 370.4000000000011
+fitness: 369.2000000000013
+fitness: 364.0000000000011
+fitness: 363.60000000000105
+fitness: 361.2000000000013
+best individual weights: 
+weight 0 : -24.0
+weight 1 : -77.0
+weight 2 : 10.0
+weight 10 : 77.0
+weight 11 : -8.0
+weight 12 : 93.0
+weight 20 : 6.0
+weight 21 : 48.0
+weight 22 : 34.0
+weight 31 : 17.0
+weight 32 : -79.0
+weight 33 : 37.0
+weight 34 : 57.0
+weight 35 : 54.0
+weight 40 : -48.0
+weight 41 : -1.0
+weight 42 : 99.0
+weight 43 : 12.0
+weight 44 : -64.0
+weight 45 : 23.0
+weight 50 : 76.0
+weight 51 : 98.0
+weight 52 : 54.0
+weight 53 : 3.0
+weight 54 : 7.0
+weight 55 : 21.0
+weight 60 : 6.0
+weight 94 : 100.0
+weight 95 : 327.0
+weight 96 : 378.0
+weight 97 : 507.0
+weight 98 : 865.0
+crossladım: 0 + 3
+crossladım: 1 + 1
+mutation rate: 0.07
+generation: 37
+one generation: 203
+individual:  1 position solved: 423
+individual:  2 position solved: 428
+individual:  3 position solved: 428
+individual:  4 position solved: 422
+individual:  5 position solved: 422
+individual:  6 position solved: 422
+individual:  7 position solved: 424
+individual:  8 position solved: 416
+individual:  9 position solved: 422
+individual:  10 position solved: 428
+fitness: 374.60000000000116
+fitness: 374.200000000001
+fitness: 373.60000000000116
+fitness: 372.8000000000012
+fitness: 372.60000000000093
+fitness: 372.60000000000093
+fitness: 371.400000000001
+fitness: 370.4000000000011
+fitness: 369.2000000000013
+fitness: 364.0000000000011
+best individual weights: 
+weight 0 : -24.0
+weight 1 : -82.0
+weight 2 : 10.0
+weight 10 : 77.0
+weight 11 : -8.0
+weight 12 : 93.0
+weight 20 : 7.0
+weight 21 : 48.0
+weight 22 : 51.0
+weight 31 : 17.0
+weight 32 : -79.0
+weight 33 : 37.0
+weight 34 : 47.0
+weight 35 : 54.0
+weight 40 : -43.0
+weight 41 : -1.0
+weight 42 : 99.0
+weight 43 : 12.0
+weight 44 : -64.0
+weight 45 : 23.0
+weight 50 : 76.0
+weight 51 : 98.0
+weight 52 : 28.0
+weight 53 : 3.0
+weight 54 : 7.0
+weight 55 : -14.0
+weight 60 : 6.0
+weight 94 : 100.0
+weight 95 : 316.0
+weight 96 : 378.0
+weight 97 : 561.0
+weight 98 : 841.0
+mutation rate: 0.07
+generation: 38
+one generation: 470
+individual:  1 position solved: 428
+individual:  2 position solved: 423
+individual:  3 position solved: 428
+individual:  4 position solved: 428
+individual:  5 position solved: 422
+individual:  6 position solved: 426
+individual:  7 position solved: 423
+individual:  8 position solved: 397
+individual:  9 position solved: 412
+individual:  10 position solved: 397
+fitness: 374.60000000000116
+fitness: 374.200000000001
+fitness: 374.200000000001
+fitness: 373.60000000000116
+fitness: 373.400000000001
+fitness: 372.8000000000012
+fitness: 372.60000000000093
+fitness: 363.80000000000103
+fitness: 353.20000000000084
+fitness: 348.40000000000083
+best individual weights: 
+weight 0 : -24.0
+weight 1 : -82.0
+weight 2 : 10.0
+weight 10 : 77.0
+weight 11 : -8.0
+weight 12 : 93.0
+weight 20 : 7.0
+weight 21 : 48.0
+weight 22 : 51.0
+weight 31 : 17.0
+weight 32 : -79.0
+weight 33 : 37.0
+weight 34 : 47.0
+weight 35 : 54.0
+weight 40 : -43.0
+weight 41 : -1.0
+weight 42 : 99.0
+weight 43 : 12.0
+weight 44 : -64.0
+weight 45 : 23.0
+weight 50 : 76.0
+weight 51 : 98.0
+weight 52 : 28.0
+weight 53 : 3.0
+weight 54 : 7.0
+weight 55 : -14.0
+weight 60 : 6.0
+weight 94 : 100.0
+weight 95 : 316.0
+weight 96 : 378.0
+weight 97 : 561.0
+weight 98 : 841.0
+crossladım: 0 + 5
+crossladım: 1 + 6
+mutation rate: 0.07
+generation: 39
+one generation: 204
+individual:  1 position solved: 428
+individual:  2 position solved: 423
+individual:  3 position solved: 423
+individual:  4 position solved: 428
+individual:  5 position solved: 426
+individual:  6 position solved: 428
+individual:  7 position solved: 422
+individual:  8 position solved: 412
+individual:  9 position solved: 426
+individual:  10 position solved: 423
+fitness: 374.60000000000116
+fitness: 374.200000000001
+fitness: 374.200000000001
+fitness: 374.00000000000097
+fitness: 373.60000000000116
+fitness: 373.400000000001
+fitness: 372.8000000000012
+fitness: 372.60000000000093
+fitness: 371.80000000000115
+fitness: 363.80000000000103
+best individual weights: 
+weight 0 : -24.0
+weight 1 : -82.0
+weight 2 : 10.0
+weight 10 : 77.0
+weight 11 : -8.0
+weight 12 : 93.0
+weight 20 : 7.0
+weight 21 : 48.0
+weight 22 : 51.0
+weight 31 : 17.0
+weight 32 : -79.0
+weight 33 : 37.0
+weight 34 : 47.0
+weight 35 : 54.0
+weight 40 : -43.0
+weight 41 : -1.0
+weight 42 : 99.0
+weight 43 : 12.0
+weight 44 : -64.0
+weight 45 : 23.0
+weight 50 : 76.0
+weight 51 : 98.0
+weight 52 : 28.0
+weight 53 : 3.0
+weight 54 : 7.0
+weight 55 : -14.0
+weight 60 : 6.0
+weight 94 : 100.0
+weight 95 : 316.0
+weight 96 : 378.0
+weight 97 : 561.0
+weight 98 : 841.0
+mutation rate: 0.07
+generation: 40
+one generation: 473
+individual:  1 position solved: 428
+individual:  2 position solved: 423
+individual:  3 position solved: 423
+individual:  4 position solved: 423
+individual:  5 position solved: 428
+individual:  6 position solved: 425
+individual:  7 position solved: 416
+individual:  8 position solved: 410
+individual:  9 position solved: 413
+individual:  10 position solved: 415
+fitness: 374.60000000000116
+fitness: 374.200000000001
+fitness: 374.200000000001
+fitness: 374.00000000000097
+fitness: 373.60000000000116
+fitness: 370.40000000000117
+fitness: 366.400000000001
+fitness: 364.60000000000093
+fitness: 364.4000000000009
+fitness: 363.0000000000012
+best individual weights: 
+weight 0 : -24.0
+weight 1 : -82.0
+weight 2 : 10.0
+weight 10 : 77.0
+weight 11 : -8.0
+weight 12 : 93.0
+weight 20 : 7.0
+weight 21 : 48.0
+weight 22 : 51.0
+weight 31 : 17.0
+weight 32 : -79.0
+weight 33 : 37.0
+weight 34 : 47.0
+weight 35 : 54.0
+weight 40 : -43.0
+weight 41 : -1.0
+weight 42 : 99.0
+weight 43 : 12.0
+weight 44 : -64.0
+weight 45 : 23.0
+weight 50 : 76.0
+weight 51 : 98.0
+weight 52 : 28.0
+weight 53 : 3.0
+weight 54 : 7.0
+weight 55 : -14.0
+weight 60 : 6.0
+weight 94 : 100.0
+weight 95 : 316.0
+weight 96 : 378.0
+weight 97 : 561.0
+weight 98 : 841.0
+crossladım: 0 + 1
+crossladım: 1 + 1
+mutation rate: 0.07
+generation: 41
+one generation: 204
+individual:  1 position solved: 428
+individual:  2 position solved: 423
+individual:  3 position solved: 423
+individual:  4 position solved: 423
+individual:  5 position solved: 428
+individual:  6 position solved: 425
+individual:  7 position solved: 416
+individual:  8 position solved: 410
+individual:  9 position solved: 422
+individual:  10 position solved: 423
+fitness: 374.60000000000116
+fitness: 374.200000000001
+fitness: 374.200000000001
+fitness: 374.200000000001
+fitness: 374.00000000000097
+fitness: 373.60000000000116
+fitness: 373.6000000000009
+fitness: 370.40000000000117
+fitness: 366.400000000001
+fitness: 364.60000000000093
+best individual weights: 
+weight 0 : -24.0
+weight 1 : -82.0
+weight 2 : 10.0
+weight 10 : 77.0
+weight 11 : -8.0
+weight 12 : 93.0
+weight 20 : 7.0
+weight 21 : 48.0
+weight 22 : 51.0
+weight 31 : 17.0
+weight 32 : -79.0
+weight 33 : 37.0
+weight 34 : 47.0
+weight 35 : 54.0
+weight 40 : -43.0
+weight 41 : -1.0
+weight 42 : 99.0
+weight 43 : 12.0
+weight 44 : -64.0
+weight 45 : 23.0
+weight 50 : 76.0
+weight 51 : 98.0
+weight 52 : 28.0
+weight 53 : 3.0
+weight 54 : 7.0
+weight 55 : -14.0
+weight 60 : 6.0
+weight 94 : 100.0
+weight 95 : 316.0
+weight 96 : 378.0
+weight 97 : 561.0
+weight 98 : 841.0
+mutation rate: 0.07
+generation: 42
+one generation: 471
+individual:  1 position solved: 428
+individual:  2 position solved: 423
+individual:  3 position solved: 423
+individual:  4 position solved: 423
+individual:  5 position solved: 423
+individual:  6 position solved: 426
+individual:  7 position solved: 420
+individual:  8 position solved: 409
+individual:  9 position solved: 420
+individual:  10 position solved: 396
+fitness: 374.60000000000116
+fitness: 374.200000000001
+fitness: 374.200000000001
+fitness: 374.200000000001
+fitness: 374.00000000000097
+fitness: 372.8000000000009
+fitness: 372.20000000000095
+fitness: 370.0000000000011
+fitness: 363.0000000000009
+fitness: 350.80000000000086
+best individual weights: 
+weight 0 : -24.0
+weight 1 : -82.0
+weight 2 : 10.0
+weight 10 : 77.0
+weight 11 : -8.0
+weight 12 : 93.0
+weight 20 : 7.0
+weight 21 : 48.0
+weight 22 : 51.0
+weight 31 : 17.0
+weight 32 : -79.0
+weight 33 : 37.0
+weight 34 : 47.0
+weight 35 : 54.0
+weight 40 : -43.0
+weight 41 : -1.0
+weight 42 : 99.0
+weight 43 : 12.0
+weight 44 : -64.0
+weight 45 : 23.0
+weight 50 : 76.0
+weight 51 : 98.0
+weight 52 : 28.0
+weight 53 : 3.0
+weight 54 : 7.0
+weight 55 : -14.0
+weight 60 : 6.0
+weight 94 : 100.0
+weight 95 : 316.0
+weight 96 : 378.0
+weight 97 : 561.0
+weight 98 : 841.0
+crossladım: 0 + 0
+crossladım: 1 + 7
+mutation rate: 0.07
+generation: 43
+one generation: 203
+individual:  1 position solved: 428
+individual:  2 position solved: 423
+individual:  3 position solved: 423
+individual:  4 position solved: 423
+individual:  5 position solved: 423
+individual:  6 position solved: 420
+individual:  7 position solved: 426
+individual:  8 position solved: 420
+individual:  9 position solved: 428
+individual:  10 position solved: 430
+fitness: 381.00000000000114
+fitness: 374.60000000000116
+fitness: 374.200000000001
+fitness: 374.200000000001
+fitness: 374.200000000001
+fitness: 374.00000000000097
+fitness: 373.60000000000116
+fitness: 372.8000000000009
+fitness: 372.20000000000095
+fitness: 370.0000000000011
+best individual weights: 
+weight 0 : -24.0
+weight 1 : -77.0
+weight 2 : 10.0
+weight 10 : 77.0
+weight 11 : -8.0
+weight 12 : 93.0
+weight 20 : 6.0
+weight 21 : 48.0
+weight 22 : 34.0
+weight 31 : 17.0
+weight 32 : -79.0
+weight 33 : 37.0
+weight 34 : 57.0
+weight 35 : 54.0
+weight 40 : -48.0
+weight 41 : -1.0
+weight 42 : 99.0
+weight 43 : 12.0
+weight 44 : -22.0
+weight 45 : 23.0
+weight 50 : 76.0
+weight 51 : 98.0
+weight 52 : 54.0
+weight 53 : 5.0
+weight 54 : 7.0
+weight 55 : 21.0
+weight 60 : 6.0
+weight 94 : 100.0
+weight 95 : 327.0
+weight 96 : 378.0
+weight 97 : 507.0
+weight 98 : 865.0
+mutation rate: 0.07
+generation: 44
+one generation: 476
+individual:  1 position solved: 430
+individual:  2 position solved: 428
+individual:  3 position solved: 423
+individual:  4 position solved: 423
+individual:  5 position solved: 423
+individual:  6 position solved: 312
+individual:  7 position solved: 422
+individual:  8 position solved: 412
+individual:  9 position solved: 345
+individual:  10 position solved: 414
+fitness: 381.00000000000114
+fitness: 374.60000000000116
+fitness: 374.200000000001
+fitness: 374.200000000001
+fitness: 374.200000000001
+fitness: 370.2000000000011
+fitness: 365.60000000000093
+fitness: 364.0000000000009
+fitness: 299.6000000000006
+fitness: 266.8000000000003
+best individual weights: 
+weight 0 : -24.0
+weight 1 : -77.0
+weight 2 : 10.0
+weight 10 : 77.0
+weight 11 : -8.0
+weight 12 : 93.0
+weight 20 : 6.0
+weight 21 : 48.0
+weight 22 : 34.0
+weight 31 : 17.0
+weight 32 : -79.0
+weight 33 : 37.0
+weight 34 : 57.0
+weight 35 : 54.0
+weight 40 : -48.0
+weight 41 : -1.0
+weight 42 : 99.0
+weight 43 : 12.0
+weight 44 : -22.0
+weight 45 : 23.0
+weight 50 : 76.0
+weight 51 : 98.0
+weight 52 : 54.0
+weight 53 : 5.0
+weight 54 : 7.0
+weight 55 : 21.0
+weight 60 : 6.0
+weight 94 : 100.0
+weight 95 : 327.0
+weight 96 : 378.0
+weight 97 : 507.0
+weight 98 : 865.0
+crossladım: 0 + 7
+crossladım: 1 + 7
+mutation rate: 0.07
+generation: 45
+one generation: 204
+individual:  1 position solved: 430
+individual:  2 position solved: 428
+individual:  3 position solved: 423
+individual:  4 position solved: 423
+individual:  5 position solved: 423
+individual:  6 position solved: 422
+individual:  7 position solved: 414
+individual:  8 position solved: 412
+individual:  9 position solved: 424
+individual:  10 position solved: 423
+fitness: 381.00000000000114
+fitness: 374.800000000001
+fitness: 374.60000000000116
+fitness: 374.200000000001
+fitness: 374.200000000001
+fitness: 374.200000000001
+fitness: 372.6000000000011
+fitness: 370.2000000000011
+fitness: 365.60000000000093
+fitness: 364.0000000000009
+best individual weights: 
+weight 0 : -24.0
+weight 1 : -77.0
+weight 2 : 10.0
+weight 10 : 77.0
+weight 11 : -8.0
+weight 12 : 93.0
+weight 20 : 6.0
+weight 21 : 48.0
+weight 22 : 34.0
+weight 31 : 17.0
+weight 32 : -79.0
+weight 33 : 37.0
+weight 34 : 57.0
+weight 35 : 54.0
+weight 40 : -48.0
+weight 41 : -1.0
+weight 42 : 99.0
+weight 43 : 12.0
+weight 44 : -22.0
+weight 45 : 23.0
+weight 50 : 76.0
+weight 51 : 98.0
+weight 52 : 54.0
+weight 53 : 5.0
+weight 54 : 7.0
+weight 55 : 21.0
+weight 60 : 6.0
+weight 94 : 100.0
+weight 95 : 327.0
+weight 96 : 378.0
+weight 97 : 507.0
+weight 98 : 865.0
+mutation rate: 0.07
+generation: 46
+one generation: 474
+individual:  1 position solved: 430
+individual:  2 position solved: 424
+individual:  3 position solved: 428
+individual:  4 position solved: 423
+individual:  5 position solved: 423
+individual:  6 position solved: 424
+individual:  7 position solved: 426
+individual:  8 position solved: 413
+individual:  9 position solved: 409
+individual:  10 position solved: 410
+fitness: 381.00000000000114
+fitness: 376.80000000000103
+fitness: 374.80000000000115
+fitness: 374.800000000001
+fitness: 374.60000000000116
+fitness: 374.200000000001
+fitness: 374.200000000001
+fitness: 363.6000000000009
+fitness: 361.80000000000086
+fitness: 360.40000000000117
+best individual weights: 
+weight 0 : -24.0
+weight 1 : -77.0
+weight 2 : 10.0
+weight 10 : 77.0
+weight 11 : -8.0
+weight 12 : 93.0
+weight 20 : 6.0
+weight 21 : 48.0
+weight 22 : 34.0
+weight 31 : 17.0
+weight 32 : -79.0
+weight 33 : 37.0
+weight 34 : 57.0
+weight 35 : 54.0
+weight 40 : -48.0
+weight 41 : -1.0
+weight 42 : 99.0
+weight 43 : 12.0
+weight 44 : -22.0
+weight 45 : 23.0
+weight 50 : 76.0
+weight 51 : 98.0
+weight 52 : 54.0
+weight 53 : 5.0
+weight 54 : 7.0
+weight 55 : 21.0
+weight 60 : 6.0
+weight 94 : 100.0
+weight 95 : 327.0
+weight 96 : 378.0
+weight 97 : 507.0
+weight 98 : 865.0
+crossladım: 0 + 7
+crossladım: 1 + 0
+mutation rate: 0.07
+generation: 47
+one generation: 205
+individual:  1 position solved: 430
+individual:  2 position solved: 426
+individual:  3 position solved: 424
+individual:  4 position solved: 424
+individual:  5 position solved: 428
+individual:  6 position solved: 423
+individual:  7 position solved: 423
+individual:  8 position solved: 409
+individual:  9 position solved: 417
+individual:  10 position solved: 430
+fitness: 381.00000000000114
+fitness: 381.00000000000114
+fitness: 376.80000000000103
+fitness: 374.80000000000115
+fitness: 374.800000000001
+fitness: 374.60000000000116
+fitness: 374.200000000001
+fitness: 374.200000000001
+fitness: 372.80000000000103
+fitness: 363.6000000000009
+best individual weights: 
+weight 0 : -24.0
+weight 1 : -77.0
+weight 2 : 10.0
+weight 10 : 77.0
+weight 11 : -8.0
+weight 12 : 93.0
+weight 20 : 6.0
+weight 21 : 48.0
+weight 22 : 34.0
+weight 31 : 17.0
+weight 32 : -79.0
+weight 33 : 37.0
+weight 34 : 57.0
+weight 35 : 54.0
+weight 40 : -48.0
+weight 41 : -1.0
+weight 42 : 99.0
+weight 43 : 12.0
+weight 44 : -22.0
+weight 45 : 23.0
+weight 50 : 76.0
+weight 51 : 98.0
+weight 52 : 54.0
+weight 53 : 5.0
+weight 54 : 7.0
+weight 55 : 21.0
+weight 60 : 6.0
+weight 94 : 100.0
+weight 95 : 327.0
+weight 96 : 378.0
+weight 97 : 507.0
+weight 98 : 865.0
+mutation rate: 0.07
+generation: 48
+one generation: 474
+individual:  1 position solved: 430
+individual:  2 position solved: 430
+individual:  3 position solved: 426
+individual:  4 position solved: 424
+individual:  5 position solved: 424
+individual:  6 position solved: 417
+individual:  7 position solved: 416
+individual:  8 position solved: 411
+individual:  9 position solved: 416
+individual:  10 position solved: 415
+fitness: 381.00000000000114
+fitness: 381.00000000000114
+fitness: 376.80000000000103
+fitness: 374.80000000000115
+fitness: 374.800000000001
+fitness: 367.40000000000106
+fitness: 365.8000000000009
+fitness: 365.200000000001
+fitness: 365.00000000000085
+fitness: 364.6000000000009
+best individual weights: 
+weight 0 : -24.0
+weight 1 : -77.0
+weight 2 : 10.0
+weight 10 : 77.0
+weight 11 : -8.0
+weight 12 : 93.0
+weight 20 : 6.0
+weight 21 : 48.0
+weight 22 : 34.0
+weight 31 : 17.0
+weight 32 : -79.0
+weight 33 : 37.0
+weight 34 : 57.0
+weight 35 : 54.0
+weight 40 : -48.0
+weight 41 : -1.0
+weight 42 : 99.0
+weight 43 : 12.0
+weight 44 : -22.0
+weight 45 : 23.0
+weight 50 : 76.0
+weight 51 : 98.0
+weight 52 : 54.0
+weight 53 : 5.0
+weight 54 : 7.0
+weight 55 : 21.0
+weight 60 : 6.0
+weight 94 : 100.0
+weight 95 : 327.0
+weight 96 : 378.0
+weight 97 : 507.0
+weight 98 : 865.0
+crossladım: 0 + 5
+crossladım: 1 + 5
+mutation rate: 0.07
+generation: 49
+one generation: 200
+individual:  1 position solved: 430
+individual:  2 position solved: 430
+individual:  3 position solved: 426
+individual:  4 position solved: 424
+individual:  5 position solved: 424
+individual:  6 position solved: 416
+individual:  7 position solved: 417
+individual:  8 position solved: 416
+individual:  9 position solved: 415
+individual:  10 position solved: 416
+fitness: 381.00000000000114
+fitness: 381.00000000000114
+fitness: 376.80000000000103
+fitness: 374.80000000000115
+fitness: 374.800000000001
+fitness: 367.40000000000106
+fitness: 367.40000000000106
+fitness: 366.000000000001
+fitness: 365.8000000000009
+fitness: 365.200000000001
+best individual weights: 
+weight 0 : -24.0
+weight 1 : -77.0
+weight 2 : 10.0
+weight 10 : 77.0
+weight 11 : -8.0
+weight 12 : 93.0
+weight 20 : 6.0
+weight 21 : 48.0
+weight 22 : 34.0
+weight 31 : 17.0
+weight 32 : -79.0
+weight 33 : 37.0
+weight 34 : 57.0
+weight 35 : 54.0
+weight 40 : -48.0
+weight 41 : -1.0
+weight 42 : 99.0
+weight 43 : 12.0
+weight 44 : -22.0
+weight 45 : 23.0
+weight 50 : 76.0
+weight 51 : 98.0
+weight 52 : 54.0
+weight 53 : 5.0
+weight 54 : 7.0
+weight 55 : 21.0
+weight 60 : 6.0
+weight 94 : 100.0
+weight 95 : 327.0
+weight 96 : 378.0
+weight 97 : 507.0
+weight 98 : 865.0
+mutation rate: 0.081
+generation: 50
+one generation: 470
+individual:  1 position solved: 430
+individual:  2 position solved: 430
+individual:  3 position solved: 426
+individual:  4 position solved: 424
+individual:  5 position solved: 424
+individual:  6 position solved: 429
+individual:  7 position solved: 426
+individual:  8 position solved: 417
+individual:  9 position solved: 394
+individual:  10 position solved: 412
+fitness: 381.00000000000114
+fitness: 381.00000000000114
+fitness: 380.0000000000011
+fitness: 378.2000000000011
+fitness: 376.80000000000103
+fitness: 374.80000000000115
+fitness: 374.800000000001
+fitness: 368.4000000000009
+fitness: 364.0000000000009
+fitness: 347.8000000000009
+best individual weights: 
+weight 0 : -24.0
+weight 1 : -77.0
+weight 2 : 10.0
+weight 10 : 77.0
+weight 11 : -8.0
+weight 12 : 93.0
+weight 20 : 6.0
+weight 21 : 48.0
+weight 22 : 34.0
+weight 31 : 17.0
+weight 32 : -79.0
+weight 33 : 37.0
+weight 34 : 57.0
+weight 35 : 54.0
+weight 40 : -48.0
+weight 41 : -1.0
+weight 42 : 99.0
+weight 43 : 12.0
+weight 44 : -22.0
+weight 45 : 23.0
+weight 50 : 76.0
+weight 51 : 98.0
+weight 52 : 54.0
+weight 53 : 5.0
+weight 54 : 7.0
+weight 55 : 21.0
+weight 60 : 6.0
+weight 94 : 100.0
+weight 95 : 327.0
+weight 96 : 378.0
+weight 97 : 507.0
+weight 98 : 865.0
+crossladım: 0 + 1
+crossladım: 1 + 6
+mutation rate: 0.092
+generation: 51
+one generation: 200
+individual:  1 position solved: 430
+individual:  2 position solved: 430
+individual:  3 position solved: 429
+individual:  4 position solved: 426
+individual:  5 position solved: 426
+individual:  6 position solved: 424
+individual:  7 position solved: 424
+individual:  8 position solved: 417
+individual:  9 position solved: 429
+individual:  10 position solved: 425
+fitness: 381.00000000000114
+fitness: 381.00000000000114
+fitness: 380.0000000000011
+fitness: 379.6000000000011
+fitness: 378.2000000000011
+fitness: 376.80000000000103
+fitness: 376.200000000001
+fitness: 374.80000000000115
+fitness: 374.800000000001
+fitness: 368.4000000000009
+best individual weights: 
+weight 0 : -24.0
+weight 1 : -77.0
+weight 2 : 10.0
+weight 10 : 77.0
+weight 11 : -8.0
+weight 12 : 93.0
+weight 20 : 6.0
+weight 21 : 48.0
+weight 22 : 34.0
+weight 31 : 17.0
+weight 32 : -79.0
+weight 33 : 37.0
+weight 34 : 57.0
+weight 35 : 54.0
+weight 40 : -48.0
+weight 41 : -1.0
+weight 42 : 99.0
+weight 43 : 12.0
+weight 44 : -22.0
+weight 45 : 23.0
+weight 50 : 76.0
+weight 51 : 98.0
+weight 52 : 54.0
+weight 53 : 5.0
+weight 54 : 7.0
+weight 55 : 21.0
+weight 60 : 6.0
+weight 94 : 100.0
+weight 95 : 327.0
+weight 96 : 378.0
+weight 97 : 507.0
+weight 98 : 865.0
+mutation rate: 0.103
+generation: 52
+one generation: 465
+individual:  1 position solved: 430
+individual:  2 position solved: 430
+individual:  3 position solved: 429
+individual:  4 position solved: 429
+individual:  5 position solved: 426
+individual:  6 position solved: 427
+individual:  7 position solved: 430
+individual:  8 position solved: 401
+individual:  9 position solved: 420
+individual:  10 position solved: 415
+fitness: 381.00000000000114
+fitness: 381.00000000000114
+fitness: 381.00000000000114
+fitness: 380.0000000000011
+fitness: 379.6000000000011
+fitness: 378.2000000000011
+fitness: 375.0000000000012
+fitness: 373.00000000000114
+fitness: 367.40000000000106
+fitness: 353.0000000000011
+best individual weights: 
+weight 0 : -24.0
+weight 1 : -77.0
+weight 2 : 10.0
+weight 10 : 77.0
+weight 11 : -8.0
+weight 12 : 93.0
+weight 20 : 6.0
+weight 21 : 48.0
+weight 22 : 34.0
+weight 31 : 17.0
+weight 32 : -79.0
+weight 33 : 37.0
+weight 34 : 57.0
+weight 35 : 54.0
+weight 40 : -48.0
+weight 41 : -1.0
+weight 42 : 99.0
+weight 43 : 12.0
+weight 44 : -22.0
+weight 45 : 23.0
+weight 50 : 76.0
+weight 51 : 98.0
+weight 52 : 54.0
+weight 53 : 5.0
+weight 54 : 7.0
+weight 55 : 21.0
+weight 60 : 6.0
+weight 94 : 100.0
+weight 95 : 327.0
+weight 96 : 378.0
+weight 97 : 507.0
+weight 98 : 865.0
+crossladım: 0 + 1
+crossladım: 1 + 0
+mutation rate: 0.11399999999999999
+generation: 53
+one generation: 200
+individual:  1 position solved: 430
+individual:  2 position solved: 430
+individual:  3 position solved: 430
+individual:  4 position solved: 429
+individual:  5 position solved: 429
+individual:  6 position solved: 426
+individual:  7 position solved: 427
+individual:  8 position solved: 420
+individual:  9 position solved: 429
+individual:  10 position solved: 430
+fitness: 381.00000000000114
+fitness: 381.00000000000114
+fitness: 381.00000000000114
+fitness: 381.00000000000114
+fitness: 380.0000000000011
+fitness: 379.6000000000011
+fitness: 379.6000000000011
+fitness: 378.2000000000011
+fitness: 375.0000000000012
+fitness: 373.00000000000114
+best individual weights: 
+weight 0 : -24.0
+weight 1 : -77.0
+weight 2 : 10.0
+weight 10 : 77.0
+weight 11 : -8.0
+weight 12 : 93.0
+weight 20 : 6.0
+weight 21 : 48.0
+weight 22 : 34.0
+weight 31 : 17.0
+weight 32 : -79.0
+weight 33 : 37.0
+weight 34 : 57.0
+weight 35 : 54.0
+weight 40 : -48.0
+weight 41 : -1.0
+weight 42 : 99.0
+weight 43 : 12.0
+weight 44 : -22.0
+weight 45 : 23.0
+weight 50 : 76.0
+weight 51 : 98.0
+weight 52 : 54.0
+weight 53 : 5.0
+weight 54 : 7.0
+weight 55 : 21.0
+weight 60 : 6.0
+weight 94 : 100.0
+weight 95 : 327.0
+weight 96 : 378.0
+weight 97 : 507.0
+weight 98 : 865.0
+mutation rate: 0.12499999999999999
+generation: 54
+one generation: 466
+individual:  1 position solved: 430
+individual:  2 position solved: 430
+individual:  3 position solved: 430
+individual:  4 position solved: 430
+individual:  5 position solved: 429
+individual:  6 position solved: 425
+individual:  7 position solved: 417
+individual:  8 position solved: 410
+individual:  9 position solved: 418
+individual:  10 position solved: 408
+fitness: 381.00000000000114
+fitness: 381.00000000000114
+fitness: 381.00000000000114
+fitness: 381.00000000000114
+fitness: 380.0000000000011
+fitness: 375.00000000000114
+fitness: 370.800000000001
+fitness: 370.00000000000097
+fitness: 364.00000000000085
+fitness: 360.200000000001
+best individual weights: 
+weight 0 : -24.0
+weight 1 : -77.0
+weight 2 : 10.0
+weight 10 : 77.0
+weight 11 : -8.0
+weight 12 : 93.0
+weight 20 : 6.0
+weight 21 : 48.0
+weight 22 : 34.0
+weight 31 : 17.0
+weight 32 : -79.0
+weight 33 : 37.0
+weight 34 : 57.0
+weight 35 : 54.0
+weight 40 : -48.0
+weight 41 : -1.0
+weight 42 : 99.0
+weight 43 : 12.0
+weight 44 : -22.0
+weight 45 : 23.0
+weight 50 : 76.0
+weight 51 : 98.0
+weight 52 : 54.0
+weight 53 : 5.0
+weight 54 : 7.0
+weight 55 : 21.0
+weight 60 : 6.0
+weight 94 : 100.0
+weight 95 : 327.0
+weight 96 : 378.0
+weight 97 : 507.0
+weight 98 : 865.0
+crossladım: 0 + 2
+crossladım: 1 + 4
+mutation rate: 0.13599999999999998
+generation: 55
+one generation: 204
+individual:  1 position solved: 430
+individual:  2 position solved: 430
+individual:  3 position solved: 430
+individual:  4 position solved: 430
+individual:  5 position solved: 429
+individual:  6 position solved: 425
+individual:  7 position solved: 417
+individual:  8 position solved: 418
+individual:  9 position solved: 429
+individual:  10 position solved: 430
+fitness: 381.00000000000114
+fitness: 381.00000000000114
+fitness: 381.00000000000114
+fitness: 381.00000000000114
+fitness: 381.00000000000114
+fitness: 380.0000000000011
+fitness: 379.6000000000011
+fitness: 375.00000000000114
+fitness: 370.800000000001
+fitness: 370.00000000000097
+best individual weights: 
+weight 0 : -24.0
+weight 1 : -77.0
+weight 2 : 10.0
+weight 10 : 77.0
+weight 11 : -8.0
+weight 12 : 93.0
+weight 20 : 6.0
+weight 21 : 48.0
+weight 22 : 34.0
+weight 31 : 17.0
+weight 32 : -79.0
+weight 33 : 37.0
+weight 34 : 57.0
+weight 35 : 54.0
+weight 40 : -48.0
+weight 41 : -1.0
+weight 42 : 99.0
+weight 43 : 12.0
+weight 44 : -22.0
+weight 45 : 23.0
+weight 50 : 76.0
+weight 51 : 98.0
+weight 52 : 54.0
+weight 53 : 5.0
+weight 54 : 7.0
+weight 55 : 21.0
+weight 60 : 6.0
+weight 94 : 100.0
+weight 95 : 327.0
+weight 96 : 378.0
+weight 97 : 507.0
+weight 98 : 865.0
+mutation rate: 0.147
+generation: 56
+one generation: 469
+individual:  1 position solved: 430
+individual:  2 position solved: 430
+individual:  3 position solved: 430
+individual:  4 position solved: 430
+individual:  5 position solved: 430
+individual:  6 position solved: 414
+individual:  7 position solved: 429
+individual:  8 position solved: 409
+individual:  9 position solved: 407
+individual:  10 position solved: 419
+fitness: 381.00000000000114
+fitness: 381.00000000000114
+fitness: 381.00000000000114
+fitness: 381.00000000000114
+fitness: 381.00000000000114
+fitness: 379.0000000000012
+fitness: 371.200000000001
+fitness: 365.2000000000009
+fitness: 360.80000000000103
+fitness: 357.0000000000009
+best individual weights: 
+weight 0 : -24.0
+weight 1 : -77.0
+weight 2 : 10.0
+weight 10 : 77.0
+weight 11 : -8.0
+weight 12 : 93.0
+weight 20 : 6.0
+weight 21 : 48.0
+weight 22 : 34.0
+weight 31 : 17.0
+weight 32 : -79.0
+weight 33 : 37.0
+weight 34 : 57.0
+weight 35 : 54.0
+weight 40 : -48.0
+weight 41 : -1.0
+weight 42 : 99.0
+weight 43 : 12.0
+weight 44 : -22.0
+weight 45 : 23.0
+weight 50 : 76.0
+weight 51 : 98.0
+weight 52 : 54.0
+weight 53 : 5.0
+weight 54 : 7.0
+weight 55 : 21.0
+weight 60 : 6.0
+weight 94 : 100.0
+weight 95 : 327.0
+weight 96 : 378.0
+weight 97 : 507.0
+weight 98 : 865.0
+crossladım: 0 + 7
+crossladım: 1 + 7
+mutation rate: 0.147
+generation: 57
+one generation: 203
+individual:  1 position solved: 430
+individual:  2 position solved: 430
+individual:  3 position solved: 430
+individual:  4 position solved: 430
+individual:  5 position solved: 430
+individual:  6 position solved: 429
+individual:  7 position solved: 419
+individual:  8 position solved: 414
+individual:  9 position solved: 429
+individual:  10 position solved: 416
+fitness: 381.00000000000114
+fitness: 381.00000000000114
+fitness: 381.00000000000114
+fitness: 381.00000000000114
+fitness: 381.00000000000114
+fitness: 379.40000000000117
+fitness: 379.0000000000012
+fitness: 371.200000000001
+fitness: 369.600000000001
+fitness: 365.2000000000009
+best individual weights: 
+weight 0 : -24.0
+weight 1 : -77.0
+weight 2 : 10.0
+weight 10 : 77.0
+weight 11 : -8.0
+weight 12 : 93.0
+weight 20 : 6.0
+weight 21 : 48.0
+weight 22 : 34.0
+weight 31 : 17.0
+weight 32 : -79.0
+weight 33 : 37.0
+weight 34 : 57.0
+weight 35 : 54.0
+weight 40 : -48.0
+weight 41 : -1.0
+weight 42 : 99.0
+weight 43 : 12.0
+weight 44 : -22.0
+weight 45 : 23.0
+weight 50 : 76.0
+weight 51 : 98.0
+weight 52 : 54.0
+weight 53 : 5.0
+weight 54 : 7.0
+weight 55 : 21.0
+weight 60 : 6.0
+weight 94 : 100.0
+weight 95 : 327.0
+weight 96 : 378.0
+weight 97 : 507.0
+weight 98 : 865.0
+mutation rate: 0.147
+generation: 58
+one generation: 466
+individual:  1 position solved: 430
+individual:  2 position solved: 430
+individual:  3 position solved: 430
+individual:  4 position solved: 430
+individual:  5 position solved: 430
+individual:  6 position solved: 425
+individual:  7 position solved: 426
+individual:  8 position solved: 418
+individual:  9 position solved: 419
+individual:  10 position solved: 416
+fitness: 381.00000000000114
+fitness: 381.00000000000114
+fitness: 381.00000000000114
+fitness: 381.00000000000114
+fitness: 381.00000000000114
+fitness: 378.0000000000011
+fitness: 375.40000000000117
+fitness: 370.600000000001
+fitness: 367.400000000001
+fitness: 365.20000000000107
+best individual weights: 
+weight 0 : -24.0
+weight 1 : -77.0
+weight 2 : 10.0
+weight 10 : 77.0
+weight 11 : -8.0
+weight 12 : 93.0
+weight 20 : 6.0
+weight 21 : 48.0
+weight 22 : 34.0
+weight 31 : 17.0
+weight 32 : -79.0
+weight 33 : 37.0
+weight 34 : 57.0
+weight 35 : 54.0
+weight 40 : -48.0
+weight 41 : -1.0
+weight 42 : 99.0
+weight 43 : 12.0
+weight 44 : -22.0
+weight 45 : 23.0
+weight 50 : 76.0
+weight 51 : 98.0
+weight 52 : 54.0
+weight 53 : 5.0
+weight 54 : 7.0
+weight 55 : 21.0
+weight 60 : 6.0
+weight 94 : 100.0
+weight 95 : 327.0
+weight 96 : 378.0
+weight 97 : 507.0
+weight 98 : 865.0
+crossladım: 0 + 7
+crossladım: 1 + 7
+mutation rate: 0.147
+generation: 59
+one generation: 205
+individual:  1 position solved: 430
+individual:  2 position solved: 430
+individual:  3 position solved: 430
+individual:  4 position solved: 430
+individual:  5 position solved: 430
+individual:  6 position solved: 425
+individual:  7 position solved: 426
+individual:  8 position solved: 419
+individual:  9 position solved: 429
+individual:  10 position solved: 425
+fitness: 381.00000000000114
+fitness: 381.00000000000114
+fitness: 381.00000000000114
+fitness: 381.00000000000114
+fitness: 381.00000000000114
+fitness: 379.60000000000105
+fitness: 378.0000000000011
+fitness: 376.000000000001
+fitness: 375.40000000000117
+fitness: 370.600000000001
+best individual weights: 
+weight 0 : -24.0
+weight 1 : -77.0
+weight 2 : 10.0
+weight 10 : 77.0
+weight 11 : -8.0
+weight 12 : 93.0
+weight 20 : 6.0
+weight 21 : 48.0
+weight 22 : 34.0
+weight 31 : 17.0
+weight 32 : -79.0
+weight 33 : 37.0
+weight 34 : 57.0
+weight 35 : 54.0
+weight 40 : -48.0
+weight 41 : -1.0
+weight 42 : 99.0
+weight 43 : 12.0
+weight 44 : -22.0
+weight 45 : 23.0
+weight 50 : 76.0
+weight 51 : 98.0
+weight 52 : 54.0
+weight 53 : 5.0
+weight 54 : 7.0
+weight 55 : 21.0
+weight 60 : 6.0
+weight 94 : 100.0
+weight 95 : 327.0
+weight 96 : 378.0
+weight 97 : 507.0
+weight 98 : 865.0
+mutation rate: 0.147
+generation: 60
+one generation: 471
+individual:  1 position solved: 430
+individual:  2 position solved: 430
+individual:  3 position solved: 430
+individual:  4 position solved: 430
+individual:  5 position solved: 430
+individual:  6 position solved: 419
+individual:  7 position solved: 420
+individual:  8 position solved: 406
+individual:  9 position solved: 344
+individual:  10 position solved: 401
+fitness: 381.00000000000114
+fitness: 381.00000000000114
+fitness: 381.00000000000114
+fitness: 381.00000000000114
+fitness: 381.00000000000114
+fitness: 371.0000000000011
+fitness: 370.40000000000106
+fitness: 356.4000000000011
+fitness: 350.60000000000093
+fitness: 295.80000000000064
+best individual weights: 
+weight 0 : -24.0
+weight 1 : -77.0
+weight 2 : 10.0
+weight 10 : 77.0
+weight 11 : -8.0
+weight 12 : 93.0
+weight 20 : 6.0
+weight 21 : 48.0
+weight 22 : 34.0
+weight 31 : 17.0
+weight 32 : -79.0
+weight 33 : 37.0
+weight 34 : 57.0
+weight 35 : 54.0
+weight 40 : -48.0
+weight 41 : -1.0
+weight 42 : 99.0
+weight 43 : 12.0
+weight 44 : -22.0
+weight 45 : 23.0
+weight 50 : 76.0
+weight 51 : 98.0
+weight 52 : 54.0
+weight 53 : 5.0
+weight 54 : 7.0
+weight 55 : 21.0
+weight 60 : 6.0
+weight 94 : 100.0
+weight 95 : 327.0
+weight 96 : 378.0
+weight 97 : 507.0
+weight 98 : 865.0
+crossladım: 0 + 1
+crossladım: 1 + 5
+mutation rate: 0.147
+generation: 61
+one generation: 205
+individual:  1 position solved: 430
+individual:  2 position solved: 430
+individual:  3 position solved: 430
+individual:  4 position solved: 430
+individual:  5 position solved: 430
+individual:  6 position solved: 419
+individual:  7 position solved: 420
+individual:  8 position solved: 406
+individual:  9 position solved: 429
+individual:  10 position solved: 426
+fitness: 381.00000000000114
+fitness: 381.00000000000114
+fitness: 381.00000000000114
+fitness: 381.00000000000114
+fitness: 381.00000000000114
+fitness: 379.6000000000011
+fitness: 377.000000000001
+fitness: 371.0000000000011
+fitness: 370.40000000000106
+fitness: 356.4000000000011
+best individual weights: 
+weight 0 : -24.0
+weight 1 : -77.0
+weight 2 : 10.0
+weight 10 : 77.0
+weight 11 : -8.0
+weight 12 : 93.0
+weight 20 : 6.0
+weight 21 : 48.0
+weight 22 : 34.0
+weight 31 : 17.0
+weight 32 : -79.0
+weight 33 : 37.0
+weight 34 : 57.0
+weight 35 : 54.0
+weight 40 : -48.0
+weight 41 : -1.0
+weight 42 : 99.0
+weight 43 : 12.0
+weight 44 : -22.0
+weight 45 : 23.0
+weight 50 : 76.0
+weight 51 : 98.0
+weight 52 : 54.0
+weight 53 : 5.0
+weight 54 : 7.0
+weight 55 : 21.0
+weight 60 : 6.0
+weight 94 : 100.0
+weight 95 : 327.0
+weight 96 : 378.0
+weight 97 : 507.0
+weight 98 : 865.0
+mutation rate: 0.147
+generation: 62
+one generation: 470
+individual:  1 position solved: 430
+individual:  2 position solved: 430
+individual:  3 position solved: 430
+individual:  4 position solved: 430
+individual:  5 position solved: 430
+individual:  6 position solved: 394
+individual:  7 position solved: 420
+individual:  8 position solved: 417
+individual:  9 position solved: 418
+individual:  10 position solved: 409
+fitness: 381.00000000000114
+fitness: 381.00000000000114
+fitness: 381.00000000000114
+fitness: 381.00000000000114
+fitness: 381.00000000000114
+fitness: 370.6000000000012
+fitness: 370.40000000000094
+fitness: 366.60000000000116
+fitness: 357.2000000000011
+fitness: 345.0000000000009
+best individual weights: 
+weight 0 : -24.0
+weight 1 : -77.0
+weight 2 : 10.0
+weight 10 : 77.0
+weight 11 : -8.0
+weight 12 : 93.0
+weight 20 : 6.0
+weight 21 : 48.0
+weight 22 : 34.0
+weight 31 : 17.0
+weight 32 : -79.0
+weight 33 : 37.0
+weight 34 : 57.0
+weight 35 : 54.0
+weight 40 : -48.0
+weight 41 : -1.0
+weight 42 : 99.0
+weight 43 : 12.0
+weight 44 : -22.0
+weight 45 : 23.0
+weight 50 : 76.0
+weight 51 : 98.0
+weight 52 : 54.0
+weight 53 : 5.0
+weight 54 : 7.0
+weight 55 : 21.0
+weight 60 : 6.0
+weight 94 : 100.0
+weight 95 : 327.0
+weight 96 : 378.0
+weight 97 : 507.0
+weight 98 : 865.0
+crossladım: 0 + 6
+crossladım: 1 + 5
+mutation rate: 0.147
+generation: 63
+one generation: 201
+individual:  1 position solved: 430
+individual:  2 position solved: 430
+individual:  3 position solved: 430
+individual:  4 position solved: 430
+individual:  5 position solved: 430
+individual:  6 position solved: 420
+individual:  7 position solved: 417
+individual:  8 position solved: 418
+individual:  9 position solved: 427
+individual:  10 position solved: 423
+fitness: 381.00000000000114
+fitness: 381.00000000000114
+fitness: 381.00000000000114
+fitness: 381.00000000000114
+fitness: 381.00000000000114
+fitness: 379.000000000001
+fitness: 372.60000000000116
+fitness: 370.6000000000012
+fitness: 370.40000000000094
+fitness: 366.60000000000116
+best individual weights: 
+weight 0 : -24.0
+weight 1 : -77.0
+weight 2 : 10.0
+weight 10 : 77.0
+weight 11 : -8.0
+weight 12 : 93.0
+weight 20 : 6.0
+weight 21 : 48.0
+weight 22 : 34.0
+weight 31 : 17.0
+weight 32 : -79.0
+weight 33 : 37.0
+weight 34 : 57.0
+weight 35 : 54.0
+weight 40 : -48.0
+weight 41 : -1.0
+weight 42 : 99.0
+weight 43 : 12.0
+weight 44 : -22.0
+weight 45 : 23.0
+weight 50 : 76.0
+weight 51 : 98.0
+weight 52 : 54.0
+weight 53 : 5.0
+weight 54 : 7.0
+weight 55 : 21.0
+weight 60 : 6.0
+weight 94 : 100.0
+weight 95 : 327.0
+weight 96 : 378.0
+weight 97 : 507.0
+weight 98 : 865.0
+mutation rate: 0.147
+generation: 64
+one generation: 467
+individual:  1 position solved: 430
+individual:  2 position solved: 430
+individual:  3 position solved: 430
+individual:  4 position solved: 430
+individual:  5 position solved: 430
+individual:  6 position solved: 427
+individual:  7 position solved: 412
+individual:  8 position solved: 411
+individual:  9 position solved: 409
+individual:  10 position solved: 413
+fitness: 381.00000000000114
+fitness: 381.00000000000114
+fitness: 381.00000000000114
+fitness: 381.00000000000114
+fitness: 381.00000000000114
+fitness: 375.800000000001
+fitness: 366.20000000000095
+fitness: 363.200000000001
+fitness: 362.400000000001
+fitness: 357.80000000000103
+best individual weights: 
+weight 0 : -24.0
+weight 1 : -77.0
+weight 2 : 10.0
+weight 10 : 77.0
+weight 11 : -8.0
+weight 12 : 93.0
+weight 20 : 6.0
+weight 21 : 48.0
+weight 22 : 34.0
+weight 31 : 17.0
+weight 32 : -79.0
+weight 33 : 37.0
+weight 34 : 57.0
+weight 35 : 54.0
+weight 40 : -48.0
+weight 41 : -1.0
+weight 42 : 99.0
+weight 43 : 12.0
+weight 44 : -22.0
+weight 45 : 23.0
+weight 50 : 76.0
+weight 51 : 98.0
+weight 52 : 54.0
+weight 53 : 5.0
+weight 54 : 7.0
+weight 55 : 21.0
+weight 60 : 6.0
+weight 94 : 100.0
+weight 95 : 327.0
+weight 96 : 378.0
+weight 97 : 507.0
+weight 98 : 865.0
+crossladım: 0 + 5
+crossladım: 1 + 0
+mutation rate: 0.147
+generation: 65
+one generation: 202
+individual:  1 position solved: 430
+individual:  2 position solved: 430
+individual:  3 position solved: 430
+individual:  4 position solved: 430
+individual:  5 position solved: 430
+individual:  6 position solved: 427
+individual:  7 position solved: 413
+individual:  8 position solved: 412
+individual:  9 position solved: 427
+individual:  10 position solved: 430
+fitness: 381.00000000000114
+fitness: 381.00000000000114
+fitness: 381.00000000000114
+fitness: 381.00000000000114
+fitness: 381.00000000000114
+fitness: 381.00000000000114
+fitness: 375.800000000001
+fitness: 375.800000000001
+fitness: 366.20000000000095
+fitness: 363.200000000001
+best individual weights: 
+weight 0 : -24.0
+weight 1 : -77.0
+weight 2 : 10.0
+weight 10 : 77.0
+weight 11 : -8.0
+weight 12 : 93.0
+weight 20 : 6.0
+weight 21 : 48.0
+weight 22 : 34.0
+weight 31 : 17.0
+weight 32 : -79.0
+weight 33 : 37.0
+weight 34 : 57.0
+weight 35 : 54.0
+weight 40 : -48.0
+weight 41 : -1.0
+weight 42 : 99.0
+weight 43 : 12.0
+weight 44 : -22.0
+weight 45 : 23.0
+weight 50 : 76.0
+weight 51 : 98.0
+weight 52 : 54.0
+weight 53 : 5.0
+weight 54 : 7.0
+weight 55 : 21.0
+weight 60 : 6.0
+weight 94 : 100.0
+weight 95 : 327.0
+weight 96 : 378.0
+weight 97 : 507.0
+weight 98 : 865.0
+mutation rate: 0.147
+generation: 66
+one generation: 471
+individual:  1 position solved: 430
+individual:  2 position solved: 430
+individual:  3 position solved: 430
+individual:  4 position solved: 430
+individual:  5 position solved: 430
+individual:  6 position solved: 428
+individual:  7 position solved: 419
+individual:  8 position solved: 420
+individual:  9 position solved: 418
+individual:  10 position solved: 424
+fitness: 381.00000000000114
+fitness: 381.00000000000114
+fitness: 381.00000000000114
+fitness: 381.00000000000114
+fitness: 381.00000000000114
+fitness: 375.40000000000117
+fitness: 374.20000000000084
+fitness: 371.8000000000011
+fitness: 371.60000000000105
+fitness: 370.40000000000117
+best individual weights: 
+weight 0 : -24.0
+weight 1 : -77.0
+weight 2 : 10.0
+weight 10 : 77.0
+weight 11 : -8.0
+weight 12 : 93.0
+weight 20 : 6.0
+weight 21 : 48.0
+weight 22 : 34.0
+weight 31 : 17.0
+weight 32 : -79.0
+weight 33 : 37.0
+weight 34 : 57.0
+weight 35 : 54.0
+weight 40 : -48.0
+weight 41 : -1.0
+weight 42 : 99.0
+weight 43 : 12.0
+weight 44 : -22.0
+weight 45 : 23.0
+weight 50 : 76.0
+weight 51 : 98.0
+weight 52 : 54.0
+weight 53 : 5.0
+weight 54 : 7.0
+weight 55 : 21.0
+weight 60 : 6.0
+weight 94 : 100.0
+weight 95 : 327.0
+weight 96 : 378.0
+weight 97 : 507.0
+weight 98 : 865.0
+crossladım: 0 + 7
+crossladım: 1 + 5
+mutation rate: 0.147
+generation: 67
+one generation: 202
+individual:  1 position solved: 430
+individual:  2 position solved: 430
+individual:  3 position solved: 430
+individual:  4 position solved: 430
+individual:  5 position solved: 430
+individual:  6 position solved: 428
+individual:  7 position solved: 424
+individual:  8 position solved: 420
+individual:  9 position solved: 429
+individual:  10 position solved: 429
+fitness: 381.00000000000114
+fitness: 381.00000000000114
+fitness: 381.00000000000114
+fitness: 381.00000000000114
+fitness: 381.00000000000114
+fitness: 379.6000000000011
+fitness: 377.0000000000012
+fitness: 375.40000000000117
+fitness: 374.20000000000084
+fitness: 371.8000000000011
+best individual weights: 
+weight 0 : -24.0
+weight 1 : -77.0
+weight 2 : 10.0
+weight 10 : 77.0
+weight 11 : -8.0
+weight 12 : 93.0
+weight 20 : 6.0
+weight 21 : 48.0
+weight 22 : 34.0
+weight 31 : 17.0
+weight 32 : -79.0
+weight 33 : 37.0
+weight 34 : 57.0
+weight 35 : 54.0
+weight 40 : -48.0
+weight 41 : -1.0
+weight 42 : 99.0
+weight 43 : 12.0
+weight 44 : -22.0
+weight 45 : 23.0
+weight 50 : 76.0
+weight 51 : 98.0
+weight 52 : 54.0
+weight 53 : 5.0
+weight 54 : 7.0
+weight 55 : 21.0
+weight 60 : 6.0
+weight 94 : 100.0
+weight 95 : 327.0
+weight 96 : 378.0
+weight 97 : 507.0
+weight 98 : 865.0
+mutation rate: 0.147
+generation: 68
+one generation: 469
+individual:  1 position solved: 430
+individual:  2 position solved: 430
+individual:  3 position solved: 430
+individual:  4 position solved: 430
+individual:  5 position solved: 430
+individual:  6 position solved: 425
+individual:  7 position solved: 431
+individual:  8 position solved: 421
+individual:  9 position solved: 314
+individual:  10 position solved: 393
+fitness: 381.8000000000011
+fitness: 381.00000000000114
+fitness: 381.00000000000114
+fitness: 381.00000000000114
+fitness: 381.00000000000114
+fitness: 381.00000000000114
+fitness: 377.0000000000011
+fitness: 371.2000000000012
+fitness: 338.80000000000086
+fitness: 267.2000000000003
+best individual weights: 
+weight 0 : -24.0
+weight 1 : -80.0
+weight 2 : 10.0
+weight 10 : 77.0
+weight 11 : -8.0
+weight 12 : 93.0
+weight 20 : 6.0
+weight 21 : 49.0
+weight 22 : 34.0
+weight 31 : 17.0
+weight 32 : -79.0
+weight 33 : 37.0
+weight 34 : 58.0
+weight 35 : 54.0
+weight 40 : -48.0
+weight 41 : -1.0
+weight 42 : 13.0
+weight 43 : 12.0
+weight 44 : -22.0
+weight 45 : 23.0
+weight 50 : 76.0
+weight 51 : 98.0
+weight 52 : 54.0
+weight 53 : 5.0
+weight 54 : 7.0
+weight 55 : 21.0
+weight 60 : 6.0
+weight 94 : 100.0
+weight 95 : 327.0
+weight 96 : 378.0
+weight 97 : 507.0
+weight 98 : 865.0
+crossladım: 0 + 0
+crossladım: 1 + 1
+mutation rate: 0.07
+generation: 69
+one generation: 203
+individual:  1 position solved: 431
+individual:  2 position solved: 430
+individual:  3 position solved: 430
+individual:  4 position solved: 430
+individual:  5 position solved: 430
+individual:  6 position solved: 430
+individual:  7 position solved: 425
+individual:  8 position solved: 421
+individual:  9 position solved: 430
+individual:  10 position solved: 430
+fitness: 381.8000000000011
+fitness: 381.00000000000114
+fitness: 381.00000000000114
+fitness: 381.00000000000114
+fitness: 381.00000000000114
+fitness: 381.00000000000114
+fitness: 381.00000000000114
+fitness: 380.4000000000011
+fitness: 377.0000000000011
+fitness: 371.2000000000012
+best individual weights: 
+weight 0 : -24.0
+weight 1 : -80.0
+weight 2 : 10.0
+weight 10 : 77.0
+weight 11 : -8.0
+weight 12 : 93.0
+weight 20 : 6.0
+weight 21 : 49.0
+weight 22 : 34.0
+weight 31 : 17.0
+weight 32 : -79.0
+weight 33 : 37.0
+weight 34 : 58.0
+weight 35 : 54.0
+weight 40 : -48.0
+weight 41 : -1.0
+weight 42 : 13.0
+weight 43 : 12.0
+weight 44 : -22.0
+weight 45 : 23.0
+weight 50 : 76.0
+weight 51 : 98.0
+weight 52 : 54.0
+weight 53 : 5.0
+weight 54 : 7.0
+weight 55 : 21.0
+weight 60 : 6.0
+weight 94 : 100.0
+weight 95 : 327.0
+weight 96 : 378.0
+weight 97 : 507.0
+weight 98 : 865.0
+mutation rate: 0.07
+generation: 70
+one generation: 470
+individual:  1 position solved: 431
+individual:  2 position solved: 430
+individual:  3 position solved: 430
+individual:  4 position solved: 430
+individual:  5 position solved: 430
+individual:  6 position solved: 426
+individual:  7 position solved: 427
+individual:  8 position solved: 418
+individual:  9 position solved: 270
+individual:  10 position solved: 421
+fitness: 381.8000000000011
+fitness: 381.00000000000114
+fitness: 381.00000000000114
+fitness: 381.00000000000114
+fitness: 381.00000000000114
+fitness: 378.0000000000011
+fitness: 375.80000000000115
+fitness: 372.80000000000115
+fitness: 370.40000000000106
+fitness: 229.00000000000014
+best individual weights: 
+weight 0 : -24.0
+weight 1 : -80.0
+weight 2 : 10.0
+weight 10 : 77.0
+weight 11 : -8.0
+weight 12 : 93.0
+weight 20 : 6.0
+weight 21 : 49.0
+weight 22 : 34.0
+weight 31 : 17.0
+weight 32 : -79.0
+weight 33 : 37.0
+weight 34 : 58.0
+weight 35 : 54.0
+weight 40 : -48.0
+weight 41 : -1.0
+weight 42 : 13.0
+weight 43 : 12.0
+weight 44 : -22.0
+weight 45 : 23.0
+weight 50 : 76.0
+weight 51 : 98.0
+weight 52 : 54.0
+weight 53 : 5.0
+weight 54 : 7.0
+weight 55 : 21.0
+weight 60 : 6.0
+weight 94 : 100.0
+weight 95 : 327.0
+weight 96 : 378.0
+weight 97 : 507.0
+weight 98 : 865.0
+crossladım: 0 + 4
+crossladım: 1 + 2
+mutation rate: 0.07
+generation: 71
+one generation: 203
+individual:  1 position solved: 431
+individual:  2 position solved: 430
+individual:  3 position solved: 430
+individual:  4 position solved: 430
+individual:  5 position solved: 430
+individual:  6 position solved: 427
+individual:  7 position solved: 426
+individual:  8 position solved: 421
+individual:  9 position solved: 429
+individual:  10 position solved: 430
+fitness: 381.8000000000011
+fitness: 381.00000000000114
+fitness: 381.00000000000114
+fitness: 381.00000000000114
+fitness: 381.00000000000114
+fitness: 381.00000000000114
+fitness: 379.6000000000011
+fitness: 378.0000000000011
+fitness: 375.80000000000115
+fitness: 372.80000000000115
+best individual weights: 
+weight 0 : -24.0
+weight 1 : -80.0
+weight 2 : 10.0
+weight 10 : 77.0
+weight 11 : -8.0
+weight 12 : 93.0
+weight 20 : 6.0
+weight 21 : 49.0
+weight 22 : 34.0
+weight 31 : 17.0
+weight 32 : -79.0
+weight 33 : 37.0
+weight 34 : 58.0
+weight 35 : 54.0
+weight 40 : -48.0
+weight 41 : -1.0
+weight 42 : 13.0
+weight 43 : 12.0
+weight 44 : -22.0
+weight 45 : 23.0
+weight 50 : 76.0
+weight 51 : 98.0
+weight 52 : 54.0
+weight 53 : 5.0
+weight 54 : 7.0
+weight 55 : 21.0
+weight 60 : 6.0
+weight 94 : 100.0
+weight 95 : 327.0
+weight 96 : 378.0
+weight 97 : 507.0
+weight 98 : 865.0
+mutation rate: 0.07
+generation: 72
+one generation: 474
+individual:  1 position solved: 431
+individual:  2 position solved: 430
+individual:  3 position solved: 430
+individual:  4 position solved: 430
+individual:  5 position solved: 430
+individual:  6 position solved: 429
+individual:  7 position solved: 429
+individual:  8 position solved: 396
+individual:  9 position solved: 416
+individual:  10 position solved: 404
+fitness: 381.8000000000011
+fitness: 381.00000000000114
+fitness: 381.00000000000114
+fitness: 381.00000000000114
+fitness: 381.00000000000114
+fitness: 379.0000000000011
+fitness: 375.6000000000012
+fitness: 367.60000000000105
+fitness: 354.800000000001
+fitness: 349.4000000000009
+best individual weights: 
+weight 0 : -24.0
+weight 1 : -80.0
+weight 2 : 10.0
+weight 10 : 77.0
+weight 11 : -8.0
+weight 12 : 93.0
+weight 20 : 6.0
+weight 21 : 49.0
+weight 22 : 34.0
+weight 31 : 17.0
+weight 32 : -79.0
+weight 33 : 37.0
+weight 34 : 58.0
+weight 35 : 54.0
+weight 40 : -48.0
+weight 41 : -1.0
+weight 42 : 13.0
+weight 43 : 12.0
+weight 44 : -22.0
+weight 45 : 23.0
+weight 50 : 76.0
+weight 51 : 98.0
+weight 52 : 54.0
+weight 53 : 5.0
+weight 54 : 7.0
+weight 55 : 21.0
+weight 60 : 6.0
+weight 94 : 100.0
+weight 95 : 327.0
+weight 96 : 378.0
+weight 97 : 507.0
+weight 98 : 865.0
+crossladım: 0 + 0
+crossladım: 1 + 7
+mutation rate: 0.07
+generation: 73
+one generation: 204
+individual:  1 position solved: 431
+individual:  2 position solved: 430
+individual:  3 position solved: 430
+individual:  4 position solved: 430
+individual:  5 position solved: 430
+individual:  6 position solved: 429
+individual:  7 position solved: 429
+individual:  8 position solved: 416
+individual:  9 position solved: 430
+individual:  10 position solved: 423
+fitness: 381.8000000000011
+fitness: 381.00000000000114
+fitness: 381.00000000000114
+fitness: 381.00000000000114
+fitness: 381.00000000000114
+fitness: 380.4000000000011
+fitness: 379.0000000000011
+fitness: 375.6000000000012
+fitness: 374.4000000000011
+fitness: 367.60000000000105
+best individual weights: 
+weight 0 : -24.0
+weight 1 : -80.0
+weight 2 : 10.0
+weight 10 : 77.0
+weight 11 : -8.0
+weight 12 : 93.0
+weight 20 : 6.0
+weight 21 : 49.0
+weight 22 : 34.0
+weight 31 : 17.0
+weight 32 : -79.0
+weight 33 : 37.0
+weight 34 : 58.0
+weight 35 : 54.0
+weight 40 : -48.0
+weight 41 : -1.0
+weight 42 : 13.0
+weight 43 : 12.0
+weight 44 : -22.0
+weight 45 : 23.0
+weight 50 : 76.0
+weight 51 : 98.0
+weight 52 : 54.0
+weight 53 : 5.0
+weight 54 : 7.0
+weight 55 : 21.0
+weight 60 : 6.0
+weight 94 : 100.0
+weight 95 : 327.0
+weight 96 : 378.0
+weight 97 : 507.0
+weight 98 : 865.0
+mutation rate: 0.07
+generation: 74
+one generation: 473
+individual:  1 position solved: 431
+individual:  2 position solved: 430
+individual:  3 position solved: 430
+individual:  4 position solved: 430
+individual:  5 position solved: 430
+individual:  6 position solved: 427
+individual:  7 position solved: 430
+individual:  8 position solved: 419
+individual:  9 position solved: 419
+individual:  10 position solved: 419
+fitness: 381.8000000000011
+fitness: 381.00000000000114
+fitness: 381.00000000000114
+fitness: 381.00000000000114
+fitness: 381.00000000000114
+fitness: 380.2000000000012
+fitness: 378.4000000000011
+fitness: 370.400000000001
+fitness: 370.00000000000097
+fitness: 369.6000000000011
+best individual weights: 
+weight 0 : -24.0
+weight 1 : -80.0
+weight 2 : 10.0
+weight 10 : 77.0
+weight 11 : -8.0
+weight 12 : 93.0
+weight 20 : 6.0
+weight 21 : 49.0
+weight 22 : 34.0
+weight 31 : 17.0
+weight 32 : -79.0
+weight 33 : 37.0
+weight 34 : 58.0
+weight 35 : 54.0
+weight 40 : -48.0
+weight 41 : -1.0
+weight 42 : 13.0
+weight 43 : 12.0
+weight 44 : -22.0
+weight 45 : 23.0
+weight 50 : 76.0
+weight 51 : 98.0
+weight 52 : 54.0
+weight 53 : 5.0
+weight 54 : 7.0
+weight 55 : 21.0
+weight 60 : 6.0
+weight 94 : 100.0
+weight 95 : 327.0
+weight 96 : 378.0
+weight 97 : 507.0
+weight 98 : 865.0
+crossladım: 0 + 1
+crossladım: 1 + 0
+mutation rate: 0.081
+generation: 75
+one generation: 206
+individual:  1 position solved: 431
+individual:  2 position solved: 430
+individual:  3 position solved: 430
+individual:  4 position solved: 430
+individual:  5 position solved: 430
+individual:  6 position solved: 430
+individual:  7 position solved: 427
+individual:  8 position solved: 419
+individual:  9 position solved: 430
+individual:  10 position solved: 431
+fitness: 382.00000000000114
+fitness: 381.8000000000011
+fitness: 381.00000000000114
+fitness: 381.00000000000114
+fitness: 381.00000000000114
+fitness: 381.00000000000114
+fitness: 380.6000000000011
+fitness: 380.2000000000012
+fitness: 378.4000000000011
+fitness: 370.400000000001
+best individual weights: 
+weight 0 : -24.0
+weight 1 : -77.0
+weight 2 : 10.0
+weight 10 : 77.0
+weight 11 : -8.0
+weight 12 : 93.0
+weight 20 : 6.0
+weight 21 : 48.0
+weight 22 : 34.0
+weight 31 : 17.0
+weight 32 : -79.0
+weight 33 : 37.0
+weight 34 : 57.0
+weight 35 : 54.0
+weight 40 : -48.0
+weight 41 : -1.0
+weight 42 : 13.0
+weight 43 : 12.0
+weight 44 : -22.0
+weight 45 : 23.0
+weight 50 : 76.0
+weight 51 : 98.0
+weight 52 : 54.0
+weight 53 : 5.0
+weight 54 : 7.0
+weight 55 : 21.0
+weight 60 : 6.0
+weight 94 : 100.0
+weight 95 : 327.0
+weight 96 : 378.0
+weight 97 : 507.0
+weight 98 : 865.0
+mutation rate: 0.07
+generation: 76
+one generation: 475
+individual:  1 position solved: 431
+individual:  2 position solved: 431
+individual:  3 position solved: 430
+individual:  4 position solved: 430
+individual:  5 position solved: 430
+individual:  6 position solved: 422
+individual:  7 position solved: 420
+individual:  8 position solved: 419
+individual:  9 position solved: 420
+individual:  10 position solved: 398
+fitness: 382.00000000000114
+fitness: 381.8000000000011
+fitness: 381.00000000000114
+fitness: 381.00000000000114
+fitness: 381.00000000000114
+fitness: 374.4000000000011
+fitness: 372.8000000000011
+fitness: 370.600000000001
+fitness: 369.60000000000116
+fitness: 350.200000000001
+best individual weights: 
+weight 0 : -24.0
+weight 1 : -77.0
+weight 2 : 10.0
+weight 10 : 77.0
+weight 11 : -8.0
+weight 12 : 93.0
+weight 20 : 6.0
+weight 21 : 48.0
+weight 22 : 34.0
+weight 31 : 17.0
+weight 32 : -79.0
+weight 33 : 37.0
+weight 34 : 57.0
+weight 35 : 54.0
+weight 40 : -48.0
+weight 41 : -1.0
+weight 42 : 13.0
+weight 43 : 12.0
+weight 44 : -22.0
+weight 45 : 23.0
+weight 50 : 76.0
+weight 51 : 98.0
+weight 52 : 54.0
+weight 53 : 5.0
+weight 54 : 7.0
+weight 55 : 21.0
+weight 60 : 6.0
+weight 94 : 100.0
+weight 95 : 327.0
+weight 96 : 378.0
+weight 97 : 507.0
+weight 98 : 865.0
+crossladım: 0 + 7
+crossladım: 1 + 7
+mutation rate: 0.07
+generation: 77
+one generation: 200
+individual:  1 position solved: 431
+individual:  2 position solved: 431
+individual:  3 position solved: 430
+individual:  4 position solved: 430
+individual:  5 position solved: 430
+individual:  6 position solved: 422
+individual:  7 position solved: 420
+individual:  8 position solved: 419
+individual:  9 position solved: 429
+individual:  10 position solved: 428
+fitness: 382.00000000000114
+fitness: 381.8000000000011
+fitness: 381.00000000000114
+fitness: 381.00000000000114
+fitness: 381.00000000000114
+fitness: 379.8000000000011
+fitness: 378.80000000000103
+fitness: 374.4000000000011
+fitness: 372.8000000000011
+fitness: 370.600000000001
+best individual weights: 
+weight 0 : -24.0
+weight 1 : -77.0
+weight 2 : 10.0
+weight 10 : 77.0
+weight 11 : -8.0
+weight 12 : 93.0
+weight 20 : 6.0
+weight 21 : 48.0
+weight 22 : 34.0
+weight 31 : 17.0
+weight 32 : -79.0
+weight 33 : 37.0
+weight 34 : 57.0
+weight 35 : 54.0
+weight 40 : -48.0
+weight 41 : -1.0
+weight 42 : 13.0
+weight 43 : 12.0
+weight 44 : -22.0
+weight 45 : 23.0
+weight 50 : 76.0
+weight 51 : 98.0
+weight 52 : 54.0
+weight 53 : 5.0
+weight 54 : 7.0
+weight 55 : 21.0
+weight 60 : 6.0
+weight 94 : 100.0
+weight 95 : 327.0
+weight 96 : 378.0
+weight 97 : 507.0
+weight 98 : 865.0
+mutation rate: 0.07
+generation: 78
+one generation: 467
+individual:  1 position solved: 431
+individual:  2 position solved: 431
+individual:  3 position solved: 430
+individual:  4 position solved: 430
+individual:  5 position solved: 430
+individual:  6 position solved: 430
+individual:  7 position solved: 429
+individual:  8 position solved: 419
+individual:  9 position solved: 415
+individual:  10 position solved: 418
+fitness: 382.00000000000114
+fitness: 381.8000000000011
+fitness: 381.00000000000114
+fitness: 381.00000000000114
+fitness: 381.00000000000114
+fitness: 380.6000000000011
+fitness: 380.0000000000011
+fitness: 369.40000000000106
+fitness: 369.0000000000011
+fitness: 364.800000000001
+best individual weights: 
+weight 0 : -24.0
+weight 1 : -77.0
+weight 2 : 10.0
+weight 10 : 77.0
+weight 11 : -8.0
+weight 12 : 93.0
+weight 20 : 6.0
+weight 21 : 48.0
+weight 22 : 34.0
+weight 31 : 17.0
+weight 32 : -79.0
+weight 33 : 37.0
+weight 34 : 57.0
+weight 35 : 54.0
+weight 40 : -48.0
+weight 41 : -1.0
+weight 42 : 13.0
+weight 43 : 12.0
+weight 44 : -22.0
+weight 45 : 23.0
+weight 50 : 76.0
+weight 51 : 98.0
+weight 52 : 54.0
+weight 53 : 5.0
+weight 54 : 7.0
+weight 55 : 21.0
+weight 60 : 6.0
+weight 94 : 100.0
+weight 95 : 327.0
+weight 96 : 378.0
+weight 97 : 507.0
+weight 98 : 865.0
+crossladım: 0 + 6
+crossladım: 1 + 7
+mutation rate: 0.07
+generation: 79
+one generation: 200
+individual:  1 position solved: 431
+individual:  2 position solved: 431
+individual:  3 position solved: 430
+individual:  4 position solved: 430
+individual:  5 position solved: 430
+individual:  6 position solved: 430
+individual:  7 position solved: 429
+individual:  8 position solved: 418
+individual:  9 position solved: 430
+individual:  10 position solved: 430
+fitness: 382.00000000000114
+fitness: 381.8000000000011
+fitness: 381.00000000000114
+fitness: 381.00000000000114
+fitness: 381.00000000000114
+fitness: 381.00000000000114
+fitness: 380.6000000000011
+fitness: 380.4000000000011
+fitness: 380.0000000000011
+fitness: 369.40000000000106
+best individual weights: 
+weight 0 : -24.0
+weight 1 : -77.0
+weight 2 : 10.0
+weight 10 : 77.0
+weight 11 : -8.0
+weight 12 : 93.0
+weight 20 : 6.0
+weight 21 : 48.0
+weight 22 : 34.0
+weight 31 : 17.0
+weight 32 : -79.0
+weight 33 : 37.0
+weight 34 : 57.0
+weight 35 : 54.0
+weight 40 : -48.0
+weight 41 : -1.0
+weight 42 : 13.0
+weight 43 : 12.0
+weight 44 : -22.0
+weight 45 : 23.0
+weight 50 : 76.0
+weight 51 : 98.0
+weight 52 : 54.0
+weight 53 : 5.0
+weight 54 : 7.0
+weight 55 : 21.0
+weight 60 : 6.0
+weight 94 : 100.0
+weight 95 : 327.0
+weight 96 : 378.0
+weight 97 : 507.0
+weight 98 : 865.0
+mutation rate: 0.07
+generation: 80
+one generation: 468
+individual:  1 position solved: 431
+individual:  2 position solved: 431
+individual:  3 position solved: 430
+individual:  4 position solved: 430
+individual:  5 position solved: 430
+individual:  6 position solved: 430
+individual:  7 position solved: 425
+individual:  8 position solved: 421
+individual:  9 position solved: 417
+individual:  10 position solved: 418
+fitness: 382.00000000000114
+fitness: 381.8000000000011
+fitness: 381.00000000000114
+fitness: 381.00000000000114
+fitness: 381.00000000000114
+fitness: 380.6000000000011
+fitness: 376.40000000000106
+fitness: 372.6000000000011
+fitness: 370.00000000000114
+fitness: 368.200000000001
+best individual weights: 
+weight 0 : -24.0
+weight 1 : -77.0
+weight 2 : 10.0
+weight 10 : 77.0
+weight 11 : -8.0
+weight 12 : 93.0
+weight 20 : 6.0
+weight 21 : 48.0
+weight 22 : 34.0
+weight 31 : 17.0
+weight 32 : -79.0
+weight 33 : 37.0
+weight 34 : 57.0
+weight 35 : 54.0
+weight 40 : -48.0
+weight 41 : -1.0
+weight 42 : 13.0
+weight 43 : 12.0
+weight 44 : -22.0
+weight 45 : 23.0
+weight 50 : 76.0
+weight 51 : 98.0
+weight 52 : 54.0
+weight 53 : 5.0
+weight 54 : 7.0
+weight 55 : 21.0
+weight 60 : 6.0
+weight 94 : 100.0
+weight 95 : 327.0
+weight 96 : 378.0
+weight 97 : 507.0
+weight 98 : 865.0
+crossladım: 0 + 1
+crossladım: 1 + 6
+mutation rate: 0.07
+generation: 81
+one generation: 202
+individual:  1 position solved: 431
+individual:  2 position solved: 431
+individual:  3 position solved: 430
+individual:  4 position solved: 430
+individual:  5 position solved: 430
+individual:  6 position solved: 430
+individual:  7 position solved: 425
+individual:  8 position solved: 421
+individual:  9 position solved: 430
+individual:  10 position solved: 428
+fitness: 382.00000000000114
+fitness: 381.8000000000011
+fitness: 381.00000000000114
+fitness: 381.00000000000114
+fitness: 381.00000000000114
+fitness: 380.6000000000011
+fitness: 380.4000000000011
+fitness: 380.2000000000011
+fitness: 376.40000000000106
+fitness: 372.6000000000011
+best individual weights: 
+weight 0 : -24.0
+weight 1 : -77.0
+weight 2 : 10.0
+weight 10 : 77.0
+weight 11 : -8.0
+weight 12 : 93.0
+weight 20 : 6.0
+weight 21 : 48.0
+weight 22 : 34.0
+weight 31 : 17.0
+weight 32 : -79.0
+weight 33 : 37.0
+weight 34 : 57.0
+weight 35 : 54.0
+weight 40 : -48.0
+weight 41 : -1.0
+weight 42 : 13.0
+weight 43 : 12.0
+weight 44 : -22.0
+weight 45 : 23.0
+weight 50 : 76.0
+weight 51 : 98.0
+weight 52 : 54.0
+weight 53 : 5.0
+weight 54 : 7.0
+weight 55 : 21.0
+weight 60 : 6.0
+weight 94 : 100.0
+weight 95 : 327.0
+weight 96 : 378.0
+weight 97 : 507.0
+weight 98 : 865.0
+mutation rate: 0.081
+generation: 82
+one generation: 470
+individual:  1 position solved: 431
+individual:  2 position solved: 431
+individual:  3 position solved: 430
+individual:  4 position solved: 430
+individual:  5 position solved: 430
+individual:  6 position solved: 260
+individual:  7 position solved: 418
+individual:  8 position solved: 416
+individual:  9 position solved: 423
+individual:  10 position solved: 422
+fitness: 382.00000000000114
+fitness: 381.8000000000011
+fitness: 381.00000000000114
+fitness: 381.00000000000114
+fitness: 381.00000000000114
+fitness: 373.80000000000115
+fitness: 373.0000000000011
+fitness: 368.60000000000105
+fitness: 368.4000000000011
+fitness: 220.80000000000015
+best individual weights: 
+weight 0 : -24.0
+weight 1 : -77.0
+weight 2 : 10.0
+weight 10 : 77.0
+weight 11 : -8.0
+weight 12 : 93.0
+weight 20 : 6.0
+weight 21 : 48.0
+weight 22 : 34.0
+weight 31 : 17.0
+weight 32 : -79.0
+weight 33 : 37.0
+weight 34 : 57.0
+weight 35 : 54.0
+weight 40 : -48.0
+weight 41 : -1.0
+weight 42 : 13.0
+weight 43 : 12.0
+weight 44 : -22.0
+weight 45 : 23.0
+weight 50 : 76.0
+weight 51 : 98.0
+weight 52 : 54.0
+weight 53 : 5.0
+weight 54 : 7.0
+weight 55 : 21.0
+weight 60 : 6.0
+weight 94 : 100.0
+weight 95 : 327.0
+weight 96 : 378.0
+weight 97 : 507.0
+weight 98 : 865.0
+crossladım: 0 + 7
+crossladım: 1 + 0
+mutation rate: 0.092
+generation: 83
+one generation: 201
+individual:  1 position solved: 431
+individual:  2 position solved: 431
+individual:  3 position solved: 430
+individual:  4 position solved: 430
+individual:  5 position solved: 430
+individual:  6 position solved: 423
+individual:  7 position solved: 422
+individual:  8 position solved: 416
+individual:  9 position solved: 425
+individual:  10 position solved: 431
+fitness: 382.00000000000114
+fitness: 381.8000000000011
+fitness: 381.60000000000116
+fitness: 381.00000000000114
+fitness: 381.00000000000114
+fitness: 381.00000000000114
+fitness: 376.40000000000106
+fitness: 373.80000000000115
+fitness: 373.0000000000011
+fitness: 368.60000000000105
+best individual weights: 
+weight 0 : -24.0
+weight 1 : -77.0
+weight 2 : 10.0
+weight 10 : 77.0
+weight 11 : -8.0
+weight 12 : 93.0
+weight 20 : 6.0
+weight 21 : 48.0
+weight 22 : 34.0
+weight 31 : 17.0
+weight 32 : -79.0
+weight 33 : 37.0
+weight 34 : 57.0
+weight 35 : 54.0
+weight 40 : -48.0
+weight 41 : -1.0
+weight 42 : 13.0
+weight 43 : 12.0
+weight 44 : -22.0
+weight 45 : 23.0
+weight 50 : 76.0
+weight 51 : 98.0
+weight 52 : 54.0
+weight 53 : 5.0
+weight 54 : 7.0
+weight 55 : 21.0
+weight 60 : 6.0
+weight 94 : 100.0
+weight 95 : 327.0
+weight 96 : 378.0
+weight 97 : 507.0
+weight 98 : 865.0
+mutation rate: 0.103
+generation: 84
+one generation: 470
+individual:  1 position solved: 431
+individual:  2 position solved: 431
+individual:  3 position solved: 431
+individual:  4 position solved: 430
+individual:  5 position solved: 430
+individual:  6 position solved: 426
+individual:  7 position solved: 420
+individual:  8 position solved: 414
+individual:  9 position solved: 417
+individual:  10 position solved: 261
+fitness: 382.00000000000114
+fitness: 381.8000000000011
+fitness: 381.60000000000116
+fitness: 381.00000000000114
+fitness: 381.00000000000114
+fitness: 376.60000000000116
+fitness: 371.80000000000103
+fitness: 369.20000000000107
+fitness: 363.40000000000106
+fitness: 221.8000000000002
+best individual weights: 
+weight 0 : -24.0
+weight 1 : -77.0
+weight 2 : 10.0
+weight 10 : 77.0
+weight 11 : -8.0
+weight 12 : 93.0
+weight 20 : 6.0
+weight 21 : 48.0
+weight 22 : 34.0
+weight 31 : 17.0
+weight 32 : -79.0
+weight 33 : 37.0
+weight 34 : 57.0
+weight 35 : 54.0
+weight 40 : -48.0
+weight 41 : -1.0
+weight 42 : 13.0
+weight 43 : 12.0
+weight 44 : -22.0
+weight 45 : 23.0
+weight 50 : 76.0
+weight 51 : 98.0
+weight 52 : 54.0
+weight 53 : 5.0
+weight 54 : 7.0
+weight 55 : 21.0
+weight 60 : 6.0
+weight 94 : 100.0
+weight 95 : 327.0
+weight 96 : 378.0
+weight 97 : 507.0
+weight 98 : 865.0
+crossladım: 0 + 6
+crossladım: 1 + 2
+mutation rate: 0.11399999999999999
+generation: 85
+one generation: 204
+individual:  1 position solved: 431
+individual:  2 position solved: 431
+individual:  3 position solved: 431
+individual:  4 position solved: 430
+individual:  5 position solved: 430
+individual:  6 position solved: 426
+individual:  7 position solved: 420
+individual:  8 position solved: 417
+individual:  9 position solved: 429
+individual:  10 position solved: 431
+fitness: 382.00000000000114
+fitness: 381.8000000000011
+fitness: 381.8000000000011
+fitness: 381.60000000000116
+fitness: 381.00000000000114
+fitness: 381.00000000000114
+fitness: 379.60000000000105
+fitness: 376.60000000000116
+fitness: 371.80000000000103
+fitness: 369.20000000000107
+best individual weights: 
+weight 0 : -24.0
+weight 1 : -77.0
+weight 2 : 10.0
+weight 10 : 77.0
+weight 11 : -8.0
+weight 12 : 93.0
+weight 20 : 6.0
+weight 21 : 48.0
+weight 22 : 34.0
+weight 31 : 17.0
+weight 32 : -79.0
+weight 33 : 37.0
+weight 34 : 57.0
+weight 35 : 54.0
+weight 40 : -48.0
+weight 41 : -1.0
+weight 42 : 13.0
+weight 43 : 12.0
+weight 44 : -22.0
+weight 45 : 23.0
+weight 50 : 76.0
+weight 51 : 98.0
+weight 52 : 54.0
+weight 53 : 5.0
+weight 54 : 7.0
+weight 55 : 21.0
+weight 60 : 6.0
+weight 94 : 100.0
+weight 95 : 327.0
+weight 96 : 378.0
+weight 97 : 507.0
+weight 98 : 865.0
+mutation rate: 0.12499999999999999
+generation: 86
+one generation: 470
+individual:  1 position solved: 431
+individual:  2 position solved: 431
+individual:  3 position solved: 431
+individual:  4 position solved: 431
+individual:  5 position solved: 430
+individual:  6 position solved: 428
+individual:  7 position solved: 400
+individual:  8 position solved: 424
+individual:  9 position solved: 417
+individual:  10 position solved: 421
+fitness: 382.00000000000114
+fitness: 381.8000000000011
+fitness: 381.8000000000011
+fitness: 381.60000000000116
+fitness: 381.00000000000114
+fitness: 375.00000000000114
+fitness: 374.4000000000011
+fitness: 371.20000000000095
+fitness: 370.60000000000105
+fitness: 353.40000000000094
+best individual weights: 
+weight 0 : -24.0
+weight 1 : -77.0
+weight 2 : 10.0
+weight 10 : 77.0
+weight 11 : -8.0
+weight 12 : 93.0
+weight 20 : 6.0
+weight 21 : 48.0
+weight 22 : 34.0
+weight 31 : 17.0
+weight 32 : -79.0
+weight 33 : 37.0
+weight 34 : 57.0
+weight 35 : 54.0
+weight 40 : -48.0
+weight 41 : -1.0
+weight 42 : 13.0
+weight 43 : 12.0
+weight 44 : -22.0
+weight 45 : 23.0
+weight 50 : 76.0
+weight 51 : 98.0
+weight 52 : 54.0
+weight 53 : 5.0
+weight 54 : 7.0
+weight 55 : 21.0
+weight 60 : 6.0
+weight 94 : 100.0
+weight 95 : 327.0
+weight 96 : 378.0
+weight 97 : 507.0
+weight 98 : 865.0
+crossladım: 0 + 3
+crossladım: 1 + 1
+mutation rate: 0.13599999999999998
+generation: 87
+one generation: 202
+individual:  1 position solved: 431
+individual:  2 position solved: 431
+individual:  3 position solved: 431
+individual:  4 position solved: 431
+individual:  5 position solved: 430
+individual:  6 position solved: 428
+individual:  7 position solved: 424
+individual:  8 position solved: 421
+individual:  9 position solved: 430
+individual:  10 position solved: 431
+fitness: 382.00000000000114
+fitness: 381.8000000000011
+fitness: 381.8000000000011
+fitness: 381.8000000000011
+fitness: 381.60000000000116
+fitness: 381.00000000000114
+fitness: 380.6000000000011
+fitness: 375.00000000000114
+fitness: 374.4000000000011
+fitness: 371.20000000000095
+best individual weights: 
+weight 0 : -24.0
+weight 1 : -77.0
+weight 2 : 10.0
+weight 10 : 77.0
+weight 11 : -8.0
+weight 12 : 93.0
+weight 20 : 6.0
+weight 21 : 48.0
+weight 22 : 34.0
+weight 31 : 17.0
+weight 32 : -79.0
+weight 33 : 37.0
+weight 34 : 57.0
+weight 35 : 54.0
+weight 40 : -48.0
+weight 41 : -1.0
+weight 42 : 13.0
+weight 43 : 12.0
+weight 44 : -22.0
+weight 45 : 23.0
+weight 50 : 76.0
+weight 51 : 98.0
+weight 52 : 54.0
+weight 53 : 5.0
+weight 54 : 7.0
+weight 55 : 21.0
+weight 60 : 6.0
+weight 94 : 100.0
+weight 95 : 327.0
+weight 96 : 378.0
+weight 97 : 507.0
+weight 98 : 865.0
+mutation rate: 0.147
+generation: 88
+one generation: 470
+individual:  1 position solved: 431
+individual:  2 position solved: 431
+individual:  3 position solved: 431
+individual:  4 position solved: 431
+individual:  5 position solved: 431
+individual:  6 position solved: 430
+individual:  7 position solved: 429
+individual:  8 position solved: 414
+individual:  9 position solved: 420
+individual:  10 position solved: 422
+fitness: 382.00000000000114
+fitness: 381.8000000000011
+fitness: 381.8000000000011
+fitness: 381.8000000000011
+fitness: 381.60000000000116
+fitness: 380.80000000000103
+fitness: 380.80000000000103
+fitness: 373.00000000000114
+fitness: 371.40000000000106
+fitness: 367.600000000001
+best individual weights: 
+weight 0 : -24.0
+weight 1 : -77.0
+weight 2 : 10.0
+weight 10 : 77.0
+weight 11 : -8.0
+weight 12 : 93.0
+weight 20 : 6.0
+weight 21 : 48.0
+weight 22 : 34.0
+weight 31 : 17.0
+weight 32 : -79.0
+weight 33 : 37.0
+weight 34 : 57.0
+weight 35 : 54.0
+weight 40 : -48.0
+weight 41 : -1.0
+weight 42 : 13.0
+weight 43 : 12.0
+weight 44 : -22.0
+weight 45 : 23.0
+weight 50 : 76.0
+weight 51 : 98.0
+weight 52 : 54.0
+weight 53 : 5.0
+weight 54 : 7.0
+weight 55 : 21.0
+weight 60 : 6.0
+weight 94 : 100.0
+weight 95 : 327.0
+weight 96 : 378.0
+weight 97 : 507.0
+weight 98 : 865.0
+crossladım: 0 + 4
+crossladım: 1 + 0
+mutation rate: 0.147
+generation: 89
+one generation: 202
+individual:  1 position solved: 431
+individual:  2 position solved: 431
+individual:  3 position solved: 431
+individual:  4 position solved: 431
+individual:  5 position solved: 431
+individual:  6 position solved: 430
+individual:  7 position solved: 429
+individual:  8 position solved: 422
+individual:  9 position solved: 430
+individual:  10 position solved: 431
+fitness: 382.00000000000114
+fitness: 381.8000000000011
+fitness: 381.8000000000011
+fitness: 381.8000000000011
+fitness: 381.60000000000116
+fitness: 381.60000000000116
+fitness: 380.80000000000103
+fitness: 380.80000000000103
+fitness: 380.2000000000011
+fitness: 373.00000000000114
+best individual weights: 
+weight 0 : -24.0
+weight 1 : -77.0
+weight 2 : 10.0
+weight 10 : 77.0
+weight 11 : -8.0
+weight 12 : 93.0
+weight 20 : 6.0
+weight 21 : 48.0
+weight 22 : 34.0
+weight 31 : 17.0
+weight 32 : -79.0
+weight 33 : 37.0
+weight 34 : 57.0
+weight 35 : 54.0
+weight 40 : -48.0
+weight 41 : -1.0
+weight 42 : 13.0
+weight 43 : 12.0
+weight 44 : -22.0
+weight 45 : 23.0
+weight 50 : 76.0
+weight 51 : 98.0
+weight 52 : 54.0
+weight 53 : 5.0
+weight 54 : 7.0
+weight 55 : 21.0
+weight 60 : 6.0
+weight 94 : 100.0
+weight 95 : 327.0
+weight 96 : 378.0
+weight 97 : 507.0
+weight 98 : 865.0
+mutation rate: 0.147
+generation: 90
+one generation: 469
+individual:  1 position solved: 431
+individual:  2 position solved: 431
+individual:  3 position solved: 431
+individual:  4 position solved: 431
+individual:  5 position solved: 431
+individual:  6 position solved: 408
+individual:  7 position solved: 425
+individual:  8 position solved: 410
+individual:  9 position solved: 313
+individual:  10 position solved: 424
+fitness: 382.00000000000114
+fitness: 381.8000000000011
+fitness: 381.8000000000011
+fitness: 381.8000000000011
+fitness: 381.60000000000116
+fitness: 378.0000000000011
+fitness: 372.80000000000115
+fitness: 362.00000000000097
+fitness: 360.800000000001
+fitness: 268.6000000000004
+best individual weights: 
+weight 0 : -24.0
+weight 1 : -77.0
+weight 2 : 10.0
+weight 10 : 77.0
+weight 11 : -8.0
+weight 12 : 93.0
+weight 20 : 6.0
+weight 21 : 48.0
+weight 22 : 34.0
+weight 31 : 17.0
+weight 32 : -79.0
+weight 33 : 37.0
+weight 34 : 57.0
+weight 35 : 54.0
+weight 40 : -48.0
+weight 41 : -1.0
+weight 42 : 13.0
+weight 43 : 12.0
+weight 44 : -22.0
+weight 45 : 23.0
+weight 50 : 76.0
+weight 51 : 98.0
+weight 52 : 54.0
+weight 53 : 5.0
+weight 54 : 7.0
+weight 55 : 21.0
+weight 60 : 6.0
+weight 94 : 100.0
+weight 95 : 327.0
+weight 96 : 378.0
+weight 97 : 507.0
+weight 98 : 865.0
+crossladım: 0 + 5
+crossladım: 1 + 3
+mutation rate: 0.147
+generation: 91
+one generation: 208
+individual:  1 position solved: 431
+individual:  2 position solved: 431
+individual:  3 position solved: 431
+individual:  4 position solved: 431
+individual:  5 position solved: 431
+individual:  6 position solved: 425
+individual:  7 position solved: 424
+individual:  8 position solved: 408
+individual:  9 position solved: 424
+individual:  10 position solved: 431
+fitness: 382.00000000000114
+fitness: 381.8000000000011
+fitness: 381.8000000000011
+fitness: 381.8000000000011
+fitness: 381.8000000000011
+fitness: 381.60000000000116
+fitness: 378.0000000000011
+fitness: 376.6000000000011
+fitness: 372.80000000000115
+fitness: 362.00000000000097
+best individual weights: 
+weight 0 : -24.0
+weight 1 : -77.0
+weight 2 : 10.0
+weight 10 : 77.0
+weight 11 : -8.0
+weight 12 : 93.0
+weight 20 : 6.0
+weight 21 : 48.0
+weight 22 : 34.0
+weight 31 : 17.0
+weight 32 : -79.0
+weight 33 : 37.0
+weight 34 : 57.0
+weight 35 : 54.0
+weight 40 : -48.0
+weight 41 : -1.0
+weight 42 : 13.0
+weight 43 : 12.0
+weight 44 : -22.0
+weight 45 : 23.0
+weight 50 : 76.0
+weight 51 : 98.0
+weight 52 : 54.0
+weight 53 : 5.0
+weight 54 : 7.0
+weight 55 : 21.0
+weight 60 : 6.0
+weight 94 : 100.0
+weight 95 : 327.0
+weight 96 : 378.0
+weight 97 : 507.0
+weight 98 : 865.0
+mutation rate: 0.147
+generation: 92
+one generation: 468
+individual:  1 position solved: 431
+individual:  2 position solved: 431
+individual:  3 position solved: 431
+individual:  4 position solved: 431
+individual:  5 position solved: 431
+individual:  6 position solved: 430
+individual:  7 position solved: 421
+individual:  8 position solved: 390
+individual:  9 position solved: 413
+individual:  10 position solved: 396
+fitness: 382.00000000000114
+fitness: 381.8000000000011
+fitness: 381.8000000000011
+fitness: 381.8000000000011
+fitness: 381.8000000000011
+fitness: 380.6000000000011
+fitness: 369.4000000000012
+fitness: 365.4000000000011
+fitness: 350.800000000001
+fitness: 346.80000000000086
+best individual weights: 
+weight 0 : -24.0
+weight 1 : -77.0
+weight 2 : 10.0
+weight 10 : 77.0
+weight 11 : -8.0
+weight 12 : 93.0
+weight 20 : 6.0
+weight 21 : 48.0
+weight 22 : 34.0
+weight 31 : 17.0
+weight 32 : -79.0
+weight 33 : 37.0
+weight 34 : 57.0
+weight 35 : 54.0
+weight 40 : -48.0
+weight 41 : -1.0
+weight 42 : 13.0
+weight 43 : 12.0
+weight 44 : -22.0
+weight 45 : 23.0
+weight 50 : 76.0
+weight 51 : 98.0
+weight 52 : 54.0
+weight 53 : 5.0
+weight 54 : 7.0
+weight 55 : 21.0
+weight 60 : 6.0
+weight 94 : 100.0
+weight 95 : 327.0
+weight 96 : 378.0
+weight 97 : 507.0
+weight 98 : 865.0
+crossladım: 0 + 7
+crossladım: 1 + 7
+mutation rate: 0.147
+generation: 93
+one generation: 200
+individual:  1 position solved: 431
+individual:  2 position solved: 431
+individual:  3 position solved: 431
+individual:  4 position solved: 431
+individual:  5 position solved: 431
+individual:  6 position solved: 430
+individual:  7 position solved: 421
+individual:  8 position solved: 413
+individual:  9 position solved: 418
+individual:  10 position solved: 423
+fitness: 382.00000000000114
+fitness: 381.8000000000011
+fitness: 381.8000000000011
+fitness: 381.8000000000011
+fitness: 381.8000000000011
+fitness: 380.6000000000011
+fitness: 373.4000000000011
+fitness: 370.40000000000117
+fitness: 369.4000000000012
+fitness: 365.4000000000011
+best individual weights: 
+weight 0 : -24.0
+weight 1 : -77.0
+weight 2 : 10.0
+weight 10 : 77.0
+weight 11 : -8.0
+weight 12 : 93.0
+weight 20 : 6.0
+weight 21 : 48.0
+weight 22 : 34.0
+weight 31 : 17.0
+weight 32 : -79.0
+weight 33 : 37.0
+weight 34 : 57.0
+weight 35 : 54.0
+weight 40 : -48.0
+weight 41 : -1.0
+weight 42 : 13.0
+weight 43 : 12.0
+weight 44 : -22.0
+weight 45 : 23.0
+weight 50 : 76.0
+weight 51 : 98.0
+weight 52 : 54.0
+weight 53 : 5.0
+weight 54 : 7.0
+weight 55 : 21.0
+weight 60 : 6.0
+weight 94 : 100.0
+weight 95 : 327.0
+weight 96 : 378.0
+weight 97 : 507.0
+weight 98 : 865.0
+mutation rate: 0.147
+generation: 94
+one generation: 468
+individual:  1 position solved: 431
+individual:  2 position solved: 431
+individual:  3 position solved: 431
+individual:  4 position solved: 431
+individual:  5 position solved: 431
+individual:  6 position solved: 429
+individual:  7 position solved: 416
+individual:  8 position solved: 421
+individual:  9 position solved: 422
+individual:  10 position solved: 411
+fitness: 382.00000000000114
+fitness: 381.8000000000011
+fitness: 381.8000000000011
+fitness: 381.8000000000011
+fitness: 381.8000000000011
+fitness: 380.0000000000011
+fitness: 374.200000000001
+fitness: 372.40000000000106
+fitness: 367.6000000000013
+fitness: 362.8000000000009
+best individual weights: 
+weight 0 : -24.0
+weight 1 : -77.0
+weight 2 : 10.0
+weight 10 : 77.0
+weight 11 : -8.0
+weight 12 : 93.0
+weight 20 : 6.0
+weight 21 : 48.0
+weight 22 : 34.0
+weight 31 : 17.0
+weight 32 : -79.0
+weight 33 : 37.0
+weight 34 : 57.0
+weight 35 : 54.0
+weight 40 : -48.0
+weight 41 : -1.0
+weight 42 : 13.0
+weight 43 : 12.0
+weight 44 : -22.0
+weight 45 : 23.0
+weight 50 : 76.0
+weight 51 : 98.0
+weight 52 : 54.0
+weight 53 : 5.0
+weight 54 : 7.0
+weight 55 : 21.0
+weight 60 : 6.0
+weight 94 : 100.0
+weight 95 : 327.0
+weight 96 : 378.0
+weight 97 : 507.0
+weight 98 : 865.0
+crossladım: 0 + 1
+crossladım: 1 + 4
+mutation rate: 0.147
+generation: 95
+one generation: 202
+individual:  1 position solved: 431
+individual:  2 position solved: 431
+individual:  3 position solved: 431
+individual:  4 position solved: 431
+individual:  5 position solved: 431
+individual:  6 position solved: 429
+individual:  7 position solved: 421
+individual:  8 position solved: 422
+individual:  9 position solved: 430
+individual:  10 position solved: 431
+fitness: 382.00000000000114
+fitness: 381.8000000000011
+fitness: 381.8000000000011
+fitness: 381.8000000000011
+fitness: 381.8000000000011
+fitness: 381.8000000000011
+fitness: 380.4000000000011
+fitness: 380.0000000000011
+fitness: 374.200000000001
+fitness: 372.40000000000106
+best individual weights: 
+weight 0 : -24.0
+weight 1 : -77.0
+weight 2 : 10.0
+weight 10 : 77.0
+weight 11 : -8.0
+weight 12 : 93.0
+weight 20 : 6.0
+weight 21 : 48.0
+weight 22 : 34.0
+weight 31 : 17.0
+weight 32 : -79.0
+weight 33 : 37.0
+weight 34 : 57.0
+weight 35 : 54.0
+weight 40 : -48.0
+weight 41 : -1.0
+weight 42 : 13.0
+weight 43 : 12.0
+weight 44 : -22.0
+weight 45 : 23.0
+weight 50 : 76.0
+weight 51 : 98.0
+weight 52 : 54.0
+weight 53 : 5.0
+weight 54 : 7.0
+weight 55 : 21.0
+weight 60 : 6.0
+weight 94 : 100.0
+weight 95 : 327.0
+weight 96 : 378.0
+weight 97 : 507.0
+weight 98 : 865.0
+mutation rate: 0.147
+generation: 96
+one generation: 469
+individual:  1 position solved: 431
+individual:  2 position solved: 431
+individual:  3 position solved: 431
+individual:  4 position solved: 431
+individual:  5 position solved: 431
+individual:  6 position solved: 420
+individual:  7 position solved: 415
+individual:  8 position solved: 422
+individual:  9 position solved: 258
+individual:  10 position solved: 413
+fitness: 382.00000000000114
+fitness: 381.8000000000011
+fitness: 381.8000000000011
+fitness: 381.8000000000011
+fitness: 381.8000000000011
+fitness: 373.200000000001
+fitness: 372.60000000000093
+fitness: 369.600000000001
+fitness: 361.20000000000095
+fitness: 218.00000000000017
+best individual weights: 
+weight 0 : -24.0
+weight 1 : -77.0
+weight 2 : 10.0
+weight 10 : 77.0
+weight 11 : -8.0
+weight 12 : 93.0
+weight 20 : 6.0
+weight 21 : 48.0
+weight 22 : 34.0
+weight 31 : 17.0
+weight 32 : -79.0
+weight 33 : 37.0
+weight 34 : 57.0
+weight 35 : 54.0
+weight 40 : -48.0
+weight 41 : -1.0
+weight 42 : 13.0
+weight 43 : 12.0
+weight 44 : -22.0
+weight 45 : 23.0
+weight 50 : 76.0
+weight 51 : 98.0
+weight 52 : 54.0
+weight 53 : 5.0
+weight 54 : 7.0
+weight 55 : 21.0
+weight 60 : 6.0
+weight 94 : 100.0
+weight 95 : 327.0
+weight 96 : 378.0
+weight 97 : 507.0
+weight 98 : 865.0
+crossladım: 0 + 7
+crossladım: 1 + 5
+mutation rate: 0.147
+generation: 97
+one generation: 206
+individual:  1 position solved: 431
+individual:  2 position solved: 431
+individual:  3 position solved: 431
+individual:  4 position solved: 431
+individual:  5 position solved: 431
+individual:  6 position solved: 422
+individual:  7 position solved: 420
+individual:  8 position solved: 415
+individual:  9 position solved: 417
+individual:  10 position solved: 431
+fitness: 382.00000000000114
+fitness: 382.0000000000011
+fitness: 381.8000000000011
+fitness: 381.8000000000011
+fitness: 381.8000000000011
+fitness: 381.8000000000011
+fitness: 373.200000000001
+fitness: 372.60000000000093
+fitness: 371.00000000000097
+fitness: 369.600000000001
+best individual weights: 
+weight 0 : -24.0
+weight 1 : -77.0
+weight 2 : 10.0
+weight 10 : 77.0
+weight 11 : -8.0
+weight 12 : 93.0
+weight 20 : 6.0
+weight 21 : 48.0
+weight 22 : 34.0
+weight 31 : 17.0
+weight 32 : -79.0
+weight 33 : 37.0
+weight 34 : 57.0
+weight 35 : 54.0
+weight 40 : -48.0
+weight 41 : -1.0
+weight 42 : 13.0
+weight 43 : 12.0
+weight 44 : -22.0
+weight 45 : 23.0
+weight 50 : 76.0
+weight 51 : 98.0
+weight 52 : 54.0
+weight 53 : 5.0
+weight 54 : 7.0
+weight 55 : 21.0
+weight 60 : 6.0
+weight 94 : 100.0
+weight 95 : 327.0
+weight 96 : 378.0
+weight 97 : 507.0
+weight 98 : 865.0
+mutation rate: 0.147
+generation: 98
+one generation: 473
+individual:  1 position solved: 431
+individual:  2 position solved: 431
+individual:  3 position solved: 431
+individual:  4 position solved: 431
+individual:  5 position solved: 431
+individual:  6 position solved: 372
+individual:  7 position solved: 422
+individual:  8 position solved: 422
+individual:  9 position solved: 418
+individual:  10 position solved: 414
+fitness: 382.00000000000114
+fitness: 382.0000000000011
+fitness: 381.8000000000011
+fitness: 381.8000000000011
+fitness: 381.8000000000011
+fitness: 376.000000000001
+fitness: 373.40000000000106
+fitness: 370.000000000001
+fitness: 367.800000000001
+fitness: 321.4000000000007
+best individual weights: 
+weight 0 : -24.0
+weight 1 : -77.0
+weight 2 : 10.0
+weight 10 : 77.0
+weight 11 : -8.0
+weight 12 : 93.0
+weight 20 : 6.0
+weight 21 : 48.0
+weight 22 : 34.0
+weight 31 : 17.0
+weight 32 : -79.0
+weight 33 : 37.0
+weight 34 : 57.0
+weight 35 : 54.0
+weight 40 : -48.0
+weight 41 : -1.0
+weight 42 : 13.0
+weight 43 : 12.0
+weight 44 : -22.0
+weight 45 : 23.0
+weight 50 : 76.0
+weight 51 : 98.0
+weight 52 : 54.0
+weight 53 : 5.0
+weight 54 : 7.0
+weight 55 : 21.0
+weight 60 : 6.0
+weight 94 : 100.0
+weight 95 : 327.0
+weight 96 : 378.0
+weight 97 : 507.0
+weight 98 : 865.0
+crossladım: 0 + 5
+crossladım: 1 + 7
+mutation rate: 0.147
+generation: 99
+one generation: 204
+individual:  1 position solved: 431
+individual:  2 position solved: 431
+individual:  3 position solved: 431
+individual:  4 position solved: 431
+individual:  5 position solved: 431
+individual:  6 position solved: 422
+individual:  7 position solved: 422
+individual:  8 position solved: 418
+individual:  9 position solved: 423
+individual:  10 position solved: 428
+fitness: 382.00000000000114
+fitness: 382.0000000000011
+fitness: 381.8000000000011
+fitness: 381.8000000000011
+fitness: 381.8000000000011
+fitness: 378.40000000000117
+fitness: 376.80000000000103
+fitness: 376.000000000001
+fitness: 373.40000000000106
+fitness: 370.000000000001
+best individual weights: 
+weight 0 : -24.0
+weight 1 : -77.0
+weight 2 : 10.0
+weight 10 : 77.0
+weight 11 : -8.0
+weight 12 : 93.0
+weight 20 : 6.0
+weight 21 : 48.0
+weight 22 : 34.0
+weight 31 : 17.0
+weight 32 : -79.0
+weight 33 : 37.0
+weight 34 : 57.0
+weight 35 : 54.0
+weight 40 : -48.0
+weight 41 : -1.0
+weight 42 : 13.0
+weight 43 : 12.0
+weight 44 : -22.0
+weight 45 : 23.0
+weight 50 : 76.0
+weight 51 : 98.0
+weight 52 : 54.0
+weight 53 : 5.0
+weight 54 : 7.0
+weight 55 : 21.0
+weight 60 : 6.0
+weight 94 : 100.0
+weight 95 : 327.0
+weight 96 : 378.0
+weight 97 : 507.0
+weight 98 : 865.0
+mutation rate: 0.147
+generation: 100
+one generation: 472
+individual:  1 position solved: 431
+individual:  2 position solved: 431
+individual:  3 position solved: 431
+individual:  4 position solved: 431
+individual:  5 position solved: 431
+individual:  6 position solved: 427
+individual:  7 position solved: 431
+individual:  8 position solved: 257
+individual:  9 position solved: 422
+individual:  10 position solved: 274
+fitness: 382.00000000000114
+fitness: 382.0000000000011
+fitness: 382.0000000000011
+fitness: 381.8000000000011
+fitness: 381.8000000000011
+fitness: 381.8000000000011
+fitness: 374.0000000000011
+fitness: 372.40000000000106
+fitness: 232.4000000000002
+fitness: 216.80000000000013
+best individual weights: 
+weight 0 : -24.0
+weight 1 : -77.0
+weight 2 : 10.0
+weight 10 : 77.0
+weight 11 : -8.0
+weight 12 : 93.0
+weight 20 : 6.0
+weight 21 : 48.0
+weight 22 : 34.0
+weight 31 : 17.0
+weight 32 : -79.0
+weight 33 : 37.0
+weight 34 : 57.0
+weight 35 : 54.0
+weight 40 : -48.0
+weight 41 : -1.0
+weight 42 : 13.0
+weight 43 : 12.0
+weight 44 : -22.0
+weight 45 : 23.0
+weight 50 : 76.0
+weight 51 : 98.0
+weight 52 : 54.0
+weight 53 : 5.0
+weight 54 : 7.0
+weight 55 : 21.0
+weight 60 : 6.0
+weight 94 : 100.0
+weight 95 : 327.0
+weight 96 : 378.0
+weight 97 : 507.0
+weight 98 : 865.0
+crossladım: 0 + 4
+crossladım: 1 + 1
+mutation rate: 0.147
+generation: 101
+one generation: 201
+individual:  1 position solved: 431
+individual:  2 position solved: 431
+individual:  3 position solved: 431
+individual:  4 position solved: 431
+individual:  5 position solved: 431
+individual:  6 position solved: 431
+individual:  7 position solved: 427
+individual:  8 position solved: 422
+individual:  9 position solved: 430
+individual:  10 position solved: 431
+fitness: 382.00000000000114
+fitness: 382.0000000000011
+fitness: 382.0000000000011
+fitness: 382.0000000000011
+fitness: 381.8000000000011
+fitness: 381.8000000000011
+fitness: 381.8000000000011
+fitness: 380.4000000000011
+fitness: 374.0000000000011
+fitness: 372.40000000000106
+best individual weights: 
+weight 0 : -24.0
+weight 1 : -77.0
+weight 2 : 10.0
+weight 10 : 77.0
+weight 11 : -8.0
+weight 12 : 93.0
+weight 20 : 6.0
+weight 21 : 48.0
+weight 22 : 34.0
+weight 31 : 17.0
+weight 32 : -79.0
+weight 33 : 37.0
+weight 34 : 57.0
+weight 35 : 54.0
+weight 40 : -48.0
+weight 41 : -1.0
+weight 42 : 13.0
+weight 43 : 12.0
+weight 44 : -22.0
+weight 45 : 23.0
+weight 50 : 76.0
+weight 51 : 98.0
+weight 52 : 54.0
+weight 53 : 5.0
+weight 54 : 7.0
+weight 55 : 21.0
+weight 60 : 6.0
+weight 94 : 100.0
+weight 95 : 327.0
+weight 96 : 378.0
+weight 97 : 507.0
+weight 98 : 865.0
+mutation rate: 0.147
+generation: 102
+one generation: 473
+individual:  1 position solved: 431
+individual:  2 position solved: 431
+individual:  3 position solved: 431
+individual:  4 position solved: 431
+individual:  5 position solved: 431
+individual:  6 position solved: 416
+individual:  7 position solved: 429
+individual:  8 position solved: 422
+individual:  9 position solved: 413
+individual:  10 position solved: 421
+fitness: 382.00000000000114
+fitness: 382.0000000000011
+fitness: 382.0000000000011
+fitness: 382.0000000000011
+fitness: 381.8000000000011
+fitness: 375.00000000000125
+fitness: 372.800000000001
+fitness: 369.200000000001
+fitness: 366.00000000000097
+fitness: 363.800000000001
+best individual weights: 
+weight 0 : -24.0
+weight 1 : -77.0
+weight 2 : 10.0
+weight 10 : 77.0
+weight 11 : -8.0
+weight 12 : 93.0
+weight 20 : 6.0
+weight 21 : 48.0
+weight 22 : 34.0
+weight 31 : 17.0
+weight 32 : -79.0
+weight 33 : 37.0
+weight 34 : 57.0
+weight 35 : 54.0
+weight 40 : -48.0
+weight 41 : -1.0
+weight 42 : 13.0
+weight 43 : 12.0
+weight 44 : -22.0
+weight 45 : 23.0
+weight 50 : 76.0
+weight 51 : 98.0
+weight 52 : 54.0
+weight 53 : 5.0
+weight 54 : 7.0
+weight 55 : 21.0
+weight 60 : 6.0
+weight 94 : 100.0
+weight 95 : 327.0
+weight 96 : 378.0
+weight 97 : 507.0
+weight 98 : 865.0
+crossladım: 0 + 4
+crossladım: 1 + 0
+mutation rate: 0.147
+generation: 103
+one generation: 210
+individual:  1 position solved: 431
+individual:  2 position solved: 431
+individual:  3 position solved: 431
+individual:  4 position solved: 431
+individual:  5 position solved: 431
+individual:  6 position solved: 429
+individual:  7 position solved: 422
+individual:  8 position solved: 421
+individual:  9 position solved: 430
+individual:  10 position solved: 431
+fitness: 382.00000000000114
+fitness: 382.00000000000114
+fitness: 382.0000000000011
+fitness: 382.0000000000011
+fitness: 382.0000000000011
+fitness: 381.8000000000011
+fitness: 380.6000000000011
+fitness: 375.00000000000125
+fitness: 372.800000000001
+fitness: 369.200000000001
+best individual weights: 
+weight 0 : -24.0
+weight 1 : -77.0
+weight 2 : 10.0
+weight 10 : 77.0
+weight 11 : -8.0
+weight 12 : 93.0
+weight 20 : 6.0
+weight 21 : 48.0
+weight 22 : 34.0
+weight 31 : 17.0
+weight 32 : -79.0
+weight 33 : 37.0
+weight 34 : 57.0
+weight 35 : 54.0
+weight 40 : -48.0
+weight 41 : -1.0
+weight 42 : 13.0
+weight 43 : 12.0
+weight 44 : -22.0
+weight 45 : 23.0
+weight 50 : 76.0
+weight 51 : 98.0
+weight 52 : 54.0
+weight 53 : 5.0
+weight 54 : 7.0
+weight 55 : 21.0
+weight 60 : 6.0
+weight 94 : 100.0
+weight 95 : 327.0
+weight 96 : 378.0
+weight 97 : 507.0
+weight 98 : 865.0
+mutation rate: 0.147
+generation: 104
+one generation: 467
+individual:  1 position solved: 431
+individual:  2 position solved: 431
+individual:  3 position solved: 431
+individual:  4 position solved: 431
+individual:  5 position solved: 431
+individual:  6 position solved: 426
+individual:  7 position solved: 429
+individual:  8 position solved: 417
+individual:  9 position solved: 414
+individual:  10 position solved: 414
+fitness: 382.00000000000114
+fitness: 382.00000000000114
+fitness: 382.0000000000011
+fitness: 382.0000000000011
+fitness: 382.0000000000011
+fitness: 380.60000000000116
+fitness: 375.20000000000124
+fitness: 368.600000000001
+fitness: 367.60000000000093
+fitness: 367.400000000001
+best individual weights: 
+weight 0 : -24.0
+weight 1 : -77.0
+weight 2 : 10.0
+weight 10 : 77.0
+weight 11 : -8.0
+weight 12 : 93.0
+weight 20 : 6.0
+weight 21 : 48.0
+weight 22 : 34.0
+weight 31 : 17.0
+weight 32 : -79.0
+weight 33 : 37.0
+weight 34 : 57.0
+weight 35 : 54.0
+weight 40 : -48.0
+weight 41 : -1.0
+weight 42 : 13.0
+weight 43 : 12.0
+weight 44 : -22.0
+weight 45 : 23.0
+weight 50 : 76.0
+weight 51 : 98.0
+weight 52 : 54.0
+weight 53 : 5.0
+weight 54 : 7.0
+weight 55 : 21.0
+weight 60 : 6.0
+weight 94 : 100.0
+weight 95 : 327.0
+weight 96 : 378.0
+weight 97 : 507.0
+weight 98 : 865.0
+crossladım: 0 + 2
+crossladım: 1 + 4
+mutation rate: 0.147
+generation: 105
+one generation: 204
+individual:  1 position solved: 431
+individual:  2 position solved: 431
+individual:  3 position solved: 431
+individual:  4 position solved: 431
+individual:  5 position solved: 431
+individual:  6 position solved: 429
+individual:  7 position solved: 426
+individual:  8 position solved: 417
+individual:  9 position solved: 429
+individual:  10 position solved: 431
+fitness: 382.00000000000114
+fitness: 382.00000000000114
+fitness: 382.0000000000011
+fitness: 382.0000000000011
+fitness: 382.0000000000011
+fitness: 381.60000000000116
+fitness: 380.60000000000116
+fitness: 380.20000000000107
+fitness: 375.20000000000124
+fitness: 368.600000000001
+best individual weights: 
+weight 0 : -24.0
+weight 1 : -77.0
+weight 2 : 10.0
+weight 10 : 77.0
+weight 11 : -8.0
+weight 12 : 93.0
+weight 20 : 6.0
+weight 21 : 48.0
+weight 22 : 34.0
+weight 31 : 17.0
+weight 32 : -79.0
+weight 33 : 37.0
+weight 34 : 57.0
+weight 35 : 54.0
+weight 40 : -48.0
+weight 41 : -1.0
+weight 42 : 13.0
+weight 43 : 12.0
+weight 44 : -22.0
+weight 45 : 23.0
+weight 50 : 76.0
+weight 51 : 98.0
+weight 52 : 54.0
+weight 53 : 5.0
+weight 54 : 7.0
+weight 55 : 21.0
+weight 60 : 6.0
+weight 94 : 100.0
+weight 95 : 327.0
+weight 96 : 378.0
+weight 97 : 507.0
+weight 98 : 865.0
+mutation rate: 0.147
+generation: 106
+one generation: 472
+individual:  1 position solved: 431
+individual:  2 position solved: 431
+individual:  3 position solved: 431
+individual:  4 position solved: 431
+individual:  5 position solved: 431
+individual:  6 position solved: 427
+individual:  7 position solved: 417
+individual:  8 position solved: 413
+individual:  9 position solved: 259
+individual:  10 position solved: 416
+fitness: 382.00000000000114
+fitness: 382.00000000000114
+fitness: 382.0000000000011
+fitness: 382.0000000000011
+fitness: 382.0000000000011
+fitness: 380.8000000000009
+fitness: 371.4000000000009
+fitness: 370.00000000000097
+fitness: 366.400000000001
+fitness: 217.60000000000002
+best individual weights: 
+weight 0 : -24.0
+weight 1 : -77.0
+weight 2 : 10.0
+weight 10 : 77.0
+weight 11 : -8.0
+weight 12 : 93.0
+weight 20 : 6.0
+weight 21 : 48.0
+weight 22 : 34.0
+weight 31 : 17.0
+weight 32 : -79.0
+weight 33 : 37.0
+weight 34 : 57.0
+weight 35 : 54.0
+weight 40 : -48.0
+weight 41 : -1.0
+weight 42 : 13.0
+weight 43 : 12.0
+weight 44 : -22.0
+weight 45 : 23.0
+weight 50 : 76.0
+weight 51 : 98.0
+weight 52 : 54.0
+weight 53 : 5.0
+weight 54 : 7.0
+weight 55 : 21.0
+weight 60 : 6.0
+weight 94 : 100.0
+weight 95 : 327.0
+weight 96 : 378.0
+weight 97 : 507.0
+weight 98 : 865.0
+crossladım: 0 + 2
+crossladım: 1 + 6
+mutation rate: 0.147
+generation: 107
+one generation: 204
+individual:  1 position solved: 431
+individual:  2 position solved: 431
+individual:  3 position solved: 431
+individual:  4 position solved: 431
+individual:  5 position solved: 431
+individual:  6 position solved: 427
+individual:  7 position solved: 417
+individual:  8 position solved: 416
+individual:  9 position solved: 430
+individual:  10 position solved: 419
+fitness: 382.00000000000114
+fitness: 382.00000000000114
+fitness: 382.0000000000011
+fitness: 382.0000000000011
+fitness: 382.0000000000011
+fitness: 380.8000000000009
+fitness: 380.60000000000105
+fitness: 371.4000000000009
+fitness: 370.80000000000103
+fitness: 370.00000000000097
+best individual weights: 
+weight 0 : -24.0
+weight 1 : -77.0
+weight 2 : 10.0
+weight 10 : 77.0
+weight 11 : -8.0
+weight 12 : 93.0
+weight 20 : 6.0
+weight 21 : 48.0
+weight 22 : 34.0
+weight 31 : 17.0
+weight 32 : -79.0
+weight 33 : 37.0
+weight 34 : 57.0
+weight 35 : 54.0
+weight 40 : -48.0
+weight 41 : -1.0
+weight 42 : 13.0
+weight 43 : 12.0
+weight 44 : -22.0
+weight 45 : 23.0
+weight 50 : 76.0
+weight 51 : 98.0
+weight 52 : 54.0
+weight 53 : 5.0
+weight 54 : 7.0
+weight 55 : 21.0
+weight 60 : 6.0
+weight 94 : 100.0
+weight 95 : 327.0
+weight 96 : 378.0
+weight 97 : 507.0
+weight 98 : 865.0
+mutation rate: 0.147
+generation: 108
+one generation: 472
+individual:  1 position solved: 431
+individual:  2 position solved: 431
+individual:  3 position solved: 431
+individual:  4 position solved: 431
+individual:  5 position solved: 431
+individual:  6 position solved: 403
+individual:  7 position solved: 430
+individual:  8 position solved: 410
+individual:  9 position solved: 397
+individual:  10 position solved: 401
+fitness: 382.00000000000114
+fitness: 382.00000000000114
+fitness: 382.0000000000011
+fitness: 382.0000000000011
+fitness: 382.0000000000011
+fitness: 381.4000000000011
+fitness: 362.20000000000107
+fitness: 359.20000000000095
+fitness: 354.40000000000094
+fitness: 353.600000000001
+best individual weights: 
+weight 0 : -24.0
+weight 1 : -77.0
+weight 2 : 10.0
+weight 10 : 77.0
+weight 11 : -8.0
+weight 12 : 93.0
+weight 20 : 6.0
+weight 21 : 48.0
+weight 22 : 34.0
+weight 31 : 17.0
+weight 32 : -79.0
+weight 33 : 37.0
+weight 34 : 57.0
+weight 35 : 54.0
+weight 40 : -48.0
+weight 41 : -1.0
+weight 42 : 13.0
+weight 43 : 12.0
+weight 44 : -22.0
+weight 45 : 23.0
+weight 50 : 76.0
+weight 51 : 98.0
+weight 52 : 54.0
+weight 53 : 5.0
+weight 54 : 7.0
+weight 55 : 21.0
+weight 60 : 6.0
+weight 94 : 100.0
+weight 95 : 327.0
+weight 96 : 378.0
+weight 97 : 507.0
+weight 98 : 865.0
+crossladım: 0 + 0
+crossladım: 1 + 7
+mutation rate: 0.147
+generation: 109
+one generation: 203
+individual:  1 position solved: 431
+individual:  2 position solved: 431
+individual:  3 position solved: 431
+individual:  4 position solved: 431
+individual:  5 position solved: 431
+individual:  6 position solved: 430
+individual:  7 position solved: 410
+individual:  8 position solved: 403
+individual:  9 position solved: 430
+individual:  10 position solved: 418
+fitness: 382.00000000000114
+fitness: 382.00000000000114
+fitness: 382.0000000000011
+fitness: 382.0000000000011
+fitness: 382.0000000000011
+fitness: 381.4000000000011
+fitness: 380.6000000000011
+fitness: 370.40000000000106
+fitness: 362.20000000000107
+fitness: 359.20000000000095
+best individual weights: 
+weight 0 : -24.0
+weight 1 : -77.0
+weight 2 : 10.0
+weight 10 : 77.0
+weight 11 : -8.0
+weight 12 : 93.0
+weight 20 : 6.0
+weight 21 : 48.0
+weight 22 : 34.0
+weight 31 : 17.0
+weight 32 : -79.0
+weight 33 : 37.0
+weight 34 : 57.0
+weight 35 : 54.0
+weight 40 : -48.0
+weight 41 : -1.0
+weight 42 : 13.0
+weight 43 : 12.0
+weight 44 : -22.0
+weight 45 : 23.0
+weight 50 : 76.0
+weight 51 : 98.0
+weight 52 : 54.0
+weight 53 : 5.0
+weight 54 : 7.0
+weight 55 : 21.0
+weight 60 : 6.0
+weight 94 : 100.0
+weight 95 : 327.0
+weight 96 : 378.0
+weight 97 : 507.0
+weight 98 : 865.0
+mutation rate: 0.147
+generation: 110
+one generation: 470
+individual:  1 position solved: 431
+individual:  2 position solved: 431
+individual:  3 position solved: 431
+individual:  4 position solved: 431
+individual:  5 position solved: 431
+individual:  6 position solved: 420
+individual:  7 position solved: 423
+individual:  8 position solved: 406
+individual:  9 position solved: 415
+individual:  10 position solved: 413
+fitness: 382.00000000000114
+fitness: 382.00000000000114
+fitness: 382.0000000000011
+fitness: 382.0000000000011
+fitness: 382.0000000000011
+fitness: 373.40000000000106
+fitness: 371.40000000000106
+fitness: 367.000000000001
+fitness: 366.0000000000008
+fitness: 358.20000000000107
+best individual weights: 
+weight 0 : -24.0
+weight 1 : -77.0
+weight 2 : 10.0
+weight 10 : 77.0
+weight 11 : -8.0
+weight 12 : 93.0
+weight 20 : 6.0
+weight 21 : 48.0
+weight 22 : 34.0
+weight 31 : 17.0
+weight 32 : -79.0
+weight 33 : 37.0
+weight 34 : 57.0
+weight 35 : 54.0
+weight 40 : -48.0
+weight 41 : -1.0
+weight 42 : 13.0
+weight 43 : 12.0
+weight 44 : -22.0
+weight 45 : 23.0
+weight 50 : 76.0
+weight 51 : 98.0
+weight 52 : 54.0
+weight 53 : 5.0
+weight 54 : 7.0
+weight 55 : 21.0
+weight 60 : 6.0
+weight 94 : 100.0
+weight 95 : 327.0
+weight 96 : 378.0
+weight 97 : 507.0
+weight 98 : 865.0
+crossladım: 0 + 6
+crossladım: 1 + 5
+mutation rate: 0.147
+generation: 111
+one generation: 207
+individual:  1 position solved: 431
+individual:  2 position solved: 431
+individual:  3 position solved: 431
+individual:  4 position solved: 431
+individual:  5 position solved: 431
+individual:  6 position solved: 423
+individual:  7 position solved: 420
+individual:  8 position solved: 415
+individual:  9 position solved: 430
+individual:  10 position solved: 423
+fitness: 382.00000000000114
+fitness: 382.00000000000114
+fitness: 382.0000000000011
+fitness: 382.0000000000011
+fitness: 382.0000000000011
+fitness: 380.80000000000115
+fitness: 373.40000000000106
+fitness: 373.40000000000106
+fitness: 371.40000000000106
+fitness: 367.000000000001
+best individual weights: 
+weight 0 : -24.0
+weight 1 : -77.0
+weight 2 : 10.0
+weight 10 : 77.0
+weight 11 : -8.0
+weight 12 : 93.0
+weight 20 : 6.0
+weight 21 : 48.0
+weight 22 : 34.0
+weight 31 : 17.0
+weight 32 : -79.0
+weight 33 : 37.0
+weight 34 : 57.0
+weight 35 : 54.0
+weight 40 : -48.0
+weight 41 : -1.0
+weight 42 : 13.0
+weight 43 : 12.0
+weight 44 : -22.0
+weight 45 : 23.0
+weight 50 : 76.0
+weight 51 : 98.0
+weight 52 : 54.0
+weight 53 : 5.0
+weight 54 : 7.0
+weight 55 : 21.0
+weight 60 : 6.0
+weight 94 : 100.0
+weight 95 : 327.0
+weight 96 : 378.0
+weight 97 : 507.0
+weight 98 : 865.0
+mutation rate: 0.147
+generation: 112
+one generation: 473
+individual:  1 position solved: 431
+individual:  2 position solved: 431
+individual:  3 position solved: 431
+individual:  4 position solved: 431
+individual:  5 position solved: 431
+individual:  6 position solved: 426
+individual:  7 position solved: 421
+individual:  8 position solved: 418
+individual:  9 position solved: 421
+individual:  10 position solved: 406
+fitness: 382.00000000000114
+fitness: 382.00000000000114
+fitness: 382.0000000000011
+fitness: 382.0000000000011
+fitness: 382.0000000000011
+fitness: 378.40000000000106
+fitness: 374.0000000000008
+fitness: 372.00000000000097
+fitness: 369.200000000001
+fitness: 364.40000000000094
+best individual weights: 
+weight 0 : -24.0
+weight 1 : -77.0
+weight 2 : 10.0
+weight 10 : 77.0
+weight 11 : -8.0
+weight 12 : 93.0
+weight 20 : 6.0
+weight 21 : 48.0
+weight 22 : 34.0
+weight 31 : 17.0
+weight 32 : -79.0
+weight 33 : 37.0
+weight 34 : 57.0
+weight 35 : 54.0
+weight 40 : -48.0
+weight 41 : -1.0
+weight 42 : 13.0
+weight 43 : 12.0
+weight 44 : -22.0
+weight 45 : 23.0
+weight 50 : 76.0
+weight 51 : 98.0
+weight 52 : 54.0
+weight 53 : 5.0
+weight 54 : 7.0
+weight 55 : 21.0
+weight 60 : 6.0
+weight 94 : 100.0
+weight 95 : 327.0
+weight 96 : 378.0
+weight 97 : 507.0
+weight 98 : 865.0
+crossladım: 0 + 4
+crossladım: 1 + 6
+mutation rate: 0.147
+generation: 113
+one generation: 210
+individual:  1 position solved: 431
+individual:  2 position solved: 431
+individual:  3 position solved: 431
+individual:  4 position solved: 431
+individual:  5 position solved: 431
+individual:  6 position solved: 426
+individual:  7 position solved: 421
+individual:  8 position solved: 421
+individual:  9 position solved: 430
+individual:  10 position solved: 421
+fitness: 382.00000000000114
+fitness: 382.00000000000114
+fitness: 382.0000000000011
+fitness: 382.0000000000011
+fitness: 382.0000000000011
+fitness: 380.8000000000011
+fitness: 378.40000000000106
+fitness: 374.0000000000008
+fitness: 374.0000000000008
+fitness: 372.00000000000097
+best individual weights: 
+weight 0 : -24.0
+weight 1 : -77.0
+weight 2 : 10.0
+weight 10 : 77.0
+weight 11 : -8.0
+weight 12 : 93.0
+weight 20 : 6.0
+weight 21 : 48.0
+weight 22 : 34.0
+weight 31 : 17.0
+weight 32 : -79.0
+weight 33 : 37.0
+weight 34 : 57.0
+weight 35 : 54.0
+weight 40 : -48.0
+weight 41 : -1.0
+weight 42 : 13.0
+weight 43 : 12.0
+weight 44 : -22.0
+weight 45 : 23.0
+weight 50 : 76.0
+weight 51 : 98.0
+weight 52 : 54.0
+weight 53 : 5.0
+weight 54 : 7.0
+weight 55 : 21.0
+weight 60 : 6.0
+weight 94 : 100.0
+weight 95 : 327.0
+weight 96 : 378.0
+weight 97 : 507.0
+weight 98 : 865.0
+mutation rate: 0.147
+generation: 114
+one generation: 476
+individual:  1 position solved: 431
+individual:  2 position solved: 431
+individual:  3 position solved: 431
+individual:  4 position solved: 431
+individual:  5 position solved: 431
+individual:  6 position solved: 413
+individual:  7 position solved: 415
+individual:  8 position solved: 342
+individual:  9 position solved: 424
+individual:  10 position solved: 409
+fitness: 382.00000000000114
+fitness: 382.00000000000114
+fitness: 382.0000000000011
+fitness: 382.0000000000011
+fitness: 382.0000000000011
+fitness: 373.40000000000106
+fitness: 365.0000000000011
+fitness: 362.20000000000107
+fitness: 361.00000000000085
+fitness: 297.20000000000067
+best individual weights: 
+weight 0 : -24.0
+weight 1 : -77.0
+weight 2 : 10.0
+weight 10 : 77.0
+weight 11 : -8.0
+weight 12 : 93.0
+weight 20 : 6.0
+weight 21 : 48.0
+weight 22 : 34.0
+weight 31 : 17.0
+weight 32 : -79.0
+weight 33 : 37.0
+weight 34 : 57.0
+weight 35 : 54.0
+weight 40 : -48.0
+weight 41 : -1.0
+weight 42 : 13.0
+weight 43 : 12.0
+weight 44 : -22.0
+weight 45 : 23.0
+weight 50 : 76.0
+weight 51 : 98.0
+weight 52 : 54.0
+weight 53 : 5.0
+weight 54 : 7.0
+weight 55 : 21.0
+weight 60 : 6.0
+weight 94 : 100.0
+weight 95 : 327.0
+weight 96 : 378.0
+weight 97 : 507.0
+weight 98 : 865.0
+crossladım: 0 + 1
+crossladım: 1 + 6
+mutation rate: 0.147
+generation: 115
+one generation: 204
+individual:  1 position solved: 431
+individual:  2 position solved: 431
+individual:  3 position solved: 431
+individual:  4 position solved: 431
+individual:  5 position solved: 431
+individual:  6 position solved: 424
+individual:  7 position solved: 415
+individual:  8 position solved: 413
+individual:  9 position solved: 430
+individual:  10 position solved: 419
+fitness: 382.00000000000114
+fitness: 382.00000000000114
+fitness: 382.0000000000011
+fitness: 382.0000000000011
+fitness: 382.0000000000011
+fitness: 380.6000000000011
+fitness: 373.40000000000106
+fitness: 368.0000000000011
+fitness: 365.0000000000011
+fitness: 362.20000000000107
+best individual weights: 
+weight 0 : -24.0
+weight 1 : -77.0
+weight 2 : 10.0
+weight 10 : 77.0
+weight 11 : -8.0
+weight 12 : 93.0
+weight 20 : 6.0
+weight 21 : 48.0
+weight 22 : 34.0
+weight 31 : 17.0
+weight 32 : -79.0
+weight 33 : 37.0
+weight 34 : 57.0
+weight 35 : 54.0
+weight 40 : -48.0
+weight 41 : -1.0
+weight 42 : 13.0
+weight 43 : 12.0
+weight 44 : -22.0
+weight 45 : 23.0
+weight 50 : 76.0
+weight 51 : 98.0
+weight 52 : 54.0
+weight 53 : 5.0
+weight 54 : 7.0
+weight 55 : 21.0
+weight 60 : 6.0
+weight 94 : 100.0
+weight 95 : 327.0
+weight 96 : 378.0
+weight 97 : 507.0
+weight 98 : 865.0
+mutation rate: 0.147
+generation: 116
+one generation: 471
+individual:  1 position solved: 431
+individual:  2 position solved: 431
+individual:  3 position solved: 431
+individual:  4 position solved: 431
+individual:  5 position solved: 431
+individual:  6 position solved: 415
+individual:  7 position solved: 415
+individual:  8 position solved: 425
+individual:  9 position solved: 425
+individual:  10 position solved: 414
+fitness: 382.00000000000114
+fitness: 382.00000000000114
+fitness: 382.0000000000011
+fitness: 382.0000000000011
+fitness: 382.0000000000011
+fitness: 375.0000000000011
+fitness: 374.40000000000106
+fitness: 369.8000000000011
+fitness: 364.8000000000011
+fitness: 363.20000000000107
+best individual weights: 
+weight 0 : -24.0
+weight 1 : -77.0
+weight 2 : 10.0
+weight 10 : 77.0
+weight 11 : -8.0
+weight 12 : 93.0
+weight 20 : 6.0
+weight 21 : 48.0
+weight 22 : 34.0
+weight 31 : 17.0
+weight 32 : -79.0
+weight 33 : 37.0
+weight 34 : 57.0
+weight 35 : 54.0
+weight 40 : -48.0
+weight 41 : -1.0
+weight 42 : 13.0
+weight 43 : 12.0
+weight 44 : -22.0
+weight 45 : 23.0
+weight 50 : 76.0
+weight 51 : 98.0
+weight 52 : 54.0
+weight 53 : 5.0
+weight 54 : 7.0
+weight 55 : 21.0
+weight 60 : 6.0
+weight 94 : 100.0
+weight 95 : 327.0
+weight 96 : 378.0
+weight 97 : 507.0
+weight 98 : 865.0
+crossladım: 0 + 0
+crossladım: 1 + 4
+mutation rate: 0.147
+improvements by crossover:10
+improvements by mutation:14
+Best individual
+number of positions solved: 431 generation: 75
+weight 0 : -24.0
+weight 1 : -77.0
+weight 2 : 10.0
+weight 10 : 77.0
+weight 11 : -8.0
+weight 12 : 93.0
+weight 20 : 6.0
+weight 21 : 48.0
+weight 22 : 34.0
+weight 31 : 17.0
+weight 32 : -79.0
+weight 33 : 37.0
+weight 34 : 57.0
+weight 35 : 54.0
+weight 40 : -48.0
+weight 41 : -1.0
+weight 42 : 13.0
+weight 43 : 12.0
+weight 44 : -22.0
+weight 45 : 23.0
+weight 50 : 76.0
+weight 51 : 98.0
+weight 52 : 54.0
+weight 53 : 5.0
+weight 54 : 7.0
+weight 55 : 21.0
+weight 60 : 6.0
+weight 94 : 100.0
+weight 95 : 327.0
+weight 96 : 378.0
+weight 97 : 507.0
+weight 98 : 865.0
+solved positions:
+0
+1
+4
+9
+14
+18
+20
+23
+25
+26
+28
+29
+33
+34
+37
+39
+40
+45
+47
+48
+49
+50
+53
+54
+55
+61
+62
+66
+67
+68
+71
+72
+74
+80
+81
+88
+95
+100
+101
+102
+103
+104
+108
+109
+110
+111
+113
+115
+118
+120
+122
+123
+124
+127
+131
+133
+134
+137
+139
+142
+143
+144
+145
+147
+154
+157
+158
+161
+162
+165
+171
+173
+175
+177
+178
+182
+185
+189
+196
+197
+198
+199
+200
+204
+207
+209
+210
+214
+216
+217
+223
+225
+226
+228
+230
+231
+232
+236
+239
+240
+242
+243
+247
+248
+252
+254
+255
+256
+259
+260
+262
+266
+269
+272
+273
+275
+277
+280
+281
+283
+284
+287
+288
+290
+296
+297
+301
+302
+303
+304
+309
+312
+313
+317
+318
+319
+323
+324
+325
+326
+328
+332
+335
+337
+339
+341
+343
+344
+350
+352
+358
+362
+364
+365
+366
+370
+373
+375
+376
+377
+379
+380
+381
+386
+387
+388
+393
+400
+403
+404
+405
+406
+407
+411
+417
+420
+421
+423
+425
+427
+428
+430
+433
+439
+440
+441
+442
+443
+444
+446
+447
+450
+454
+455
+456
+457
+458
+460
+463
+468
+469
+474
+476
+480
+481
+482
+484
+487
+490
+491
+493
+495
+497
+499
+500
+501
+502
+503
+504
+505
+506
+509
+512
+516
+517
+519
+520
+523
+527
+528
+531
+532
+533
+537
+538
+539
+541
+542
+544
+547
+550
+551
+556
+558
+561
+562
+567
+568
+573
+578
+580
+583
+584
+587
+589
+592
+596
+599
+601
+602
+604
+605
+607
+609
+612
+614
+615
+616
+617
+618
+619
+625
+628
+629
+631
+632
+634
+635
+637
+639
+642
+644
+646
+654
+658
+659
+662
+663
+664
+665
+666
+676
+680
+687
+688
+692
+693
+695
+696
+697
+698
+701
+704
+705
+706
+707
+709
+710
+711
+715
+720
+721
+722
+724
+725
+727
+728
+731
+733
+740
+743
+745
+746
+747
+749
+751
+756
+758
+762
+767
+773
+774
+775
+777
+783
+784
+785
+789
+791
+792
+793
+795
+797
+798
+799
+802
+805
+806
+809
+812
+814
+816
+817
+819
+821
+824
+826
+828
+829
+830
+831
+833
+834
+839
+840
+841
+842
+843
+848
+849
+850
+851
+852
+853
+854
+857
+859
+860
+861
+862
+864
+868
+869
+875
+876
+877
+879
+883
+885
+887
+889
+891
+893
+897
+898
+900
+902
+905
+909
+917
+920
+924
+926
+929
+932
+933
+936
+937
+940
+941
+943
+946
+955
+957
+958
+961
+963
+965
+966
+972
+973
+976
+979
+980
+984
+985
+988
+990
+993
+996
+998

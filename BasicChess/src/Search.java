@@ -1,4 +1,6 @@
 import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Iterator;
 
 import javax.lang.model.element.NestingKind;
 
@@ -10,6 +12,7 @@ public class Search {
 	public int maxDepth=0;
 	public String bestmove="";
 	//public String []bestpath;
+	HashMap<Long, int[]> hashmap1=new HashMap<>(); //info about pos is stored
 	public Evaluate eval;
 	public MoveGenerator movegen=new MoveGenerator();
 	public Search(Board b,int dep){
@@ -41,14 +44,20 @@ public class Search {
 	// this is shorter minimax
 	//position startpos moves e2e4 d7d5 e4d5 d8d5 b1c3 d5c6 d2d4 g8f6 f1b5
 	public Move minimax2(Board b,int side, int depth,double alpha,double beta, Move lastmove ,int qui){
-		ArrayList<Move>list=movegen.moveGenerator(b, side,1, lastmove);
+		ArrayList<Move>legallist=movegen.legalMoves(b, side, lastmove);
 		Move bestmove=new Move();
 		if(side==0)
 			bestmove.moveScore=-99999;
 		else
 			bestmove.moveScore= 99999;
-		ArrayList<Move> legallist=new ArrayList<>();
-		for (Move hamle: list){
+		/*for(Move movex: legallist){
+			System.out.println("move: "+ movex.move+" movescore: "+ movex.moveScore);
+		}*/
+		//position startpos moves d2d4 e7e6 d1d3 b8c6 c1f4 d8h4 g2g3
+		//position startpos moves d2d4 e7e6 d1d3 b8c6 c1f4 d8h4 g2g3 f8b4 c2c3 c6e5 d4e5 h4h5 c3b4 g8e7 b1c3 e7c6 g1f3 c6b4 d3c4 b4c2
+
+		//ArrayList<Move> legallist=new ArrayList<>();
+		/*for (Move hamle: list){
 			b.makeMove(hamle);
 			int check= movegen.isCheck(b,side);
 			if(check==0)
@@ -56,11 +65,11 @@ public class Search {
 				legallist.add(hamle);
 			}
 			b.unmakeMove(hamle);
-		}
+		}*/
 		// position startpos moves e2e3 e7e5 g1e2 b8c6 f2f4 d7d5 e2c3 d5d4 c3e4 d4e3 f1b5 c6b4 
 
 		// iterative deepening routine beginning
-		if(maxDepth==depth&& depth!=1){
+		/*if(maxDepth==depth&& depth!=1){
 			for(Move hamle: legallist){
 				hamle.side=side;
 				//System.out.println("move: "+hamle.move+" depth: "+depth);
@@ -70,7 +79,7 @@ public class Search {
 			}
 			legallist.sort(null);// ascending or descending
 
-		} 
+		} */
 		if(maxDepth!=depth&&maxDepth!=1){
 			for(Move hamle: legallist){
 				eval=new Evaluate(b);
@@ -92,7 +101,12 @@ public class Search {
 				if(depth==1){
 				eval=new Evaluate(b);
 				hamle.moveScore=eval.positionalValues();
-				
+				double diff=eval.captureRoutine(1-side);
+				if(side==0)
+				hamle.moveScore-=diff;
+				if(side==1)
+					hamle.moveScore+=diff;
+	//position startpos moves d2d4 g8f6 c2c4 g7g6 b1c3 f8g7 e2e4 d7d6 g1f3 e8g8 f1e2 e7e5 e1g1 b8c6 d4d5 c6e7 b2b4 f6h5 f1e1 h5f4 e2f1 f7f5 c1f4 e5f4 e4e5 h7h6 d1d2 g6g5 e5d6 c7d6 f3d4 e7g6 a1d1 g6e5 c4c5 a7a5 a2a3 a5b4 a3b4 d8f6 c3b5 d6c5 b4c5 c8d7 b5c7 a8c8 d5d6 b7b6 c7d5 f6f7 d5e7 g8h8
 				// quiescence search with errors
 			/*	if(side==0){
 					impPieces=b.wN|b.wB|b.wQ|b.wK|b.wR;
@@ -133,62 +147,408 @@ public class Search {
 		}
 		return bestmove;
 	}
-	public Move minimax3(Board b,int side, int depth,double alpha,double beta, Move lastmove ,int qui,Individual ind){
-		ArrayList<Move>list=movegen.moveGenerator(b, side,1, lastmove);
+	public Move[] minimax3(Board b,int side, int depth,double alpha,double beta, Move lastmove ,int qui,Individual ind){
+		//ArrayList<Move>list=movegen.moveGenerator(b, side,1, lastmove);
+		Move [] topmovelist=new Move[5];
+		int listite=0;
 		Move bestmove=new Move();
 		if(side==0)
 			bestmove.moveScore=-99999;
 		else
 			bestmove.moveScore= 99999;
-		ArrayList<Move> legallist=new ArrayList<>();
-		for (Move hamle: list){
-			b.makeMove(hamle);
+		ArrayList<Move> legallist=movegen.legalMoves(b, side, lastmove);
+	/*	for (Move hamle1: list){
+			b.makeMove(hamle1);
 			int check= movegen.isCheck(b,side);
 			if(check==0)
 			{
-				legallist.add(hamle);
+				legallist.add(hamle1);
 			}
-			b.unmakeMove(hamle);
-		}
+			b.unmakeMove(hamle1);
+		}*/
 		if(legallist.size()==0){//stalemate hatasi var
 			int check= movegen.isCheck(b,side);
 			if(check==0)
 			{
 				bestmove.moveScore=0;
-				return bestmove;
+				topmovelist=listadd(topmovelist, bestmove, 5,side);
+				return topmovelist;
 			}
 			bestmove.moveScore=bestmove.moveScore/(maxDepth-depth+1);// mata gitmesi icin
-			return bestmove;
+			topmovelist=listadd(topmovelist, bestmove, 5,side);
+			System.out.println("olasý hamle yok");
+			b.printBoard();
+			System.out.println("side to move: "+ side+" "+" inCheck: "+b.inCheck);
+			return topmovelist;
 		}
-		for(Move hamle: legallist){
+		for(Move hamle : legallist){
 				b.makeMove(hamle);
 				if(depth==1){
 				eval=new Evaluate(b,ind);
 				hamle.moveScore=eval.positionalValues();
+				double diff=eval.captureRoutine(1-side);
+				if(side==0)
+					hamle.moveScore-=diff;
+				if(side==1)
+					hamle.moveScore+=diff;
+				
+			/*	System.out.println("hamle: "+hamle.move);
+				b.printBoard();
+				System.out.print("haklar: ");
+				for(int i=0;i<b.rights.length;i++)
+					System.out.print(" right "+ i+" : "+b.rights[i]);
+				System.out.println();*/
 			}else if(depth>1){
 				//System.out.println("depth: "+depth+"  alpha: "+ alpha +"  beta: "+ beta);
-				hamle.child=minimax3(b, 1-side, depth-1,alpha,beta,hamle,1,ind);
+					/*for(int i=0;i<movegen.pinnedcount;i++){
+						System.out.println("önce pinned: "+movegen.pinnedpiece[i]+ " side: "+b.sideToMove);
+						b.printBoard();
+					}*/
+				Move movelis=minimax4(b, 1-side, depth-1,alpha,beta,hamle,1,ind);
+				hamle.child=movelis;
 				hamle.moveScore=hamle.child.moveScore;
+				/*b.printBoard();
+				System.out.println("olasý en iyi hamleler");
+				for(int i = 0;i<size;i++){
+					if(movelis[i]!=null)
+					System.out.println("hamle: "+ movelis[i].move);
+				}*/
+			/*	System.out.println("hamle neydi: "+hamle.move);
+				b.printBoard();
+				System.out.println(" best move: "+hamle.child.move+" score: "+hamle.child.moveScore);*/
+				/*	for(int i=0;i<movegen.pinnedcount;i++){
+						System.out.println("sonra pinned: "+movegen.pinnedpiece[i]+ " side: "+b.sideToMove);
+						b.printBoard();
+					}
+				System.out.println("pinite "+movegen.pinite);*/
 			}
 				b.unmakeMove(hamle);
 			if(side==0){
 				if(hamle.moveScore>=bestmove.moveScore){
-					bestmove=hamle;
+					bestmove=hamle;	
 					//System.out.println("depth: "+depth+"  score: "+ hamle.moveScore+"  "+ hamle.move +" alpha "+alpha +" beta "+beta);
 				}
 				if(bestmove.moveScore>alpha) alpha = bestmove.moveScore;
-				if(alpha > beta ) return bestmove;
-				
+				if(alpha > beta ) {
+					topmovelist=listadd(topmovelist, bestmove, 5,side);
+					return topmovelist;
+				}
+				topmovelist=listadd(topmovelist, hamle, 5,side);
 			}else if(side==1){
 				if(hamle.moveScore<=bestmove.moveScore){
 					bestmove=hamle;
 				}
 					if(bestmove.moveScore<beta) beta = bestmove.moveScore;
-					if(alpha > beta ) return bestmove;
+					if(alpha > beta ){
+						topmovelist=listadd(topmovelist, bestmove, 5,side);
+						return topmovelist;
+					}
 					//System.out.println("side: "+side +" depth: "+depth+" best sofar: "+ bestmove.move+ "  score: "+bestmove.moveScore);
+					topmovelist=listadd(topmovelist, hamle, 5,side);
+			}
+		}
+		return topmovelist;
+	}
+	public ArrayList<Move> minimax5(Board b,int side, int depth,double alpha,double beta, Move lastmove ,int qui,Individual ind){
+		//ArrayList<Move>list=movegen.moveGenerator(b, side,1, lastmove);
+		Move [] topmovelist=new Move[5];
+		ArrayList<Move>sortedlist=new ArrayList<>();
+		int listite=0;
+		Move bestmove=new Move();
+		if(side==0)
+			bestmove.moveScore=-99999;
+		else
+			bestmove.moveScore= 99999;
+		ArrayList<Move> legallist=movegen.legalMoves(b, side, lastmove);
+	/*	for (Move hamle1: list){
+			b.makeMove(hamle1);
+			int check= movegen.isCheck(b,side);
+			if(check==0)
+			{
+				legallist.add(hamle1);
+			}
+			b.unmakeMove(hamle1);
+		}*/
+		if(legallist.size()==0){//stalemate hatasi var
+			int check= movegen.isCheck(b,side);
+			if(check==0)
+			{
+				bestmove.moveScore=0;
+				topmovelist=listadd(topmovelist, bestmove, 5,side);
+				sortedlist=sortmoves(sortedlist,bestmove,side);
+				return sortedlist;
+			}
+			bestmove.moveScore=bestmove.moveScore/(maxDepth-depth+1);// mata gitmesi icin
+			topmovelist=listadd(topmovelist, bestmove, 5,side);
+			System.out.println("olasý hamle yok");
+			b.printBoard();
+			System.out.println("side to move: "+ side+" "+" inCheck: "+b.inCheck);
+			sortedlist=sortmoves(sortedlist,bestmove,side);
+			return sortedlist;
+		}
+		for(Move hamle : legallist){
+				b.makeMove(hamle);
+				if(depth==1){
+				eval=new Evaluate(b,ind);
+				hamle.moveScore=eval.positionalValues();
+				double diff=eval.captureRoutine(1-side);
+				if(side==0)
+					hamle.moveScore-=diff;
+				if(side==1)
+					hamle.moveScore+=diff;
+				
+			/*	System.out.println("hamle: "+hamle.move);
+				b.printBoard();
+				System.out.print("haklar: ");
+				for(int i=0;i<b.rights.length;i++)
+					System.out.print(" right "+ i+" : "+b.rights[i]);
+				System.out.println();*/
+			}else if(depth>1){
+				//System.out.println("depth: "+depth+"  alpha: "+ alpha +"  beta: "+ beta);
+					/*for(int i=0;i<movegen.pinnedcount;i++){
+						System.out.println("önce pinned: "+movegen.pinnedpiece[i]+ " side: "+b.sideToMove);
+						b.printBoard();
+					}*/
+				Move movelis=minimax4(b, 1-side, depth-1,alpha,beta,hamle,1,ind);
+				hamle.child=movelis;
+				hamle.moveScore=hamle.child.moveScore;
+				/*b.printBoard();
+				System.out.println("olasý en iyi hamleler");
+				for(int i = 0;i<size;i++){
+					if(movelis[i]!=null)
+					System.out.println("hamle: "+ movelis[i].move);
+				}*/
+			/*	System.out.println("hamle neydi: "+hamle.move);
+				b.printBoard();
+				System.out.println(" best move: "+hamle.child.move+" score: "+hamle.child.moveScore);*/
+				/*	for(int i=0;i<movegen.pinnedcount;i++){
+						System.out.println("sonra pinned: "+movegen.pinnedpiece[i]+ " side: "+b.sideToMove);
+						b.printBoard();
+					}
+				System.out.println("pinite "+movegen.pinite);*/
+			}
+				b.unmakeMove(hamle);
+			if(side==0){
+				if(hamle.moveScore>=bestmove.moveScore){
+					bestmove=hamle;	
+					//System.out.println("depth: "+depth+"  score: "+ hamle.moveScore+"  "+ hamle.move +" alpha "+alpha +" beta "+beta);
+				}
+				if(bestmove.moveScore>alpha) alpha = bestmove.moveScore;
+				if(alpha > beta ) {
+					topmovelist=listadd(topmovelist, bestmove, 5,side);
+					sortedlist=sortmoves(sortedlist,bestmove,side);
+					return sortedlist;
+				}
+				topmovelist=listadd(topmovelist, hamle, 5,side);
+				sortedlist=sortmoves(sortedlist,hamle,side);
+			}else if(side==1){
+				if(hamle.moveScore<=bestmove.moveScore){
+					bestmove=hamle;
+				}
+					if(bestmove.moveScore<beta) beta = bestmove.moveScore;
+					if(alpha > beta ){
+						topmovelist=listadd(topmovelist, bestmove, 5,side);
+						sortedlist=sortmoves(sortedlist,bestmove,side);
+						return sortedlist;
+					}
+					//System.out.println("side: "+side +" depth: "+depth+" best sofar: "+ bestmove.move+ "  score: "+bestmove.moveScore);
+					topmovelist=listadd(topmovelist, hamle, 5,side);
+					sortedlist=sortmoves(sortedlist,hamle,side);
+			}
+		}
+		//sortedlist=sortmoves(sortedlist,bestmove,side);
+		return sortedlist;
+	}
+	public ArrayList<Move> sortmoves(ArrayList<Move> legallist,Move move ,int side) {
+		// TODO Auto-generated method stub
+		ArrayList<Move > sortedlist=new ArrayList<>();
+		int count=0;
+		if(side==0){
+			while(count<legallist.size()){
+				if(legallist.get(count).moveScore>move.moveScore)
+				{
+					sortedlist.add(legallist.get(count++));
+				}
+				else{
+					sortedlist.add(move);
+					for(int a=count;a<legallist.size();a++){
+						sortedlist.add(legallist.get(a));
+					}
+					return sortedlist;
+				}
+			}
+			sortedlist.add(move);
+			return sortedlist;
+		}
+		else{
+			while(count<legallist.size()){
+				if(legallist.get(count).moveScore<move.moveScore)
+				{
+					sortedlist.add(legallist.get(count++));
+				}
+				else{
+					sortedlist.add(move);
+					for(int a=count;a<legallist.size();a++){
+						sortedlist.add(legallist.get(a));
+					}
+					return sortedlist;
+				}
+			}
+			sortedlist.add(move);
+			return sortedlist;
+		}
+	}
+	public Move minimax4(Board b,int side, int depth,double alpha,double beta, Move lastmove ,int qui,Individual ind){
+		//ArrayList<Move>list=movegen.moveGenerator(b, side,1, lastmove);
+		Move [] topmovelist=new Move[5];
+		int listite=0;
+		Move bestmove=new Move();
+		if(side==0)
+			bestmove.moveScore=-99999;
+		else
+			bestmove.moveScore= 99999;
+		ArrayList<Move> legallist=movegen.legalMoves(b, side, lastmove);
+	/*	for (Move hamle1: list){
+			b.makeMove(hamle1);
+			int check= movegen.isCheck(b,side);
+			if(check==0)
+			{
+				legallist.add(hamle1);
+			}
+			b.unmakeMove(hamle1);
+		}*/
+		if(legallist.size()==0){//stalemate hatasi var
+			int check= movegen.isCheck(b,side);
+			if(check==0)
+			{
+				bestmove.moveScore=0;
+				topmovelist[listite]=bestmove;
+				return bestmove;
+			}
+			bestmove.moveScore=bestmove.moveScore/(maxDepth-depth+1);// mata gitmesi icin
+			topmovelist[listite]=bestmove;
+			System.out.println("olasý hamle yok");
+			b.printBoard();
+			System.out.println("side to move: "+ side+" "+" inCheck: "+b.inCheck);
+			return bestmove;
+		}
+		for(Move hamle : legallist){
+				b.makeMove(hamle);
+			if(depth==1){
+				eval=new Evaluate(b,ind);
+				hamle.moveScore=eval.positionalValues();
+				double diff=eval.captureRoutine(1-side);
+				if(side==0)
+					hamle.moveScore-=diff;
+				if(side==1)
+					hamle.moveScore+=diff;
+				
+			/*	System.out.println("hamle: "+hamle.move);
+				b.printBoard();
+				System.out.print("haklar: ");
+				for(int i=0;i<b.rights.length;i++)
+					System.out.print(" right "+ i+" : "+b.rights[i]);
+				System.out.println();*/
+			}else if(depth>1){
+				//System.out.println("depth: "+depth+"  alpha: "+ alpha +"  beta: "+ beta);
+					/*for(int i=0;i<movegen.pinnedcount;i++){
+						System.out.println("önce pinned: "+movegen.pinnedpiece[i]+ " side: "+b.sideToMove);
+						b.printBoard();
+					}*/
+				Move movex=minimax4(b, 1-side, depth-1,alpha,beta,hamle,1,ind);
+				hamle.child=movex;
+				hamle.moveScore=hamle.child.moveScore;
+				/*b.printBoard();
+				System.out.println("olasý en iyi hamleler");
+				for(int i = 0;i<size;i++){
+					if(movelis[i]!=null)
+					System.out.println("hamle: "+ movelis[i].move);
+				}*/
+			/*	System.out.println("hamle neydi: "+hamle.move);
+				b.printBoard();
+				System.out.println(" best move: "+hamle.child.move+" score: "+hamle.child.moveScore);*/
+				/*	for(int i=0;i<movegen.pinnedcount;i++){
+						System.out.println("sonra pinned: "+movegen.pinnedpiece[i]+ " side: "+b.sideToMove);
+						b.printBoard();
+					}
+				System.out.println("pinite "+movegen.pinite);*/
+			}
+				b.unmakeMove(hamle);
+			if(side==0){
+				if(hamle.moveScore>=bestmove.moveScore){
+					bestmove=hamle;	
+					//System.out.println("depth: "+depth+"  score: "+ hamle.moveScore+"  "+ hamle.move +" alpha "+alpha +" beta "+beta);
+				}
+				if(bestmove.moveScore>alpha) alpha = bestmove.moveScore;
+				if(alpha > beta ) {
+					topmovelist[listite]=bestmove;
+					listadd(topmovelist,hamle,5,side);
+					return bestmove;
+				}
+			}else if(side==1){
+				if(hamle.moveScore<=bestmove.moveScore){
+					bestmove=hamle;
+				}
+					if(bestmove.moveScore<beta) beta = bestmove.moveScore;
+					if(alpha > beta ){
+						topmovelist[listite]=bestmove;
+						return bestmove;
+					}
+					//System.out.println("side: "+side +" depth: "+depth+" best sofar: "+ bestmove.move+ "  score: "+bestmove.moveScore)
+					
+					
 			}
 		}
 		return bestmove;
+	}
+	public Move [] listadd(Move[] topmovelist, Move hamle, int limit,int side) {
+		Move []toplist=new Move[limit];
+		toplist=topmovelist;
+		// TODO Auto-generated method stub
+		int count=0;
+		while(topmovelist.length>count&&toplist[count]!=null){
+			count++;
+		}
+		if(limit<count)
+		{
+			count=limit;
+		}
+		int flag=0;
+		if(side==0){
+		for(int i =0;i<count;i++){
+			if(hamle.moveScore>toplist[i].moveScore){
+				flag=1;
+				Move temp=toplist[i];
+				toplist[i]=hamle;
+				for(int j=i+1;j<limit;j++){
+					Move temp2=toplist[j];
+					toplist[j]=temp;
+					temp=temp2;
+				}
+				return toplist;
+			}
+		}
+		}
+		if(side==1){
+			for(int i =0;i<count;i++){
+				if(hamle.moveScore<toplist[i].moveScore){
+					flag=1;
+					Move temp=toplist[i];
+					toplist[i]=hamle;
+					for(int j=i+1;j<limit;j++){
+						Move temp2=toplist[j];
+						toplist[j]=temp;
+						temp=temp2;
+					}
+					return toplist;
+				}
+			}
+		}
+		if(flag==0){
+			if(count<limit)
+				toplist[count]=hamle;
+		}
+		return toplist;
 	}
 	// ilk pozisyon cok onemli 
 //position startpos moves g2g3 d7d5 f1g2 e7e5 e2e3 b8c6 d2d4 e5d4 e3d4 f8b4 c1d2 d8e7 d1e2 b4d2 b1d2 c6d4 e2e7 g8e7 e1c1 e8d8 d2e4 e7f5 e4g5 c8e6 g3g4 h7h6 g5e6 f7e6 g4f5 d4f5 g2d5 e6d5 d1d5
@@ -370,5 +730,20 @@ public class Search {
 	}
 	public void printPath(){
 		System.out.println();
+	}
+	//check if the position is checked before
+	public boolean isTransposition(Board b){
+		return true;
+	}
+	
+	//information about the board is added to the hash table
+	public void addtoHashTable(Board b,Move bestmove,int depth){
+		long hashkey=b.hashKey;
+		int[]infoar=new int [10];
+		infoar[0]= (int) bestmove.moveScore;
+		infoar[1]= Integer.parseInt(bestmove.move);
+		infoar[2]= depth;//depth of search
+		infoar[3]= b.moveNumber;//age
+		hashmap1.put(hashkey, infoar);
 	}
 }

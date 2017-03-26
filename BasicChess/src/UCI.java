@@ -91,6 +91,7 @@ public class UCI {
     }
     // this method makes all the moves from gui
     public  void inputPosition(String input) {
+    	int count =0;
         input=input.substring(9).concat(" ");
         if (input.contains("startpos ")) {
             input=input.substring(9);
@@ -103,28 +104,35 @@ public class UCI {
         }
         if (input.contains("moves")) {
             input=input.substring(input.indexOf("moves")+6);
-            while (input.length()>0)
+        	StringTokenizer strtok=new StringTokenizer(input);
+            while (strtok.hasMoreTokens())
             {
-            	String algmove=input.substring(0,4);
+            	count++;
+            	String algmove=strtok.nextToken();
             	String mytypemove=algebraToMove(algmove);
             	Move movex=new Move();
             	movex.pieceType=board.detectPieceType(mytypemove);
             	movex.move=mytypemove;
-            	movex.moveType=movegen.moveTypeDetector(board, mytypemove, movex.pieceType);
+            	int movety=movegen.moveTypeDetector(board, mytypemove, movex.pieceType);
+            	movex.moveType=movety;
             	// in the case of promotion 	
             	//System.out.println("movestr:"+ mytypemove+"  pieceType:"+ movex.pieceType);
-            	if(input.charAt(4)=='q')movex.promotionType=4+(6*board.sideToMove);else if(input.charAt(4)=='n')movex.promotionType=1+(6*board.sideToMove);
+            	if(movety==2)
+            	if(algmove.charAt(4)=='q')movex.promotionType=4+(6*board.sideToMove);else if(input.charAt(4)=='n')movex.promotionType=1+(6*board.sideToMove);
             	else if(input.charAt(4)=='b')movex.promotionType=2+(6*board.sideToMove);else if(input.charAt(4)=='r')movex.promotionType=3+(6*board.sideToMove);
                if (board.sideToMove==0) {// belki kiþiye göre degiþtirebilirim burayi
             	   board.makeMove(movex);
                 } else {
              	   board.makeMove(movex);
                 }
+       //position startpos moves e2e4 b8c6 d2d4 e7e5 g1f3 e5d4 f3d4 g8f6 b1c3 d7d6 f1e2 c8d7 c1e3 f8e7 f2f3 a7a6 f3f4 d8c8 h2h3 b7b5 e2f3 c6d4 e3d4 e8g8 e4e5 f6e8 f3a8 e7h4 d4f2 h4f2 e1f2 c8a8 h1e1 d7c6 d1g4 f7f5 g4g3 g7g6 f2g1 e8f6 e5f6 c6g2 g3g2 a8g2 g1g2 f8e8 e1e8 g8f7 a1e1 f7f6 c3b5 a6b5 g2f3 g6g5 f4g5 f6g5 f3g2 g5f6 e8g8 d6d5 g2h2 b5b4 a2a4 d5d4 a4a5 b4b3 a5a6 b3c2 a6a7 c2c1q a7a8q
+
                // algebraToMove(input);position startpos moves e2e4 g8f6 e4e5 f6e4 d2d3 e4c5 b1c3 b8c6 g1f3 b7b6 d3d4 c5e6 f1b5 c6d4 f3d4 c8a6 b5a6 e6c5 a6c4 d7d5 c4d5 c5d3 d1d3 a8b8 d5c6 d8d7 c6d7
                lastmove= movex;
-                input=input.substring(input.indexOf(' ')+1);
+               // input=input.substring(input.indexOf(' ')+1);
             }
         }
+       // System.out.println("movenumber: "+count);
     }
     public  void inputGo(String inputstring) {
         String move="131312";
@@ -145,15 +153,23 @@ public class UCI {
         Move nullmove=new Move();
         Move bestmove=search.minimax2(board, board.sideToMove, depth,-1000000,1000000,lastmove,1);
     //position startpos moves e2e4 d7d5 e4d5 d8d5 b1c3 d5d4 g1f3 d4f6 f1e2
+    //position startpos moves e2e4 e7e6 d2d4 d8h4 b1c3 f8b4 f1d3 b8c6 g1f3 h4g4 e1g1 g8f6 e4e5 f6d5 c3d5 e6d5 c2c3 b4e7 d3e2 h7h5 h2h3 g4g6 e2d3 f7f5 e5f6 g6f6 c1g5 f6e6 d1a4 e7g5
+
       //  System.out.println("minimax2: "+ bestmove.move+ "score : "+ bestmove.moveScore);
         //System.out.println("path: "+bestmove.move);
         System.out.println("bestmove "+moveToAlgebra(bestmove) +" score: "+bestmove.moveScore);
+      /*.makeMove(bestmove);
+        //board.printBoard();
+        Evaluate eval=new Evaluate(board);
+        eval.positionalValues1();
+        board.unmakeMove(bestmove);*/
+       // System.out.println("bestmove "+bestmove.move +" score: "+bestmove.moveScore+" taþ: "+bestmove.pieceType);
         Move parent= bestmove;
-        for(int i=0;i<depth-2;i++){
+        for(int i=0;i<depth-1;i++){
         	Move child=parent.child;
         	parent=parent.child;
-        	if(child!=null)
-        	System.out.println("move : "+ moveToAlgebra(child)+" movescore: "+ child.moveScore);
+        	if(child!=null&&!child.move.equals(""))
+        		System.out.println("move : "+ moveToAlgebra(child)+" movescore: "+ child.moveScore);
         }
     }
     //burada sey hatasi var bu promotion bilgisi gitmiyor
@@ -222,6 +238,13 @@ public class UCI {
     }
     public String Solver( int gamenum) throws IOException{
     	String moves=games[gamenum];
+    	if(moves.length()==6)
+    	if(moves.charAt(moves.length()-1)=='+'&&(moves.charAt(moves.length()-2)=='Q'||moves.charAt(moves.length()-2)=='q')){
+    		String move= "position startpos moves"+moves.substring(0, moves.length()-7);
+        	inputPosition(move);
+        	return moves.substring(moves.length()-6);
+    	}
+    	if(moves.length()==5)
     	if(moves.charAt(moves.length()-1)=='+')
     	{
     	String move= "position startpos moves"+moves.substring(0, moves.length()-6);
@@ -247,12 +270,15 @@ public class UCI {
 				line+=reader.readLine();
 			StringTokenizer str=new StringTokenizer(line);
 			int allmove=str.countTokens();
-			movenum=allmove/5;
-			while(movenum!=countmove)
+			movenum=(int) (20+20*Math.random());// this is to determine which move to predict
+			while(allmove<movenum+6)
+				movenum-=2;
+			while(movenum>countmove&&str.hasMoreTokens())
 			{
 				moves+=" "+str.nextToken();
 				countmove++;
 			}
+			if(countgame>=0)
 			games[countgame]=moves;
 			//System.out.println(moves);
 			countgame++;
@@ -305,11 +331,14 @@ public class UCI {
         			line=reader.readLine();
         		}while(!(temp.contains("0-1")||temp.contains("1-0")||temp.contains("1/2-1/2")));
         		//end of a game
-        		System.out.print(tokenizer(game));
+        		StringTokenizer strtok=new StringTokenizer(game);
+        		if(strtok.countTokens()<100||strtok.countTokens()>30){
+        			System.out.print(tokenizer(game));
         		System.out.println(" end of game");
         		count++;
+        		}
         	}
-
+    
         }
         System.out.println(count);
         out.close();

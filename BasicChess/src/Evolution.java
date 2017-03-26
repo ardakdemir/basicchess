@@ -59,42 +59,95 @@ public class Evolution {
 		Search src = new Search();
 		int totalcount = 0;
 		int totalpop= 0;
+		int fingen=0;
 		int improveind = 0;
 		int flag = 0;
+		int mutimp=0;//improvements made by mutation
+		int crossimp=0;// improvements made by crossover
 		for (int a = 0; a < gennum; a++){
 			int b=0;
 			System.out.println("generation: "+ a);
+			long starttime = System.currentTimeMillis();
+			int known=0;
+			while(known<indlist.size()&&indlist.get(known).positionssolved!=0)
+				known++;
+			for(int i = 0; i<positionnum;i++){
+			//	System.out.println(i);
+				String move = uci.Solver(i);
+				//startB.printBoard();
+				//	System.out.print(i+"  grandmaster move: "+ move);
+				for(int y = known;y<indlist.size();y++){
+					Individual ind = indlist.get(y);
+					//Move bestmovelist[]=src.minimax3(startB, startB.sideToMove,1, -99999, 99999, null, 0, ind);
+					//Move bestmovelist2[]=src.minimax3(startB, startB.sideToMove,2, -99999, 99999, null, 0, ind);
+					//Move bestmov=src.minimax4(startB, startB.sideToMove,2, -99999, 99999, null, 0, ind);
+					//Move bestmove= src.minimax4(startB, startB.sideToMove,2, -99999, 99999, null, 0, ind);// simdilik nullmove veriyorum enpas
+					//Move bestmove = src.randomSearch(startB, startB.sideToMove);
+					ArrayList<Move> sortedmoves=src.minimax5(startB, startB.sideToMove,2, -99999, 99999, null, 0, ind);
+					String bstmv=uci.moveToAlgebra(sortedmoves.get(0));
+					
+					//startB.printBoard();
+					/*for(int u = 0;u<sortedmoves.size();u++){
+						System.out.println("move: "+sortedmoves.get(u).move+" score: "+sortedmoves.get(u).moveScore);
+					}*/
+					//	System.out.println("  my bestmove: "+ bstmv);
+			//		System.out.println(i+"my: "+bstmv+"  his: "+move);
+			//		System.out.println("king black :"+ startB.rights[5]);
+					/*System.out.println("pozisyon "+i+" side"+startB.sideToMove);
+					startB.printBoard();
+					for(int l = 0;l<3;l++){
+						if(bestmovelist[l]!=null){
+							System.out.println("1move: "+bestmovelist[l].move+"moveScore: "+bestmovelist[l].moveScore);
+							System.out.println("2move: "+bestmovelist2[l].move+"moveScore: "+bestmovelist2[l].moveScore);
+						}
+						
+					}*/
+					if(move.substring(0,4).equals(bstmv)){
+					//	System.out.println(move.substring(0,4));
+						//System.out.println("Position: "+i+" Ind:"+y+" First move suggested is true");
+						ind.solvedgameindex[ind.positionssolved]=i;
+						ind.positionssolved++;
+						ind.onfirsttrial++;
+						ind.fitness++;
+					}
+					/*else{
+						for(int x=1;x<sortedmoves.size()&&x<3;x++){
+							String movestr=uci.moveToAlgebra(sortedmoves.get(x));
+							if(move.substring(0,4).equals(movestr)){
+								//	System.out.println(move.substring(0,4));
+									//System.out.println("Position: "+i+" Ind:"+y+" First move suggested is true");
+									ind.solvedgameindex[ind.positionssolved]=i;
+									ind.positionssolved++;
+									ind.fitness+=(1-(x*0.2));
+								}
+						}
+					}*/
+				}
+			}
+			long diff= System.currentTimeMillis()-starttime;
+			System.out.println("one generation: "+ diff);
 			for(Individual ind : indlist){
-				totalpop+=1;
 				b++;
 				int count=0;
-				ind.positionssolved=0;
-				for(int i = 0; i<positionnum;i++){
-					String move = uci.Solver(i);
-					//	System.out.print(i+"  grandmaster move: "+ move);
-					Move bestmove= src.minimax3(startB, startB.sideToMove, 1, -99999, 99999, null, 0, ind);// simdilik nullmove veriyorum enpas
-					//Move bestmove = src.randomSearch(startB, startB.sideToMove);
-					String bstmv=uci.moveToAlgebra(bestmove);
-					//	System.out.println("  my bestmove: "+ bstmv);
-					if(move.substring(0,4).equals(bstmv)){
-						ind.solvedgameindex[count]=i;
-						count++;
-					}
-				}
-				totalcount+=count;
-				System.out.println("individual:  "+b+" position solved: "+ count);
-				ind.positionssolved=count;
-				if(count>bestind.positionssolved){
+				System.out.println("individual:  "+b+" position solved: "+ ind.positionssolved);
+				if(ind.fitness>bestind.fitness){
 					//System.out.println("count: "+ count + "  best: "+ bestind.positionssolved);
 					bestind.weights=ind.weights;
+					bestind.fitness=ind.fitness;
 					bestind.positionssolved=ind.positionssolved;
 					bestind.solvedgameindex=ind.solvedgameindex;
 					bestind.generationnum=a;
+					if(a%2==0&&a!=0){
+						mutimp++;
+					}
+					if(a%2==1){
+						crossimp++;
+					}
 					flag++;
 				}
-
 			}
-			indlist.sort(null);
+			//indlist.sort(null);
+			indlist=sortInds(indlist);
 			if(flag == 0 ){
 				improveind++;
 			}
@@ -104,46 +157,72 @@ public class Evolution {
 			}
 			//dynamic mutation rate
 			if(improveind>5){// no improvement in the last generations on the best individual
-				if(mutrat<0.20)
-					mutrat+=0.01;
+				if(mutrat<0.14)
+					mutrat+=0.011;
 			}
 			flag = 0;
-			/*	for(Individual ind: indlist) {
-				System.out.println("fitness: "+ ind.positionssolved);
-			} */
+				for(Individual ind: indlist) {
+				System.out.println("fitness: "+ ind.fitness+"  first: "+ind.onfirsttrial);
+			} 
 			for(int i = 0;i<100;i++)
 			{
 				bestindweights[a][i]=(int) bestind.weights[i];
 			}
 			System.out.println("best individual weights: ");
-				bestind.printWeights();
+			bestind.printWeights();
 			indlist=nextGen1(indlist, crossoverrate, mutrat,a);
-			System.out.println("ortalama : "+totalcount/totalpop);
 			System.out.println("mutation rate: "+mutrat);
+			if(improveind>40){
+				fingen=a;
+				a=gennum;
+			}
 		}
 		// end of simulation
-		
-		
+
+		System.out.println("improvements by crossover:"+ crossimp);
+		System.out.println("improvements by mutation:"+ mutimp);		
 		System.out.println("Best individual");
 		System.out.println("number of positions solved: "+ bestind.positionssolved + " generation: "+ bestind.generationnum);
 		bestind.printWeights();
 		//draw weights i every generation
-		ArrayList<Double>weight = new ArrayList<>();
-		for(int i = 0;i<gennum;i++)
-			weight.add((double)bestindweights[i][22]);
-		String title="weight "+ 22;
-		DrawGraph.createAndShowGui(weight,title);
+//		ArrayList<Double>weight = new ArrayList<>();
+//		for(int i = 0;i<fingen;i++)
+//			weight.add((double)bestindweights[i][22]);
+//		String title="weight "+ 22;
+//		DrawGraph.createAndShowGui(weight,title);
 		System.out.println("solved positions:");
 		for(int i = 0;i<bestind.positionssolved;i++)
 			System.out.println(bestind.solvedgameindex[i]);
 		out.close();
 		return bestind;
 	}
+	private ArrayList<Individual> sortInds(ArrayList<Individual> indlist) {
+		// TODO Auto-generated method stub
+		Individual[]inds=new Individual[indlist.size()];
+		int count=0;
+		for(Individual ind:indlist)
+			inds[count++]=ind;
+		for(int i = 1;i<indlist.size();i++){
+			for(int j= 0;j<i;j++){
+				if(inds[i].fitness>inds[j].fitness){
+					Individual temp= inds[j];
+					inds[j]=inds[i];
+					inds[i]=temp;
+				}
+			}
+		}
+		ArrayList<Individual> indler=new ArrayList<>();
+		for(int a=0;a<indlist.size();a++){
+			indler.add(inds[a]);
+		}
+		return indler;
+	}
 	// mutates the given list with given parameters
 	Individual mutate(Individual ind, double mutarate){
 		//ArrayList<Individual >mutated= new ArrayList<>();
 		Individual ind1=new Individual();
 		int count = 0;
+		int again=0;
 		while(count==0)
 			for(int i = 0; i<100;i++){
 				int weight = (int) ind.weights[i];
@@ -157,7 +236,7 @@ public class Evolution {
 						{
 							ind1.weights[i]=ind.weights[i+1];
 						}
-						else if(i>94&&i<98&&ind1.weights[i-1]>ind.weights[i])
+						else if(i>94&&i<=98&&ind1.weights[i-1]>ind.weights[i])
 						{
 							ind1.weights[i]=ind.weights[i-1];
 						}
@@ -167,43 +246,44 @@ public class Evolution {
 				}
 				if(i==94)
 					ind1.weights[i]=100;
+				again=1;
 			}
 		return ind1;
 	}
-	
+
+	// only eliminate the least successful individuals
+	// put the newly created individuals
+	// keep the rest of the individuals
+	ArrayList<Individual>crossOverRoutine(ArrayList<Individual>indlist,double crossoverrate){
+		ArrayList<Individual>newinds= new ArrayList<>();
+		int num = (int) (indlist.size() * crossoverrate);
+		int rest = indlist.size()-num;
+		for(int i = 0;i<rest;i++){
+			newinds.add(indlist.get(i));
+		}
+		for(int i = 0; i<num; i++){
+			Individual a =  new Individual();
+			int in2= (int) (rest*Math.random());
+			a= crossOver(newinds.get(i), newinds.get(in2));
+			System.out.println("crossladým: "+i +" + "+in2);
+			newinds.add(a);
+		}
+		return newinds;
+	}
 	// if i is even makes crossover only if i is odd mutation only
 	ArrayList<Individual>nextGen1(ArrayList<Individual>indlist, double crossoverrate, double mutarate,int i){
 		ArrayList<Individual>nextGeneration=new ArrayList<>();
 		if(i%2==0){//only crossover
-			int num = (int) (crossoverrate*indlist.size());//individuals to keep 
-			int rest = indlist.size()- num ;
-			for(int a=0;a<num;a++)
-				nextGeneration.add(indlist.get(a));
-			int x=0;
-
-			while(x*x+x<rest){
-				x++;
-			}
-			x--;
-			for(int b= 0 ;b<x;b++){
-				for(int j=b+1;j<=2*x-b;j++){
-					Individual newind= crossOver(indlist.get(b), indlist.get(j));
-					nextGeneration.add(newind);
-				}
-			}
-			int kalan = rest - (x*x+x);
-			for(int a = 0; a< kalan ; a ++){
-				Individual newind = crossOver(indlist.get(1+a),indlist.get(x*x+a+1));
-				nextGeneration.add(newind);
-			}
+			return crossOverRoutine(indlist, crossoverrate);
 		}
-		else{
-			int copy= indlist.size()/5;
+		else{//only mutation
+			int copy= indlist.size()/2;
 			for(int a = 0;a<copy;a++){
 				nextGeneration.add(indlist.get(a));
 			}
-			for(int y=copy;y<indlist.size();y++){
-				Individual ind1= mutate(indlist.get(y), mutarate);
+			for(int y=0;y<indlist.size()-copy;y++){
+				Individual ind1=new Individual();
+					ind1=mutate(indlist.get(y), mutarate);
 				nextGeneration.add(ind1);
 			}
 		}
@@ -220,7 +300,7 @@ public class Evolution {
 			nextGeneration.add(indlist.get(i));
 			//	System.out.println("bildi sayisi: "+ indlist.get(i).positionssolved);
 		}
-			for(int i=0;i<num;i++){
+		for(int i=0;i<num;i++){
 			Individual a = mutate(indlist.get(i), mutarate);
 			nextGeneration.add(a);
 		} 
@@ -254,10 +334,16 @@ public class Evolution {
 		double rand =1;
 		for(int i = 0 ; i<100;i++){
 			rand = Math.random();
-			if(rand>0.45)
+			if(rand<0.33)
 				ind.weights[i]=ind1.weights[i];
-			else
+			else if(rand<66)
 				ind.weights[i]=ind2.weights[i];
+			else
+				ind.weights[i]=(ind1.weights[i]+ind2.weights[i])/2;
+		}
+		for(int i = 94;i<98;i++){
+			if(ind.weights[i]>ind.weights[i+1])
+				ind.weights[i+1]=ind.weights[i];
 		}
 		return ind ;
 	}
@@ -278,10 +364,10 @@ public class Evolution {
 	}
 	void setBoundaries(){
 		int count=0;
-		boundaries[count][0]=0;
-		boundaries[count++][1]=30;//weaks
+		boundaries[count][0]=-50;
+		boundaries[count++][1]=0;//weaks
 		boundaries[count][0]=-100;
-		boundaries[count++][1]=0;//knightonweak
+		boundaries[count++][1]=0;//enemyknightonweak
 		boundaries[count][0]=-30;
 		boundaries[count++][1]=70;//centerpawn
 		count+=7;
@@ -293,31 +379,41 @@ public class Evolution {
 		boundaries[count++][1]=100;//kingcastled
 		count+=7;
 		boundaries[count][0]=0;
-		boundaries[count++][1]=100;//bishopmob
+		boundaries[count++][1]=15;//bishopmob
 		boundaries[count][0]=0;
-		boundaries[count++][1]=100;//bishoponlarge
+		boundaries[count++][1]=50;//bishoponlarge
 		boundaries[count][0]=0;
 		boundaries[count++][1]=100;//bishoppair
 		count+=7;
 		boundaries[count][0]=0;
-		boundaries[count++][1]=100;//knightmob
-		count+=9;
-		boundaries[count][0]=-70;
-		boundaries[count++][1]=30;//isopawn
-		boundaries[count][0]=-70;
-		boundaries[count++][1]=30;//doublepawn
+		boundaries[count++][1]=15;//knightmob
+		boundaries[count][0]=0;
+		boundaries[count++][1]=100;//knighsupport
+		boundaries[count][0]=-100;
+		boundaries[count++][1]=0;//knightper0
+		boundaries[count][0]=-60;
+		boundaries[count++][1]=40;//knightper1
+		boundaries[count][0]=-40;
+		boundaries[count++][1]=60;//knightper2
+		boundaries[count][0]=-30;
+		boundaries[count++][1]=70;//knightper3
+		count+=4;
+		boundaries[count][0]=-50;
+		boundaries[count++][1]=0;//isopawn
+		boundaries[count][0]=-50;
+		boundaries[count++][1]=0;//doublepawn
 		boundaries[count][0]=-20;
 		boundaries[count++][1]=100;//passpawn
 		boundaries[count][0]=0;
 		boundaries[count++][1]=100;//rookbhdpawn
 		boundaries[count][0]=-70;
 		boundaries[count++][1]=30;//backpawn
-		boundaries[count][0]=-30;
-		boundaries[count++][1]=60;//rankpasspawn
-		boundaries[count][0]=-100;
+		boundaries[count][0]=-40;
+		boundaries[count++][1]=40;//rankpasspawn
+		boundaries[count][0]=0;
 		boundaries[count++][1]=0;//blockedpawnpen
-		boundaries[count][0]=-70;
-		boundaries[count++][1]=30;//blockedpasspawnpen
+		boundaries[count][0]=-0;
+		boundaries[count++][1]=0;//blockedpasspawnpen
 		count+=2;
 		boundaries[count][0]=0;
 		boundaries[count++][1]=100;//rookopenfile
@@ -326,12 +422,14 @@ public class Evolution {
 		boundaries[count][0]=0;
 		boundaries[count++][1]=100;//rookonseventh
 		boundaries[count][0]=0;
-		boundaries[count++][1]=100;//rookmob
+		boundaries[count++][1]=10;//rookmob
 		boundaries[count][0]=0;
 		boundaries[count++][1]=100;//rookcon
-		count+=5;
+		boundaries[count][0]=-60;
+		boundaries[count++][1]=30;//rookclosedfile		
+		count+=4;
 		boundaries[count][0]=0;
-		boundaries[count++][1]=100;//queenmob	
+		boundaries[count++][1]=10;//queenmob	
 		count=95;
 		boundaries[count][0]=200;
 		boundaries[count++][1]=400;//knight
@@ -346,12 +444,19 @@ public class Evolution {
 		for(int i =0;i<100;i++){
 			ind.weights[i]=randomGenerator2(boundaries[i][0], boundaries[i][1]);
 		}
+		ind.weights[94]=100;
 	}
 	private double randomGenerator2(int i, int j) {
 		// TODO Auto-generated method stub
 		double rand = Math.random();
 		int diff = j-i;
 		int mut = (int) (i + diff *rand);
+		if(mut==0&&i!=0&&j!=0){
+			if(rand<0.50)
+				return -1;
+			else
+				return 1;
+		}
 		return mut;
 	}
 	void initializeIndividualWeights(Individual ind,int ub){
@@ -398,7 +503,7 @@ public class Evolution {
 			ind.weights[piece++]=randomGenerator(900, 900, ub);
 		}
 	}
-	
+
 	int randomGenerator(double weightsarr, double weightsarr2,int ub){
 		int num=0;
 		int low1 =(int) ( weightsarr /ub );
